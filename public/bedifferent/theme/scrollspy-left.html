@@ -1,0 +1,787 @@
+<!doctype html>
+<!--[if lte IE 8 ]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Be Different Bootstrap Off Canvas Theme - Scroll Spy on Left</title>
+  <meta name="description" content="Scroll Spy on Left : Be Different Bootstrap Theme - a different, unique theme with 10 different color combos. Built with Bootstrap, custom css3, html5, and plenty of excellent components, sliders, and other useful elements">
+  
+  <!-- BASE CSS ============================================== -->
+  <!-- custom build of latest bootstrap see json or follow the link in the file ============================================== -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- ASSET CSS (if you are on a secure server remove the http: but not the // it won't work local but will work for both http and httpS ============================================== -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/theme-assets.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- LOGO FONT, replace with your own ============================================== -->
+  <link href="assets/css/logo-font.css" rel="stylesheet" type="text/css">
+  
+  <!-- THEME CSS (unminified TOC version w/purchase) ============================================== -->
+  <link href="assets/css/theme-min.css" rel="stylesheet" type="text/css">
+  
+  <!-- SCRIPTS IN HEAD ============================================== -->
+  <script src="assets/js/modernizr.2.8.3.js"></script>
+  
+  <!--[if lt IE 9]>
+   <script src="assets/js/respond.min.js"></script>
+   <![endif]-->
+  
+  <!-- +++++++ jQuery library ============================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+   if (!window.jQuery) {
+       document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>');
+   }
+   </script>
+  
+  <!-- WINDOWS 8 Phones BUG FIX -->
+  <script src="assets/js/windows-fix.js"></script>
+</head>
+<body>
+
+<!-- +++++ No Script Fallback notice +++++ -->
+<noscript>
+<div>
+  Turn on your JavaScript!
+</div>
+</noscript>
+<!-- accessibility skip to nav skip content -->
+<ul class="sr-only" id="top">
+  <li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to Navigation</a></li>
+  <li><a href="#page" title="Skip to content" accesskey="c">Skip to Content</a></li>
+</ul>
+<!--  /.sr-only accessibility--> 
+<!-- =============== HEADER ==============================-->
+<header class="header">
+  <div class="header-inner">
+    <!-- :: info :: .header-inner acts like container --> 
+    <!-- #### logo font  -->
+    <div class="logo-brand logo-font">
+      <a href="index.html">
+      <span class="logo-brand-inner">
+        <span class="logo-b-different-logo">
+          <!--logo font for demo -->
+        </span>
+        <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
+      </span>
+      </a>
+    </div>
+    <!-- /.logo-brand-->
+    
+    <div class="header-btn-bar">
+      <!-- .menu-toggle --> 
+      <a href="#" class="menu-toggle" data-slide="slide" data-target="#navigation-panel"> 
+      <!-- this above data-slide toggles the #navigation-panel .slide-panel -->
+      <div class="menu-toggle-inner">
+        <span class="veggieburger">
+          <span class="lines">
+          </span>
+        </span>
+        <!--/.veggieburger-->
+        <span class="menu-toggle-text">
+          M<i class="fa fa-bars"></i>NU
+        </span>
+      </div>
+      </a> 
+      <!-- /.menu-toggle-->
+      <div class="header-btn-wrapper clearfix">
+        <!-- .header-btn-row-->
+        <div class="header-btn-row half-row">
+          <!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
+          <a href="#" class="login-toggle header-btn header-btn-xl" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
+          <span class="header-btn-text">
+            Login
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #login-panel .slide-panel example --> 
+          <!-- /END 1st .header-btn .header-btn-xl in first row --> 
+          <!-- BEGIN 2nd.header-btn .header-btn-xl in first row --> 
+          <a href="#" class="signin-toggle header-btn header-btn-xl" data-slide="slide" data-target="#signup-panel"> <i class="fa fa-pencil header-icon"></i>
+          <span class="header-btn-text">
+            Sign Up
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #signup-panel .slide-panel example --> 
+          <!-- /END 2nd .header-btn .header-btn-xl in first row -->
+        </div>
+        <!-- /.header-btn-row-->
+        <div class="header-btn-row half-row">
+          <!-- BEGIN 3rd .header-btn .header-btn-lg in second row --> 
+          <a href="#" class="anchor header-btn header-btn-lg" data-slide="slide" data-target="#contact-panel"> <i class="fa fa-at header-icon"></i>
+          <span class="header-btn-text">
+            Contact
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #contact-panel .slide-panel example --> 
+          <!-- /END 3rd .header-btn .header-btn-lg in second row --> 
+          <!-- BEGIN 4th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm search-toggle" data-slide="slide" data-target="#search-panel"  data-hover="tooltip" data-placement="left" title="search"> <i class="fa fa-search header-icon"></i> </a> 
+          <!-- this above data-slide toggles the #search-panel .slide-panel example --> 
+          <!-- /END 4th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 5th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="follow us on twitter"> <i class="fa fa-twitter header-icon"></i> </a> 
+          <!-- this link above links to your twitter page --> 
+          <!-- /END 5th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 6th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="like us on facebook"> <i class="fa fa-facebook header-icon"></i> </a> 
+          <!-- this link above links to your facebook page --> 
+          <!-- /END 6th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 7th .header-btn .header-btn-sm in second row --> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="subscribe to our RSS"> <i class="fa fa-rss header-icon"></i> </a> 
+          <!-- this link above links to your google+ page --> 
+          <!-- /END 7th .header-btn .header-btn-sm in second row -->
+        </div>
+        <!-- /END .header-btn-row-->
+      </div>
+      <!-- /END .header-btn-wrapper-->
+    </div>
+    <!-- /END .header-btn-bar -->
+    
+  </div>
+  <!-- /END .header-inner --> 
+</header>
+<!-- =============== END HEADER ==============================--> 
+
+<!-- ================== BEGIN SLIDE OUT PANELS  ================= -->
+<div class="slide-panel-parent">
+  <!-- .slide-panel-parent goes around all the panels --> 
+  <!-- _____________ NAVIGATION PANEL _______ -->
+  <div class="slide-panel" id="navigation-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-8">
+          <!-- _________ BEGIN NAVIGATION ___________ -->
+          <nav id="nav" role="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="home-events.html">Home Events</a></li>
+              <li><a href="multi-col-menu.html">Multiple Column Menu on Larger Viewports</a></li>
+              <li class="has-children"> <a href="#">Header Options</a>
+                <ul>
+                  <li><a href="tall-button-header.html">Tall Button Header</a></li>
+                  <li><a href="image-logo.html">Image Logo</a></li>
+                  <li><a href="tall-logo.html">Tall Logo Image</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Carousels</a>
+                <ul>
+                  <li><a href="variable-width-slider.html">Variable Image Widths</a></li>
+                  <li><a href="testimonial-slider.html">Testimonial Slider</a></li>
+                  <li><a href="featured-work-slider.html">Featured Work Slider</a></li>
+                  <li><a href="equal-column-slider.html">Equal Column Slider</a></li>
+                  <li><a href="video-slider.html">Video Slider</a></li>
+                  <li><a href="mini-bootstrap-carousel.html">Mini Slider</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Components</a>
+                <ul>
+                  <li><a href="bootstrap-3-misc-sink.html">Misc. Bootstrap Components</a></li>
+                  <li><a href="modals.html">Magnific Popup Modals</a></li>
+                  <li class="has-children"> <a href="#">Icons</a>
+                    <ul>
+                      <li><a href="themify-icons.html">Themify Icons</a></li>
+                      <li><a href="font-awesome.html">Font Awesome</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="icon-usage.html">Icon Usage</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"> <a href="#">Collapse/Tabs</a>
+                    <ul>
+                      <li><a href="tabs.html">Tabs</a></li>
+                      <li><a href="left-tabs.html">Left Tabs</a></li>
+                      <li><a href="collapse.html">Collapse/Accordion</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#" class="current">Pages & Misc</a>
+                <ul>
+                  <li><a href="about-us-option-1.html">About Us Option 1</a></li>
+                  <li><a href="about-us-option-2.html">About Us Option 2</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="pricing-columns.html">Pricing Columns</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li class="active"><a href="scrollspy-left.html">Scrollspy Left Column</a></li>
+                  <li><a href="scrollspy-right.html">Scrollspy Right Column</a></li>
+                  <li><a href="simple-gallery.html">Simple Image Gallery</a></li>
+                  <li><a href="equal-height.html">Equal Height Columns</a></li>
+                  <li><a href="blank-template.html">Blank Template</a></li>
+                  <li><a href="page-not-found.html">404 Page Not Found</a></li>
+                  <li><a href="typography-example.html">Typography Example</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Blog</a>
+                <ul>
+                  <li><a href="blog-summary-masonry-layout.html">Blog Summary Isotope</a></li>
+                  <li><a href="blog-summary-left.html">Blog Summary L</a></li>
+                  <li><a href="blog-summary-right.html">Blog Summary R</a></li>
+                  <li><a href="blog-single.html">Single Blog Post</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Portfolio</a>
+                <ul>
+                  <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                  <li><a href="portfolio-single.html">Portfolio Single Item</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--/.col-md-6 col-lg-8 -->
+        <div class="col-md-6 col-lg-4">
+          <h4 class="h2">Latest News</h4>
+          <ul>
+            <li><a href="your-link-goes-here.html">We will amplify our power to benchmark...</a></li>
+            <li><a href="your-link-goes-here.html">We have revolutionized the conceptualization...</a></li>
+            <li><a href="your-link-goes-here.html">Everything is relative; relatively speaking.</a></li>
+            <li><a href="your-link-goes-here.html">My other body is an immortal robot body.</a></li>
+            <li><a href="your-link-goes-here.html">I don't know who they are but they're...</a></li>
+            <li><a href="your-link-goes-here.html">For those about to rock, we salute you </a> </li>
+          </ul>
+          <h4 class="h2">Latest Work</h4>
+          <div class="img-widget fade-hover-img">
+            <a href="#"><img src="assets/demo-images/img-widget/1.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/2.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/3.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/4.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/5.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/6.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/7.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/8.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/9.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/10.jpg" alt="" /></a>
+          </div>
+          <!--/.img-widget-->
+        </div>
+        <!--/.col-md-6 col-lg-4 -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container inside #navigation-panel -->
+  </div>
+  <!--/.slide-panel #navigation-panel --> 
+  <!-- _________ SEARCH PANEL #search-panel___________ -->
+  <div class="slide-panel search" id="search-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h3 class="slide-panel-title">Search</h3>
+      <form role="form">
+        <div class="form-group">
+          <input type="search" placeholder="Enter search term and press enter" class="form-control">
+        </div>
+        <!--/.form-group -->
+      </form>
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.slide-panel #search-panel --> 
+  <!-- _________ CONTACT PANEL ___________ -->
+  <div class="slide-panel" id="contact-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title text-center-md-view">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 text-right-md-view text-right-lg-view">
+          <h3>Organized Organization</h3>
+          <p class="lead"> 1255 Nowhere Street<br>
+            Tampa, FL 33655<br>
+            <strong>phone:</strong> <a href="tel:8135551234">813.555.1234</a><br>
+            <strong>fax:</strong> 813.555.1235<br>
+            <span class="overflow">
+              <strong>email:</strong> <a class="link-underline" href="mailto:email@domain.com">email@companydomain.com</a>
+            </span>
+          </p>
+        </div>
+        <!-- /.col-md-6 -->
+        
+        <div class="col-md-6">
+          <h3>Find Us On...</h3>
+          <ul class="social-icon-list">
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <!-- /.col-md-6 -->
+        
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.slide-panel #contact-panel --> 
+  <!-- _________ LOGIN PANEL #login-panel ___________ -->
+  <div class="slide-panel" id="login-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title">Login</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Social Login</h4>
+          <ul class="list-unstyled social-user">
+            <li><a href="#" title="Login with Facebook" class="facebook"><i class="fa fa-facebook"></i>
+              <span>
+                Login with Facebook
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Google Plus" class="google"><i class="fa fa-google-plus"></i>
+              <span>
+                Login with Google
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Twitter" class="twitter"><i class="fa fa-twitter"></i>
+              <span>
+                Login with Twitter
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i>
+              <span>
+                Login with Wordpress
+              </span>
+              </a></li>
+          </ul>
+          <!-- /.social-user -->
+        </div>
+        <!-- /.col-*-6 -->
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign In</h4>
+          <form role="form" action="your-script.php">
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control  form-control-lg" placeholder="Password">
+            </div>
+            <div class="form-group checkbox small">
+              <label>
+                <input type="checkbox">
+                Remember Me </label>
+            </div>
+            <p class="text-center">
+              <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Sign in</button>
+            </p>
+          </form>
+          <p class="text-center clear"><a href="#" data-slide="slide" data-target="#forgot-password-panel" class="link-underline">Forgot your password?</a> <br>
+            Don't have an account yet? <a class="link-underline signin-toggle" href="#" data-slide="slide" data-target="#signup-panel">Sign up</a> </p>
+        </div>
+        <!-- /.col-*-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #login-panel --> 
+  <!-- _________ SIGNUP PANEL #signup-panel ___________ -->
+  <div class="slide-panel" id="signup-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title">Sign In</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign Up with...</h4>
+          <ul class="list-unstyled social-user">
+            <li><a href="#" title="Signup with Facebook" class="facebook"><i class="fa fa-facebook"></i>
+              <span>
+                Signup with Facebook
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Google Plus" class="google"><i class="fa fa-google-plus"></i>
+              <span>
+                Signup with Google
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Twitter" class="twitter"><i class="fa fa-twitter"></i>
+              <span>
+                Signup with Twitter
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i>
+              <span>
+                Signup with Wordpress
+              </span>
+              </a></li>
+          </ul>
+          <!-- /.social-user -->
+        </div>
+        <!-- /.col-*-6 -->
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign Up</h4>
+          <form role="form" action="your-script.php">
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control form-control-lg" placeholder="Password">
+            </div>
+            <p class="text-center">
+              <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Register</button>
+            </p>
+          </form>
+          <p class="text-center clear">Already have an account? <a class="link-underline login-toggle" href="#" data-slide="slide" data-target="#login-panel">Login</a></p>
+        </div>
+        <!-- /.col-*-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #signup-panel --> 
+  <!-- _________ FORGOT PASSWORD #forgot-password-panel ___________ -->
+  <div class="slide-panel" id="forgot-password-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h3 class="slide-panel-title">Forgot Password</h3>
+      <form role="form" action="your-script.php">
+        <div class="input-group input-group-lg input-group-slide-panel">
+          <input class="form-control" placeholder="Your@EmailAddress.com" type="email">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-slide-panel btn-lg">Reset Password</button>
+          </span>
+          <!--/.input-group-btn-->
+        </div>
+      </form>
+      <hr class="vertical-spacer height-20px">
+      <p class="text-center"><a href="#" data-slide="slide" data-target="#login-panel" class="link-underline login-toggle">Remembered your Password?</a></p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #forgot-password-panel -->
+</div>
+<!-- END .slide-down-parent --> 
+<!-- ================== END SLIDE OUT PANELS  ================= --> 
+<!-- =============== BEGIN #page ==============================-->
+<div id="page">
+  <!-- =========== PAGE HEADER ON ALL BUT INDEX PAGES =========================================================================== --> 
+  <!-- _________ Page Header ___________ -->
+  <div class="page-header-primary">
+    <div class="container">
+      <h2>Scroll Spy on Left</h2>
+      <ol class="breadcrumb page-header-breadcrumb hidden-xs">
+        <li><a href="index.html" class="link-underline">Home</a></li>
+        <li class="active">Scroll Spy on Left</li>
+      </ol>
+    </div>
+    <!-- /.container (for page-header-primary) -->
+  </div>
+  <!-- /.page-header-primary --> 
+  <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
+  <div class="page-content" role="main">
+    <!--slide to sidebar toggle --> 
+    <a class="visible-xs slide-sidebar has-anchor" href="#sidebar"><i class="ti ti-menu"></i> <em>Sidebar</em></a>
+    <div class="container affix-page-container">
+      <!--toggle button-->
+      <div class="row">
+        <div class="col-sm-8 col-md-9 col-sm-push-4 col-md-push-3 primary-column">
+          <!-- section -->
+          <section>
+            <h2 class="title h1">Easy Spying and Affixing</h2>
+            <!-- this has no id since the first link in the navigation is #top -->
+            <p class="lead">This page is set up for easy implementation of a sticky side nav that spies on the content here in the primary-column. It uses Bootstrap's Scroll Spy but it utilizes a
+              different script for the stickiness. </p>
+            <div class="well">
+              <h3>Not Set Up for Touch Devices</h3>
+              <p>This page works on touch devices, but it does not stick. On the Bootstrap docs site you'll notice that their sticky sidenav starts at the desktop break point, but it is static under 992px. I suspect that this is because they are trying to
+                avoid tablets, though I don't know. I agree, I think we should skip sticky navs on tablets (and they come in all different sizes and send out resolutions even bigger than some desktop
+                devices), therefore, this solution only implements for non-touch devices in both the css and the jQuery but works on smaller screens down to 768px. </p>
+            </div>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section2">Left or Right Side Navigation</h2>
+            <!-- id matches the id in the second link in the spying-sidebar make sure they marry up -->
+            <p>I prefer right sided navigation. I don't know why, I just think that it looks more artistic or different and people do look there and it's closer to the most for most people (right
+              handed folks). </p>
+            <h2 class="title h1" id="subsection-2-1">Subnavigation</h2>
+            <p>As you can see, this page supports sublevel navigation at device/screen widths above 767px.</p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section3">Section Three</h2>
+            <!-- id matches the id in the third parent link in the spying-sidebar   make sure they marry up -->
+            <p class="lead">We here at Company have come to know that it is better to synthesize strategically than to morph
+              seamlessly. The web services factor can be summed up in one word: clicks-and-mortar, 24/7/365. Without appropriate biometrics, returns-on-investment are forced to become B2C. What does the
+              term "best-of-breed" really mean? </p>
+            <h2 class="title h1" id="subsection-3-1">Subsection 3-1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Efficiens dici potest. Ego vero isti, inquam, permitto. Hoc non est positum in nostra actione. Duo Reges: constructio
+              interrete. </p>
+            <h2 class="title h1" id="subsection-3-2">Subsection 3-2</h2>
+            <p>Roges enim Aristonem, bonane ei videantur haec: vacuitas doloris, divitiae, valitudo; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Dempta enim aeternitate nihilo
+              beatior Iuppiter quam Epicurus; Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. Terram, mihi crede, ea lanx et maria deprimet. Iam id ipsum
+              absurdum, maximum malum neglegi. </p>
+            <h2 class="title h1" id="subsection-3-3">Subsection 3-3</h2>
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta capienda. Sed in
+              rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Quae diligentissime
+              contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section4">Section Four</h2>
+            <!-- id matches the id in the fourth parent link in the spying-sidebar make sure they marry up -->
+            <p class="lead">Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+            <h2 class="title h1" id="subsection-4-1">Subsection 4-1</h2>
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta capienda. Sed in
+              rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Quae diligentissime
+              contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+            <h2 class="title h1" id="subsection-4-2">Subsection 4-2</h2>
+            <p>Roges enim Aristonem, bonane ei videantur haec: vacuitas doloris, divitiae, valitudo; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Dempta enim aeternitate nihilo
+              beatior Iuppiter quam Epicurus; Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. Terram, mihi crede, ea lanx et maria deprimet. Iam id ipsum
+              absurdum, maximum malum neglegi. </p>
+            <h2 class="title h1" id="subsection-4-3">Subsection 4-3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Efficiens dici potest. Ego vero isti, inquam, permitto. Hoc non est positum in nostra actione. Duo Reges: constructio
+              interrete. </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section5">Section Five</h2>
+            <!-- id matches the id in the fifth parent link in the spying-sidebar make sure they marry up -->
+            <p class="lead">Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section6">Section Six</h2>
+            <!-- id matches the id in the sixth parent link in the spying-sidebar make sure they marry up -->
+            <p class="lead">Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section7">Section Seven</h2>
+            <!-- id matches the id in the seventh parent link in the spying-sidebar make sure they marry up -->
+            <p class="lead">Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section8">Section Eight</h2>
+            <!-- id matches the id in the eighth parent link in the spying-sidebar make sure they marry up -->
+            <div class="well">
+              <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+                capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+                Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+            </div>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section9">Section Nine</h2>
+            <!-- id matches the id in the ninth parent link in the spying-sidebar make sure they marry up -->
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section10">Section Ten</h2>
+            <!-- id matches the id in the tenth parent link in the spying-sidebar make sure they marry up -->
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section11">Section Eleven</h2>
+            <!-- id matches the id in the eleventh parent link in the spying-sidebar make sure they marry up -->
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section12">Section 12</h2>
+            <!-- id matches the id in the 12th parent link in the spying-sidebar make sure they marry up -->
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section13">Section 13</h2>
+            <!-- id matches the id in the 13th parent link in the spying-sidebar make sure they marry up -->
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section14">Section 14</h2>
+            <!-- id matches the id in the 14th parent link in the spying-sidebar make sure they marry up -->
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section--> 
+          <!-- another section -->
+          <section>
+            <h2 class="title h1" id="section15">Section 15</h2>
+            <!-- id matches the id in the 15th parent link in the spying-sidebar make sure they marry up -->
+            <p>Expectoque quid ad id, quod quaerebam, respondeas. Haec quo modo conveniant, non sane intellego. Nihil illinc huc pervenit. Duarum enim vitarum nobis erunt instituta
+              capienda. Sed in rebus apertissimis nimium longi sumus. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta.
+              Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed quia studebat laudi et dignitati, multum in virtute processerat. Idem adhuc; </p>
+          </section>
+          <!--/end section-->
+        </div>
+        <!--/col-sm-8 col-md-9 primary-column-->
+        <div class="col-sm-4 col-md-3 col-sm-pull-8 col-md-pull-9" id="sidebar">
+          <div class="widget spying-sidebar">
+            <h3 class="widget-title">Navigation</h3>
+            <ul class="nav side-nav">
+              <!-- the very first "link" is #top so that it is active on load and when you scroll to the top -->
+              <li> <a class="has-anchor" href="#top">Easy Spying and Affixing</a> </li>
+              <li> <a class="has-anchor" href="#section2">Left or Right Side Bar</a>
+                <ul class="nav">
+                  <li> <a class="has-anchor" href="#subsection-2-1">Subnavigation</a> </li>
+                </ul>
+              </li>
+              <li> <a class="has-anchor" href="#section3">Section Three</a>
+                <ul class="nav">
+                  <li> <a class="has-anchor" href="#subsection-3-1">Subsection 3-1</a> </li>
+                  <li> <a class="has-anchor" href="#subsection-3-2">Subsection 3-2</a> </li>
+                  <li> <a class="has-anchor" href="#subsection-3-3">Subsection 3-2</a> </li>
+                </ul>
+              </li>
+              <li> <a class="has-anchor" href="#section4">Section Four</a>
+                <ul class="nav">
+                  <li> <a class="has-anchor" href="#subsection-4-1">Subsection 4-1</a> </li>
+                  <li> <a class="has-anchor" href="#subsection-4-2">Subsection 4-2</a> </li>
+                  <li> <a class="has-anchor" href="#subsection-4-3">Subsection 4-3</a> </li>
+                </ul>
+              </li>
+              <li> <a class="has-anchor" href="#section5">Section Five</a> </li>
+              <li> <a class="has-anchor" href="#section6">Section Six</a> </li>
+              <li> <a class="has-anchor" href="#section7">Section Seven</a> </li>
+              <li> <a class="has-anchor" href="#section8">Section Eight</a> </li>
+              <li> <a class="has-anchor" href="#section9">Section Nine</a> </li>
+              <li> <a class="has-anchor" href="#section10">Section Ten</a> </li>
+              <li> <a class="has-anchor" href="#section11">Section Eleventh</a> </li>
+              <li> <a class="has-anchor" href="#section12">Section Twelve</a> </li>
+              <li> <a class="has-anchor" href="#section13">Section Thirteenth</a> </li>
+              <li> <a class="has-anchor" href="#section14">Section Fourteenth</a> </li>
+              <li> <a class="has-anchor" href="#section15">Section Fifteenth</a> </li>
+            </ul>
+          </div>
+        </div>
+        <!--/col-sm-4 col-md-3-->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--.container-->
+  </div>
+  <!-- /.page-content role=main --> 
+  <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
+</div>
+<!-- ================== END #page ================= --> 
+<!-- ================== FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-column-wrapper">
+    <div class="container">
+      <div class="row footer-row equal-height-col">
+        <div class="col-sm-5 col-md-3 footer-col">
+          <h4 class="footer-title">Socialfy</h4>
+          <ul class="social-icon-list">
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <!-- /.col-sm-5 .col-md-3 footer-col -->
+        <div class="col-sm-7 col-md-9 footer-col">
+          <h4 class="footer-title">About Us</h4>
+          <p>There’s a lot written about immortal robot bodies and how they’re the new rage. Religion can’t provide immortal robot bodies. Flying heads in bubbles are also becoming popular. The cost of preserving a head is much less than the entire body and at least you can keep your face. But with the immortal robot, after you die, your soul or spirit is digitized and your flesh body rots, but you don’t care, ‘cause having an immortal robot body is ultra cool and sexy. While you’re still on earth, your immortal robot body sits in storage ready for the fateful day. No, it doesn’t act like Dorian Gray, keeping you ageless and that kind of thing, but it does provide a great feeling of peace of mind.</p>
+        </div>
+        <!-- /.col-sm-7 col-md-9 footer-col-->
+      </div>
+      <!--/.row .footer-row-->
+      <div class="row footer-row equal-height-col">
+        <!-- ::info:: this is equal heights with jQuery -->
+        <div class="col-sm-4 footer-col">
+          <h4 class="footer-title">Stay Updated</h4>
+          <p>Sign up for our newsletter. We won't share your email address.</p>
+          <form action="yourscript.php" method="post">
+            <div class="input-group">
+              <input class="form-control form-control-footer" placeholder="Your@EmailAddress.com" type="email">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-footer">Sign Up</button>
+              </span>
+              <!--/.input-group-btn-->
+            </div>
+          </form>
+        </div>
+        <!-- /.col-sm-4 footer-col-->
+        <div class="col-sm-8 footer-col">
+          <h4 class="footer-title">Latest Stuff</h4>
+          <div class="img-widget fade-hover-img">
+            <a href="#"><img src="assets/demo-images/img-widget/1.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/2.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/3.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/4.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/5.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/6.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/7.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/8.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/9.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/10.jpg" alt="" /></a>
+          </div>
+          <!--/.img-widget-->
+        </div>
+        <!-- /.col-sm-8 footer-col-->
+      </div>
+      <!--/.row .footer-row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.footer-column-wrapper -->
+  <div class="footer-copyright">
+    <div class="container">
+      <p class="no-margin">© Copyright 2015 WebsiteTemplatesThatRock.com. 
+        All rights reserved. Please purchase this theme so you can use it in your project. 
+        Email <a href="mailto:websitetemplatesthatrock@gmail.com" class="link-underline">the designer.</a> | <a class="link-underline" href="site-map.html">Site Map</a> </p>
+    </div>
+  </div>
+  <!--/.footer-copyright--> 
+</footer>
+<!-- ================== /.END footer ================= --> 
+<!-- _________ GO TO TOP ___________ --> 
+<a id="go-to-top" href="#top" title="up"> <i class="ti ti-arrow-up"></i> </a> 
+
+<!-- _________ FOOTER SCRIPTS  ________ --> 
+<script src="assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 
+<script src="assets/js/bootstrap.min.js"></script> <!-- bootstrap's js --> 
+<script src="assets/js/jquery.bootstrap.addon.js"></script><!-- initializations and custom scripts for bootstrap --> 
+<script src="assets/js/jquery.magnific-popup.js"></script><!-- image popups, video, modals, etc., contains the initializations --> 
+<script src="assets/js/jquery.slick-slider.min.js"></script> <!-- base carousel/slider SLICK SLIDER --> 
+<script src="assets/js/jquery.isotope.masonry.js"></script> <!-- Isotope w/Masonry also contains the initializations --> 
+
+<script src="assets/js/jquery.main.js"></script> <!-- CORE scripts and initializations --> 
+
+
+</body>
+</html>
