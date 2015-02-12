@@ -9,12 +9,22 @@ class UsersTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 10) as $index)
-		{
-			User::create([
+		for ($i=0; $i < 100; $i++) { 
+			$user = new User();
 
-			]);
+			$user->email = $faker->email;
+			$user->password = Hash::make('codeup');
+			$user->first_name = $faker->firstName;
+			$user->last_name = $faker->lastName;
+			$user->profile = $faker->paragraph($nbSentences = 3);
+			$user->phone = $faker->phoneNumber;
+			$user->city = $faker->city;
+			$user->state = $faker->stateAbbr;
+			$user->zip = $faker->postcode;
+			$user->save();
 		}
+
+
 	}
 
 }
