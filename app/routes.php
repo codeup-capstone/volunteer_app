@@ -15,3 +15,25 @@ Route::get('/', function()
 {
 	return View::make('activity.index');
 });
+
+Route::get('rsvp', 'HomeController@showRsvp');
+
+Route::get('admin', 'HomeController@showAdminPage');
+
+Route::get('adminEdit', 'HomeController@showOrganizationProfile');
+
+Route::get('createEvent', 'HomeController@showCreate');
+
+Route::get('events','HomeController@showEvents');
+
+Route::get('liveEvent', 'HomeController@showLive');
+
+Route::get('organizations', 'HomeController@showlistOrg');
+
+Route::get('pastVolunteers', 'HomeController@showVolunteers');
+
+/*Volunteer profile view below*/
+Route::get('volunteer', 'HomeController@showProfile');
+/*Volunteer profile view below*/
+
+Route::get('volunteerEdit', 'HomeController@showProfileEdit');

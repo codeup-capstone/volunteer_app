@@ -15,40 +15,49 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function showAdminPage()
 	{
-		return View::make('hello');
+		return View::make('activity.admin');
+	}
+	public function showOrganizationProfile()
+	{
+		return View::make('activity.adminEdit');
+	}
+	public function showCreate()
+	{
+		return View::make('activity.createEvent');
+	}
+	public function showEvents()
+	{
+		return View::make('activity.events');
+	}
+	public function showLive()
+	{
+		return View::make('activity.liveEvent');
+	}
+	public function showlistOrg()
+	{
+		return View::make('activity.organizations');
 	}
 
-	public function showOrganization()
+	public function showVolunteers()
 	{
-		return View::make('organization');
+		return View::make('activity.pastVolunteers');
 	}
-
-	public function showVolunteer()
+	public function showRsvp()
 	{
-		return View::make('Volunteer');
+		return View::make('activity.rsvp');
 	}
-
-	public function showAdmin()
-	{
-		return View::make('admin');
-	}
-
-	public function showActivity()
-	{
-		return View::make('activity');
-	}
-
 	public function showProfile()
 	{
-		return View::make('contact');
+		return View::make('activity.volunteer');
+	}
+	public function showProfileEdit()
+	{
+		return View::make('activity.volunteerEdit');
 	}
 
-	public function showLogin()
-	{
-		return View::make('login');
-	}
+
 
 	public function doLogin()
 	{
@@ -74,4 +83,4 @@ class HomeController extends BaseController {
 	}
 
 }
-}
+
