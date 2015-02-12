@@ -23,7 +23,6 @@ class CreateEventsTable extends Migration {
 			$table->datetime('cutoff_time');
 			$table->string('image_name', 100)->nullabe();
 			$table->string('headline', 100)->nullable();
-			$table->string('image_url', 100)->nullable();
 			$table->string('contact_name', 100);
 			$table->char('contact_phone', 10);
 			$table->string('contact_email', 100);
