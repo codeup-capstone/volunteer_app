@@ -1,0 +1,3320 @@
+<!doctype html>
+<!--[if lte IE 8 ]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Be Different Bootstrap Off Canvas Theme - Font Awesome</title>
+  <meta name="description" content="Font Awesome : Be Different Bootstrap Theme - a different, unique theme with 10 different color combos. Built with Bootstrap, custom css3, html5, and plenty of excellent components, sliders, and other useful elements">
+  
+  <!-- BASE CSS ============================================== -->
+  <!-- custom build of latest bootstrap see json or follow the link in the file ============================================== -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- ASSET CSS (if you are on a secure server remove the http: but not the // it won't work local but will work for both http and httpS ============================================== -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/theme-assets.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- LOGO FONT, replace with your own ============================================== -->
+  <link href="assets/css/logo-font.css" rel="stylesheet" type="text/css">
+  
+  <!-- THEME CSS (unminified TOC version w/purchase) ============================================== -->
+  <link href="assets/css/theme-min.css" rel="stylesheet" type="text/css">
+  
+  <!-- SCRIPTS IN HEAD ============================================== -->
+  <script src="assets/js/modernizr.2.8.3.js"></script>
+  
+  <!--[if lt IE 9]>
+   <script src="assets/js/respond.min.js"></script>
+   <![endif]-->
+  
+  <!-- +++++++ jQuery library ============================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+   if (!window.jQuery) {
+       document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>');
+   }
+   </script>
+  
+  <!-- WINDOWS 8 Phones BUG FIX -->
+  <script src="assets/js/windows-fix.js"></script>
+</head>
+<body>
+
+<!-- +++++ No Script Fallback notice +++++ -->
+<noscript>
+<div>
+  Turn on your JavaScript!
+</div>
+</noscript>
+<!-- accessibility skip to nav skip content -->
+<ul class="sr-only" id="top">
+  <li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to Navigation</a></li>
+  <li><a href="#page" title="Skip to content" accesskey="c">Skip to Content</a></li>
+</ul>
+<!--  /.sr-only accessibility--> 
+<!-- =============== HEADER ==============================-->
+<header class="header">
+  <div class="header-inner">
+    <!-- :: info :: .header-inner acts like container --> 
+    <!-- #### logo font  -->
+    <div class="logo-brand logo-font">
+      <a href="index.html">
+      <span class="logo-brand-inner">
+        <span class="logo-b-different-logo">
+          <!--logo font for demo -->
+        </span>
+        <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
+      </span>
+      </a>
+    </div>
+    <!-- /.logo-brand-->
+    
+    <div class="header-btn-bar">
+      <!-- .menu-toggle --> 
+      <a href="#" class="menu-toggle" data-slide="slide" data-target="#navigation-panel"> 
+      <!-- this above data-slide toggles the #navigation-panel .slide-panel -->
+      <div class="menu-toggle-inner">
+        <span class="veggieburger">
+          <span class="lines">
+          </span>
+        </span>
+        <!--/.veggieburger-->
+        <span class="menu-toggle-text">
+          M<i class="fa fa-bars"></i>NU
+        </span>
+      </div>
+      </a> 
+      <!-- /.menu-toggle-->
+      <div class="header-btn-wrapper clearfix">
+        <!-- .header-btn-row-->
+        <div class="header-btn-row half-row">
+          <!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
+          <a href="#" class="login-toggle header-btn header-btn-xl" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
+          <span class="header-btn-text">
+            Login
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #login-panel .slide-panel example --> 
+          <!-- /END 1st .header-btn .header-btn-xl in first row --> 
+          <!-- BEGIN 2nd.header-btn .header-btn-xl in first row --> 
+          <a href="#" class="signin-toggle header-btn header-btn-xl" data-slide="slide" data-target="#signup-panel"> <i class="fa fa-pencil header-icon"></i>
+          <span class="header-btn-text">
+            Sign Up
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #signup-panel .slide-panel example --> 
+          <!-- /END 2nd .header-btn .header-btn-xl in first row -->
+        </div>
+        <!-- /.header-btn-row-->
+        <div class="header-btn-row half-row">
+          <!-- BEGIN 3rd .header-btn .header-btn-lg in second row --> 
+          <a href="#" class="anchor header-btn header-btn-lg" data-slide="slide" data-target="#contact-panel"> <i class="fa fa-at header-icon"></i>
+          <span class="header-btn-text">
+            Contact
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #contact-panel .slide-panel example --> 
+          <!-- /END 3rd .header-btn .header-btn-lg in second row --> 
+          <!-- BEGIN 4th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm search-toggle" data-slide="slide" data-target="#search-panel"  data-hover="tooltip" data-placement="left" title="search"> <i class="fa fa-search header-icon"></i> </a> 
+          <!-- this above data-slide toggles the #search-panel .slide-panel example --> 
+          <!-- /END 4th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 5th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="follow us on twitter"> <i class="fa fa-twitter header-icon"></i> </a> 
+          <!-- this link above links to your twitter page --> 
+          <!-- /END 5th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 6th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="like us on facebook"> <i class="fa fa-facebook header-icon"></i> </a> 
+          <!-- this link above links to your facebook page --> 
+          <!-- /END 6th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 7th .header-btn .header-btn-sm in second row --> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="subscribe to our RSS"> <i class="fa fa-rss header-icon"></i> </a> 
+          <!-- this link above links to your google+ page --> 
+          <!-- /END 7th .header-btn .header-btn-sm in second row -->
+        </div>
+        <!-- /END .header-btn-row-->
+      </div>
+      <!-- /END .header-btn-wrapper-->
+    </div>
+    <!-- /END .header-btn-bar -->
+    
+  </div>
+  <!-- /END .header-inner --> 
+</header>
+<!-- =============== END HEADER ==============================--> 
+
+<!-- ================== BEGIN SLIDE OUT PANELS  ================= -->
+<div class="slide-panel-parent">
+  <!-- .slide-panel-parent goes around all the panels --> 
+  <!-- _____________ NAVIGATION PANEL _______ -->
+  <div class="slide-panel" id="navigation-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-8">
+          <!-- _________ BEGIN NAVIGATION ___________ -->
+          <nav id="nav" role="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="home-events.html">Home Events</a></li>
+              <li><a href="multi-col-menu.html">Multiple Column Menu on Larger Viewports</a></li>
+              <li class="has-children"> <a href="#">Header Options</a>
+                <ul>
+                  <li><a href="tall-button-header.html">Tall Button Header</a></li>
+                  <li><a href="image-logo.html">Image Logo</a></li>
+                  <li><a href="tall-logo.html">Tall Logo Image</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Carousels</a>
+                <ul>
+                  <li><a href="variable-width-slider.html">Variable Image Widths</a></li>
+                  <li><a href="testimonial-slider.html">Testimonial Slider</a></li>
+                  <li><a href="featured-work-slider.html">Featured Work Slider</a></li>
+                  <li><a href="equal-column-slider.html">Equal Column Slider</a></li>
+                  <li><a href="video-slider.html">Video Slider</a></li>
+                  <li><a href="mini-bootstrap-carousel.html">Mini Slider</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#" class="current">Components</a>
+                <ul>
+                  <li><a href="bootstrap-3-misc-sink.html">Misc. Bootstrap Components</a></li>
+                  <li><a href="modals.html">Magnific Popup Modals</a></li>
+                  <li class="has-children active"> <a href="#" class="current">Icons</a>
+                    <ul>
+                      <li><a href="themify-icons.html">Themify Icons</a></li>
+                      <li class="active"><a href="font-awesome.html">Font Awesome</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="icon-usage.html">Icon Usage</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"> <a href="#">Collapse/Tabs</a>
+                    <ul>
+                      <li><a href="tabs.html">Tabs</a></li>
+                      <li><a href="left-tabs.html">Left Tabs</a></li>
+                      <li><a href="collapse.html">Collapse/Accordion</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Pages & Misc</a>
+                <ul>
+                  <li><a href="about-us-option-1.html">About Us Option 1</a></li>
+                  <li><a href="about-us-option-2.html">About Us Option 2</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="pricing-columns.html">Pricing Columns</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="scrollspy-left.html">Scrollspy Left Column</a></li>
+                  <li><a href="scrollspy-right.html">Scrollspy Right Column</a></li>
+                  <li><a href="simple-gallery.html">Simple Image Gallery</a></li>
+                  <li><a href="equal-height.html">Equal Height Columns</a></li>
+                  <li><a href="blank-template.html">Blank Template</a></li>
+                  <li><a href="page-not-found.html">404 Page Not Found</a></li>
+                  <li><a href="typography-example.html">Typography Example</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Blog</a>
+                <ul>
+                  <li><a href="blog-summary-masonry-layout.html">Blog Summary Isotope</a></li>
+                  <li><a href="blog-summary-left.html">Blog Summary L</a></li>
+                  <li><a href="blog-summary-right.html">Blog Summary R</a></li>
+                  <li><a href="blog-single.html">Single Blog Post</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Portfolio</a>
+                <ul>
+                  <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                  <li><a href="portfolio-single.html">Portfolio Single Item</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--/.col-md-6 col-lg-8 -->
+        <div class="col-md-6 col-lg-4">
+          <h4 class="h2">Latest News</h4>
+          <ul>
+            <li><a href="your-link-goes-here.html">We will amplify our power to benchmark...</a></li>
+            <li><a href="your-link-goes-here.html">We have revolutionized the conceptualization...</a></li>
+            <li><a href="your-link-goes-here.html">Everything is relative; relatively speaking.</a></li>
+            <li><a href="your-link-goes-here.html">My other body is an immortal robot body.</a></li>
+            <li><a href="your-link-goes-here.html">I don't know who they are but they're...</a></li>
+            <li><a href="your-link-goes-here.html">For those about to rock, we salute you </a> </li>
+          </ul>
+          <h4 class="h2">Latest Work</h4>
+          <div class="img-widget fade-hover-img">
+            <a href="#"><img src="assets/demo-images/img-widget/1.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/2.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/3.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/4.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/5.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/6.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/7.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/8.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/9.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/10.jpg" alt="" /></a>
+          </div>
+          <!--/.img-widget-->
+        </div>
+        <!--/.col-md-6 col-lg-4 -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container inside #navigation-panel -->
+  </div>
+  <!--/.slide-panel #navigation-panel --> 
+  <!-- _________ SEARCH PANEL #search-panel___________ -->
+  <div class="slide-panel search" id="search-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h3 class="slide-panel-title">Search</h3>
+      <form role="form">
+        <div class="form-group">
+          <input type="search" placeholder="Enter search term and press enter" class="form-control">
+        </div>
+        <!--/.form-group -->
+      </form>
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.slide-panel #search-panel --> 
+  <!-- _________ CONTACT PANEL ___________ -->
+  <div class="slide-panel" id="contact-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title text-center-md-view">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 text-right-md-view text-right-lg-view">
+          <h3>Organized Organization</h3>
+          <p class="lead"> 1255 Nowhere Street<br>
+            Tampa, FL 33655<br>
+            <strong>phone:</strong> <a href="tel:8135551234">813.555.1234</a><br>
+            <strong>fax:</strong> 813.555.1235<br>
+            <span class="overflow">
+              <strong>email:</strong> <a class="link-underline" href="mailto:email@domain.com">email@companydomain.com</a>
+            </span>
+          </p>
+        </div>
+        <!-- /.col-md-6 -->
+        
+        <div class="col-md-6">
+          <h3>Find Us On...</h3>
+          <ul class="social-icon-list">
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <!-- /.col-md-6 -->
+        
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.slide-panel #contact-panel --> 
+  <!-- _________ LOGIN PANEL #login-panel ___________ -->
+  <div class="slide-panel" id="login-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title">Login</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Social Login</h4>
+          <ul class="list-unstyled social-user">
+            <li><a href="#" title="Login with Facebook" class="facebook"><i class="fa fa-facebook"></i>
+              <span>
+                Login with Facebook
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Google Plus" class="google"><i class="fa fa-google-plus"></i>
+              <span>
+                Login with Google
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Twitter" class="twitter"><i class="fa fa-twitter"></i>
+              <span>
+                Login with Twitter
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i>
+              <span>
+                Login with Wordpress
+              </span>
+              </a></li>
+          </ul>
+          <!-- /.social-user -->
+        </div>
+        <!-- /.col-*-6 -->
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign In</h4>
+          <form role="form" action="your-script.php">
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control  form-control-lg" placeholder="Password">
+            </div>
+            <div class="form-group checkbox small">
+              <label>
+                <input type="checkbox">
+                Remember Me </label>
+            </div>
+            <p class="text-center">
+              <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Sign in</button>
+            </p>
+          </form>
+          <p class="text-center clear"><a href="#" data-slide="slide" data-target="#forgot-password-panel" class="link-underline">Forgot your password?</a> <br>
+            Don't have an account yet? <a class="link-underline signin-toggle" href="#" data-slide="slide" data-target="#signup-panel">Sign up</a> </p>
+        </div>
+        <!-- /.col-*-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #login-panel --> 
+  <!-- _________ SIGNUP PANEL #signup-panel ___________ -->
+  <div class="slide-panel" id="signup-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title">Sign In</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign Up with...</h4>
+          <ul class="list-unstyled social-user">
+            <li><a href="#" title="Signup with Facebook" class="facebook"><i class="fa fa-facebook"></i>
+              <span>
+                Signup with Facebook
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Google Plus" class="google"><i class="fa fa-google-plus"></i>
+              <span>
+                Signup with Google
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Twitter" class="twitter"><i class="fa fa-twitter"></i>
+              <span>
+                Signup with Twitter
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i>
+              <span>
+                Signup with Wordpress
+              </span>
+              </a></li>
+          </ul>
+          <!-- /.social-user -->
+        </div>
+        <!-- /.col-*-6 -->
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign Up</h4>
+          <form role="form" action="your-script.php">
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control form-control-lg" placeholder="Password">
+            </div>
+            <p class="text-center">
+              <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Register</button>
+            </p>
+          </form>
+          <p class="text-center clear">Already have an account? <a class="link-underline login-toggle" href="#" data-slide="slide" data-target="#login-panel">Login</a></p>
+        </div>
+        <!-- /.col-*-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #signup-panel --> 
+  <!-- _________ FORGOT PASSWORD #forgot-password-panel ___________ -->
+  <div class="slide-panel" id="forgot-password-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h3 class="slide-panel-title">Forgot Password</h3>
+      <form role="form" action="your-script.php">
+        <div class="input-group input-group-lg input-group-slide-panel">
+          <input class="form-control" placeholder="Your@EmailAddress.com" type="email">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-slide-panel btn-lg">Reset Password</button>
+          </span>
+          <!--/.input-group-btn-->
+        </div>
+      </form>
+      <hr class="vertical-spacer height-20px">
+      <p class="text-center"><a href="#" data-slide="slide" data-target="#login-panel" class="link-underline login-toggle">Remembered your Password?</a></p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #forgot-password-panel -->
+</div>
+<!-- END .slide-down-parent --> 
+<!-- ================== END SLIDE OUT PANELS  ================= --> 
+<!-- =============== BEGIN #page ==============================-->
+<div id="page">
+  <!-- =========== PAGE HEADER ON ALL BUT INDEX PAGES =========================================================================== --> 
+  <!-- _________ Page Header ___________ -->
+  <div class="page-header-primary">
+    <div class="container">
+      <h2>Font Awesome</h2>
+      <ol class="breadcrumb page-header-breadcrumb hidden-xs">
+        <li><a href="index.html" class="link-underline">Home</a></li>
+        <li class="active">Font Awesome</li>
+      </ol>
+    </div>
+    <!-- /.container (for page-header-primary) -->
+  </div>
+  <!-- /.page-header-primary --> 
+  <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
+  <div class="page-content" role="main">
+    <div class="container">
+      <ul class="list-inline icon-demo clearfix">
+        <li>
+          <span class="fa fa-fw">
+            &#xf042
+          </span>
+          fa fa-adjust <em class="muted">[&amp;#xf042;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf170
+          </span>
+          fa fa-adn <em class="muted">[&amp;#xf170;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf037
+          </span>
+          fa fa-align-center <em class="muted">[&amp;#xf037;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf039
+          </span>
+          fa fa-align-justify <em class="muted">[&amp;#xf039;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf036
+          </span>
+          fa fa-align-left <em class="muted">[&amp;#xf036;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf038
+          </span>
+          fa fa-align-right <em class="muted">[&amp;#xf038;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f9
+          </span>
+          fa fa-ambulance <em class="muted">[&amp;#xf0f9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf13d
+          </span>
+          fa fa-anchor <em class="muted">[&amp;#xf13d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf17b
+          </span>
+          fa fa-android <em class="muted">[&amp;#xf17b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf209
+          </span>
+          fa fa-angellist <em class="muted">[&amp;#xf209;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf103
+          </span>
+          fa fa-angle-double-down <em class="muted">[&amp;#xf103;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf100
+          </span>
+          fa fa-angle-double-left <em class="muted">[&amp;#xf100;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf101
+          </span>
+          fa fa-angle-double-right <em class="muted">[&amp;#xf101;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf102
+          </span>
+          fa fa-angle-double-up <em class="muted">[&amp;#xf102;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf107
+          </span>
+          fa fa-angle-down <em class="muted">[&amp;#xf107;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf104
+          </span>
+          fa fa-angle-left <em class="muted">[&amp;#xf104;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf105
+          </span>
+          fa fa-angle-right <em class="muted">[&amp;#xf105;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf106
+          </span>
+          fa fa-angle-up <em class="muted">[&amp;#xf106;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf179
+          </span>
+          fa fa-apple <em class="muted">[&amp;#xf179;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf187
+          </span>
+          fa fa-archive <em class="muted">[&amp;#xf187;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1fe
+          </span>
+          fa fa-area-chart <em class="muted">[&amp;#xf1fe;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ab
+          </span>
+          fa fa-arrow-circle-down <em class="muted">[&amp;#xf0ab;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a8
+          </span>
+          fa fa-arrow-circle-left <em class="muted">[&amp;#xf0a8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf01a
+          </span>
+          fa fa-arrow-circle-o-down <em class="muted">[&amp;#xf01a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf190
+          </span>
+          fa fa-arrow-circle-o-left <em class="muted">[&amp;#xf190;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf18e
+          </span>
+          fa fa-arrow-circle-o-right <em class="muted">[&amp;#xf18e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf01b
+          </span>
+          fa fa-arrow-circle-o-up <em class="muted">[&amp;#xf01b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a9
+          </span>
+          fa fa-arrow-circle-right <em class="muted">[&amp;#xf0a9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0aa
+          </span>
+          fa fa-arrow-circle-up <em class="muted">[&amp;#xf0aa;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf063
+          </span>
+          fa fa-arrow-down <em class="muted">[&amp;#xf063;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf060
+          </span>
+          fa fa-arrow-left <em class="muted">[&amp;#xf060;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf061
+          </span>
+          fa fa-arrow-right <em class="muted">[&amp;#xf061;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf062
+          </span>
+          fa fa-arrow-up <em class="muted">[&amp;#xf062;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf047
+          </span>
+          fa fa-arrows <em class="muted">[&amp;#xf047;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0b2
+          </span>
+          fa fa-arrows-alt <em class="muted">[&amp;#xf0b2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf07e
+          </span>
+          fa fa-arrows-h <em class="muted">[&amp;#xf07e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf07d
+          </span>
+          fa fa-arrows-v <em class="muted">[&amp;#xf07d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf069
+          </span>
+          fa fa-asterisk <em class="muted">[&amp;#xf069;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1fa
+          </span>
+          fa fa-at <em class="muted">[&amp;#xf1fa;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b9
+          </span>
+          fa fa-automobile <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1b9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf04a
+          </span>
+          fa fa-backward <em class="muted">[&amp;#xf04a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf05e
+          </span>
+          fa fa-ban <em class="muted">[&amp;#xf05e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19c
+          </span>
+          fa fa-bank <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf19c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf080
+          </span>
+          fa fa-bar-chart <em class="muted">[&amp;#xf080;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf080
+          </span>
+          fa fa-bar-chart-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf080;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf02a
+          </span>
+          fa fa-barcode <em class="muted">[&amp;#xf02a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c9
+          </span>
+          fa fa-bars <em class="muted">[&amp;#xf0c9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0fc
+          </span>
+          fa fa-beer <em class="muted">[&amp;#xf0fc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b4
+          </span>
+          fa fa-behance <em class="muted">[&amp;#xf1b4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b5
+          </span>
+          fa fa-behance-square <em class="muted">[&amp;#xf1b5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f3
+          </span>
+          fa fa-bell <em class="muted">[&amp;#xf0f3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a2
+          </span>
+          fa fa-bell-o <em class="muted">[&amp;#xf0a2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f6
+          </span>
+          fa fa-bell-slash <em class="muted">[&amp;#xf1f6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f7
+          </span>
+          fa fa-bell-slash-o <em class="muted">[&amp;#xf1f7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf206
+          </span>
+          fa fa-bicycle <em class="muted">[&amp;#xf206;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e5
+          </span>
+          fa fa-binoculars <em class="muted">[&amp;#xf1e5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1fd
+          </span>
+          fa fa-birthday-cake <em class="muted">[&amp;#xf1fd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf171
+          </span>
+          fa fa-bitbucket <em class="muted">[&amp;#xf171;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf172
+          </span>
+          fa fa-bitbucket-square <em class="muted">[&amp;#xf172;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf15a
+          </span>
+          fa fa-bitcoin <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf15a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf032
+          </span>
+          fa fa-bold <em class="muted">[&amp;#xf032;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e7
+          </span>
+          fa fa-bolt <em class="muted">[&amp;#xf0e7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e2
+          </span>
+          fa fa-bomb <em class="muted">[&amp;#xf1e2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf02d
+          </span>
+          fa fa-book <em class="muted">[&amp;#xf02d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf02e
+          </span>
+          fa fa-bookmark <em class="muted">[&amp;#xf02e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf097
+          </span>
+          fa fa-bookmark-o <em class="muted">[&amp;#xf097;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0b1
+          </span>
+          fa fa-briefcase <em class="muted">[&amp;#xf0b1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf15a
+          </span>
+          fa fa-btc <em class="muted">[&amp;#xf15a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf188
+          </span>
+          fa fa-bug <em class="muted">[&amp;#xf188;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ad
+          </span>
+          fa fa-building <em class="muted">[&amp;#xf1ad;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f7
+          </span>
+          fa fa-building-o <em class="muted">[&amp;#xf0f7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a1
+          </span>
+          fa fa-bullhorn <em class="muted">[&amp;#xf0a1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf140
+          </span>
+          fa fa-bullseye <em class="muted">[&amp;#xf140;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf207
+          </span>
+          fa fa-bus <em class="muted">[&amp;#xf207;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ba
+          </span>
+          fa fa-cab <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1ba;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ec
+          </span>
+          fa fa-calculator <em class="muted">[&amp;#xf1ec;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf073
+          </span>
+          fa fa-calendar <em class="muted">[&amp;#xf073;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf133
+          </span>
+          fa fa-calendar-o <em class="muted">[&amp;#xf133;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf030
+          </span>
+          fa fa-camera <em class="muted">[&amp;#xf030;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf083
+          </span>
+          fa fa-camera-retro <em class="muted">[&amp;#xf083;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b9
+          </span>
+          fa fa-car <em class="muted">[&amp;#xf1b9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d7
+          </span>
+          fa fa-caret-down <em class="muted">[&amp;#xf0d7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d9
+          </span>
+          fa fa-caret-left <em class="muted">[&amp;#xf0d9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0da
+          </span>
+          fa fa-caret-right <em class="muted">[&amp;#xf0da;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf150
+          </span>
+          fa fa-caret-square-o-down <em class="muted">[&amp;#xf150;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf191
+          </span>
+          fa fa-caret-square-o-left <em class="muted">[&amp;#xf191;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf152
+          </span>
+          fa fa-caret-square-o-right <em class="muted">[&amp;#xf152;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf151
+          </span>
+          fa fa-caret-square-o-up <em class="muted">[&amp;#xf151;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d8
+          </span>
+          fa fa-caret-up <em class="muted">[&amp;#xf0d8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf20a
+          </span>
+          fa fa-cc <em class="muted">[&amp;#xf20a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f3
+          </span>
+          fa fa-cc-amex <em class="muted">[&amp;#xf1f3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f2
+          </span>
+          fa fa-cc-discover <em class="muted">[&amp;#xf1f2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f1
+          </span>
+          fa fa-cc-mastercard <em class="muted">[&amp;#xf1f1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f4
+          </span>
+          fa fa-cc-paypal <em class="muted">[&amp;#xf1f4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f5
+          </span>
+          fa fa-cc-stripe <em class="muted">[&amp;#xf1f5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f0
+          </span>
+          fa fa-cc-visa <em class="muted">[&amp;#xf1f0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a3
+          </span>
+          fa fa-certificate <em class="muted">[&amp;#xf0a3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c1
+          </span>
+          fa fa-chain <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0c1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf127
+          </span>
+          fa fa-chain-broken <em class="muted">[&amp;#xf127;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf00c
+          </span>
+          fa fa-check <em class="muted">[&amp;#xf00c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf058
+          </span>
+          fa fa-check-circle <em class="muted">[&amp;#xf058;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf05d
+          </span>
+          fa fa-check-circle-o <em class="muted">[&amp;#xf05d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf14a
+          </span>
+          fa fa-check-square <em class="muted">[&amp;#xf14a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf046
+          </span>
+          fa fa-check-square-o <em class="muted">[&amp;#xf046;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf13a
+          </span>
+          fa fa-chevron-circle-down <em class="muted">[&amp;#xf13a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf137
+          </span>
+          fa fa-chevron-circle-left <em class="muted">[&amp;#xf137;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf138
+          </span>
+          fa fa-chevron-circle-right <em class="muted">[&amp;#xf138;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf139
+          </span>
+          fa fa-chevron-circle-up <em class="muted">[&amp;#xf139;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf078
+          </span>
+          fa fa-chevron-down <em class="muted">[&amp;#xf078;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf053
+          </span>
+          fa fa-chevron-left <em class="muted">[&amp;#xf053;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf054
+          </span>
+          fa fa-chevron-right <em class="muted">[&amp;#xf054;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf077
+          </span>
+          fa fa-chevron-up <em class="muted">[&amp;#xf077;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ae
+          </span>
+          fa fa-child <em class="muted">[&amp;#xf1ae;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf111
+          </span>
+          fa fa-circle <em class="muted">[&amp;#xf111;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf10c
+          </span>
+          fa fa-circle-o <em class="muted">[&amp;#xf10c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ce
+          </span>
+          fa fa-circle-o-notch <em class="muted">[&amp;#xf1ce;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1db
+          </span>
+          fa fa-circle-thin <em class="muted">[&amp;#xf1db;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ea
+          </span>
+          fa fa-clipboard <em class="muted">[&amp;#xf0ea;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf017
+          </span>
+          fa fa-clock-o <em class="muted">[&amp;#xf017;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf00d
+          </span>
+          fa fa-close <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf00d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c2
+          </span>
+          fa fa-cloud <em class="muted">[&amp;#xf0c2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ed
+          </span>
+          fa fa-cloud-download <em class="muted">[&amp;#xf0ed;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ee
+          </span>
+          fa fa-cloud-upload <em class="muted">[&amp;#xf0ee;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf157
+          </span>
+          fa fa-cny <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf157;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf121
+          </span>
+          fa fa-code <em class="muted">[&amp;#xf121;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf126
+          </span>
+          fa fa-code-fork <em class="muted">[&amp;#xf126;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1cb
+          </span>
+          fa fa-codepen <em class="muted">[&amp;#xf1cb;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f4
+          </span>
+          fa fa-coffee <em class="muted">[&amp;#xf0f4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf013
+          </span>
+          fa fa-cog <em class="muted">[&amp;#xf013;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf085
+          </span>
+          fa fa-cogs <em class="muted">[&amp;#xf085;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0db
+          </span>
+          fa fa-columns <em class="muted">[&amp;#xf0db;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf075
+          </span>
+          fa fa-comment <em class="muted">[&amp;#xf075;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e5
+          </span>
+          fa fa-comment-o <em class="muted">[&amp;#xf0e5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf086
+          </span>
+          fa fa-comments <em class="muted">[&amp;#xf086;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e6
+          </span>
+          fa fa-comments-o <em class="muted">[&amp;#xf0e6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf14e
+          </span>
+          fa fa-compass <em class="muted">[&amp;#xf14e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf066
+          </span>
+          fa fa-compress <em class="muted">[&amp;#xf066;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c5
+          </span>
+          fa fa-copy <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0c5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f9
+          </span>
+          fa fa-copyright <em class="muted">[&amp;#xf1f9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf09d
+          </span>
+          fa fa-credit-card <em class="muted">[&amp;#xf09d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf125
+          </span>
+          fa fa-crop <em class="muted">[&amp;#xf125;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf05b
+          </span>
+          fa fa-crosshairs <em class="muted">[&amp;#xf05b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf13c
+          </span>
+          fa fa-css3 <em class="muted">[&amp;#xf13c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b2
+          </span>
+          fa fa-cube <em class="muted">[&amp;#xf1b2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b3
+          </span>
+          fa fa-cubes <em class="muted">[&amp;#xf1b3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c4
+          </span>
+          fa fa-cut <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0c4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f5
+          </span>
+          fa fa-cutlery <em class="muted">[&amp;#xf0f5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e4
+          </span>
+          fa fa-dashboard <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0e4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c0
+          </span>
+          fa fa-database <em class="muted">[&amp;#xf1c0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03b
+          </span>
+          fa fa-dedent <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf03b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a5
+          </span>
+          fa fa-delicious <em class="muted">[&amp;#xf1a5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf108
+          </span>
+          fa fa-desktop <em class="muted">[&amp;#xf108;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1bd
+          </span>
+          fa fa-deviantart <em class="muted">[&amp;#xf1bd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a6
+          </span>
+          fa fa-digg <em class="muted">[&amp;#xf1a6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf155
+          </span>
+          fa fa-dollar <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf155;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf192
+          </span>
+          fa fa-dot-circle-o <em class="muted">[&amp;#xf192;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf019
+          </span>
+          fa fa-download <em class="muted">[&amp;#xf019;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf17d
+          </span>
+          fa fa-dribbble <em class="muted">[&amp;#xf17d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf16b
+          </span>
+          fa fa-dropbox <em class="muted">[&amp;#xf16b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a9
+          </span>
+          fa fa-drupal <em class="muted">[&amp;#xf1a9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf044
+          </span>
+          fa fa-edit <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf044;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf052
+          </span>
+          fa fa-eject <em class="muted">[&amp;#xf052;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf141
+          </span>
+          fa fa-ellipsis-h <em class="muted">[&amp;#xf141;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf142
+          </span>
+          fa fa-ellipsis-v <em class="muted">[&amp;#xf142;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d1
+          </span>
+          fa fa-empire <em class="muted">[&amp;#xf1d1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e0
+          </span>
+          fa fa-envelope <em class="muted">[&amp;#xf0e0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf003
+          </span>
+          fa fa-envelope-o <em class="muted">[&amp;#xf003;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf199
+          </span>
+          fa fa-envelope-square <em class="muted">[&amp;#xf199;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf12d
+          </span>
+          fa fa-eraser <em class="muted">[&amp;#xf12d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf153
+          </span>
+          fa fa-eur <em class="muted">[&amp;#xf153;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf153
+          </span>
+          fa fa-euro <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf153;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ec
+          </span>
+          fa fa-exchange <em class="muted">[&amp;#xf0ec;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf12a
+          </span>
+          fa fa-exclamation <em class="muted">[&amp;#xf12a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf06a
+          </span>
+          fa fa-exclamation-circle <em class="muted">[&amp;#xf06a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf071
+          </span>
+          fa fa-exclamation-triangle <em class="muted">[&amp;#xf071;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf065
+          </span>
+          fa fa-expand <em class="muted">[&amp;#xf065;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf08e
+          </span>
+          fa fa-external-link <em class="muted">[&amp;#xf08e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf14c
+          </span>
+          fa fa-external-link-square <em class="muted">[&amp;#xf14c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf06e
+          </span>
+          fa fa-eye <em class="muted">[&amp;#xf06e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf070
+          </span>
+          fa fa-eye-slash <em class="muted">[&amp;#xf070;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1fb
+          </span>
+          fa fa-eyedropper <em class="muted">[&amp;#xf1fb;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf09a
+          </span>
+          fa fa-facebook <em class="muted">[&amp;#xf09a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf082
+          </span>
+          fa fa-facebook-square <em class="muted">[&amp;#xf082;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf049
+          </span>
+          fa fa-fast-backward <em class="muted">[&amp;#xf049;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf050
+          </span>
+          fa fa-fast-forward <em class="muted">[&amp;#xf050;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ac
+          </span>
+          fa fa-fax <em class="muted">[&amp;#xf1ac;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf182
+          </span>
+          fa fa-female <em class="muted">[&amp;#xf182;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0fb
+          </span>
+          fa fa-fighter-jet <em class="muted">[&amp;#xf0fb;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf15b
+          </span>
+          fa fa-file <em class="muted">[&amp;#xf15b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c6
+          </span>
+          fa fa-file-archive-o <em class="muted">[&amp;#xf1c6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c7
+          </span>
+          fa fa-file-audio-o <em class="muted">[&amp;#xf1c7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c9
+          </span>
+          fa fa-file-code-o <em class="muted">[&amp;#xf1c9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c3
+          </span>
+          fa fa-file-excel-o <em class="muted">[&amp;#xf1c3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c5
+          </span>
+          fa fa-file-image-o <em class="muted">[&amp;#xf1c5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c8
+          </span>
+          fa fa-file-movie-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1c8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf016
+          </span>
+          fa fa-file-o <em class="muted">[&amp;#xf016;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c1
+          </span>
+          fa fa-file-pdf-o <em class="muted">[&amp;#xf1c1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c5
+          </span>
+          fa fa-file-photo-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1c5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c5
+          </span>
+          fa fa-file-picture-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1c5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c4
+          </span>
+          fa fa-file-powerpoint-o <em class="muted">[&amp;#xf1c4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c7
+          </span>
+          fa fa-file-sound-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1c7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf15c
+          </span>
+          fa fa-file-text <em class="muted">[&amp;#xf15c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f6
+          </span>
+          fa fa-file-text-o <em class="muted">[&amp;#xf0f6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c8
+          </span>
+          fa fa-file-video-o <em class="muted">[&amp;#xf1c8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c2
+          </span>
+          fa fa-file-word-o <em class="muted">[&amp;#xf1c2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1c6
+          </span>
+          fa fa-file-zip-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1c6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c5
+          </span>
+          fa fa-files-o <em class="muted">[&amp;#xf0c5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf008
+          </span>
+          fa fa-film <em class="muted">[&amp;#xf008;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0b0
+          </span>
+          fa fa-filter <em class="muted">[&amp;#xf0b0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf06d
+          </span>
+          fa fa-fire <em class="muted">[&amp;#xf06d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf134
+          </span>
+          fa fa-fire-extinguisher <em class="muted">[&amp;#xf134;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf024
+          </span>
+          fa fa-flag <em class="muted">[&amp;#xf024;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf11e
+          </span>
+          fa fa-flag-checkered <em class="muted">[&amp;#xf11e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf11d
+          </span>
+          fa fa-flag-o <em class="muted">[&amp;#xf11d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e7
+          </span>
+          fa fa-flash <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0e7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c3
+          </span>
+          fa fa-flask <em class="muted">[&amp;#xf0c3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf16e
+          </span>
+          fa fa-flickr <em class="muted">[&amp;#xf16e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c7
+          </span>
+          fa fa-floppy-o <em class="muted">[&amp;#xf0c7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf07b
+          </span>
+          fa fa-folder <em class="muted">[&amp;#xf07b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf114
+          </span>
+          fa fa-folder-o <em class="muted">[&amp;#xf114;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf07c
+          </span>
+          fa fa-folder-open <em class="muted">[&amp;#xf07c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf115
+          </span>
+          fa fa-folder-open-o <em class="muted">[&amp;#xf115;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf031
+          </span>
+          fa fa-font <em class="muted">[&amp;#xf031;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf04e
+          </span>
+          fa fa-forward <em class="muted">[&amp;#xf04e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf180
+          </span>
+          fa fa-foursquare <em class="muted">[&amp;#xf180;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf119
+          </span>
+          fa fa-frown-o <em class="muted">[&amp;#xf119;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e3
+          </span>
+          fa fa-futbol-o <em class="muted">[&amp;#xf1e3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf11b
+          </span>
+          fa fa-gamepad <em class="muted">[&amp;#xf11b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e3
+          </span>
+          fa fa-gavel <em class="muted">[&amp;#xf0e3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf154
+          </span>
+          fa fa-gbp <em class="muted">[&amp;#xf154;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d1
+          </span>
+          fa fa-ge <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1d1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf013
+          </span>
+          fa fa-gear <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf013;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf085
+          </span>
+          fa fa-gears <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf085;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf06b
+          </span>
+          fa fa-gift <em class="muted">[&amp;#xf06b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d3
+          </span>
+          fa fa-git <em class="muted">[&amp;#xf1d3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d2
+          </span>
+          fa fa-git-square <em class="muted">[&amp;#xf1d2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf09b
+          </span>
+          fa fa-github <em class="muted">[&amp;#xf09b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf113
+          </span>
+          fa fa-github-alt <em class="muted">[&amp;#xf113;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf092
+          </span>
+          fa fa-github-square <em class="muted">[&amp;#xf092;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf184
+          </span>
+          fa fa-gittip <em class="muted">[&amp;#xf184;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf000
+          </span>
+          fa fa-glass <em class="muted">[&amp;#xf000;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ac
+          </span>
+          fa fa-globe <em class="muted">[&amp;#xf0ac;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a0
+          </span>
+          fa fa-google <em class="muted">[&amp;#xf1a0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d5
+          </span>
+          fa fa-google-plus <em class="muted">[&amp;#xf0d5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d4
+          </span>
+          fa fa-google-plus-square <em class="muted">[&amp;#xf0d4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ee
+          </span>
+          fa fa-google-wallet <em class="muted">[&amp;#xf1ee;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19d
+          </span>
+          fa fa-graduation-cap <em class="muted">[&amp;#xf19d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c0
+          </span>
+          fa fa-group <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0c0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0fd
+          </span>
+          fa fa-h-square <em class="muted">[&amp;#xf0fd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d4
+          </span>
+          fa fa-hacker-news <em class="muted">[&amp;#xf1d4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a7
+          </span>
+          fa fa-hand-o-down <em class="muted">[&amp;#xf0a7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a5
+          </span>
+          fa fa-hand-o-left <em class="muted">[&amp;#xf0a5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a4
+          </span>
+          fa fa-hand-o-right <em class="muted">[&amp;#xf0a4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a6
+          </span>
+          fa fa-hand-o-up <em class="muted">[&amp;#xf0a6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0a0
+          </span>
+          fa fa-hdd-o <em class="muted">[&amp;#xf0a0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1dc
+          </span>
+          fa fa-header <em class="muted">[&amp;#xf1dc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf025
+          </span>
+          fa fa-headphones <em class="muted">[&amp;#xf025;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf004
+          </span>
+          fa fa-heart <em class="muted">[&amp;#xf004;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf08a
+          </span>
+          fa fa-heart-o <em class="muted">[&amp;#xf08a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1da
+          </span>
+          fa fa-history <em class="muted">[&amp;#xf1da;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf015
+          </span>
+          fa fa-home <em class="muted">[&amp;#xf015;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f8
+          </span>
+          fa fa-hospital-o <em class="muted">[&amp;#xf0f8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf13b
+          </span>
+          fa fa-html5 <em class="muted">[&amp;#xf13b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf20b
+          </span>
+          fa fa-ils <em class="muted">[&amp;#xf20b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03e
+          </span>
+          fa fa-image <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf03e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf01c
+          </span>
+          fa fa-inbox <em class="muted">[&amp;#xf01c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03c
+          </span>
+          fa fa-indent <em class="muted">[&amp;#xf03c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf129
+          </span>
+          fa fa-info <em class="muted">[&amp;#xf129;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf05a
+          </span>
+          fa fa-info-circle <em class="muted">[&amp;#xf05a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf156
+          </span>
+          fa fa-inr <em class="muted">[&amp;#xf156;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf16d
+          </span>
+          fa fa-instagram <em class="muted">[&amp;#xf16d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19c
+          </span>
+          fa fa-institution <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf19c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf208
+          </span>
+          fa fa-ioxhost <em class="muted">[&amp;#xf208;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf033
+          </span>
+          fa fa-italic <em class="muted">[&amp;#xf033;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1aa
+          </span>
+          fa fa-joomla <em class="muted">[&amp;#xf1aa;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf157
+          </span>
+          fa fa-jpy <em class="muted">[&amp;#xf157;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1cc
+          </span>
+          fa fa-jsfiddle <em class="muted">[&amp;#xf1cc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf084
+          </span>
+          fa fa-key <em class="muted">[&amp;#xf084;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf11c
+          </span>
+          fa fa-keyboard-o <em class="muted">[&amp;#xf11c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf159
+          </span>
+          fa fa-krw <em class="muted">[&amp;#xf159;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ab
+          </span>
+          fa fa-language <em class="muted">[&amp;#xf1ab;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf109
+          </span>
+          fa fa-laptop <em class="muted">[&amp;#xf109;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf202
+          </span>
+          fa fa-lastfm <em class="muted">[&amp;#xf202;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf203
+          </span>
+          fa fa-lastfm-square <em class="muted">[&amp;#xf203;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf06c
+          </span>
+          fa fa-leaf <em class="muted">[&amp;#xf06c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e3
+          </span>
+          fa fa-legal <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0e3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf094
+          </span>
+          fa fa-lemon-o <em class="muted">[&amp;#xf094;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf149
+          </span>
+          fa fa-level-down <em class="muted">[&amp;#xf149;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf148
+          </span>
+          fa fa-level-up <em class="muted">[&amp;#xf148;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1cd
+          </span>
+          fa fa-life-bouy <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1cd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1cd
+          </span>
+          fa fa-life-buoy <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1cd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1cd
+          </span>
+          fa fa-life-ring <em class="muted">[&amp;#xf1cd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1cd
+          </span>
+          fa fa-life-saver <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1cd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0eb
+          </span>
+          fa fa-lightbulb-o <em class="muted">[&amp;#xf0eb;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf201
+          </span>
+          fa fa-line-chart <em class="muted">[&amp;#xf201;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c1
+          </span>
+          fa fa-link <em class="muted">[&amp;#xf0c1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e1
+          </span>
+          fa fa-linkedin <em class="muted">[&amp;#xf0e1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf08c
+          </span>
+          fa fa-linkedin-square <em class="muted">[&amp;#xf08c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf17c
+          </span>
+          fa fa-linux <em class="muted">[&amp;#xf17c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03a
+          </span>
+          fa fa-list <em class="muted">[&amp;#xf03a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf022
+          </span>
+          fa fa-list-alt <em class="muted">[&amp;#xf022;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0cb
+          </span>
+          fa fa-list-ol <em class="muted">[&amp;#xf0cb;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ca
+          </span>
+          fa fa-list-ul <em class="muted">[&amp;#xf0ca;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf124
+          </span>
+          fa fa-location-arrow <em class="muted">[&amp;#xf124;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf023
+          </span>
+          fa fa-lock <em class="muted">[&amp;#xf023;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf175
+          </span>
+          fa fa-long-arrow-down <em class="muted">[&amp;#xf175;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf177
+          </span>
+          fa fa-long-arrow-left <em class="muted">[&amp;#xf177;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf178
+          </span>
+          fa fa-long-arrow-right <em class="muted">[&amp;#xf178;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf176
+          </span>
+          fa fa-long-arrow-up <em class="muted">[&amp;#xf176;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d0
+          </span>
+          fa fa-magic <em class="muted">[&amp;#xf0d0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf076
+          </span>
+          fa fa-magnet <em class="muted">[&amp;#xf076;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf064
+          </span>
+          fa fa-mail-forward <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf064;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf112
+          </span>
+          fa fa-mail-reply <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf112;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf122
+          </span>
+          fa fa-mail-reply-all <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf122;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf183
+          </span>
+          fa fa-male <em class="muted">[&amp;#xf183;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf041
+          </span>
+          fa fa-map-marker <em class="muted">[&amp;#xf041;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf136
+          </span>
+          fa fa-maxcdn <em class="muted">[&amp;#xf136;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf20c
+          </span>
+          fa fa-meanpath <em class="muted">[&amp;#xf20c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0fa
+          </span>
+          fa fa-medkit <em class="muted">[&amp;#xf0fa;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf11a
+          </span>
+          fa fa-meh-o <em class="muted">[&amp;#xf11a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf130
+          </span>
+          fa fa-microphone <em class="muted">[&amp;#xf130;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf131
+          </span>
+          fa fa-microphone-slash <em class="muted">[&amp;#xf131;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf068
+          </span>
+          fa fa-minus <em class="muted">[&amp;#xf068;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf056
+          </span>
+          fa fa-minus-circle <em class="muted">[&amp;#xf056;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf146
+          </span>
+          fa fa-minus-square <em class="muted">[&amp;#xf146;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf147
+          </span>
+          fa fa-minus-square-o <em class="muted">[&amp;#xf147;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf10b
+          </span>
+          fa fa-mobile <em class="muted">[&amp;#xf10b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf10b
+          </span>
+          fa fa-mobile-phone <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf10b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d6
+          </span>
+          fa fa-money <em class="muted">[&amp;#xf0d6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf186
+          </span>
+          fa fa-moon-o <em class="muted">[&amp;#xf186;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19d
+          </span>
+          fa fa-mortar-board <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf19d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf001
+          </span>
+          fa fa-music <em class="muted">[&amp;#xf001;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c9
+          </span>
+          fa fa-navicon <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0c9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ea
+          </span>
+          fa fa-newspaper-o <em class="muted">[&amp;#xf1ea;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19b
+          </span>
+          fa fa-openid <em class="muted">[&amp;#xf19b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03b
+          </span>
+          fa fa-outdent <em class="muted">[&amp;#xf03b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf18c
+          </span>
+          fa fa-pagelines <em class="muted">[&amp;#xf18c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1fc
+          </span>
+          fa fa-paint-brush <em class="muted">[&amp;#xf1fc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d8
+          </span>
+          fa fa-paper-plane <em class="muted">[&amp;#xf1d8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d9
+          </span>
+          fa fa-paper-plane-o <em class="muted">[&amp;#xf1d9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c6
+          </span>
+          fa fa-paperclip <em class="muted">[&amp;#xf0c6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1dd
+          </span>
+          fa fa-paragraph <em class="muted">[&amp;#xf1dd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ea
+          </span>
+          fa fa-paste <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0ea;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf04c
+          </span>
+          fa fa-pause <em class="muted">[&amp;#xf04c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b0
+          </span>
+          fa fa-paw <em class="muted">[&amp;#xf1b0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ed
+          </span>
+          fa fa-paypal <em class="muted">[&amp;#xf1ed;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf040
+          </span>
+          fa fa-pencil <em class="muted">[&amp;#xf040;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf14b
+          </span>
+          fa fa-pencil-square <em class="muted">[&amp;#xf14b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf044
+          </span>
+          fa fa-pencil-square-o <em class="muted">[&amp;#xf044;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf095
+          </span>
+          fa fa-phone <em class="muted">[&amp;#xf095;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf098
+          </span>
+          fa fa-phone-square <em class="muted">[&amp;#xf098;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03e
+          </span>
+          fa fa-photo <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf03e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03e
+          </span>
+          fa fa-picture-o <em class="muted">[&amp;#xf03e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf200
+          </span>
+          fa fa-pie-chart <em class="muted">[&amp;#xf200;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a7
+          </span>
+          fa fa-pied-piper <em class="muted">[&amp;#xf1a7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a8
+          </span>
+          fa fa-pied-piper-alt <em class="muted">[&amp;#xf1a8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d2
+          </span>
+          fa fa-pinterest <em class="muted">[&amp;#xf0d2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d3
+          </span>
+          fa fa-pinterest-square <em class="muted">[&amp;#xf0d3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf072
+          </span>
+          fa fa-plane <em class="muted">[&amp;#xf072;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf04b
+          </span>
+          fa fa-play <em class="muted">[&amp;#xf04b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf144
+          </span>
+          fa fa-play-circle <em class="muted">[&amp;#xf144;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf01d
+          </span>
+          fa fa-play-circle-o <em class="muted">[&amp;#xf01d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e6
+          </span>
+          fa fa-plug <em class="muted">[&amp;#xf1e6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf067
+          </span>
+          fa fa-plus <em class="muted">[&amp;#xf067;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf055
+          </span>
+          fa fa-plus-circle <em class="muted">[&amp;#xf055;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0fe
+          </span>
+          fa fa-plus-square <em class="muted">[&amp;#xf0fe;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf196
+          </span>
+          fa fa-plus-square-o <em class="muted">[&amp;#xf196;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf011
+          </span>
+          fa fa-power-off <em class="muted">[&amp;#xf011;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf02f
+          </span>
+          fa fa-print <em class="muted">[&amp;#xf02f;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf12e
+          </span>
+          fa fa-puzzle-piece <em class="muted">[&amp;#xf12e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d6
+          </span>
+          fa fa-qq <em class="muted">[&amp;#xf1d6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf029
+          </span>
+          fa fa-qrcode <em class="muted">[&amp;#xf029;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf128
+          </span>
+          fa fa-question <em class="muted">[&amp;#xf128;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf059
+          </span>
+          fa fa-question-circle <em class="muted">[&amp;#xf059;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf10d
+          </span>
+          fa fa-quote-left <em class="muted">[&amp;#xf10d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf10e
+          </span>
+          fa fa-quote-right <em class="muted">[&amp;#xf10e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d0
+          </span>
+          fa fa-ra <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1d0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf074
+          </span>
+          fa fa-random <em class="muted">[&amp;#xf074;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d0
+          </span>
+          fa fa-rebel <em class="muted">[&amp;#xf1d0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b8
+          </span>
+          fa fa-recycle <em class="muted">[&amp;#xf1b8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a1
+          </span>
+          fa fa-reddit <em class="muted">[&amp;#xf1a1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a2
+          </span>
+          fa fa-reddit-square <em class="muted">[&amp;#xf1a2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf021
+          </span>
+          fa fa-refresh <em class="muted">[&amp;#xf021;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf00d
+          </span>
+          fa fa-remove <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf00d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf18b
+          </span>
+          fa fa-renren <em class="muted">[&amp;#xf18b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c9
+          </span>
+          fa fa-reorder <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0c9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf01e
+          </span>
+          fa fa-repeat <em class="muted">[&amp;#xf01e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf112
+          </span>
+          fa fa-reply <em class="muted">[&amp;#xf112;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf122
+          </span>
+          fa fa-reply-all <em class="muted">[&amp;#xf122;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf079
+          </span>
+          fa fa-retweet <em class="muted">[&amp;#xf079;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf157
+          </span>
+          fa fa-rmb <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf157;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf018
+          </span>
+          fa fa-road <em class="muted">[&amp;#xf018;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf135
+          </span>
+          fa fa-rocket <em class="muted">[&amp;#xf135;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e2
+          </span>
+          fa fa-rotate-left <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0e2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf01e
+          </span>
+          fa fa-rotate-right <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf01e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf158
+          </span>
+          fa fa-rouble <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf158;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf09e
+          </span>
+          fa fa-rss <em class="muted">[&amp;#xf09e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf143
+          </span>
+          fa fa-rss-square <em class="muted">[&amp;#xf143;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf158
+          </span>
+          fa fa-rub <em class="muted">[&amp;#xf158;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf158
+          </span>
+          fa fa-ruble <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf158;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf156
+          </span>
+          fa fa-rupee <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf156;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c7
+          </span>
+          fa fa-save <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0c7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c4
+          </span>
+          fa fa-scissors <em class="muted">[&amp;#xf0c4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf002
+          </span>
+          fa fa-search <em class="muted">[&amp;#xf002;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf010
+          </span>
+          fa fa-search-minus <em class="muted">[&amp;#xf010;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf00e
+          </span>
+          fa fa-search-plus <em class="muted">[&amp;#xf00e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d8
+          </span>
+          fa fa-send <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1d8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d9
+          </span>
+          fa fa-send-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1d9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf064
+          </span>
+          fa fa-share <em class="muted">[&amp;#xf064;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e0
+          </span>
+          fa fa-share-alt <em class="muted">[&amp;#xf1e0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e1
+          </span>
+          fa fa-share-alt-square <em class="muted">[&amp;#xf1e1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf14d
+          </span>
+          fa fa-share-square <em class="muted">[&amp;#xf14d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf045
+          </span>
+          fa fa-share-square-o <em class="muted">[&amp;#xf045;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf20b
+          </span>
+          fa fa-shekel <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf20b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf20b
+          </span>
+          fa fa-sheqel <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf20b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf132
+          </span>
+          fa fa-shield <em class="muted">[&amp;#xf132;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf07a
+          </span>
+          fa fa-shopping-cart <em class="muted">[&amp;#xf07a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf090
+          </span>
+          fa fa-sign-in <em class="muted">[&amp;#xf090;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf08b
+          </span>
+          fa fa-sign-out <em class="muted">[&amp;#xf08b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf012
+          </span>
+          fa fa-signal <em class="muted">[&amp;#xf012;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e8
+          </span>
+          fa fa-sitemap <em class="muted">[&amp;#xf0e8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf17e
+          </span>
+          fa fa-skype <em class="muted">[&amp;#xf17e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf198
+          </span>
+          fa fa-slack <em class="muted">[&amp;#xf198;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1de
+          </span>
+          fa fa-sliders <em class="muted">[&amp;#xf1de;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e7
+          </span>
+          fa fa-slideshare <em class="muted">[&amp;#xf1e7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf118
+          </span>
+          fa fa-smile-o <em class="muted">[&amp;#xf118;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e3
+          </span>
+          fa fa-soccer-ball-o <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1e3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0dc
+          </span>
+          fa fa-sort <em class="muted">[&amp;#xf0dc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf15d
+          </span>
+          fa fa-sort-alpha-asc <em class="muted">[&amp;#xf15d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf15e
+          </span>
+          fa fa-sort-alpha-desc <em class="muted">[&amp;#xf15e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf160
+          </span>
+          fa fa-sort-amount-asc <em class="muted">[&amp;#xf160;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf161
+          </span>
+          fa fa-sort-amount-desc <em class="muted">[&amp;#xf161;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0de
+          </span>
+          fa fa-sort-asc <em class="muted">[&amp;#xf0de;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0dd
+          </span>
+          fa fa-sort-desc <em class="muted">[&amp;#xf0dd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0dd
+          </span>
+          fa fa-sort-down <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0dd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf162
+          </span>
+          fa fa-sort-numeric-asc <em class="muted">[&amp;#xf162;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf163
+          </span>
+          fa fa-sort-numeric-desc <em class="muted">[&amp;#xf163;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0de
+          </span>
+          fa fa-sort-up <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0de;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1be
+          </span>
+          fa fa-soundcloud <em class="muted">[&amp;#xf1be;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf197
+          </span>
+          fa fa-space-shuttle <em class="muted">[&amp;#xf197;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf110
+          </span>
+          fa fa-spinner <em class="muted">[&amp;#xf110;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b1
+          </span>
+          fa fa-spoon <em class="muted">[&amp;#xf1b1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1bc
+          </span>
+          fa fa-spotify <em class="muted">[&amp;#xf1bc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c8
+          </span>
+          fa fa-square <em class="muted">[&amp;#xf0c8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf096
+          </span>
+          fa fa-square-o <em class="muted">[&amp;#xf096;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf18d
+          </span>
+          fa fa-stack-exchange <em class="muted">[&amp;#xf18d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf16c
+          </span>
+          fa fa-stack-overflow <em class="muted">[&amp;#xf16c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf005
+          </span>
+          fa fa-star <em class="muted">[&amp;#xf005;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf089
+          </span>
+          fa fa-star-half <em class="muted">[&amp;#xf089;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf123
+          </span>
+          fa fa-star-half-empty <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf123;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf123
+          </span>
+          fa fa-star-half-full <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf123;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf123
+          </span>
+          fa fa-star-half-o <em class="muted">[&amp;#xf123;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf006
+          </span>
+          fa fa-star-o <em class="muted">[&amp;#xf006;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b6
+          </span>
+          fa fa-steam <em class="muted">[&amp;#xf1b6;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1b7
+          </span>
+          fa fa-steam-square <em class="muted">[&amp;#xf1b7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf048
+          </span>
+          fa fa-step-backward <em class="muted">[&amp;#xf048;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf051
+          </span>
+          fa fa-step-forward <em class="muted">[&amp;#xf051;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f1
+          </span>
+          fa fa-stethoscope <em class="muted">[&amp;#xf0f1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf04d
+          </span>
+          fa fa-stop <em class="muted">[&amp;#xf04d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0cc
+          </span>
+          fa fa-strikethrough <em class="muted">[&amp;#xf0cc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a4
+          </span>
+          fa fa-stumbleupon <em class="muted">[&amp;#xf1a4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1a3
+          </span>
+          fa fa-stumbleupon-circle <em class="muted">[&amp;#xf1a3;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf12c
+          </span>
+          fa fa-subscript <em class="muted">[&amp;#xf12c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f2
+          </span>
+          fa fa-suitcase <em class="muted">[&amp;#xf0f2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf185
+          </span>
+          fa fa-sun-o <em class="muted">[&amp;#xf185;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf12b
+          </span>
+          fa fa-superscript <em class="muted">[&amp;#xf12b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1cd
+          </span>
+          fa fa-support <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1cd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ce
+          </span>
+          fa fa-table <em class="muted">[&amp;#xf0ce;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf10a
+          </span>
+          fa fa-tablet <em class="muted">[&amp;#xf10a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e4
+          </span>
+          fa fa-tachometer <em class="muted">[&amp;#xf0e4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf02b
+          </span>
+          fa fa-tag <em class="muted">[&amp;#xf02b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf02c
+          </span>
+          fa fa-tags <em class="muted">[&amp;#xf02c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ae
+          </span>
+          fa fa-tasks <em class="muted">[&amp;#xf0ae;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ba
+          </span>
+          fa fa-taxi <em class="muted">[&amp;#xf1ba;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d5
+          </span>
+          fa fa-tencent-weibo <em class="muted">[&amp;#xf1d5;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf120
+          </span>
+          fa fa-terminal <em class="muted">[&amp;#xf120;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf034
+          </span>
+          fa fa-text-height <em class="muted">[&amp;#xf034;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf035
+          </span>
+          fa fa-text-width <em class="muted">[&amp;#xf035;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf00a
+          </span>
+          fa fa-th <em class="muted">[&amp;#xf00a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf009
+          </span>
+          fa fa-th-large <em class="muted">[&amp;#xf009;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf00b
+          </span>
+          fa fa-th-list <em class="muted">[&amp;#xf00b;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf08d
+          </span>
+          fa fa-thumb-tack <em class="muted">[&amp;#xf08d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf165
+          </span>
+          fa fa-thumbs-down <em class="muted">[&amp;#xf165;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf088
+          </span>
+          fa fa-thumbs-o-down <em class="muted">[&amp;#xf088;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf087
+          </span>
+          fa fa-thumbs-o-up <em class="muted">[&amp;#xf087;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf164
+          </span>
+          fa fa-thumbs-up <em class="muted">[&amp;#xf164;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf145
+          </span>
+          fa fa-ticket <em class="muted">[&amp;#xf145;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf00d
+          </span>
+          fa fa-times <em class="muted">[&amp;#xf00d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf057
+          </span>
+          fa fa-times-circle <em class="muted">[&amp;#xf057;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf05c
+          </span>
+          fa fa-times-circle-o <em class="muted">[&amp;#xf05c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf043
+          </span>
+          fa fa-tint <em class="muted">[&amp;#xf043;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf150
+          </span>
+          fa fa-toggle-down <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf150;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf191
+          </span>
+          fa fa-toggle-left <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf191;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf204
+          </span>
+          fa fa-toggle-off <em class="muted">[&amp;#xf204;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf205
+          </span>
+          fa fa-toggle-on <em class="muted">[&amp;#xf205;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf152
+          </span>
+          fa fa-toggle-right <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf152;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf151
+          </span>
+          fa fa-toggle-up <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf151;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1f8
+          </span>
+          fa fa-trash <em class="muted">[&amp;#xf1f8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf014
+          </span>
+          fa fa-trash-o <em class="muted">[&amp;#xf014;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1bb
+          </span>
+          fa fa-tree <em class="muted">[&amp;#xf1bb;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf181
+          </span>
+          fa fa-trello <em class="muted">[&amp;#xf181;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf091
+          </span>
+          fa fa-trophy <em class="muted">[&amp;#xf091;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0d1
+          </span>
+          fa fa-truck <em class="muted">[&amp;#xf0d1;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf195
+          </span>
+          fa fa-try <em class="muted">[&amp;#xf195;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e4
+          </span>
+          fa fa-tty <em class="muted">[&amp;#xf1e4;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf173
+          </span>
+          fa fa-tumblr <em class="muted">[&amp;#xf173;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf174
+          </span>
+          fa fa-tumblr-square <em class="muted">[&amp;#xf174;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf195
+          </span>
+          fa fa-turkish-lira <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf195;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e8
+          </span>
+          fa fa-twitch <em class="muted">[&amp;#xf1e8;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf099
+          </span>
+          fa fa-twitter <em class="muted">[&amp;#xf099;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf081
+          </span>
+          fa fa-twitter-square <em class="muted">[&amp;#xf081;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e9
+          </span>
+          fa fa-umbrella <em class="muted">[&amp;#xf0e9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0cd
+          </span>
+          fa fa-underline <em class="muted">[&amp;#xf0cd;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0e2
+          </span>
+          fa fa-undo <em class="muted">[&amp;#xf0e2;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19c
+          </span>
+          fa fa-university <em class="muted">[&amp;#xf19c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf127
+          </span>
+          fa fa-unlink <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf127;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf09c
+          </span>
+          fa fa-unlock <em class="muted">[&amp;#xf09c;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf13e
+          </span>
+          fa fa-unlock-alt <em class="muted">[&amp;#xf13e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0dc
+          </span>
+          fa fa-unsorted <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf0dc;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf093
+          </span>
+          fa fa-upload <em class="muted">[&amp;#xf093;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf155
+          </span>
+          fa fa-usd <em class="muted">[&amp;#xf155;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf007
+          </span>
+          fa fa-user <em class="muted">[&amp;#xf007;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0f0
+          </span>
+          fa fa-user-md <em class="muted">[&amp;#xf0f0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0c0
+          </span>
+          fa fa-users <em class="muted">[&amp;#xf0c0;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf03d
+          </span>
+          fa fa-video-camera <em class="muted">[&amp;#xf03d;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf194
+          </span>
+          fa fa-vimeo-square <em class="muted">[&amp;#xf194;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1ca
+          </span>
+          fa fa-vine <em class="muted">[&amp;#xf1ca;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf189
+          </span>
+          fa fa-vk <em class="muted">[&amp;#xf189;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf027
+          </span>
+          fa fa-volume-down <em class="muted">[&amp;#xf027;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf026
+          </span>
+          fa fa-volume-off <em class="muted">[&amp;#xf026;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf028
+          </span>
+          fa fa-volume-up <em class="muted">[&amp;#xf028;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf071
+          </span>
+          fa fa-warning <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf071;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d7
+          </span>
+          fa fa-wechat <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf1d7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf18a
+          </span>
+          fa fa-weibo <em class="muted">[&amp;#xf18a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1d7
+          </span>
+          fa fa-weixin <em class="muted">[&amp;#xf1d7;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf193
+          </span>
+          fa fa-wheelchair <em class="muted">[&amp;#xf193;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1eb
+          </span>
+          fa fa-wifi <em class="muted">[&amp;#xf1eb;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf17a
+          </span>
+          fa fa-windows <em class="muted">[&amp;#xf17a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf159
+          </span>
+          fa fa-won <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf159;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19a
+          </span>
+          fa fa-wordpress <em class="muted">[&amp;#xf19a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf0ad
+          </span>
+          fa fa-wrench <em class="muted">[&amp;#xf0ad;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf168
+          </span>
+          fa fa-xing <em class="muted">[&amp;#xf168;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf169
+          </span>
+          fa fa-xing-square <em class="muted">[&amp;#xf169;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf19e
+          </span>
+          fa fa-yahoo <em class="muted">[&amp;#xf19e;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf1e9
+          </span>
+          fa fa-yelp <em class="muted">[&amp;#xf1e9;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf157
+          </span>
+          fa fa-yen <em class="text-muted">(alias)</em> <em class="muted">[&amp;#xf157;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf167
+          </span>
+          fa fa-youtube <em class="muted">[&amp;#xf167;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf16a
+          </span>
+          fa fa-youtube-play <em class="muted">[&amp;#xf16a;]</em> </li>
+        <li>
+          <span class="fa fa-fw">
+            &#xf166
+          </span>
+          fa fa-youtube-square <em class="muted">[&amp;#xf166;]</em> </li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.page-content role=main --> 
+  <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
+</div>
+<!-- ================== END #page ================= --> 
+<!-- ================== FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-column-wrapper">
+    <div class="container">
+      <div class="row footer-row equal-height-col">
+        <div class="col-sm-5 col-md-3 footer-col">
+          <h4 class="footer-title">Socialfy</h4>
+          <ul class="social-icon-list">
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <!-- /.col-sm-5 .col-md-3 footer-col -->
+        <div class="col-sm-7 col-md-9 footer-col">
+          <h4 class="footer-title">About Us</h4>
+          <p>There’s a lot written about immortal robot bodies and how they’re the new rage. Religion can’t provide immortal robot bodies. Flying heads in bubbles are also becoming popular. The cost of preserving a head is much less than the entire body and at least you can keep your face. But with the immortal robot, after you die, your soul or spirit is digitized and your flesh body rots, but you don’t care, ‘cause having an immortal robot body is ultra cool and sexy. While you’re still on earth, your immortal robot body sits in storage ready for the fateful day. No, it doesn’t act like Dorian Gray, keeping you ageless and that kind of thing, but it does provide a great feeling of peace of mind.</p>
+        </div>
+        <!-- /.col-sm-7 col-md-9 footer-col-->
+      </div>
+      <!--/.row .footer-row-->
+      <div class="row footer-row equal-height-col">
+        <!-- ::info:: this is equal heights with jQuery -->
+        <div class="col-sm-4 footer-col">
+          <h4 class="footer-title">Stay Updated</h4>
+          <p>Sign up for our newsletter. We won't share your email address.</p>
+          <form action="yourscript.php" method="post">
+            <div class="input-group">
+              <input class="form-control form-control-footer" placeholder="Your@EmailAddress.com" type="email">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-footer">Sign Up</button>
+              </span>
+              <!--/.input-group-btn-->
+            </div>
+          </form>
+        </div>
+        <!-- /.col-sm-4 footer-col-->
+        <div class="col-sm-8 footer-col">
+          <h4 class="footer-title">Latest Stuff</h4>
+          <div class="img-widget fade-hover-img">
+            <a href="#"><img src="assets/demo-images/img-widget/1.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/2.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/3.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/4.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/5.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/6.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/7.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/8.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/9.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/10.jpg" alt="" /></a>
+          </div>
+          <!--/.img-widget-->
+        </div>
+        <!-- /.col-sm-8 footer-col-->
+      </div>
+      <!--/.row .footer-row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.footer-column-wrapper -->
+  <div class="footer-copyright">
+    <div class="container">
+      <p class="no-margin">© Copyright 2015 WebsiteTemplatesThatRock.com. 
+        All rights reserved. Please purchase this theme so you can use it in your project. 
+        Email <a href="mailto:websitetemplatesthatrock@gmail.com" class="link-underline">the designer.</a> | <a class="link-underline" href="site-map.html">Site Map</a> </p>
+    </div>
+  </div>
+  <!--/.footer-copyright--> 
+</footer>
+<!-- ================== /.END footer ================= --> 
+<!-- _________ GO TO TOP ___________ --> 
+<a id="go-to-top" href="#top" title="up"> <i class="ti ti-arrow-up"></i> </a> 
+
+<!-- _________ FOOTER SCRIPTS  ________ --> 
+<script src="assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 
+<script src="assets/js/bootstrap.min.js"></script> <!-- bootstrap's js --> 
+<script src="assets/js/jquery.bootstrap.addon.js"></script><!-- initializations and custom scripts for bootstrap --> 
+<script src="assets/js/jquery.magnific-popup.js"></script><!-- image popups, video, modals, etc., contains the initializations --> 
+<script src="assets/js/jquery.slick-slider.min.js"></script> <!-- base carousel/slider SLICK SLIDER --> 
+<script src="assets/js/jquery.isotope.masonry.js"></script> <!-- Isotope w/Masonry also contains the initializations --> 
+
+<script src="assets/js/jquery.main.js"></script> <!-- CORE scripts and initializations --> 
+
+
+</body>
+</html>

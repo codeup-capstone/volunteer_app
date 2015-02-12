@@ -1,0 +1,1984 @@
+<!doctype html>
+<!--[if lte IE 8 ]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Be Different Bootstrap Off Canvas Theme - Themify Icons</title>
+  <meta name="description" content="Themify Icons : Be Different Bootstrap Theme - a different, unique theme with 10 different color combos. Built with Bootstrap, custom css3, html5, and plenty of excellent components, sliders, and other useful elements">
+  
+  <!-- BASE CSS ============================================== -->
+  <!-- custom build of latest bootstrap see json or follow the link in the file ============================================== -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- ASSET CSS (if you are on a secure server remove the http: but not the // it won't work local but will work for both http and httpS ============================================== -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/theme-assets.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- LOGO FONT, replace with your own ============================================== -->
+  <link href="assets/css/logo-font.css" rel="stylesheet" type="text/css">
+  
+  <!-- THEME CSS (unminified TOC version w/purchase) ============================================== -->
+  <link href="assets/css/theme-min.css" rel="stylesheet" type="text/css">
+  
+  <!-- SCRIPTS IN HEAD ============================================== -->
+  <script src="assets/js/modernizr.2.8.3.js"></script>
+  
+  <!--[if lt IE 9]>
+   <script src="assets/js/respond.min.js"></script>
+   <![endif]-->
+  
+  <!-- +++++++ jQuery library ============================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+   if (!window.jQuery) {
+       document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>');
+   }
+   </script>
+  
+  <!-- WINDOWS 8 Phones BUG FIX -->
+  <script src="assets/js/windows-fix.js"></script>
+</head>
+<body>
+
+<!-- +++++ No Script Fallback notice +++++ -->
+<noscript>
+<div>
+  Turn on your JavaScript!
+</div>
+</noscript>
+<!-- accessibility skip to nav skip content -->
+<ul class="sr-only" id="top">
+  <li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to Navigation</a></li>
+  <li><a href="#page" title="Skip to content" accesskey="c">Skip to Content</a></li>
+</ul>
+<!--  /.sr-only accessibility--> 
+<!-- =============== HEADER ==============================-->
+<header class="header">
+  <div class="header-inner">
+    <!-- :: info :: .header-inner acts like container --> 
+    <!-- #### logo font  -->
+    <div class="logo-brand logo-font">
+      <a href="index.html">
+      <span class="logo-brand-inner">
+        <span class="logo-b-different-logo">
+          <!--logo font for demo -->
+        </span>
+        <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
+      </span>
+      </a>
+    </div>
+    <!-- /.logo-brand-->
+    
+    <div class="header-btn-bar">
+      <!-- .menu-toggle --> 
+      <a href="#" class="menu-toggle" data-slide="slide" data-target="#navigation-panel"> 
+      <!-- this above data-slide toggles the #navigation-panel .slide-panel -->
+      <div class="menu-toggle-inner">
+        <span class="veggieburger">
+          <span class="lines">
+          </span>
+        </span>
+        <!--/.veggieburger-->
+        <span class="menu-toggle-text">
+          M<i class="fa fa-bars"></i>NU
+        </span>
+      </div>
+      </a> 
+      <!-- /.menu-toggle-->
+      <div class="header-btn-wrapper clearfix">
+        <!-- .header-btn-row-->
+        <div class="header-btn-row half-row">
+          <!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
+          <a href="#" class="login-toggle header-btn header-btn-xl" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
+          <span class="header-btn-text">
+            Login
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #login-panel .slide-panel example --> 
+          <!-- /END 1st .header-btn .header-btn-xl in first row --> 
+          <!-- BEGIN 2nd.header-btn .header-btn-xl in first row --> 
+          <a href="#" class="signin-toggle header-btn header-btn-xl" data-slide="slide" data-target="#signup-panel"> <i class="fa fa-pencil header-icon"></i>
+          <span class="header-btn-text">
+            Sign Up
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #signup-panel .slide-panel example --> 
+          <!-- /END 2nd .header-btn .header-btn-xl in first row -->
+        </div>
+        <!-- /.header-btn-row-->
+        <div class="header-btn-row half-row">
+          <!-- BEGIN 3rd .header-btn .header-btn-lg in second row --> 
+          <a href="#" class="anchor header-btn header-btn-lg" data-slide="slide" data-target="#contact-panel"> <i class="fa fa-at header-icon"></i>
+          <span class="header-btn-text">
+            Contact
+          </span>
+          </a> 
+          <!-- this above data-slide toggles the #contact-panel .slide-panel example --> 
+          <!-- /END 3rd .header-btn .header-btn-lg in second row --> 
+          <!-- BEGIN 4th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm search-toggle" data-slide="slide" data-target="#search-panel"  data-hover="tooltip" data-placement="left" title="search"> <i class="fa fa-search header-icon"></i> </a> 
+          <!-- this above data-slide toggles the #search-panel .slide-panel example --> 
+          <!-- /END 4th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 5th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="follow us on twitter"> <i class="fa fa-twitter header-icon"></i> </a> 
+          <!-- this link above links to your twitter page --> 
+          <!-- /END 5th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 6th .header-btn .header-btn-sm in second row--> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="like us on facebook"> <i class="fa fa-facebook header-icon"></i> </a> 
+          <!-- this link above links to your facebook page --> 
+          <!-- /END 6th .header-btn .header-btn-sm in second row --> 
+          <!-- BEGIN 7th .header-btn .header-btn-sm in second row --> 
+          <a href="#" class="header-btn header-btn-sm" data-hover="tooltip" data-placement="left" title="subscribe to our RSS"> <i class="fa fa-rss header-icon"></i> </a> 
+          <!-- this link above links to your google+ page --> 
+          <!-- /END 7th .header-btn .header-btn-sm in second row -->
+        </div>
+        <!-- /END .header-btn-row-->
+      </div>
+      <!-- /END .header-btn-wrapper-->
+    </div>
+    <!-- /END .header-btn-bar -->
+    
+  </div>
+  <!-- /END .header-inner --> 
+</header>
+<!-- =============== END HEADER ==============================--> 
+
+<!-- ================== BEGIN SLIDE OUT PANELS  ================= -->
+<div class="slide-panel-parent">
+  <!-- .slide-panel-parent goes around all the panels --> 
+  <!-- _____________ NAVIGATION PANEL _______ -->
+  <div class="slide-panel" id="navigation-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-8">
+          <!-- _________ BEGIN NAVIGATION ___________ -->
+          <nav id="nav" role="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="home-events.html">Home Events</a></li>
+              <li><a href="multi-col-menu.html">Multiple Column Menu on Larger Viewports</a></li>
+              <li class="has-children"> <a href="#">Header Options</a>
+                <ul>
+                  <li><a href="tall-button-header.html">Tall Button Header</a></li>
+                  <li><a href="image-logo.html">Image Logo</a></li>
+                  <li><a href="tall-logo.html">Tall Logo Image</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Carousels</a>
+                <ul>
+                  <li><a href="variable-width-slider.html">Variable Image Widths</a></li>
+                  <li><a href="testimonial-slider.html">Testimonial Slider</a></li>
+                  <li><a href="featured-work-slider.html">Featured Work Slider</a></li>
+                  <li><a href="equal-column-slider.html">Equal Column Slider</a></li>
+                  <li><a href="video-slider.html">Video Slider</a></li>
+                  <li><a href="mini-bootstrap-carousel.html">Mini Slider</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#" class="current">Components</a>
+                <ul>
+                  <li><a href="bootstrap-3-misc-sink.html">Misc. Bootstrap Components</a></li>
+                  <li><a href="modals.html">Magnific Popup Modals</a></li>
+                  <li class="has-children active"> <a href="#" class="current">Icons</a>
+                    <ul>
+                      <li class="active"><a href="themify-icons.html">Themify Icons</a></li>
+                      <li><a href="font-awesome.html">Font Awesome</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="icon-usage.html">Icon Usage</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"> <a href="#">Collapse/Tabs</a>
+                    <ul>
+                      <li><a href="tabs.html">Tabs</a></li>
+                      <li><a href="left-tabs.html">Left Tabs</a></li>
+                      <li><a href="collapse.html">Collapse/Accordion</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Pages & Misc</a>
+                <ul>
+                  <li><a href="about-us-option-1.html">About Us Option 1</a></li>
+                  <li><a href="about-us-option-2.html">About Us Option 2</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="pricing-columns.html">Pricing Columns</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="scrollspy-left.html">Scrollspy Left Column</a></li>
+                  <li><a href="scrollspy-right.html">Scrollspy Right Column</a></li>
+                  <li><a href="simple-gallery.html">Simple Image Gallery</a></li>
+                  <li><a href="equal-height.html">Equal Height Columns</a></li>
+                  <li><a href="blank-template.html">Blank Template</a></li>
+                  <li><a href="page-not-found.html">404 Page Not Found</a></li>
+                  <li><a href="typography-example.html">Typography Example</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Blog</a>
+                <ul>
+                  <li><a href="blog-summary-masonry-layout.html">Blog Summary Isotope</a></li>
+                  <li><a href="blog-summary-left.html">Blog Summary L</a></li>
+                  <li><a href="blog-summary-right.html">Blog Summary R</a></li>
+                  <li><a href="blog-single.html">Single Blog Post</a></li>
+                </ul>
+              </li>
+              <li class="has-children"> <a href="#">Portfolio</a>
+                <ul>
+                  <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                  <li><a href="portfolio-single.html">Portfolio Single Item</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--/.col-md-6 col-lg-8 -->
+        <div class="col-md-6 col-lg-4">
+          <h4 class="h2">Latest News</h4>
+          <ul>
+            <li><a href="your-link-goes-here.html">We will amplify our power to benchmark...</a></li>
+            <li><a href="your-link-goes-here.html">We have revolutionized the conceptualization...</a></li>
+            <li><a href="your-link-goes-here.html">Everything is relative; relatively speaking.</a></li>
+            <li><a href="your-link-goes-here.html">My other body is an immortal robot body.</a></li>
+            <li><a href="your-link-goes-here.html">I don't know who they are but they're...</a></li>
+            <li><a href="your-link-goes-here.html">For those about to rock, we salute you </a> </li>
+          </ul>
+          <h4 class="h2">Latest Work</h4>
+          <div class="img-widget fade-hover-img">
+            <a href="#"><img src="assets/demo-images/img-widget/1.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/2.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/3.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/4.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/5.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/6.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/7.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/8.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/9.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/10.jpg" alt="" /></a>
+          </div>
+          <!--/.img-widget-->
+        </div>
+        <!--/.col-md-6 col-lg-4 -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container inside #navigation-panel -->
+  </div>
+  <!--/.slide-panel #navigation-panel --> 
+  <!-- _________ SEARCH PANEL #search-panel___________ -->
+  <div class="slide-panel search" id="search-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h3 class="slide-panel-title">Search</h3>
+      <form role="form">
+        <div class="form-group">
+          <input type="search" placeholder="Enter search term and press enter" class="form-control">
+        </div>
+        <!--/.form-group -->
+      </form>
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.slide-panel #search-panel --> 
+  <!-- _________ CONTACT PANEL ___________ -->
+  <div class="slide-panel" id="contact-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title text-center-md-view">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 text-right-md-view text-right-lg-view">
+          <h3>Organized Organization</h3>
+          <p class="lead"> 1255 Nowhere Street<br>
+            Tampa, FL 33655<br>
+            <strong>phone:</strong> <a href="tel:8135551234">813.555.1234</a><br>
+            <strong>fax:</strong> 813.555.1235<br>
+            <span class="overflow">
+              <strong>email:</strong> <a class="link-underline" href="mailto:email@domain.com">email@companydomain.com</a>
+            </span>
+          </p>
+        </div>
+        <!-- /.col-md-6 -->
+        
+        <div class="col-md-6">
+          <h3>Find Us On...</h3>
+          <ul class="social-icon-list">
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <!-- /.col-md-6 -->
+        
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.slide-panel #contact-panel --> 
+  <!-- _________ LOGIN PANEL #login-panel ___________ -->
+  <div class="slide-panel" id="login-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title">Login</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Social Login</h4>
+          <ul class="list-unstyled social-user">
+            <li><a href="#" title="Login with Facebook" class="facebook"><i class="fa fa-facebook"></i>
+              <span>
+                Login with Facebook
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Google Plus" class="google"><i class="fa fa-google-plus"></i>
+              <span>
+                Login with Google
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Twitter" class="twitter"><i class="fa fa-twitter"></i>
+              <span>
+                Login with Twitter
+              </span>
+              </a></li>
+            <li><a href="#" title="Login with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i>
+              <span>
+                Login with Wordpress
+              </span>
+              </a></li>
+          </ul>
+          <!-- /.social-user -->
+        </div>
+        <!-- /.col-*-6 -->
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign In</h4>
+          <form role="form" action="your-script.php">
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control  form-control-lg" placeholder="Password">
+            </div>
+            <div class="form-group checkbox small">
+              <label>
+                <input type="checkbox">
+                Remember Me </label>
+            </div>
+            <p class="text-center">
+              <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Sign in</button>
+            </p>
+          </form>
+          <p class="text-center clear"><a href="#" data-slide="slide" data-target="#forgot-password-panel" class="link-underline">Forgot your password?</a> <br>
+            Don't have an account yet? <a class="link-underline signin-toggle" href="#" data-slide="slide" data-target="#signup-panel">Sign up</a> </p>
+        </div>
+        <!-- /.col-*-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #login-panel --> 
+  <!-- _________ SIGNUP PANEL #signup-panel ___________ -->
+  <div class="slide-panel" id="signup-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h2 class="slide-panel-title">Sign In</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign Up with...</h4>
+          <ul class="list-unstyled social-user">
+            <li><a href="#" title="Signup with Facebook" class="facebook"><i class="fa fa-facebook"></i>
+              <span>
+                Signup with Facebook
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Google Plus" class="google"><i class="fa fa-google-plus"></i>
+              <span>
+                Signup with Google
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Twitter" class="twitter"><i class="fa fa-twitter"></i>
+              <span>
+                Signup with Twitter
+              </span>
+              </a></li>
+            <li><a href="#" title="Signup with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i>
+              <span>
+                Signup with Wordpress
+              </span>
+              </a></li>
+          </ul>
+          <!-- /.social-user -->
+        </div>
+        <!-- /.col-*-6 -->
+        <div class="col-md-6">
+          <h4 class="no-margin-top">Sign Up</h4>
+          <form role="form" action="your-script.php">
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control form-control-lg" placeholder="Password">
+            </div>
+            <p class="text-center">
+              <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Register</button>
+            </p>
+          </form>
+          <p class="text-center clear">Already have an account? <a class="link-underline login-toggle" href="#" data-slide="slide" data-target="#login-panel">Login</a></p>
+        </div>
+        <!-- /.col-*-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #signup-panel --> 
+  <!-- _________ FORGOT PASSWORD #forgot-password-panel ___________ -->
+  <div class="slide-panel" id="forgot-password-panel">
+    <a href="#" class="close ti ti-close"> 
+    <!--themify icon font--> 
+    </a>
+    <div class="container">
+      <h3 class="slide-panel-title">Forgot Password</h3>
+      <form role="form" action="your-script.php">
+        <div class="input-group input-group-lg input-group-slide-panel">
+          <input class="form-control" placeholder="Your@EmailAddress.com" type="email">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-slide-panel btn-lg">Reset Password</button>
+          </span>
+          <!--/.input-group-btn-->
+        </div>
+      </form>
+      <hr class="vertical-spacer height-20px">
+      <p class="text-center"><a href="#" data-slide="slide" data-target="#login-panel" class="link-underline login-toggle">Remembered your Password?</a></p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.slide-panel #forgot-password-panel -->
+</div>
+<!-- END .slide-down-parent --> 
+<!-- ================== END SLIDE OUT PANELS  ================= --> 
+<!-- =============== BEGIN #page ==============================-->
+<div id="page">
+  <!-- =========== PAGE HEADER ON ALL BUT INDEX PAGES =========================================================================== --> 
+  <!-- _________ Page Header ___________ -->
+  <div class="page-header-primary">
+    <div class="container">
+      <h2>Themify Icons</h2>
+      <ol class="breadcrumb page-header-breadcrumb hidden-xs">
+        <li><a href="index.html" class="link-underline">Home</a></li>
+        <li class="active">Themify Icons</li>
+      </ol>
+    </div>
+    <!-- /.container (for page-header-primary) -->
+  </div>
+  <!-- /.page-header-primary --> 
+  <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
+  <div class="page-content" role="main">
+    <!-- ______________ Themify Icons ______________ -->
+    <div class="container">
+      <ul class="list-inline icon-demo clearfix">
+        <li>
+          <span class="ti ti-wand">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-volume">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-user">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-unlock">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-unlink">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-trash">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-thought">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-target">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-tag">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-tablet">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-star">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-spray">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-signal">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shopping-cart">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shopping-cart-full">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-settings">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-search">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-zoom-in">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-zoom-out">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-cut">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-ruler">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-ruler-pencil">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-ruler-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bookmark">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bookmark-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-reload">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-plus">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pin">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pencil">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pencil-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-paint-roller">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-paint-bucket">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-na">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-mobile">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-minus">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-medall">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-medall-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-marker">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-marker-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-lock">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-location-arrow">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-link">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layers">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layers-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-key">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-import">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-image">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-heart">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-heart-broken">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hand-stop">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hand-open">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hand-drag">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-folder">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-flag">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-flag-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-flag-alt-2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-eye">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-export">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-exchange-vertical">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-desktop">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-cup">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-crown">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-comments">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-comment">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-comment-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-close">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-clip">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-check">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-check-box">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-camera">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-announcement">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-brush">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-briefcase">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bolt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bolt-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-blackboard">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bag">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-move">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrows-vertical">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrows-horizontal">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-fullscreen">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-top-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-top-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-circle-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-circle-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-circle-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrow-circle-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-double-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-double-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-double-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-angle-double-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-zip">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-world">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-wheelchair">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-view-list">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-view-list-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-view-grid">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-uppercase">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-upload">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-underline">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-truck">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-timer">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-ticket">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-thumb-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-thumb-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-text">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-stats-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-stats-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-split-v">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-split-h">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-smallcap">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shine">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shift-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shift-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shield">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-notepad">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-server">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-quote-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-quote-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pulse">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-printer">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-power-off">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-plug">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pie-chart">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-paragraph">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-panel">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-package">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-music">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-music-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-mouse">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-mouse-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-money">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-microphone">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-menu">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-menu-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-map">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-map-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-loop">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-location-pin">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-list">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-light-bulb">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-Italic">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-info">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-infinite">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-id-badge">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hummer">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-home">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-help">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-headphone">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-harddrives">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-harddrive">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-gift">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-game">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-filter">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-files">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-file">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-eraser">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-envelope">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-download">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-direction">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-direction-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-dashboard">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-stop">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-shuffle">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-play">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-pause">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-forward">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-backward">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-cloud">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-cloud-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-cloud-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-clipboard">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-car">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-calendar">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-book">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bell">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-basketball">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bar-chart">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-bar-chart-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-back-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-back-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-arrows-corner">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-archive">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-anchor">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-align-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-align-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-align-justify">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-align-center">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-alert">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-alarm-clock">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-agenda">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-write">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-window">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-widgetized">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-widget">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-widget-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-wallet">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-video-clapper">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-video-camera">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-vector">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-themify-logo">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-themify-favicon">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-themify-favicon-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-support">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-stamp">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-split-v-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-slice">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shortcode">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shift-right-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-shift-left-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-ruler-alt-2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-receipt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pin2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pin-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pencil-alt2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-palette">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-more">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-more-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-microphone-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-magnet">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-line-double">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-line-dotted">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-line-dashed">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-width-full">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-width-default">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-width-default-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-tab">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-tab-window">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-tab-v">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-tab-min">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-slider">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-slider-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-sidebar-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-sidebar-none">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-sidebar-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-placeholder">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-menu">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-menu-v">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-menu-separated">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-menu-full">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-right-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-overlay">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-overlay-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-overlay-alt-2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-left-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-center-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-media-center">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-list-thumb">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-list-thumb-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-list-post">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-list-large-image">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-line-solid">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-grid4">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-grid3">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-grid2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-grid2-thumb">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-cta-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-cta-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-cta-center">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-cta-btn-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-cta-btn-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-column4">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-column3">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-column2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-accordion-separated">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-accordion-merged">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-accordion-list">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-ink-pen">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-info-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-help-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-headphone-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hand-point-up">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hand-point-right">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hand-point-left">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-hand-point-down">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-gallery">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-face-smile">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-face-sad">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-credit-card">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-skip-forward">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-skip-backward">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-record">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-control-eject">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-comments-smiley">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-brush-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-youtube">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-vimeo">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-twitter">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-time">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-tumblr">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-skype">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-share">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-share-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-rocket">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pinterest">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-new-window">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-microsoft">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-list-ol">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-linkedin">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-sidebar-2">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-grid4-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-grid3-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-grid2-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-column4-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-column3-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-layout-column2-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-instagram">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-google">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-github">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-flickr">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-facebook">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-dropbox">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-dribbble">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-apple">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-android">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-save">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-save-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-yahoo">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-wordpress">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-vimeo-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-twitter-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-tumblr-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-trello">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-stack-overflow">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-soundcloud">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-sharethis">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-sharethis-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-reddit">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-pinterest-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-microsoft-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-linux">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-jsfiddle">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-joomla">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-html5">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-flickr-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-email">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-drupal">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-dropbox-alt">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-css3">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-rss">
+          </span>
+        </li>
+        <li>
+          <span class="ti ti-rss-alt">
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- ______________ Themify Icons ______________ -->
+  </div>
+  <!-- /.page-content role=main --> 
+  <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
+</div>
+<!-- ================== END #page ================= --> 
+<!-- ================== FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-column-wrapper">
+    <div class="container">
+      <div class="row footer-row equal-height-col">
+        <div class="col-sm-5 col-md-3 footer-col">
+          <h4 class="footer-title">Socialfy</h4>
+          <ul class="social-icon-list">
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <!-- /.col-sm-5 .col-md-3 footer-col -->
+        <div class="col-sm-7 col-md-9 footer-col">
+          <h4 class="footer-title">About Us</h4>
+          <p>There’s a lot written about immortal robot bodies and how they’re the new rage. Religion can’t provide immortal robot bodies. Flying heads in bubbles are also becoming popular. The cost of preserving a head is much less than the entire body and at least you can keep your face. But with the immortal robot, after you die, your soul or spirit is digitized and your flesh body rots, but you don’t care, ‘cause having an immortal robot body is ultra cool and sexy. While you’re still on earth, your immortal robot body sits in storage ready for the fateful day. No, it doesn’t act like Dorian Gray, keeping you ageless and that kind of thing, but it does provide a great feeling of peace of mind.</p>
+        </div>
+        <!-- /.col-sm-7 col-md-9 footer-col-->
+      </div>
+      <!--/.row .footer-row-->
+      <div class="row footer-row equal-height-col">
+        <!-- ::info:: this is equal heights with jQuery -->
+        <div class="col-sm-4 footer-col">
+          <h4 class="footer-title">Stay Updated</h4>
+          <p>Sign up for our newsletter. We won't share your email address.</p>
+          <form action="yourscript.php" method="post">
+            <div class="input-group">
+              <input class="form-control form-control-footer" placeholder="Your@EmailAddress.com" type="email">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-footer">Sign Up</button>
+              </span>
+              <!--/.input-group-btn-->
+            </div>
+          </form>
+        </div>
+        <!-- /.col-sm-4 footer-col-->
+        <div class="col-sm-8 footer-col">
+          <h4 class="footer-title">Latest Stuff</h4>
+          <div class="img-widget fade-hover-img">
+            <a href="#"><img src="assets/demo-images/img-widget/1.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/2.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/3.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/4.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/5.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/6.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/7.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/8.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/9.jpg" alt="" /></a> <a href="#"><img src="assets/demo-images/img-widget/10.jpg" alt="" /></a>
+          </div>
+          <!--/.img-widget-->
+        </div>
+        <!-- /.col-sm-8 footer-col-->
+      </div>
+      <!--/.row .footer-row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.footer-column-wrapper -->
+  <div class="footer-copyright">
+    <div class="container">
+      <p class="no-margin">© Copyright 2015 WebsiteTemplatesThatRock.com. 
+        All rights reserved. Please purchase this theme so you can use it in your project. 
+        Email <a href="mailto:websitetemplatesthatrock@gmail.com" class="link-underline">the designer.</a> | <a class="link-underline" href="site-map.html">Site Map</a> </p>
+    </div>
+  </div>
+  <!--/.footer-copyright--> 
+</footer>
+<!-- ================== /.END footer ================= --> 
+<!-- _________ GO TO TOP ___________ --> 
+<a id="go-to-top" href="#top" title="up"> <i class="ti ti-arrow-up"></i> </a> 
+
+<!-- _________ FOOTER SCRIPTS  ________ --> 
+<script src="assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 
+<script src="assets/js/bootstrap.min.js"></script> <!-- bootstrap's js --> 
+<script src="assets/js/jquery.bootstrap.addon.js"></script><!-- initializations and custom scripts for bootstrap --> 
+<script src="assets/js/jquery.magnific-popup.js"></script><!-- image popups, video, modals, etc., contains the initializations --> 
+<script src="assets/js/jquery.slick-slider.min.js"></script> <!-- base carousel/slider SLICK SLIDER --> 
+<script src="assets/js/jquery.isotope.masonry.js"></script> <!-- Isotope w/Masonry also contains the initializations --> 
+
+<script src="assets/js/jquery.main.js"></script> <!-- CORE scripts and initializations --> 
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* ---------- READ ME --------------- */
+
+--------------------
+INSTRUCTIONS:
+--------------------
+Launch the BEDIFFERENT-DOCS/index.html file
+inside your browser.
+
+This is a local file for working offline. 
+If you use the search input, you 
+will be accessing the online version. 
+
+--------------------
+DEMO IMAGES:
+--------------------
+COPY the "demo-images" directory into the 
+respective "assets" directories inside the 
+following directories:
+
+BEDIFFERENT-DEMO
+
+BEDIFFERENT-THEME
+
+
+The resulting path will be as follows:
+
+BEDIFFERENT-THEME/assets/demo-images
+BEDIFFERENT-DEMO/assets/demo-images
+
