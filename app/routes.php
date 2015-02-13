@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('activity.index');
+	return View::make('landing');
 });
 
 Route::get('landing', 'HomeController@showHome');

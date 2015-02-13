@@ -33,7 +33,7 @@ class HomeController extends BaseController {
 	}
 	public function showHome()
 	{
-		return View::make('activities.landing');
+		return View::make('landing');
 	}
 	public function showLive()
 	{
