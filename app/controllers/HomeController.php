@@ -60,8 +60,14 @@ class HomeController extends BaseController {
 	{
 		return View::make('activities.volunteerEdit');
 	}
-
-
+	public function showLogin()
+	{
+		return View::make('landing');
+	}
+	public function showLogout()
+	{
+		return View::make('landing');
+	}
 
 	public function doLogin()
 	{
@@ -75,7 +81,7 @@ class HomeController extends BaseController {
 		} else {
 			Session::flash('errorMessage', 'Failed to log in.');
 
-		    return Redirect::action('HomeController@showLogin');
+		    return Redirect::action('HomeController@showHome');
 		}
 	}
 
