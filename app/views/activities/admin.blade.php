@@ -23,8 +23,7 @@
       	<!--Need to change this in CSS -->
       <span class="logo-brand-inner"><!--Need to change this in CSS -->
       	<!--Need to change this in CSS -->
-      	 <h1>Serve Search</h1>
-        <span class="">
+        <span class="logo-b-different-logo">
           <!--logo font for demo -->
         </span>
         <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
@@ -108,12 +107,12 @@
           <!-- _________ BEGIN NAVIGATION ___________ -->
           <nav id="nav" role="navigation">
             <ul>
-              <li class="active"><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
                       <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
-                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('ActivitiesController@index') }}}">Browse by Event</a></li>
                       <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          
@@ -313,80 +312,6 @@
 </div>
 <!-- END .slide-down-parent --> 
 <!-- ================== END SLIDE OUT PANELS  ================= --> 
-
-<div id="page">
-  <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
-  <div class="page-content" role="main">
-    <div class="container">
-      
-      <!-- .container for entire page --> 
-      
-      <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
-   
-     
-      
-      
-      <div class="row sixteen-gutter">
-      
-        <div class="col-sm-7 col-md-8">
-          <div class="featured-carousel single-item-carousel">
-            <div class="slick-slider-item">
-             	<div>
-             		<iframe src="/img/agency/habitat.jpg" width="363px" height="164px"></iframe>
-             		<iframe src="https://mapsengine.google.com/00788290253781242191-09052745394509652502-4/widget/in_iframe" width="363px" height="164px"></iframe>
-             	</div>
-            </div>
-            <!--/.slick-slider-item-->
-          </div>
-        </div>
-        <!--/.col-x-x-->
-        
-        <hr class="visible-xs vertical-spacer vertical-spacer-xs">
-        <!-- add some vertical spacing when stacked -->
-        
-        <div class="col-sm-5 col-md-4">
-          <div class="column-inner column-featured">
-            <h3 class="h2 column-featured-headline">RSVP</h3>
-            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showRsvp') }}}"><i class="fa fa-arrow-right fa-fw"></i></a> </p>      
-          </div>
-          <!--/.column-inner .column-featured-->
-        </div>
-        <!--/.col-x-x--> 
-
-        <div class="col-sm-5 col-md-4">
-          <div class="column-inner column-featured">
-            <h3 class="h2 column-featured-headline">PASS</h3>
-         	
-            <p> <a class="btn btn-featured btn-lg" href="#"><i class="fa fa-arrow-right fa-fw"></i></a> </p>
-         
-            
-          </div>
-          <!--/.column-inner .column-featured-->
-        </div>
-        <!--/.col-x-x--> 
-        <div class="col-sm-5 col-md-4">
-          <div class="column-inner column-featured">
-            <h3 class="h2 column-featured-headline">HOME</h3>
-         	
-            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showHome') }}}"> <i class="fa fa-arrow-right fa-fw"></i></a> </p>      
-            
-          </div>
-          <!--/.column-inner .column-featured-->
-        </div>
-        <!--/.col-x-x--> 
-
-      </div>
-      <!--/.row sixteen-gutter-->     
-   
-      <!-- VERTICAL SPACING -->
-      <hr class="vertical-spacer vertical-spacer-lg"> 
-    </div>
-    <!-- / .container -->
-  </div>
-  <!-- /.page-content role=main --> 
-  <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
-</div>
-<!-- ================== END #page ================= --> 
 
 <!-- _________ FOOTER SCRIPTS  ________ --> 
 <script src="/bedifferent/theme/assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 

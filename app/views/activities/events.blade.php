@@ -19,11 +19,12 @@
     <!-- :: info :: .header-inner acts like container --> 
     <!-- #### logo font  -->
     <div class="logo-brand logo-font">
-      <a href="{{{ action('HomeController@showHome') }}}">
-      	<!--Need to change this in CSS -->
+      <a href=" Home') }}}">
+        <!--Need to change this in CSS -->
       <span class="logo-brand-inner"><!--Need to change this in CSS -->
-      	<!--Need to change this in CSS -->
-        <span class="logo-b-different-logo">
+        <!--Need to change this in CSS -->
+         <h1>Serve Search</h1>
+        <span class="">
           <!--logo font for demo -->
         </span>
         <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
@@ -69,7 +70,7 @@
           <!-- /END 2nd .header-btn .header-btn-xl in first row -->
         </div>
         <!-- /.header-btn-row-->
- 		<div class="header-btn-row half-row">
+    <div class="header-btn-row half-row">
           <!-- BEGIN 3rd .header-btn .header-btn-lg in second row --> 
           <a href="#" class="anchor header-btn header-btn-xl" data-slide="slide" data-target="#contact-panel"> <i class="fa fa-at header-icon"></i>
           <span class="header-btn-text">
@@ -107,12 +108,12 @@
           <!-- _________ BEGIN NAVIGATION ___________ -->
           <nav id="nav" role="navigation">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
               
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
                       <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
-                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('ActivitiesController@index') }}}">Browse by Event</a></li>
                       <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          
@@ -312,7 +313,20 @@
 </div>
 <!-- END .slide-down-parent --> 
 <!-- ================== END SLIDE OUT PANELS  ================= --> 
-
+<table class="table table-striped table-hover">
+    <tr>
+      <th>Event Name</th>
+      <th>Organization</th>
+      <th>Event Date</th>
+    </tr>
+  @foreach ($activities as $activity)
+    <tr>
+    <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
+    <td>{{ $activity->agency }}</td>
+    <td>{{ $activity->date }}</td>
+    </tr>
+  @endforeach
+</table>
 <!-- _________ FOOTER SCRIPTS  ________ --> 
 <script src="/bedifferent/theme/assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 
 <script src="/bedifferent/theme/assets/js/bootstrap.min.js"></script> <!-- bootstrap's js --> 
