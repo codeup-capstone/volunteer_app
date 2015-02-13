@@ -29,7 +29,6 @@ Route::get('adminEdit', 'HomeController@showOrganizationProfile');
 
 Route::get('createEvent', 'HomeController@showCreate');
 
-
 Route::get('liveEvent', 'HomeController@showLive');
 
 Route::get('organizations', 'HomeController@showlistOrg');
@@ -41,3 +40,6 @@ Route::get('volunteer', 'HomeController@showProfile');
 /*Volunteer profile view below*/
 
 Route::get('volunteerEdit', 'HomeController@showProfileEdit');
+
+Route::post('login', 'HomeController@doLogin');
+Route::get('login', 'HomeController@doLogin');

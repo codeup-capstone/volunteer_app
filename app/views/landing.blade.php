@@ -216,7 +216,7 @@
         <!-- /.col-*-6 -->
         <div class="col-md-6">
           <h4 class="no-margin-top">Sign In</h4>
-          <form role="form" action="your-script.php">
+          <form role="form" action="{{ action('HomeController@doLogin') }}">
             <div class="form-group">
               <input type="email" class="form-control form-control-lg" placeholder="Enter email">
             </div>
