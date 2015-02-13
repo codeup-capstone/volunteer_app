@@ -19,11 +19,12 @@
     <!-- :: info :: .header-inner acts like container --> 
     <!-- #### logo font  -->
     <div class="logo-brand logo-font">
-      <a href="index.html">
+      <a href="{{{ action('HomeController@showHome') }}}">
       	<!--Need to change this in CSS -->
       <span class="logo-brand-inner"><!--Need to change this in CSS -->
       	<!--Need to change this in CSS -->
-        <span class="logo-b-different-logo">
+        <span class="">
+          <h1>Serve Search</h1>
           <!--logo font for demo -->
         </span>
         <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
@@ -41,7 +42,7 @@
           <span class="lines">
           </span>
         </span>
-        <!--/.veggieburger-->
+        
         <span class="menu-toggle-text">
           M<i class="fa fa-bars"></i>NU
         </span>
@@ -108,13 +109,13 @@
           <!-- _________ BEGIN NAVIGATION ___________ -->
           <nav id="nav" role="navigation">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
               
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
-                      <li><a href="tabs.html">Quick Connect</a></li>
-                      <li><a href="left-tabs.html">Browse by Event</a></li>
-                      <li><a href="collapse.html">Browse Non Profits</a></li>
+                      <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
+                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          
               <li><a data-slide="slide" data-target="#contact-panel" href="contact.html">Contact</a></li>
@@ -379,7 +380,7 @@
           <div class="column-inner column-featured">
             <h3 class="h2 column-featured-headline">Quick Connect</h3>
          	
-            <p> <a class="btn btn-featured btn-lg" href="#">See an Event<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showRsvp') }}}">See an Event<i class="fa fa-arrow-right fa-fw"></i></a> </p>
          
             
           </div>
@@ -391,7 +392,7 @@
           <div class="column-inner column-featured">
             <h3 class="h2 column-featured-headline">Events</h3>
          	
-            <p> <a class="btn btn-featured btn-lg" href="#">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showEvents') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
          
             
           </div>
@@ -402,7 +403,7 @@
           <div class="column-inner column-featured">
             <h3 class="h2 column-featured-headline">Non Profits</h3>
          	
-            <p> <a class="btn btn-featured btn-lg" href="#">Browse Non Profits <i class="fa fa-arrow-right fa-fw"></i></a> </p>
+            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits <i class="fa fa-arrow-right fa-fw"></i></a> </p>
          
             
           </div>

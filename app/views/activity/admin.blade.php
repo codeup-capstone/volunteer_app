@@ -19,7 +19,7 @@
     <!-- :: info :: .header-inner acts like container --> 
     <!-- #### logo font  -->
     <div class="logo-brand logo-font">
-      <a href="index.html">
+      <a href="{{{ action('HomeController@showHome') }}}">
       	<!--Need to change this in CSS -->
       <span class="logo-brand-inner"><!--Need to change this in CSS -->
       	<!--Need to change this in CSS -->
@@ -111,9 +111,9 @@
               
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
-                      <li><a href="tabs.html">Quick Connect</a></li>
-                      <li><a href="left-tabs.html">Browse by Event</a></li>
-                      <li><a href="collapse.html">Browse Non Profits</a></li>
+                      <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
+                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          
               <li><a data-slide="slide" data-target="#contact-panel" href="contact.html">Contact</a></li>
