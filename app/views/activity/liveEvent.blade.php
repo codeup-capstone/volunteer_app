@@ -19,11 +19,12 @@
     <!-- :: info :: .header-inner acts like container --> 
     <!-- #### logo font  -->
     <div class="logo-brand logo-font">
-      <a href="index.html">
-      	<!--Need to change this in CSS -->
+      <a href="{{{ action('HomeController@showHome') }}}">
+        <!--Need to change this in CSS -->
       <span class="logo-brand-inner"><!--Need to change this in CSS -->
-      	<!--Need to change this in CSS -->
-        <span class="logo-b-different-logo">
+        <!--Need to change this in CSS -->
+         <h1>Serve Search</h1>
+        <span class="">
           <!--logo font for demo -->
         </span>
         <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
@@ -69,7 +70,7 @@
           <!-- /END 2nd .header-btn .header-btn-xl in first row -->
         </div>
         <!-- /.header-btn-row-->
- 		<div class="header-btn-row half-row">
+    <div class="header-btn-row half-row">
           <!-- BEGIN 3rd .header-btn .header-btn-lg in second row --> 
           <a href="#" class="anchor header-btn header-btn-xl" data-slide="slide" data-target="#contact-panel"> <i class="fa fa-at header-icon"></i>
           <span class="header-btn-text">
@@ -107,13 +108,13 @@
           <!-- _________ BEGIN NAVIGATION ___________ -->
           <nav id="nav" role="navigation">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
               
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
-                      <li><a href="tabs.html">Quick Connect</a></li>
-                      <li><a href="left-tabs.html">Browse by Event</a></li>
-                      <li><a href="collapse.html">Browse Non Profits</a></li>
+                      <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
+                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          
               <li><a data-slide="slide" data-target="#contact-panel" href="contact.html">Contact</a></li>
@@ -324,5 +325,3 @@
 <script src="/bedifferent/theme/assets/js/jquery.main.js"></script> <!-- CORE scripts and initializations --> 
 
 @stop
-
-
