@@ -16,6 +16,8 @@ Route::get('/', function()
 	return View::make('activity.index');
 });
 
+Route::get('index', 'HomeController@showHome');
+
 Route::get('rsvp', 'HomeController@showRsvp');
 
 Route::get('admin', 'HomeController@showAdminPage');

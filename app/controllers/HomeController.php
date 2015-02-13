@@ -31,6 +31,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('activity.events');
 	}
+	public function showHome()
+	{
+		return View::make('activity.index');
+	}
 	public function showLive()
 	{
 		return View::make('activity.liveEvent');
