@@ -62,11 +62,11 @@ class HomeController extends BaseController {
 	}
 	public function showLogin()
 	{
-		return View::make('landing');
+		return View::make('master');
 	}
 	public function showLogout()
 	{
-		return View::make('landing');
+		return View::make('master');
 	}
 
 	public function doLogin()
