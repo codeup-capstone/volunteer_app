@@ -330,15 +330,29 @@
       
         <div class="col-sm-7 col-md-8">
           <div class="featured-carousel single-item-carousel">
-            <div class="slick-slider-item">
-             	<div>
-             		<iframe src="/img/agency/habitat.jpg" width="363px" height="164px"></iframe>
-             		<iframe src="https://mapsengine.google.com/00788290253781242191-09052745394509652502-4/widget/in_iframe" width="363px" height="164px"></iframe>
-             	</div>
+            <div>
+             	<div class="col-sm-5 col-md-8" >
+	             	<div class="row">
+	             		<iframe src="/img/agency/habitat.jpg" width="259px" height="203px"></iframe>
+	             		<div class="col-sm-5 col-md-4 column-inner text-center pull-right">
+	             			<p>DATE</p>
+	             		</div>
+	             		
+	             	</div><!--div for logo -->
+
+	             	<div>
+	             		<iframe src="https://mapsengine.google.com/00788290253781242191-09052745394509652502-4/widget/in_iframe" width="259" height="203px"></iframe>
+	             	</div><!-- map div -->
+	             	<div>
+	             		<p>123 Falcon St<br>San Antonio, TX<br>75344</p><!--table data will go here with some blade sytax -->
+	             	</div>
+	             </div><!--left group of main section -->
             </div>
             <!--/.slick-slider-item-->
           </div>
+	             
         </div>
+
         <!--/.col-x-x-->
         
         <hr class="visible-xs vertical-spacer vertical-spacer-xs">
