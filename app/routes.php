@@ -16,6 +16,9 @@ Route::get('/', function()
 	return View::make('landing');
 });
 
+Route::resource('activities', 'ActivitiesController');
+Route::get('events','ActivitiesController@index');
+
 Route::get('landing', 'HomeController@showHome');
 
 Route::get('rsvp', 'HomeController@showRsvp');
@@ -26,7 +29,6 @@ Route::get('adminEdit', 'HomeController@showOrganizationProfile');
 
 Route::get('createEvent', 'HomeController@showCreate');
 
-Route::get('events','HomeController@showEvents');
 
 Route::get('liveEvent', 'HomeController@showLive');
 

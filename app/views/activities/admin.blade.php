@@ -112,7 +112,7 @@
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
                       <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
-                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('ActivitiesController@index') }}}">Browse by Event</a></li>
                       <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          

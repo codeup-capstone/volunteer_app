@@ -114,7 +114,7 @@
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
                       <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
-                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('ActivitiesController@index') }}}">Browse by Event</a></li>
                       <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          
@@ -392,7 +392,7 @@
           <div class="column-inner column-featured">
             <h3 class="h2 column-featured-headline">Events</h3>
          	
-            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showEvents') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+            <p> <a class="btn btn-featured btn-lg" href="{{{ action('ActivitiesController@index') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
          
             
           </div>
