@@ -3,7 +3,7 @@
 class ActivitiesController extends \BaseController {
 
 	/**
-	 * Display a listing of users
+	 * Display a listing of activities (events).
 	 *
 	 * @return Response
 	 */
@@ -15,7 +15,7 @@ class ActivitiesController extends \BaseController {
 	}
 
 	/**
-	 * Show the form for creating a new user
+	 * Show the form for creating a new activity
 	 *
 	 * @return Response
 	 */
@@ -25,7 +25,7 @@ class ActivitiesController extends \BaseController {
 	}
 
 	/**
-	 * Store a newly created user in storage.
+	 * Store a newly created activity in storage.
 	 *
 	 * @return Response
 	 */
@@ -79,7 +79,7 @@ class ActivitiesController extends \BaseController {
 	{
 		$activity = Activity::findOrFail($id);
 
-		$validator = Validator::make($data = Input::all(), User::$rules);
+		$validator = Validator::make($data = Input::all(), Activity::$rules);
 
 		if ($validator->fails())
 		{
