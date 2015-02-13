@@ -113,7 +113,7 @@
                   <li class="has-children"> <a href="#">Find Events</a>
                     <ul>
                       <li><a href="{{{ action('HomeController@showRsvp') }}}">Quick Connect</a></li>
-                      <li><a href="{{{ action('HomeController@showEvents') }}}">Browse by Event</a></li>
+                      <li><a href="{{{ action('ActivitiesController@index') }}}">Browse by Event</a></li>
                       <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
                     </ul>
                   </li>          
@@ -327,9 +327,6 @@
     </tr>
   @endforeach
 </table>
-<div>
-{{ $posts->links() }}
-</div>
 <!-- _________ FOOTER SCRIPTS  ________ --> 
 <script src="/bedifferent/theme/assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 
 <script src="/bedifferent/theme/assets/js/bootstrap.min.js"></script> <!-- bootstrap's js --> 
