@@ -19,7 +19,7 @@
     <!-- :: info :: .header-inner acts like container --> 
     <!-- #### logo font  -->
     <div class="logo-brand logo-font">
-      <a href="{{{ action('HomeController@showHome') }}}">
+      <a href=" Home') }}}">
         <!--Need to change this in CSS -->
       <span class="logo-brand-inner"><!--Need to change this in CSS -->
         <!--Need to change this in CSS -->
@@ -313,7 +313,23 @@
 </div>
 <!-- END .slide-down-parent --> 
 <!-- ================== END SLIDE OUT PANELS  ================= --> 
-
+<table class="table table-striped table-hover">
+    <tr>
+      <th>Event Name</th>
+      <th>Organization</th>
+      <th>Event Date</th>
+    </tr>
+  @foreach ($activities as $activity)
+    <tr>
+    <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
+    <td>{{ $activity->agency }}</td>
+    <td>{{ $activity->date }}</td>
+    </tr>
+  @endforeach
+</table>
+<div>
+{{ $posts->links() }}
+</div>
 <!-- _________ FOOTER SCRIPTS  ________ --> 
 <script src="/bedifferent/theme/assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 
 <script src="/bedifferent/theme/assets/js/bootstrap.min.js"></script> <!-- bootstrap's js --> 
