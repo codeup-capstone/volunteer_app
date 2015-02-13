@@ -19,7 +19,7 @@
     <!-- :: info :: .header-inner acts like container --> 
     <!-- #### logo font  -->
     <div class="logo-brand logo-font">
-      <a href=" Home') }}}">
+      <a href="{{{ action('HomeController@showHome') }}}">
         <!--Need to change this in CSS -->
       <span class="logo-brand-inner"><!--Need to change this in CSS -->
         <!--Need to change this in CSS -->
