@@ -262,16 +262,8 @@
         <!-- /.col-*-6 -->
         <div class="col-md-6">
           <h4 class="no-margin-top">Sign In</h4>
-          {{ Form::open(array(action('HomeController@doLogin')))}}
-
-            {{ Form::email('email')}}
-            {{ Form::password('password')}}
-
-          {{ Form::submit('Login')}}
-
-
-
-<!--           <form role="form" action="{{{ action('HomeController@doLogin') }}}">
+          <form role="form" method="POST" action="{{{ action('HomeController@doLogin') }}}">
+            {{ Form::token() }}
             <div class="form-group">
               <input type="email" class="form-control form-control-lg" placeholder="Enter email">
             </div>
@@ -286,7 +278,7 @@
             <p class="text-center">
               <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Sign in</button>
             </p>
-          </form> -->
+          </form>
           <p class="text-center clear"><a href="#" data-slide="slide" data-target="#forgot-password-panel" class="link-underline">Forgot your password?</a> <br>
             Don't have an account yet? <a class="link-underline signin-toggle" href="#" data-slide="slide" data-target="#signup-panel">Sign up</a> </p>
         </div>
