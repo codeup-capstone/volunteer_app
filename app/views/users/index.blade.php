@@ -1,1 +1,8 @@
-/vagrant/sites/capstone.dev/app/views/users/index.blade.php
+@extends('layouts.master')
+
+@section('content')
+
+
+
+
+@stop
