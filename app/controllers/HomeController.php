@@ -72,10 +72,12 @@ class HomeController extends BaseController {
 	public function doLogin()
 	{
 		$email = Input::get('email');
-		$password = Input::get('password');
+		$password = Input::get('password');	
 
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
 		    Session::flash('successMessage', "You're logged in!.");
+
+		    
 
 		    return Redirect::intended('/');
 		} else {
