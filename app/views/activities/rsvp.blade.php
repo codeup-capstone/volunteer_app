@@ -50,12 +50,35 @@
 	   	     	<div class="col-md-4 embed-responsive-4by3">
 	             		<img src="/img/agency/habitat.jpg">
 	   	            </div><!--div for logo -->
-	   	     </div>
+	   	        <div class="col-md-8">
+	   	        	  <nav id="nav" role="navigation">
+            <ul>
+              <li class="active has-children"><a href="#">Summary</a>
+              
+                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+                    <ul>
+                      <li>Description</li>
+                      <li>Max Volunteers</li>
+                      <li>Staff</li>
+                      <li>Notes</li>
+                    </ul>
+                  </li>          
+              
+            </ul>
+          </nav>
+	   	       	</div>
+	   	     </div><!-- middle third of  section-->
 	             
           
-          	<div class="col-md-2">
-	             	<div>
+          	<div class="row">
+	             	<div class="col-md-4">
 	             		<p>123 Falcon St<br>San Antonio, TX<br>75344</p><!--table data will go here with some blade sytax -->
+	             	</div>
+	             	<div class="col-md-4">
+	             		<p>email button</p><!--table data will go here with some blade sytax -->
+	             	</div>
+	             	<div class="col-md-4">
+	             		<p>call button</p><!--table data will go here with some blade sytax -->
 	             	</div>
           	</div> <!-- address section-->
 	             
