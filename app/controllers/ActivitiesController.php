@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 class ActivitiesController extends \BaseController {
 
@@ -10,25 +10,28 @@ class ActivitiesController extends \BaseController {
 	public function index()
 	{
 			if (Input::has('search')) {
-			$search = Input::get('search');
-			$query = Activity::with('user');
+				$search = Input::get('search');
+				$query = Activity::with('user');
 
-			$query->where('name', 'like', '%' . $search . '%');
-			$query->orWhere('description', 'like', '%' . $search . '%');
-			$query->orWhere('event_date', 'like', '%' . $search . '%');
-			$query->orderBy('event_date', 'desc');
-			$activities = $query->paginate(4);
+				$query->where('name', 'like', '%' . $search . '%');
+				$query->orWhere('description', 'like', '%' . $search . '%');
+				$query->orWhere('event_date', 'like', '%' . $search . '%');
+				$query->orderBy('event_date', 'desc');
+				$activities = $query->paginate(4);
 
-			return View::make('activities.index')->with('activities', $activities);
-		} else {
+				return View::make('activities.index')->with('activities', $activities);
+			} 
 
-			$activities = Activity::all();
+			else {
+
+			$activities = Activity::with('agency')->paginate(10);
 
 			return View::make('activities.events', compact('activities'));
 
 			// $activities = Activity::with('user')->orderBy('event_date', 'desc')->paginate(4);
 			// return View::make('activities.index')->with('activities', $activities);
-		}
+
+			}
 	}
 
 	/**
