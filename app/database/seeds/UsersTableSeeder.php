@@ -10,7 +10,7 @@ class UsersTableSeeder extends Seeder {
 
 		$user = new User();
 		$user->email = 'wendey.loenard@sanantonio.gov';
-		$user->password = Hash::make('codeup');
+		$user->password = 'codeup';
 		$user->first_name = 'Wendey';
 		$user->last_name = 'Leonard';
 		$user->phone = '2102073292';
@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder {
 
 		$user = new User();
 		$user->email = 'pworthen@safoodbank.org';
-		$user->password = Hash::make('codeup');
+		$user->password = 'codeup';
 		$user->first_name = 'Pete';
 		$user->last_name = 'Worthen';
 		$user->phone = '2104318321';
@@ -32,7 +32,7 @@ class UsersTableSeeder extends Seeder {
 
 		$user = new User();
 		$user->email = 'aetorija@texasdiaperbank.org';
-		$user->password = Hash::make('codeup');
+		$user->password = 'codeup';
 		$user->first_name = 'Angelica';
 		$user->last_name = 'Torija';
 		$user->phone = '2107318118';
@@ -43,7 +43,7 @@ class UsersTableSeeder extends Seeder {
 	
 		$user = new User();
 		$user->email = 'sbrooks@adltexas.org';
-		$user->password = Hash::make('codeup');
+		$user->password = 'codeup';
 		$user->first_name = 'Sabine';
 		$user->last_name = 'Brooks';
 		$user->phone = '2106551481';
@@ -54,7 +54,7 @@ class UsersTableSeeder extends Seeder {
 
 		$user = new User();
 		$user->email = 'adeluna@redcross.org';
-		$user->password = Hash::make('');
+		$user->password = '';
 		$user->first_name = 'Angie';
 		$user->last_name = 'De Luna';
 		$user->phone = '2102245151';
@@ -65,7 +65,7 @@ class UsersTableSeeder extends Seeder {
 
 		$user = new User();
 		$user->email = 'orientation@SAhumane.org';
-		$user->password = Hash::make('codeup');
+		$user->password = 'codeup';
 		$user->first_name = 'Cathy';
 		$user->last_name = 'Rea';
 		$user->phone = '2102267461';
@@ -76,7 +76,7 @@ class UsersTableSeeder extends Seeder {
 
 		$user = new User();
 		$user->email = 'sarah@habitatsa.org';
-		$user->password = Hash::make('codeup');
+		$user->password = 'codeup';
 		$user->first_name = 'Sarah';
 		$user->last_name = 'Arrendondo';
 		$user->phone = '2102235203';

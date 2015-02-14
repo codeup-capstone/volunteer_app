@@ -13,6 +13,11 @@
 
 Route::get('/', function()
 {
+
+	// if (Auth::check()) {
+	// 	dd(Auth::id());
+	// }
+
 	return View::make('landing');
 });
 
@@ -50,5 +55,6 @@ Route::get('volunteer', 'HomeController@showProfile');
 
 Route::get('volunteerEdit', 'HomeController@showProfileEdit');
 
-Route::post('login', 'HomeController@doLogin');
 Route::get('login', 'HomeController@doLogin');
+Route::post('login', 'HomeController@doLogin');
+Route::post('landing', 'HomeController@doLogin');
