@@ -31,6 +31,7 @@ Route::resource('activities', 'ActivitiesController');
 Route::get('events','ActivitiesController@index');
 
 Route::get('landing', 'HomeController@showHome');
+Route::post('landing', 'HomeController@doLogin');
 
 Route::get('rsvp', 'HomeController@showRsvp');
 
@@ -54,4 +55,3 @@ Route::get('volunteerEdit', 'HomeController@showProfileEdit');
 
 Route::get('login', 'HomeController@doLogin');
 Route::post('login', 'HomeController@doLogin');
-Route::post('landing', 'HomeController@doLogin');
