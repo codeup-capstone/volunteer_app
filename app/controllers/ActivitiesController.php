@@ -24,7 +24,7 @@ class ActivitiesController extends \BaseController {
 
 			else {
 
-			$activities = Activity::with('agencies')->paginate(10);
+			$activities = Activity::with('agency')->paginate(10);
 			// $activities = Activity::all();
 
 			return View::make('activities.events', compact('activities'));

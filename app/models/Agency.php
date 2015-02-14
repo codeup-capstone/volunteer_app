@@ -32,7 +32,7 @@ class Agency extends BaseModel {
 	{
 	    return $this->hasMany('Location');
 	}
-	public function categories()
+	public function category()
 	{
 	    return $this->belongsTo('Category');
 	}
