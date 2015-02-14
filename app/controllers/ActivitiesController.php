@@ -9,7 +9,6 @@ class ActivitiesController extends \BaseController {
 	 */
 	public function index()
 	{
-
 			if (Input::has('search')) {
 				$search = Input::get('search');
 				$query = Activity::with('user');
