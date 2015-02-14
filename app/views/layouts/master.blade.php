@@ -45,8 +45,7 @@
 				<div class="alert alert-danger">{{{ Session::get('errorMessage')}}}</div>
 
 			@endif
-		<!--	@yield('posts') -->
-			@yield('content')
+		
 			<!-- +++++ No Script Fallback notice +++++ -->
 <noscript>
 <div>
@@ -360,6 +359,8 @@
 </div>
 <!-- END .slide-down-parent --> 
 <!-- ================== END SLIDE OUT PANELS  ================= --> 
+<!--	@yield('posts') -->
+			@yield('content')
 <!-- _________ GO TO TOP ___________ --> 
 <a id="go-to-top" href="#top" title="up"> <i class="ti ti-arrow-up"></i> </a> 
 
