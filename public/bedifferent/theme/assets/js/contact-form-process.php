@@ -1,9 +1,9 @@
 <?php
-    $to = "christinabeymer@gmail.com"; // put your email address here
+    $to = "david.runnels@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "From: $from";
-    $subject = "$contactsubject from: $name @ $from"; // subject and the name and email of the person
+    $subject = "$contactsubject from: $name @ $from";
 
     $fields = array();
     $fields{"name"} = "Name";
