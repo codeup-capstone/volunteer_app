@@ -9,7 +9,10 @@ class ActivitiesController extends \BaseController {
 	 */
 	public function index()
 	{
-		$activities = Activity::all();
+		$activities = Activity::with('agency')->paginate(10);
+
+		// dd($activities);
+		// $activities = Activity::all();
 
 		return View::make('activities.events', compact('activities'));
 	}
