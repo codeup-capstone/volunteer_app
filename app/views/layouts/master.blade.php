@@ -184,10 +184,11 @@
     </a>
     <div class="container">
       <h3 class="slide-panel-title">Search</h3>
-      <form role="form">
+      <form role="form" action="{{{ action('ActivitiesController@index') }}}" method="GET" >   
         <div class="form-group">
           <input type="search" placeholder="Enter search term and press enter" class="form-control">
         </div>
+        <!-- <button type="submit" class="pull-right btn btn-default">Submit</button> -->
         <!--/.form-group -->
       </form>
     </div>
@@ -315,7 +316,7 @@
         <!-- /.col-*-6 -->
         <div class="col-md-6">
           <h4 class="no-margin-top">Sign Up</h4>
-          <form role="form" action="your-script.php">
+          <form role="form" action="{{{ action('UsersController@create') }}}">
             <div class="form-group">
               <input type="email" class="form-control form-control-lg" placeholder="Enter email">
             </div>
