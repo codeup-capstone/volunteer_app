@@ -64,7 +64,7 @@
                     </ul>
                   </li>          
               
-            </ul>
+            </ul> <!-- summary of event -->
           </nav>
 	   	       	</div>
 	   	     </div><!-- middle third of  section-->
