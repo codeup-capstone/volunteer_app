@@ -11,7 +11,7 @@
   @foreach ($activities as $activity)
     <tr>
     <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
-    <td>{{ $activity->agency }}</td>
+    <td>{{ $activity->agency_id }}</td>
     <td>{{ $activity->event_date }}</td>
     </tr>
   @endforeach

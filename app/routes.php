@@ -16,6 +16,12 @@ Route::get('/', function()
 	return View::make('landing');
 });
 
+Route::resource('agencies', 'AgenciesController');
+
+Route::resource('locations', 'LocationsController');
+
+Route::resource('users', 'UsersController');
+
 Route::resource('activities', 'ActivitiesController');
 Route::get('events','ActivitiesController@index');
 
