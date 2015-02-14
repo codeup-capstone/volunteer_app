@@ -22,7 +22,7 @@ class ActivitiesController extends \BaseController {
 			return View::make('activities.index')->with('activities', $activities);
 		} else {
 
-			$activities = Activity::all();
+			$activities = Activity::with('agency')->paginate(10);
 
 			return View::make('activities.events', compact('activities'));
 
