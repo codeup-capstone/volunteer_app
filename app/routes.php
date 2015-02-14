@@ -23,7 +23,10 @@ Route::resource('locations', 'LocationsController');
 Route::resource('users', 'UsersController');
 
 Route::resource('activities', 'ActivitiesController');
-Route::get('events','ActivitiesController@index');
+
+Route::resource('events', 'ActivitiesController');
+
+// Route::get('events','ActivitiesController@index');
 
 Route::get('landing', 'HomeController@showHome');
 

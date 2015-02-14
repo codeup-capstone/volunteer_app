@@ -28,11 +28,11 @@ class Activity extends BaseModel {
 	{
 	    return $this->belongsToMany('Tag');
 	}
-	public function locations()
+	public function location()
 	{
 	    return $this->belongsTo('Location');
 	}
-	public function agencies()
+	public function agency()
 	{
 	    return $this->belongsTo('Agency');
 	}
