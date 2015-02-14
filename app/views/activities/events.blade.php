@@ -14,7 +14,7 @@
     <tr>
     <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
     <td>
-      {{ $activity->agency_id }}
+      {{ $activity->agency->name }}
     </td>
     <td>{{ $activity->event_date }}</td>
     <td>{{ $activity->start_time }}</td>

@@ -24,7 +24,7 @@ class Location extends BaseModel {
 	{
 	    return $this->hasMany('Activity');
 	}
-	public function agencies()
+	public function agency()
 	{
 	    return $this->belongsTo('Agency');
 	}
