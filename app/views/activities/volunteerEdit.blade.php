@@ -171,9 +171,7 @@
 	      </div><!-- row that contains rsvp and all data -->
 	          
 	    
-	      <!-- VERTICAL SPACING -->
-	      <hr class="vertical-spacer vertical-spacer-lg"> 
-	    <!-- / .container -->
+	   
    			</div> 
   		</div>
   <!-- /.page-content role=main --> 
