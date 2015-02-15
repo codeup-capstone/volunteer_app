@@ -23,13 +23,14 @@
 		     		<div class="col-md-3">
 				        
 			             	<div class="equal-height-title column-inner text-center">
-			             		<h3>CREATE</h3>
+			             		<h3>CREATE event Button</h3>
 			             	</div><!-- CREATE EVENT-->
 	         		</div><!-- CREATE EVENT -->
 			             	
 				         	
 			        <div class="col-md-3 equal-height-title column-inner text-center">
 			             	<h3>VOLUNTEERS</h3>
+			             	<p>see past volunteers</p>
 			        </div><!-- VOLUNTEERS-->	
 	         		
 				     
