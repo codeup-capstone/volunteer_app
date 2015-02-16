@@ -25,8 +25,7 @@
          
           <!--/.col-x-x-->
           
-          <hr class="visible-xs vertical-spacer vertical-spacer-xs">
-          <!-- add some vertical spacing when stacked -->
+          
           
           <div class="col-xs-12 col-sm-12 col-md-4">
             <div class="column-inner column-featured">
@@ -66,8 +65,7 @@
         </div>
         <!--/.row sixteen-gutter-->     
    </div>
-      <!-- VERTICAL SPACING -->
-      <hr class="vertical-spacer vertical-spacer-lg">
+      
      
      </div> <!--wrapper -->
       

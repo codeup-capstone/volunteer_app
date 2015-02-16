@@ -3,16 +3,9 @@ body {
 	padding-right: 0px;
 	padding-left: 0px;
 	overflow-x: hidden;
+  max-height: 100%;
 }
-img {
-	position: relative;
-    background-image: url("bedifferent/theme/assets/images/bird_hand.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
+
 
 
 .dropmenuItems {
@@ -39,12 +32,3 @@ img {
 }
 
 
-#text {
-    z-index:100;
-    position:absolute;    
-    color:white;
-    /*font-size:16px;*/
-    font-weight:bold;
-    left:150px;
-    top:350px;
-}
