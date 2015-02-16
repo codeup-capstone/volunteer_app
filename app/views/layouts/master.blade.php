@@ -41,6 +41,9 @@
 		
 		<!-- WINDOWS 8 Phones BUG FIX -->
 		<script src="/bedifferent/theme/assets/js/windows-fix.js"></script>
+
+    
+
 	</head>
 	
 	<body>
@@ -380,6 +383,6 @@
 <script src="/bedifferent/theme/assets/js/jquery.isotope.masonry.js"></script> <!-- Isotope w/Masonry also contains the initializations --> 
 
 <script src="/bedifferent/theme/assets/js/jquery.main.js"></script> <!-- CORE scripts and initializations --> 
-
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 	</body>
 </html>
