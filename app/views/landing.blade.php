@@ -11,40 +11,7 @@
       <!-- .container for entire page --> 
       
       <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
-      <div class="hidden-xs row no-gutter big-text-banner-wrapper">
-        <div class="col-lg-3">
-          <h3 class="big-text-banner">
-            <span class="hidden-lg">
-              Serve &middot; Search
-            </span>
-            <span class="visible-lg">
-              Different
-            </span>
-            <span class="visible-lg">
-              Interesting
-            </span>
-            <span>
-              Quickest Way to
-              <span class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block">
-                &middot; Volunteer
-              </span>
-            </span>
-            <span class="visible-lg">
-              one &middot; click
-            </span>
-            <span class="visible-lg">
-              Many Events
-            </span>
-          </h3>
-        </div>
-        <div class="col-lg-9 visible-lg">
-          <h3 class="big-text-banner big-text-main-headline">
-            <span>
-              Serve Search
-            </span>
-          </h3>
-        </div>
-      </div>
+      
       <!-- .row .sixteen-gutter --> 
       
       <!-- _________ SLICK SLIDER SINGLE CAROUSEL AND COLUMN EQUAL HEIGHT ___________ -->
