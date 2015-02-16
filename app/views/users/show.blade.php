@@ -14,9 +14,9 @@
 			<p><h3>{{{ $user->body }}}</h3></p>
 			@if (Auth::check())
 		
-			<a href="{{{ action('PostsController@edit', $post->id) }}}"><button class='btn btn-info' id='edit-button'>Edit Post</button></a>
+			<a href="{{{ action('UsersController@edit', $user->id) }}}"><button class='btn btn-info' id='edit-button'>Edit Post</button></a>
 
-			{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete')) }}
+			{{ Form::open(array('action' => array('UsersController@destroy', $user->id), 'method' => 'delete')) }}
 				{{ Form::submit('Delete Post', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
 			{{ Form::close() }}
 
