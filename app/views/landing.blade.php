@@ -6,12 +6,12 @@
 <div id="page">
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
   <div class="page-content" role="main">
-    <div class="container">
+    <div class="row no-gutters">
       
       <!-- .container for entire page --> 
       
       <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
-      <div class="row sixteen-gutter big-text-banner-wrapper">
+      <div class="hidden-xs row no-gutter big-text-banner-wrapper">
         <div class="col-lg-3">
           <h3 class="big-text-banner">
             <span class="hidden-lg">
@@ -48,60 +48,62 @@
       <!-- .row .sixteen-gutter --> 
       
       <!-- _________ SLICK SLIDER SINGLE CAROUSEL AND COLUMN EQUAL HEIGHT ___________ -->
-      <div class="row sixteen-gutter">
-      
-        <div class="col-sm-7 col-md-8">
-          <div class="featured-carousel single-item-carousel slick-dots-left fade-hover-img loading-slick">
-            <div class="slick-slider-item">
-              <figure> <a href="blog-summary-masonry-layout.html"><img src="/bedifferent/theme/assets/images/purple_finger.jpg" alt=""></a>
-              </figure>
+      <div class="col-xs-12 col-md-12 container-fluid">
+    
+        <div class="row no-gutters">
+        
+          <div class=" col-xs-12 col-sm-12 col-md-8">
+            <div class="featured-carousel single-item-carousel slick-dots-left fade-hover-img loading-slick">
+              <div class="slick-slider-item">
+                <figure> <a href="blog-summary-masonry-layout.html"><img src="/bedifferent/theme/assets/images/purple_finger.jpg" alt=""></a>
+                </figure>
+              </div>
+              <!--/.slick-slider-item-->
             </div>
-            <!--/.slick-slider-item-->
           </div>
-        </div>
-        <!--/.col-x-x-->
-        
-        <hr class="visible-xs vertical-spacer vertical-spacer-xs">
-        <!-- add some vertical spacing when stacked -->
-        
-        <div class="col-sm-5 col-md-4">
-          <div class="column-inner column-featured">
-            <h3 class="h2 column-featured-headline">Quick Connect</h3>
-         	
-            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showRsvp') }}}">See an Event<i class="fa fa-arrow-right fa-fw"></i></a> </p>
-         
-            
+          <!--/.col-x-x-->
+          
+          <hr class="visible-xs vertical-spacer vertical-spacer-xs">
+          <!-- add some vertical spacing when stacked -->
+          
+          <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="column-inner column-featured">
+              <h3 class="h2 column-featured-headline">Quick Connect</h3>
+           	
+              <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showRsvp') }}}">See an Event<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+           
+              
+            </div>
+            <!--/.column-inner .column-featured-->
           </div>
-          <!--/.column-inner .column-featured-->
-        </div>
-        <!--/.col-x-x--> 
+          <!--/.col-x-x--> 
 
-           <div class="col-sm-5 col-md-4">
-          <div class="column-inner column-featured">
-            <h3 class="h2 column-featured-headline">Events</h3>
-         	
-            <p> <a class="btn btn-featured btn-lg" href="{{{ action('ActivitiesController@index') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
-         
-            
+             <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="column-inner column-featured">
+              <h3 class="h2 column-featured-headline">Events</h3>
+           	
+              <p> <a class="btn btn-featured btn-lg" href="{{{ action('ActivitiesController@index') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+           
+              
+            </div>
+            <!--/.column-inner .column-featured-->
           </div>
-          <!--/.column-inner .column-featured-->
-        </div>
-        <!--/.col-x-x--> 
-           <div class="col-sm-5 col-md-4">
-          <div class="column-inner column-featured">
-            <h3 class="h2 column-featured-headline">Non Profits</h3>
-         	
-            <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits <i class="fa fa-arrow-right fa-fw"></i></a> </p>
-         
-            
+          <!--/.col-x-x--> 
+             <div class=" col-xs-12 col-sm-12 col-md-4">
+            <div class="column-inner column-featured">
+              <h3 class="h2 column-featured-headline">Non Profits</h3>
+           	
+              <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits <i class="fa fa-arrow-right fa-fw"></i></a> </p>
+           
+              
+            </div>
+            <!--/.column-inner .column-featured-->
           </div>
-          <!--/.column-inner .column-featured-->
-        </div>
-        <!--/.col-x-x--> 
+          <!--/.col-x-x--> 
 
-      </div>
-      <!--/.row sixteen-gutter-->     
-   
+        </div>
+        <!--/.row sixteen-gutter-->     
+   </div>
       <!-- VERTICAL SPACING -->
       <hr class="vertical-spacer vertical-spacer-lg">
      

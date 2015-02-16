@@ -20,14 +20,14 @@
 	      
 	       <div class="col-md-12 ">       
 	       	<div class="row"> <!-- live view title -->           	
-		     		<div class="col-md-9">
+		     		<div class="col-md-9 no-gutters">
 				        
 			             	<div class="equal-height-title column-inner text-center">
 			             		<h3>Live View</h3>
 			             	</div><!--live view -->
 			         </div>
 			             	
-	   			   <div class="col-md-3 embed-responsive-4by3">
+	   			   <div class="hidden-xs col-md-3 embed-responsive-4by3">
 	   	             		<img src="/img/agency/habitat.jpg">
 	   	             		<p>Welcome Habitat Admin</p>
 	   	   	       </div><!--div for profile picture -->
@@ -38,10 +38,10 @@
 		   	<div class="row"><!-- row for container people and notes-->
 		   		<div class="col-md-8"><!-- section for checking in people -->
 		   			<div class="row"><!-- row for a person -->
-		   				<div class="col-md-2 embed-responsive-4by3"><!--div for profile picture -->
+		   				<div class="col-xs-3 col-md-2 embed-responsive-4by3"><!--div for profile picture -->
 	   	             		<img src="/bedifferent/theme/assets/images/people/kathy.jpg">
 	   	   	       		</div><!--div for profile picture -->
-	   	   	       		<div class="col-md-10"><!--div for drop down profile information -->
+	   	   	       		<div class="col-xs-9 col-md-10"><!--div for drop down profile information -->
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Profile</a>
@@ -61,10 +61,10 @@
 
 		   			</div>
 		   			<div class="row"><!-- row for a person -->
-		   				<div class="col-md-2 embed-responsive-4by3"><!--div for profile picture -->
+		   				<div class="col-xs-3 col-md-2 embed-responsive-4by3"><!--div for profile picture -->
 	   	             		<img src="/bedifferent/theme/assets/images/people/7.jpg">
 	   	   	       		</div><!--div for profile picture -->
-	   	   	       		<div class="col-md-10"><!--div for drop down profile information -->
+	   	   	       		<div class="col-xs-9 col-md-10"><!--div for drop down profile information -->
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Profile</a>
@@ -84,10 +84,10 @@
 
 		   			</div>
 		   			<div class="row"><!-- row for a person -->
-		   				<div class="col-md-2 embed-responsive-4by3"><!--div for profile picture -->
+		   				<div class="col-xs-3 col-md-2 embed-responsive-4by3"><!--div for profile picture -->
 	   	             		<img src="/bedifferent/theme/assets/images/people/dave.jpg">
 	   	   	       		</div><!--div for profile picture -->
-	   	   	       		<div class="col-md-10"><!--div for drop down profile information -->
+	   	   	       		<div class="col-xs-9 col-md-10"><!--div for drop down profile information -->
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Profile</a>
@@ -107,10 +107,10 @@
 
 		   			</div>
 		   			<div class="row"><!-- row for a person -->
-		   				<div class="col-md-2 embed-responsive-4by3"><!--div for profile picture -->
+		   				<div class="col-xs-3 col-md-2 embed-responsive-4by3"><!--div for profile picture -->
 	   	             		<img src="/bedifferent/theme/assets/images/people/nickie.jpg">
 	   	   	       		</div><!--div for profile picture -->
-	   	   	       		<div class="col-md-10"><!--div for drop down profile information -->
+	   	   	       		<div class="col-xs-9 col-md-10"><!--div for drop down profile information -->
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Profile</a>
@@ -130,10 +130,10 @@
 
 		   			</div>
 		   			<div class="row"><!-- row for a person -->
-		   				<div class="col-md-2 embed-responsive-4by3"><!--div for profile picture -->
+		   				<div class="col-xs-3 col-md-2 embed-responsive-4by3"><!--div for profile picture -->
 	   	             		<img src="/bedifferent/theme/assets/images/people/scott.jpg">
 	   	   	       		</div><!--div for profile picture -->
-	   	   	       		<div class="col-md-10"><!--div for drop down profile information -->
+	   	   	       		<div class="col-xs-9 col-md-10"><!--div for drop down profile information -->
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Profile</a>
@@ -153,10 +153,10 @@
 
 		   			</div>
 		   			<div class="row"><!-- row for a person -->
-		   				<div class="col-md-2 embed-responsive-4by3"><!--div for profile picture -->
+		   				<div class="col-xs-3 col-md-2 embed-responsive-4by3"><!--div for profile picture -->
 	   	             		<img src="/bedifferent/theme/assets/images/people/jake.jpg">
 	   	   	       		</div><!--div for profile picture -->
-	   	   	       		<div class="col-md-10"><!--div for drop down profile information -->
+	   	   	       		<div class="col-xs-9 col-md-10"><!--div for drop down profile information -->
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Profile</a>
@@ -176,10 +176,10 @@
 
 		   			</div>
 		   			<div class="row"><!-- row for a person -->
-		   				<div class="col-md-2 embed-responsive-4by3"><!--div for profile picture -->
+		   				<div class="col-xs-3 col-md-2 embed-responsive-4by3"><!--div for profile picture -->
 	   	             		<img src="/bedifferent/theme/assets/images/people/jackie.jpg">
 	   	   	       		</div><!--div for profile picture -->
-	   	   	       		<div class="col-md-10"><!--div for drop down profile information -->
+	   	   	       		<div class="col-xs-9 col-md-10"><!--div for drop down profile information -->
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Profile</a>
@@ -200,7 +200,7 @@
 		   			</div>
 
 		   		</div>
-		   		<div class="col-md-4"><!-- container for notes side of this div -->
+		   		<div class="hidden-xs col-md-4"><!-- container for notes side of this div -->
 		   			<div class="col-md-12"><!-- notes section -->
 		   				<textarea rows="10" cols="40">
 

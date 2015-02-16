@@ -7,7 +7,7 @@
 <div id="page">
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
   <div class="page-content" role="main">
-    <div class="container">
+    <div class="container no-gutters">
       
       <!-- .container for entire page --> 
       
@@ -19,22 +19,12 @@
 	      <!-- <div class="row sixteen-gutter"> -->
 	      
 	       <div class="col-md-12 ">       
-	       	<div class="row"> <!-- profile info bar -->           	
-		     		<div class="col-md-3">
-				        
-			             	<div class="equal-height-title column-inner text-center">
-			             		<h3>CREATE event Button</h3>
-			             	</div><!-- CREATE EVENT-->
-	         		</div><!-- CREATE EVENT -->
-			             	
-				         	
-			        <div class="col-md-3 equal-height-title column-inner text-center">
-			             	<h3>VOLUNTEERS</h3>
-			             	<p>see past volunteers</p>
-			        </div><!-- VOLUNTEERS-->	
-	         		
-				     
-			        <div class="col-md-3">
+	       	<div class="row no-gutters "> <!-- profile info bar -->           	
+ 				   	<div class="col-xs-12 col-md-3 embed-responsive-4by3">
+ 		             		<img src="/img/agency/habitat.jpg">
+ 		             		<p>Welcome Habitat Admin</p>
+ 		   	       	</div><!--div for profile picture -->
+			        <div class="col-xs-12 col-md-3 ">
 		   	        	<nav id="nav" role="navigation">
 				            <ul>
 				              <li class="active has-children"><a href="#">Edit Profile</a>
@@ -51,12 +41,16 @@
 				            </ul> <!-- summary of USER PROFILE -->
 			          	</nav>
 				   	</div>
-	   			   
-	   			   <div class="col-md-3 embed-responsive-4by3">
-	   	             		<img src="/img/agency/habitat.jpg">
-	   	             		<p>Welcome Habitat Admin</p>
-	   	   	       </div><!--div for profile picture -->
-	   	   	    
+			        <div class="hidden-xs col-md-3 equal-height-title column-inner text-center ">
+			             	<h3>VOLUNTEERS</h3>
+			             	<p>see past volunteers</p>
+			        </div><!-- VOLUNTEERS-->	
+		     		<div class="col-xs-12 col-md-3">
+				        <div class="equal-height-title column-inner text-center ">
+		             		<h3>CREATE event Button</h3>
+		             	</div><!-- CREATE EVENT-->
+	         		</div><!-- CREATE EVENT -->
+
 			</div><!--ADMIN INFO BAR -->
 		   </div><!-- first div col-md-12 -->
 		   

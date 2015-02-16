@@ -23,6 +23,9 @@
 		
 		<!-- SCRIPTS IN HEAD ============================================== -->
 		<script src="/bedifferent/theme/assets/js/modernizr.2.8.3.js"></script>
+
+    <!--Custom stylesheet =================================================== -->
+    <link rel="stylesheet" type="text/css" href="/stylesheet/customstyle.css">
 		
 		<!--[if lt IE 9]>
 		 <script src="assets/js/respond.min.js"></script>
@@ -94,7 +97,7 @@
       </div>
       </a> 
       <!-- /.menu-toggle-->
-      <div class="header-btn-wrapper clearfix">
+      <div class="hidden-xs header-btn-wrapper clearfix">
         <!-- .header-btn-row-->
         <div class="header-btn-row half-row">
           <!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
