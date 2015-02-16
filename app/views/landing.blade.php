@@ -70,57 +70,46 @@
       <hr class="vertical-spacer vertical-spacer-lg">
      
      </div> <!--wrapper -->
-        <div class="hidden-xs hidden-sm">
+        <div class="hidden-xs hidden-sm"> <!-- hidden on small screens -->
 
            <div class="col-xs-12 col-md-12 container-fluid">
        
            <div class="row no-gutters" >
-           
-            
-             <!--/.col-x-x-->
-             
+         
              <hr class="visible-xs vertical-spacer vertical-spacer-xs">
              <!-- add some vertical spacing when stacked -->
              
-             <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
-               <div class="column-inner column-featured">
-                 <h3 class="h2 column-featured-headline">Quick Connect</h3>
-                
-                 <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showRsvp') }}}">See an Event<i class="fa fa-arrow-right fa-fw"></i></a> </p>
-              
-                 
-               </div>
-               <!--/.column-inner .column-featured-->
-             </div>
-             <!--/.col-x-x--> 
+                 <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
+                   <div class="column-inner column-featured transparent">
+                     <h3 class="h2 column-featured-headline">Quick Connect</h3>
+                      <p> <a class="btn btn-featured btn-lg transparent " href="{{{ action('HomeController@showRsvp') }}}">Fastest Way to Help<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+                   </div>
+                   <!--/.column-inner .column-featured-->
+                 </div>
+                 <!--/.col-x-x--> 
 
-                <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
-               <div class="column-inner column-featured">
-                 <h3 class="h2 column-featured-headline">Events</h3>
-                
-                 <p> <a class="btn btn-featured btn-lg" href="{{{ action('ActivitiesController@index') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
-              
-                 
-               </div>
-               <!--/.column-inner .column-featured-->
-             </div>
-             <!--/.col-x-x--> 
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
+                   <div class="column-inner column-featured transparent">
+                     <h3 class="h2 column-featured-headline">Events</h3>
+                    
+                     <p> <a class="btn btn-featured btn-lg transparent" href="{{{ action('ActivitiesController@index') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+                   </div>
+                   <!--/.column-inner .column-featured-->
+                  </div>
+                 <!--/.col-x-x--> 
                 <div class=" col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
-               <div class="column-inner column-featured">
-                 <h3 class="h2 column-featured-headline">Non Profits</h3>
-                
-                 <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits <i class="fa fa-arrow-right fa-fw"></i></a> </p>
-              
-                 
-               </div>
-               <!--/.column-inner .column-featured-->
-             </div>
+                   <div class="column-inner column-featured transparent">
+                     <h3 class="h2 column-featured-headline">Non Profits</h3>
+                        <p> <a class="btn btn-featured btn-lg transparent" href="{{{ action('HomeController@showlistOrg') }}}">Browse Groups <i class="fa fa-arrow-right fa-fw"></i></a> </p>
+                   </div>
+                   <!--/.column-inner .column-featured-->
+                </div>
              <!--/.col-x-x--> 
 
            </div>
-           <!--/.row sixteen-gutter-->     
-      </div>
-     </div><!-- hidden -->   
+           <!--no sixteen-gutter-->     
+      </div><!-- container fluid -->
+     </div><!-- hidden on small screens-->   
 
     </div>
     <!-- / .container -->
