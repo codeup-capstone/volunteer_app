@@ -3,7 +3,10 @@ body {
 	padding-right: 0px;
 	padding-left: 0px;
 	overflow-x: hidden;
+  max-height: 100%;
+
 }
+
 
 
 .dropmenuItems {
@@ -12,6 +15,9 @@ body {
 .no-gutters {
 	padding-right: 0;
   	padding-left: 0;
+}
+.no-page-gutters {
+	padding: 0px;
 }
 .row.no-gutters {
   margin-right: 0;
@@ -22,4 +28,22 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
+.wrapper {
+	width: 100%;
+}
 
+
+/*hides the background image on anything smaller than the a destop screen*/
+@media screen and (min-width: 992px){
+
+    .landingBackground {
+      height: 70%;
+      background: url('/bedifferent/theme/assets/images/bird_hand.jpeg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color:#fff;
+      background-color:#333;
+    }
+}
