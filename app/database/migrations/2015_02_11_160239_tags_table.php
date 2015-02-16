@@ -16,6 +16,7 @@ class TagsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('tag', 100);
+			$table->timestamps();
 		});
 	}
 

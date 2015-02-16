@@ -16,6 +16,7 @@ class CreateSkillsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('skill', 100);
+			$table->timestamps();
 		});
 	}
 

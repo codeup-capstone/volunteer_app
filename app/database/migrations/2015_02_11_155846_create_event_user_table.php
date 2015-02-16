@@ -16,7 +16,6 @@ class CreateEventUserTable extends Migration {
 		{
 			$table->integer('user_id')->unsigned();
 			$table->integer('event_id')->unsigned();
-			$table->timestamp('join_date');
 			$table->tinyInteger('rsvp');
 			$table->tinyInteger('approved');
 			$table->tinyInteger('cancelled');

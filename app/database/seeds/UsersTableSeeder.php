@@ -85,6 +85,28 @@ class UsersTableSeeder extends Seeder {
 		$user->zip = '78204';
 		$user->save();
 
+		$user = new User();
+		$user->email = 'johnsmith@gmail.com';
+		$user->password = 'codeup';
+		$user->first_name = 'John';
+		$user->last_name = 'Smith';
+		$user->phone = '2105551212';
+		$user->city = 'San Antonio';
+		$user->state = 'TX';
+		$user->zip = '78201';
+		$user->save();
+
+		$user = new User();
+		$user->email = 'janedoe@gmail.com';
+		$user->password = 'codeup';
+		$user->first_name = 'Jane';
+		$user->last_name = 'Doe';
+		$user->phone = '2105551212';
+		$user->city = 'San Antonio';
+		$user->state = 'TX';
+		$user->zip = '78201';
+		$user->save();
+
 		$faker = Faker::create();
 
 		for ($i=0; $i < 100; $i++) {

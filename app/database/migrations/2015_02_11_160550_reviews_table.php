@@ -19,8 +19,8 @@ class ReviewsTable extends Migration {
 			$table->integer('review_on_type');
 			$table->string('headline', 100);
 			$table->text('review');
-			$table->date('review_date');
 			$table->tinyInteger('rating');
+			$table->timestamps();
 		});
 	}
 
