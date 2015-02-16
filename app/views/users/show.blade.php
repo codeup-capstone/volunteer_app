@@ -10,8 +10,8 @@
 				profile updated [{{{ $user->updated_at->diffForHumans() }}}]&nbsp
 				joined [{{{ $user->created_at->diffForHumans() }}}]</p>
 			</div>
-				<h5>posted by: {{{ $post->user->email }}}</h5>
-			<p><h3>{{{ $post->body }}}</h3></p>
+				<h5>posted by: {{{ $user->email }}}</h5>
+			<p><h3>{{{ $user->body }}}</h3></p>
 			@if (Auth::check())
 		
 			<a href="{{{ action('PostsController@edit', $post->id) }}}"><button class='btn btn-info' id='edit-button'>Edit Post</button></a>
