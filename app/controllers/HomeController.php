@@ -75,14 +75,13 @@ class HomeController extends BaseController {
 		$password = Input::get('password');	
 
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+
 		    Session::flash('successMessage', "You're logged in!.");
-
-		    
-
 		    return Redirect::intended('/');
+		
 		} else {
+			
 			Session::flash('errorMessage', 'Failed to log in.');
-
 		    return Redirect::action('HomeController@showHome');
 		}
 	}
@@ -91,7 +90,7 @@ class HomeController extends BaseController {
 	{
 		Auth::logout();
 		Session::flash('successMessage', "You're logged out.");
-		return Redirect::action('HomeController@showLogout');
+		return Redirect::to('/');
 	}
 
 }

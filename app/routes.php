@@ -13,13 +13,10 @@
 
 Route::get('/', function()
 {
-
-	// if (Auth::check()) {
-	// 	dd(Auth::id());
-	// }
-
 	return View::make('landing');
 });
+
+Route::post('/', 'HomeController@doLogin');
 
 Route::resource('agencies', 'AgenciesController');
 
@@ -57,4 +54,5 @@ Route::get('volunteer', 'HomeController@showProfile');
 Route::get('volunteerEdit', 'HomeController@showProfileEdit');
 
 Route::get('login', 'HomeController@doLogin');
-Route::post('login', 'HomeController@doLogin');
+Route::post('/login', 'HomeController@doLogin');
+Route::get('logout', 'HomeController@doLogout');

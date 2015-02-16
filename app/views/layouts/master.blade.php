@@ -265,23 +265,20 @@
         <!-- /.col-*-6 -->
         <div class="col-md-6">
           <h4 class="no-margin-top">Sign In</h4>
-          <form role="form" method="POST" action="{{{ action('HomeController@doLogin') }}}">
-            {{ Form::token() }}
-            <div class="form-group">
-              <input type="email" class="form-control form-control-lg" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control  form-control-lg" placeholder="Password">
-            </div>
-            <div class="form-group checkbox small">
-              <label>
-                <input type="checkbox">
-                Remember Me </label>
-            </div>
-            <p class="text-center">
-              <button class="btn btn-slide-panel btn-lg btn-block" type="submit"><i class="ti ti-lock"></i> Sign in</button>
-            </p>
-          </form>
+          {{ Form::open(array(action('HomeController@doLogin'))) }}
+              
+              {{--Form::label('email', 'eMail Address'--}}
+              {{ Form::email('email', Input::old('email'), array('class' => 'form-control form-control-lg form-group', 'placeholder' => 'Enter email')) }}
+
+              {{--Form::label('password', 'Password')--}}
+              {{ Form::password('password', array('class' => 'form-control form-control-lg form-group', 'placeholder' => 'Password')) }}
+
+              {{-- Form::checkbox('agree', 1, null, array('class' => 'form-group checkbox small')) --}}
+
+              {{ Form::submit('Sign in', array('class'=> 'btn btn-slide-panel btn-lg btn-block', 'type' => 'submit')) }}
+              <!-- <i class="ti ti-lock"></i> -->
+        
+          {{ Form::close() }}
           <p class="text-center clear"><a href="#" data-slide="slide" data-target="#forgot-password-panel" class="link-underline">Forgot your password?</a> <br>
             Don't have an account yet? <a class="link-underline signin-toggle" href="#" data-slide="slide" data-target="#signup-panel">Sign up</a> </p>
         </div>
