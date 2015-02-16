@@ -7,7 +7,7 @@
 <div id="page">
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
   <div class="page-content" role="main">
-    <div class="container">
+    <div class="container no-gutters">
       
       <!-- .container for entire page --> 
       
@@ -19,7 +19,12 @@
 	      <!-- <div class="row sixteen-gutter"> -->
 	      
 	       <div class="col-md-12 ">       
-	       	<div class="row"> <!-- profile info bar -->           	
+	       	<div class="row no-gutters"> <!-- profile info bar -->           	
+ 				   	<div class="col-md-3 embed-responsive-4by3">
+     		             		<img src="/img/agency/habitat.jpg">
+     		             		<p>Welcome Habitat Admin</p>
+     		   	    </div><!--div for profile picture -->
+
 		     		<div class="col-md-3">
 				        
 			             	<div class="equal-height-title column-inner text-center">
@@ -30,7 +35,7 @@
 				         	
 			        <div class="col-md-3 equal-height-title column-inner text-center">
 			             	<h3>VOLUNTEERS</h3>
-			             	<p>see past volunteers</p>
+			             	
 			        </div><!-- VOLUNTEERS-->	
 	         		
 				     
@@ -52,22 +57,19 @@
 			          	</nav>
 				   	</div>
 	   			   
-	   			   <div class="col-md-3 embed-responsive-4by3">
-	   	             		<img src="/img/agency/habitat.jpg">
-	   	             		<p>Welcome Habitat Admin</p>
-	   	   	       </div><!--div for profile picture -->
+	   			  
 	   	   	    
 			</div><!--ADMIN INFO BAR -->
 		   </div><!-- first div col-md-12 -->
 		   
 		   <div class="col-md-12">
-		   		<div class="row">
+		   		<div class="row ">
 		   			<div class="col-md-7"><!-- form for editing or creating -->
 		   				<div class="row"><!-- cancel and save buttons -->
-		   					<div class="col-md-6 equal-height-title column-inner text-center"><!-- cancel buttons -->
+		   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center"><!-- cancel buttons -->
 		   						<h3>Cancel Changes</h3>
 		   					</div><!-- cancel buttons -->
-		   					<div class="col-md-6 equal-height-title column-inner text-center"><!-- save buttons -->	
+		   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center"><!-- save buttons -->	
 		   						<h3>Save Changes</h3>
 		   					</div><!-- save buttons -->	
 		   				</div><!-- row cancel and save buttons -->

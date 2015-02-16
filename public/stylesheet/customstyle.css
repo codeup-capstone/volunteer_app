@@ -1,0 +1,25 @@
+/*The body padding in original is 52px to account for sidebar that is now hidden*/
+body {
+	padding-right: 0px;
+	padding-left: 0px;
+	overflow-x: hidden;
+}
+
+
+.dropmenuItems {
+	padding-left: 20px !important;
+}
+.no-gutters {
+	padding-right: 0;
+  	padding-left: 0;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
