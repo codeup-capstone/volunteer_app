@@ -4,23 +4,23 @@
 
 <div>
 	<div class='main-container'>
-		<div class='col-md-12' id='users'>
+		<div class='col-md-12' id='agencies'>
 			<ul style="list-style-type:none">
-  				<li><h2>{{{ $user->first_name }}} &nbsp {{{ $user->last_name }}}</h2></li>
-  				<li>{{{ $user->city }}} &nbsp {{{ $user->state }}} &nbsp {{{ $user->zip }}}</li>
-  				<li>{{{ $user->email }}}</li>
-  				<li>{{{ $user->phone }}}</li>
-  				<li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
-  				<li>{{{ $user->first_name }}}'s profile was updated {{{ $user->updated_at->diffForHumans() }}}</li>
+  				<li><h2>{{{ $agency->name }}}</h2></li>
+  				<li>{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
+  				<li>{{{ $agency->email }}}</li>
+  				<li>{{{ $agency->phone }}}</li>
+  				<li>{{{ $agency->first_name }}} joined {{{ $agency->created_at->diffForHumans() }}}</li>
+  				<li>{{{ $agency->first_name }}}'s profile was updated {{{ $agency->updated_at->diffForHumans() }}}</li>
 			</ul>
 				
-			<p><h3>{{{ $user->description }}}</h3></p>
+			<p><h3>{{{ $agency->description }}}</h3></p>
 			@if (Auth::check())
 		
-			<a href="{{{ action('UsersController@edit', $user->id) }}}"><button class='btn btn-info' id='edit-button'>Edit User</button></a>
+			<a href="{{{ action('AgenciesController@edit', $agency->id) }}}"><button class='btn btn-info' id='edit-button'>Edit agency</button></a>
 
-			{{ Form::open(array('action' => array('UsersController@destroy', $user->id), 'method' => 'delete')) }}
-				{{ Form::submit('Delete User', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
+			{{ Form::open(array('action' => array('AgenciesController@destroy', $agency->id), 'method' => 'delete')) }}
+				{{ Form::submit('Delete Organization', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
 			{{ Form::close() }}
 
 			</div>
@@ -55,8 +55,8 @@
 		     		<div class="section">
 				        <div class="half-row col-md-6">
 			             	<div class="equal-height-title column-inner text-center">
-			             		<h3>{{{$user->first_name." ".$user->last_name}}}</h3>
-			             	</div><!-- USER NAME-->
+			             		<h3>{{{$agency->first_name." ".$agency->last_name}}}</h3>
+			             	</div><!-- AGENCY NAME-->
 				         	<div class="half-row">
 					            <div class="col-md-6 equal-height-text column-inner text-center">
 					             	<h5>PAST EVENTS</h5>
@@ -78,19 +78,19 @@
 				                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
 				                    <ul>
 				                      
-				                      <li>Address:<p>{{{$user->city}}}</p></li>
-				                      <li>Number:<p>{{{$user->phone}}}</p></li>
-				                      <li>Email:<p>{{{$user->email}}}</p></li>
+				                      <li>Address:<p>{{{$agency->city}}}</p></li>
+				                      <li>Number:<p>{{{$agency->phone}}}</p></li>
+				                      <li>Email:<p>{{{$agency->email}}}</p></li>
 				                    </ul>
 				                  </li>          
 				              
-				            </ul> <!-- summary of USER PROFILE -->
+				            </ul> <!-- summary of AGENCY PROFILE -->
 			          	</nav>
 				   	</div>
 	   			   
 	   			  
 	   	   	    
-			</div><!--TOP SECTION OF USER PROFILE BREAKDOWN-->
+			</div><!--TOP SECTION OF AGENCY PROFILE BREAKDOWN-->
 		   </div>             	
 	   
 
@@ -98,10 +98,10 @@
 		     <div class="row">
 
 	    		<div class="col-md-12 text-center">	
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
+			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
+			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
+			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
+			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
 		     	</div><!-- table of events -->
       		</div><!-- row that contains rsvp and all data -->
 		     
