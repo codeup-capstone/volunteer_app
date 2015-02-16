@@ -21,10 +21,5 @@
 {{{ "Search not found on the site." }}}
 @endforelse
 
-<div class='text-center'>
-	{{--$users->appends(array('search' => Input::get('search')))->links()--}}
-</div>
-
-
 
 @stop
