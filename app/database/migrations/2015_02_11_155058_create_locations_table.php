@@ -20,6 +20,7 @@ class CreateLocationsTable extends Migration {
 			$table->string('city', 45);
 			$table->char('state',2);
 			$table->char('zip',5);
+			$table->timestamps();
 			$table->integer('agency_id')->unsigned();
 			$table->foreign('agency_id')->references('id')->on('agencies');
 		});

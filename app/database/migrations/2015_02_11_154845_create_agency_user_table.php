@@ -16,7 +16,6 @@ class CreateAgencyUserTable extends Migration {
 		{
 			$table->integer('agency_id')->unsigned();
 			$table->integer('user_id')->unsigned();
-			$table->timestamp('join_date');
 			$table->primary(array('agency_id', 'user_id'));
 			$table->foreign('agency_id')->references('id')->on('agencies');
 			$table->foreign('user_id')->references('id')->on('users');

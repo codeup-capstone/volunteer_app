@@ -26,6 +26,7 @@ class CreateAgenciesTable extends Migration {
 			$table->char('state',2)->nullable();
 			$table->char('zip',5)->nullable();
 			$table->string('website', 100)->nullable();
+			$table->timestamps();
 			$table->integer('category_id')->unsigned();
 			$table->integer('admin_user_id')->unsigned();
 			$table->foreign('category_id')->references('id')->on('categories');

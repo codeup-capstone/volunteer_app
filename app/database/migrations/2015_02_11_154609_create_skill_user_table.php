@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserSkillTable extends Migration {
+class CreateSkillUserTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateUserSkillTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('user_skill', function(Blueprint $table)
+		Schema::create('skill_user', function(Blueprint $table)
 		{
 			$table->integer('user_id')->unsigned();
 			$table->integer('skill_id')->unsigned();
@@ -29,7 +29,7 @@ class CreateUserSkillTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('user_skill');
+		Schema::drop('skill_user');
 	}
 
 }
