@@ -16,9 +16,7 @@ class CreateEventUserTable extends Migration {
 		{
 			$table->integer('user_id')->unsigned();
 			$table->integer('event_id')->unsigned();
-			$table->tinyInteger('rsvp');
-			$table->tinyInteger('approved');
-			$table->tinyInteger('cancelled');
+			$table->date('cancelled');
 			$table->tinyInteger('attended');
 			$table->primary(array('user_id', 'event_id'));
 			$table->foreign('user_id')->references('id')->on('users');
