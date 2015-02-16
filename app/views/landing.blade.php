@@ -5,8 +5,8 @@
 <!-- =============== BEGIN #page ==============================-->
 <div id="page">
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
-  <div class="page-content" role="main">
-    <div class="row no-gutters">
+  <div class="page-content no-page-gutters" role="main">
+    <div class="row ">
       
       <!-- .container for entire page --> 
       
@@ -16,13 +16,11 @@
       
         <div class="wrapper">
             <img src="bedifferent/theme/assets/images/bird_hand.jpeg" class="img-responsive" alt="Responsive image">
-             <div class="sol-sm-6">
-                <h1 id="text">Hello World!</h1>
-             </div>
-        </div>
+             
+        
         <div class="col-xs-12 col-md-12 container-fluid">
     
-        <div class="row no-gutters">
+        <div class="row no-gutters" >
         
          
           <!--/.col-x-x-->
@@ -71,7 +69,7 @@
       <!-- VERTICAL SPACING -->
       <hr class="vertical-spacer vertical-spacer-lg">
      
-     
+     </div> <!--wrapper -->
       
     </div>
     <!-- / .container -->
