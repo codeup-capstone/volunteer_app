@@ -4,20 +4,23 @@
 
 <div>
 	<div class='main-container'>
-		<div class='users' id='users'>
-			<h2>{{{ $user->first_name }}} &nbsp {{{ $user->last_name }}}</h2>
-			<div class='create-update'>
-				profile updated [{{{ $user->updated_at->diffForHumans() }}}]&nbsp
-				joined [{{{ $user->created_at->diffForHumans() }}}]</p>
-			</div>
-				<h5>posted by: {{{ $user->email }}}</h5>
-			<p><h3>{{{ $user->body }}}</h3></p>
+		<div class='col-md-12' id='users'>
+			<ul style="list-style-type:none">
+  				<li><h2>{{{ $user->first_name }}} &nbsp {{{ $user->last_name }}}</h2></li>
+  				<li>{{{ $user->city }}} &nbsp {{{ $user->state }}} &nbsp {{{ $user->zip }}}</li>
+  				<li>{{{ $user->email }}}</li>
+  				<li>{{{ $user->phone }}}</li>
+  				<li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
+  				<li>{{{ $user->first_name }}}'s profile was updated {{{ $user->updated_at->diffForHumans() }}}</li>
+			</ul>
+				
+			<p><h3>{{{ $user->description }}}</h3></p>
 			@if (Auth::check())
 		
-			<a href="{{{ action('UsersController@edit', $user->id) }}}"><button class='btn btn-info' id='edit-button'>Edit Post</button></a>
+			<a href="{{{ action('UsersController@edit', $user->id) }}}"><button class='btn btn-info' id='edit-button'>Edit User</button></a>
 
 			{{ Form::open(array('action' => array('UsersController@destroy', $user->id), 'method' => 'delete')) }}
-				{{ Form::submit('Delete Post', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
+				{{ Form::submit('Delete User', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
 			{{ Form::close() }}
 
 			</div>
