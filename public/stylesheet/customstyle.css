@@ -4,6 +4,7 @@ body {
 	padding-left: 0px;
 	overflow-x: hidden;
   max-height: 100%;
+
 }
 
 
@@ -32,3 +33,17 @@ body {
 }
 
 
+/*hides the background image on anything smaller than the a destop screen*/
+@media screen and (min-width: 992px){
+
+    .landingBackground {
+      height: 70%;
+      background: url('/bedifferent/theme/assets/images/bird_hand.jpeg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color:#fff;
+      background-color:#333;
+    }
+}
