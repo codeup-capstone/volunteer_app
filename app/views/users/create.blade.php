@@ -1,13 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="col-md-3">
-</div>
-<div class="col-md-6">
-    <h4 class="text-center clear"><br>Welcome to Serve Search!</h4>
-        
-          <p class="text-center clear">Update your profile. <a class="link-underline login-toggle" href="{{{ action('UsersController@create') }}}" data-slide="slide" data-target="#login-panel">Edit </a></p>
-          <p class="text-center clear">Great opportunities are waitng for you. <a class="link-underline login-toggle" href="{{{ action('UsersController@create') }}}" data-slide="slide" data-target="#login-panel">Login</a></p>
+
+	{{Form::open(array('action' =>'UsersController@store', 'files' => true)) }}
+		
+	@include('users.form')
+
+	{{Form::submit('Save Changes', array('class' => 'btn btn-primary')) }}
+	{{ Form::close() }}
+
 </div>
 
 

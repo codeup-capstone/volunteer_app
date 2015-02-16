@@ -11,13 +11,15 @@ class ActivitiesController extends \BaseController {
 	{
 			if (Input::has('search')) {
 				$search = Input::get('search');
-				$query = Activity::with('user');
+				$query = Activity::with('user', 'agencies');
 
 				$query->where('name', 'like', '%' . $search . '%');
 				$query->orWhere('description', 'like', '%' . $search . '%');
 				$query->orWhere('event_date', 'like', '%' . $search . '%');
 				$query->orderBy('event_date', 'desc');
 				$activities = $query->paginate(4);
+
+				//dd($activities);
 
 				return View::make('activities.index')->with('activities', $activities);
 			} 
