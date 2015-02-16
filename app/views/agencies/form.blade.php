@@ -13,10 +13,11 @@
 	      <!-- <div class="row sixteen-gutter"> -->
 	      
 	       <div class="col-md-12 ">       
-	       	<div class="row no-gutters"> <!-- profile info bar -->           	
- 				   	<div class="text-center col-md-3 embed-responsive-4by3">
-     		             		<img src="/img/agency/placeholder.jpg">
-     		             		<p>Welcome!</p>
+	       		<div class="row no-gutters"> <!-- profile info bar --> 
+	       			<div class="text-center col-md-3 embed-responsive-4by3">
+     		            <img src="/img/agency/placeholder.jpg">
+     		             	<p>Welcome!</p>
+     		             </img>
      		   	    </div><!--div for profile picture -->
      		   	    			         	
 			        <div class="col-md-7 equal-height-title column-inner text-center">
@@ -27,7 +28,7 @@
 	 				<div class="row text-center">
 	 					<div class="col-md-3">
 			 				<div class="form-group" {{{ $errors->has('image') ? 'has-error' : '' }}}>
-			 					{{ Form::label('image', 'User Image') }}
+			 					{{ Form::label('image', 'Agency Image') }}
 			 					{{ Form::file('image', array('class' => 'form-control')) }}	
 			 					{{ $errors->first('image', '<p class="help-block">:message</p>') }}
 			 				</div>
@@ -43,34 +44,28 @@
 		   				<div class="row"><!-- row form for edit fields -->
 		   					<div class="col-md-12 ">
 
-									<div class="form-group" {{{ $errors->has('first_name') ? 'has-error' : '' }}}>
-										{{ Form::label('first_name', 'First Name') }}
-										{{ Form::text('first_name', Input::old('first_name'), array('class' => 'form-control')) }}	
-										{{ $errors->first('first_name', '<p class="help-block">:message</p>') }}
+									<div class="form-group" {{{ $errors->has('name') ? 'has-error' : '' }}}>
+										{{ Form::label('name', 'Name') }}
+										{{ Form::text('name', Input::old('name'), array('class' => 'form-control')) }}	
+										{{ $errors->first('name', '<p class="help-block">:message</p>') }}
 									</div>
 
-									<div class="form-group" {{{ $errors->has('last_name') ? 'has-error' : '' }}}>
-										{{ Form::label('last_name', 'Last Name') }}
-										{{ Form::text('last_name', Input::old('last_name'), array('class' => 'form-control')) }}	
-										{{ $errors->first('last_name', '<p class="help-block">:message</p>') }}
-									</div>
-
-									<div class="form-group" {{{ $errors->has('profile') ? 'has-error' : '' }}}>
-										{{ Form::label('profile', 'About Me') }}
-										{{ Form::text('profile', Input::old('profile'), array('class' => 'form-control')) }}	
-										{{ $errors->first('profile', '<p class="help-block">:message</p>') }}
-									</div>
-
-									<div class="form-group" {{{ $errors->has('email') ? 'has-error' : '' }}}>
-										{{ Form::label('email', 'E-mail') }}
-										{{ Form::text('email', Input::old('email'), array('class' => 'form-control')) }}	
-										{{ $errors->first('email', '<p class="help-block">:message</p>') }}
+									<div class="form-group" {{{ $errors->has('description') ? 'has-error' : '' }}}>
+										{{ Form::label('description', 'Description') }}
+										{{ Form::text('description', Input::old('description'), array('class' => 'form-control')) }}	
+										{{ $errors->first('description', '<p class="help-block">:message</p>') }}
 									</div>
 
 									<div class="form-group" {{{ $errors->has('phone') ? 'has-error' : '' }}}>
 										{{ Form::label('phone', 'Phone Number') }}
 										{{ Form::text('phone', Input::old('phone'), array('class' => 'form-control')) }}	
 										{{ $errors->first('phone', '<p class="help-block">:message</p>') }}
+									</div>
+
+									<div class="form-group" {{{ $errors->has('address') ? 'has-error' : '' }}}>
+										{{ Form::label('address', 'Address') }}
+										{{ Form::text('address', Input::old('address'), array('class' => 'form-control')) }}	
+										{{ $errors->first('address', '<p class="help-block">:message</p>') }}
 									</div>
 
 									<div class="form-group" {{{ $errors->has('city') ? 'has-error' : '' }}}>
@@ -99,7 +94,7 @@
    				   					<div class="col-md-9">
 	   				   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center"><!-- cancel buttons -->
 	   				   						
-	   										<a href="/users/create" class="btn btn-danger">Cancel Changes</a>
+	   										<a href="/agencies/create" class="btn btn-danger">Cancel Changes</a>
 
 	   				   					</div><!-- cancel buttons -->
 	   				   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center">
@@ -111,8 +106,8 @@
 		   			
 		   				
 
-						@unless(empty($user->img_url))
-							<img scr="{{{ $user->img_url }}}" alt="{{{ $user->title }}}">
+						@unless(empty($agencies->img_url))
+							<img scr="{{{ $agency->img_url }}}" alt="{{{ $agency->name }}}">
 						@endunless
 		   			
 
