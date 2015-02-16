@@ -87,15 +87,16 @@ class UsersTableSeeder extends Seeder {
 
 		$faker = Faker::create();
 
-		for ($i=0; $i < 100; $i++) { 
-			$user = new User();
+		for ($i=0; $i < 100; $i++) {
+			$lastFour = mt_rand(1001, 9998);
 
+			$user = new User();
 			$user->email = $faker->email;
 			$user->password = Hash::make('codeup');
 			$user->first_name = $faker->firstName;
 			$user->last_name = $faker->lastName;
 			$user->profile = $faker->paragraph($nbSentences = 3);
-			$user->phone = $faker->phoneNumber;
+			$user->phone = '210555'.$lastFour;
 			$user->city = $faker->city;
 			$user->state = $faker->stateAbbr;
 			$user->zip = $faker->postcode;
