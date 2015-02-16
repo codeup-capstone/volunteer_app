@@ -14,20 +14,17 @@
       
       <!-- .row .sixteen-gutter --> 
       
-      <!-- _________ SLICK SLIDER SINGLE CAROUSEL AND COLUMN EQUAL HEIGHT ___________ -->
-      <div class="col-xs-12 col-md-12 container-fluid">
+        <div class="wrapper">
+            <img src="bedifferent/theme/assets/images/bird_hand.jpeg" class="img-responsive" alt="Responsive image">
+             <div class="sol-sm-6">
+                <h1 id="text">Hello World!</h1>
+             </div>
+        </div>
+        <div class="col-xs-12 col-md-12 container-fluid">
     
         <div class="row no-gutters">
         
-          <div class=" col-xs-12 col-sm-12 col-md-8">
-            <div class="featured-carousel single-item-carousel slick-dots-left fade-hover-img loading-slick">
-              <div class="slick-slider-item">
-                <figure> <a href="blog-summary-masonry-layout.html"><img src="/bedifferent/theme/assets/images/purple_finger.jpg" alt=""></a>
-                </figure>
-              </div>
-              <!--/.slick-slider-item-->
-            </div>
-          </div>
+         
           <!--/.col-x-x-->
           
           <hr class="visible-xs vertical-spacer vertical-spacer-xs">
