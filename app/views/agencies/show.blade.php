@@ -6,12 +6,12 @@
 	<div class='main-container'>
 		<div class='col-md-12' id='agencies'>
 			<ul style="list-style-type:none">
+				<img src="">
+  				<li><img class="ls-bg" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}"></li>
   				<li><h2>{{{ $agency->name }}}</h2></li>
   				<li>{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
   				<li>{{{ $agency->email }}}</li>
   				<li>{{{ $agency->phone }}}</li>
-  				<li>{{{ $agency->first_name }}} joined {{{ $agency->created_at->diffForHumans() }}}</li>
-  				<li>{{{ $agency->first_name }}}'s profile was updated {{{ $agency->updated_at->diffForHumans() }}}</li>
 			</ul>
 				
 			<p><h3>{{{ $agency->description }}}</h3></p>
@@ -50,7 +50,6 @@
 	       <div class="col-md-12 ">       
 	       	<div class="row"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
- 		             		<img src="/bedifferent/theme/assets/images/people/kathy.jpg">
  		   	       </div><!--div for profile picture -->
 		     		<div class="section">
 				        <div class="half-row col-md-6">
