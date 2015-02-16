@@ -1,5 +1,69 @@
-<div class="col-md-6 col-med-offset-2">
-          <h4 class="no-margin-top">User Profile</h4>
+<div id="page">
+  <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
+  <div class="page-content" role="main">
+    <div class="container no-gutters">
+      
+      <!-- .container for entire page --> 
+      
+      <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
+   
+     
+      
+	      <!-- .row .sixteen-gutter --> 
+	      <!-- <div class="row sixteen-gutter"> -->
+	      
+	       <div class="col-md-12 ">       
+	       	<div class="row no-gutters"> <!-- profile info bar -->           	
+ 				   	<div class="col-md-3 embed-responsive-4by3">
+     		             		<img src="/img/agency/habitat.jpg">
+     		             		<p>Welcome!</p>
+     		   	    </div><!--div for profile picture -->
+     		   	    			         	
+			        <div class="col-md-3 equal-height-title column-inner text-center">
+			             	<h3>VOLUNTEERS</h3>
+			             	
+			        </div><!-- VOLUNTEERS-->	
+	         		
+				     
+			        <div class="col-md-3">
+		   	        	<nav id="nav" role="navigation">
+				            <ul>
+				              <li class="active has-children"><a href="#">Edit Profile</a>
+				              
+				                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+				                    <ul>
+				                      <li>Age</li>
+				                      <li>Adress</li>
+				                      <li>Number</li>
+				                      <li>Email</li>
+				                    </ul>
+				                </li>          
+				              
+				            </ul> <!-- summary of USER PROFILE -->
+			          	</nav>
+				   	</div>
+	   			   
+	   			  
+	   	   	    
+			</div><!--ADMIN INFO BAR -->
+		   </div><!-- first div col-md-12 -->
+		   
+		   <div class="col-md-12">
+		   		<div class="row ">
+		   			<div class="col-md-7"><!-- form for editing or creating -->
+		   				<div class="row"><!-- cancel and save buttons -->
+		   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center"><!-- cancel buttons -->
+		   						
+								<a href="/users/create" class="btn btn-danger">Cancel Changes</a>
+
+		   					</div><!-- cancel buttons -->
+		   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center">
+		   						{{Form::submit('Save Changes', array('class' => 'btn btn-primary')) }}
+								{{ Form::close() }}
+		   					</div><!-- save buttons -->	
+		   				</div><!-- row cancel and save buttons -->
+		   				<div class="row"><!-- row form for edit fields -->
+		   					<div class="col-md-12 ">
 
 <div class="form-group" {{{ $errors->has('first_name') ? 'has-error' : '' }}}>
 	{{ Form::label('first_name', 'First Name') }}
@@ -31,6 +95,11 @@
 	{{ $errors->first('phone', '<p class="help-block">:message</p>') }}
 </div>
 
+		   					</div><!-- form for edit fields -->
+		   				</div><!-- row form for edit fields -->
+		   			</div><!-- form for editing or creating -->
+		   			<div class="col-md-5"><!-- events table  -->
+		   				
 <div class="form-group" {{{ $errors->has('city') ? 'has-error' : '' }}}>
 	{{ Form::label('city', 'City') }}
 	{{ Form::text('city', Input::old('city'), array('class' => 'form-control')) }}	
@@ -58,3 +127,21 @@
 @unless(empty($user->img_url))
 	<img scr="{{{ $user->img_url }}}" alt="{{{ $user->title }}}">
 @endunless
+		   			</div><!-- events table-->
+
+		   		</div>
+
+		   </div>             	
+	   
+
+	
+	          
+	    
+	     
+	    <!-- / .container -->
+   			</div> 
+  		</div>
+
+
+
+

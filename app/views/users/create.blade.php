@@ -6,8 +6,6 @@
 		
 	@include('users.form')
 
-	{{Form::submit('Save Changes', array('class' => 'btn btn-primary')) }}
-	{{ Form::close() }}
 
 </div>
 
