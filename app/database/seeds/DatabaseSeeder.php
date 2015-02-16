@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder {
 		$this->call('AgenciesTableSeeder');
 		$this->call('AgencyUserTableSeeder');
 		$this->call('LocationsTableSeeder');
-		// $this->call('EventsTableSeeder');
-		// $this->call('EventUserTableSeeder');
+		$this->call('EventsTableSeeder');
+		$this->call('EventUserTableSeeder');
 		// $this->call('TagsTableSeeder');
 		// $this->call('EventTagTableSeeder');
 		// $this->call('ReviewsTableSeeder');
