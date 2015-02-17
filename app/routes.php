@@ -51,7 +51,7 @@ Route::get('pastVolunteers', 'HomeController@showVolunteers');
 Route::get('volunteer', 'HomeController@showProfile');
 /*Volunteer profile view below*/
 
-Route::get('volunteerRSVPEdit', 'HomeController@showProfileEdit');
+Route::get('volunteerEdit', 'HomeController@showProfileEdit');
 
 Route::get('login', 'HomeController@doLogin');
 Route::post('/login', 'HomeController@doLogin');
