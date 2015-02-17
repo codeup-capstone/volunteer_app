@@ -105,7 +105,7 @@
                 <div class=" col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
                    <div class="column-inner column-featured transparent btn-height">
                      <!-- h3 class="h2 column-featured-headline">Non Profits</h3> -->
-                        <p> <a class="btn btn-featured btn-lg transparent shadow-1" href="{{{ action('HomeController@showlistOrg') }}}">Browse Organizations </a> </p>
+                        <p> <a class="btn btn-featured btn-lg transparent shadow-1" href="{{{ action('AgenciesController@index') }}}">Browse Organizations </a> </p>
                    </div>
                    <!--/.column-inner .column-featured-->
                 </div>
