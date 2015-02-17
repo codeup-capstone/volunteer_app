@@ -2,7 +2,10 @@
 
 @section('content')
 
+@foreach($user->activities as $activity)
+	<p>{{$activity->name}}  {{ $activity->event_date }}</p>
 
+@endforeach
 
 <div id="page">
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
