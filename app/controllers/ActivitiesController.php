@@ -17,7 +17,7 @@ class ActivitiesController extends \BaseController {
 				$query->orWhere('description', 'like', '%' . $search . '%');
 				$query->orWhere('event_date', 'like', '%' . $search . '%');
 				$query->orderBy('event_date', 'desc');
-				$activities = $query->paginate(4);
+				$activities = $query->paginate();
 
 				//dd($activities);
 
@@ -26,10 +26,10 @@ class ActivitiesController extends \BaseController {
 
 			else {
 
-			$activities = Activity::with('agency')->paginate(10);
+			$activities = Activity::with('agency')->paginate(6);
 			// $activities = Activity::all();
 
-			return View::make('activities.eventsByOrganizations', compact('activities'));
+			return View::make('activities.index', compact('activities'));
 
 			// $activities = Activity::with('user')->orderBy('event_date', 'desc')->paginate(4);
 			// return View::make('activities.index')->with('activities', $activities);

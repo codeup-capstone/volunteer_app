@@ -25,6 +25,7 @@ a.btn:hover {
 .dropmenuItems {
   padding-left: 20px !important;
 }
+
 .no-gutters {
 	padding-right: 0;
   	padding-left: 0;
@@ -40,6 +41,9 @@ a.btn:hover {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.summary {
+  text-align: justify;
 }
 .transparent {
   background-color: transparent;
@@ -81,6 +85,11 @@ a.btn:hover {
 /*hides the background image on anything smaller than the a destop screen*/
 @media screen and (min-width: 992px){
 
+    .img-size {
+      max-width: 183px;
+      text-align: center;
+    }
+
     .landingBackground {
       height: 70%;
       background: url('/bedifferent/theme/assets/images/bird_hand.jpeg') no-repeat center center fixed;
@@ -102,11 +111,77 @@ a.btn:hover {
       width: 100%;
       bottom: 0;
       right: 100%;
-      z-index: 1000;
+      z-index: 1000git ;
       transition: all 0.5s ease-in-out;
       overflow: auto;
       box-shadow: inset 0px 0px 0px 2px #ffffff;
       border: 3px solid #000000;
      
     }
+    .pagination {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  /*margin: 20px 0;*/
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+/*  float: left;*/
+  padding:  6px 12px;
+  margin-left: -1px;
+  /*line-height: 1.42867143; */
+  text-decoration: none;
+  background-color: #fff;
+
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #50D9FF;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 1;
+  color: #fff;
+  
+  background-color: #50D9FF;
+
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #50D9FF;
+  
+  background-color: #fff;
+  border-color: #ddd;
+}
 }
