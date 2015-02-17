@@ -25,6 +25,7 @@ a.btn:hover {
 .dropmenuItems {
   padding-left: 20px !important;
 }
+
 .no-gutters {
 	padding-right: 0;
   	padding-left: 0;
@@ -40,6 +41,9 @@ a.btn:hover {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.summary {
+  text-align: justify;
 }
 .transparent {
   background-color: transparent;
@@ -80,6 +84,11 @@ a.btn:hover {
 
 /*hides the background image on anything smaller than the a destop screen*/
 @media screen and (min-width: 992px){
+
+    .img-size {
+      max-width: 183px;
+      text-align: center;
+    }
 
     .landingBackground {
       height: 70%;

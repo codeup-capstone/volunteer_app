@@ -5,16 +5,9 @@
 <div>
 	<div class='main-container'>
 		<div class='col-md-12' id='agencies'>
-			<ul style="list-style-type:none">
-				<img src="">
-  				<li><img class="ls-bg" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}"></li>
-  				<li><h2>{{{ $agency->name }}}</h2></li>
-  				<li>{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
-  				<li>{{{ $agency->email }}}</li>
-  				<li>{{{ $agency->phone }}}</li>
-			</ul>
+			
 				
-			<p><h3>{{{ $agency->description }}}</h3></p>
+			
 			@if (Auth::check())
 		
 			<a href="{{{ action('AgenciesController@edit', $agency->id) }}}"><button class='btn btn-info' id='edit-button'>Edit agency</button></a>
@@ -50,11 +43,12 @@
 	       <div class="col-md-12 ">       
 	       	<div class="row"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
+ 		   	      		<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}">
  		   	       </div><!--div for profile picture -->
 		     		<div class="section">
 				        <div class="half-row col-md-6">
 			             	<div class="equal-height-title column-inner text-center">
-			             		<h3>{{{$agency->first_name." ".$agency->last_name}}}</h3>
+			             		<h5>{{{ $agency->name }}}</h5>
 			             	</div><!-- AGENCY NAME-->
 				         	<div class="half-row">
 					            <div class="col-md-6 equal-height-text column-inner text-center">
@@ -69,22 +63,25 @@
 			        		
 		     	
 			        
-			        <div class="col-md-4">
-		   	        	<nav id="nav" role="navigation">
-				            <ul>
-				              <li class="active has-children"><a href="#"> Profile</a>
-				              
-				                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-				                    <ul>
-				                      
-				                      <li>Address:<p>{{{$agency->city}}}</p></li>
-				                      <li>Number:<p>{{{$agency->phone}}}</p></li>
-				                      <li>Email:<p>{{{$agency->email}}}</p></li>
-				                    </ul>
-				                  </li>          
-				              
-				            </ul> <!-- summary of AGENCY PROFILE -->
-			          	</nav>
+			        <div class="col-md-4 ">
+		   	        	<div class="slide-panel">
+			   	        	<nav id="nav" role="navigation slide-panel" >
+					            <ul>
+					              <li class="active has-children"><a href="#"> Profile</a>
+					              
+					                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+					                    <ul>
+					                      
+					                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
+					                     <li>Number:<p>{{{$agency->phone}}}</p></li>
+					                     <li>Email:<p>{{{$agency->email}}}</p></li>
+					                     <li><p class="summary">{{{ $agency->description }}}</p></li>
+					                    </ul>
+					                  </li>          
+					              
+					            </ul> <!-- summary of AGENCY PROFILE -->
+				          	</nav>
+		   	        	</div>
 				   	</div>
 	   			   
 	   			  
@@ -107,8 +104,26 @@
 
 	        <!--/.col-x-x-->
 	        <hr class="visible-xs vertical-spacer vertical-spacer-xs">
-	     
-	       
+	  
+	     <!-- ================== BEGIN SLIDE OUT PANELS  ================= -->
+        	<div class="slide-panel">
+	   	        	<nav id="nav" role="navigation slide-panel" >
+			            <ul>
+			              <li class="active has-children"><a href="#"> Profile</a>
+			              
+			                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+			                    <ul>
+			                      
+			                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
+			                     <li>Number:<p>{{{$agency->phone}}}</p></li>
+			                     <li>Email:<p>{{{$agency->email}}}</p></li>
+			                     <li><p class="summary">{{{ $agency->description }}}</p></li>
+			                    </ul>
+			                  </li>          
+			              
+			            </ul> <!-- summary of AGENCY PROFILE -->
+		          	</nav>
+        	</div>	       
 	          
 	    
 	      <!-- VERTICAL SPACING -->
