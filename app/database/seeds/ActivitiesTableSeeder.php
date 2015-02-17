@@ -1,6 +1,6 @@
 <?php
 
-class ActivityTableSeeder extends Seeder {
+class ActivitiesTableSeeder extends Seeder {
 
 	public function run()
 	{
