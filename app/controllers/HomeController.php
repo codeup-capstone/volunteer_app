@@ -56,6 +56,27 @@ class HomeController extends BaseController {
 	{
 		return View::make('activities.volunteerEdit');
 	}
+	public function showUsersRSVP()
+	{
+
+		//  This will return a view which shows all the activities
+		// associated with a particular user.
+
+		$id = Auth::id();
+
+		$user = User::find($id);
+		// activity_user -> table name in sql
+		
+
+		// $activities = $user->activities;
+		// dd($user->activities);
+		// // dd($user);
+
+		return View::make('activities.showProfile')
+			->compact($user)
+			->compact($activities);
+	}
+
 	public function showLogin()
 	{
 		return View::make('master');
