@@ -284,7 +284,7 @@
               {{-- Form::checkbox('agree', 1, null, array('class' => 'form-group checkbox small')) --}}
 
               {{ Form::submit('Sign in', array('class'=> 'btn btn-slide-panel btn-lg btn-block', 'type' => 'submit')) }}
-              <i class="ti ti-lock"></i>
+              <!-- <i class="ti ti-lock"></i> -->
         
           {{ Form::close() }}
           <p class="text-center clear"><a href="#" data-slide="slide" data-target="#forgot-password-panel" class="link-underline">Forgot your password?</a> <br>
