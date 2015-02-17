@@ -16,9 +16,8 @@ class CreateAgenciesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name', 100);
-			$table->string('image_name', 100);
+			$table->string('image_name', 100)->nullable();
 			$table->string('headline', 100)->nullable();
-			$table->string('image_url', 100)->nullable();
 			$table->text('description')->nullable();
 			$table->char('phone', 10)->nullable();
 			$table->string('address', 100)->nullable();
