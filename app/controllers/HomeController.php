@@ -72,7 +72,7 @@ class HomeController extends BaseController {
 		// dd($user->activities);
 		// // dd($user);
 
-		return View::make('activities.showProfile')
+		return View::make('activities.volunteerRSVPEdit')
 			->compact($user)
 			->compact($activities);
 	}
