@@ -54,6 +54,7 @@ class AgenciesController extends \BaseController {
 		$agency = Agency::findOrFail($id);
 
 		return View::make('agencies.show', compact('agency'));
+
 	}
 
 	/**

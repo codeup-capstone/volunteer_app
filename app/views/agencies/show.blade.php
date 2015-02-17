@@ -21,7 +21,7 @@
 	@endif
 
 	@if (Auth::guest())
-		<h2>Welcome Guest!</h2>
+		<p>Welcome {{{$agency->name}}}</p>
 	@endif
 </div>
 	
@@ -64,14 +64,22 @@
 		     	
 			        
 			        <div class="col-md-4">
-		   	        	<div class="row btn">
-			   	        	<a href="#" class="btn" data-slide="slide" data-target="#agency-profile"> 
-					            
-					              <h3 class="btn"><a href="#"> Profile</a></h3>
-					              
-					                
-				          	
-		   	        	</div>
+		   	        	<nav id="nav" role="navigation">
+				            <ul>
+				              <li class="active has-children"><a href="#"> Profile</a>
+				              
+				                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+				                    <ul>
+				                      
+				                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
+				                     <li>Number:<p>{{{$agency->phone}}}</p></li>
+				                     <li>Email:<p>{{{$agency->email}}}</p></li>
+				                     <li><p class="summary">{{{ $agency->description }}}</p></li>
+				                    </ul>
+				                  </li>          
+				              
+				            </ul> <!-- summary of AGENCY PROFILE -->
+			          	</nav>
 				   	</div>
 	   			   
 	   			  
@@ -84,46 +92,35 @@
 		     <div class="row">
 
 	    		<div class="col-md-12 text-center">	
-			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
-			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
-			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
-			     	<h1>ORGANIZATION RSVP EVENTS GO IN HERE</h1>
+			     	<table class="table table-striped table-hover">
+			     	    <tr>
+			     	      <th>Event Name</th>
+			     	      <th>Organization</th>
+			     	      <th>Event Date</th>
+			     	      <th>Start Time</th>
+			     	      <th>End Time</th>
+			     	    </tr>
+			     	  @foreach ($activities as $activity)
+			     	    <tr>
+			     	    <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
+			     	    <td>
+			     	      {{ $activity->agency->name }}
+			     	    </td>
+			     	    <td>{{ $activity->event_date }}</td>
+			     	    <td>{{ $activity->start_time }}</td>
+			     	    <td>{{ $activity->end_time }}</td>
+			     	    </tr>
+			     	  @endforeach
+			     	</table>
 		     	</div><!-- table of events -->
       		</div><!-- row that contains rsvp and all data -->
 		     
 
 	        <!--/.col-x-x-->
 	        <hr class="visible-xs vertical-spacer vertical-spacer-xs">
-	  
-	     <!-- ================== BEGIN SLIDE OUT PANELS  ================= -->
-        	<div class="slide-panel-parent">
-        	<div class="slide-panel" id="agency-profile">
-        		 <a href="#" class="close ti ti-close"> 
-        		 	<!-- themify font -->
-	   	        	
-	   	        	<div  class="container">
-	   	        		<div class="row">
-				            <div class="col-md-6 text-right-md-view text-right-lg-view">
-					            <ul>
-					              <li class="active has-children"><a href="#"> Profile</a>
-					              
-					                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-					                    <ul>
-					                      
-					                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
-					                     <li>Number:<p>{{{$agency->phone}}}</p></li>
-					                     <li>Email:<p>{{{$agency->email}}}</p></li>
-					                     <li><p class="summary">{{{ $agency->description }}}</p></li>
-					                    </ul>
-					                  </li>          
-					              
-					            </ul> <!-- summary of AGENCY PROFILE -->
-				            </div>
-	   	        		</div>
-		          	</div>
-        	</div>	       
+	     
+	       
 	          
-        </div><!-- slide panel parent -->
 	    
 	      <!-- VERTICAL SPACING -->
 	      <hr class="vertical-spacer vertical-spacer-lg"> 
