@@ -54,11 +54,20 @@ class HomeController extends BaseController {
 	}
 	public function showProfile()
 	{
-		return View::make('activities.volunteer');
+		$id = Auth::id();
+
+		$user = User::find($id)->with('activity');
+		dd($user)
+
+		return View::make('activities.showProfile')->compact($user);
 	}
 	public function showProfileEdit()
 	{
-		return View::make('activities.volunteerEdit');
+		$id = Auth::id();
+
+		// $activities = Activity::
+
+		return View::make('activities.volunteerRSVPEdit');
 	}
 	public function showLogin()
 	{
