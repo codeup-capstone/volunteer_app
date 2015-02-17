@@ -12,7 +12,7 @@ class Activity extends BaseModel {
 	 *
 	 * @var string
 	 */
-	protected $table = 'events';
+	protected $table = 'activities';
 
 	/**
 	 * The attributes excluded from the model's JSON form.
