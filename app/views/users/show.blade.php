@@ -20,12 +20,12 @@
 				{{ Form::submit('Delete User', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
 			{{ Form::close() }}
 
+			@endif
 			</div>
 </div>
-	@endif
 
 	@if (Auth::guest())
-		<h2>Welcome Guest!</h2>
+		<h2>Welcome<p>{{{$user->first_name}}}</p></h2>
 	@endif
 </div>
 	
