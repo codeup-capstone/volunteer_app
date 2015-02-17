@@ -49,11 +49,15 @@
               @endforeach
             </table>
           </div>
-            <div class="pagination col-md-offset-4">
-                {{$activities->links()}}
-            </div><!-- pagination -->
 
        </div>               
+            <div class="col-md-6 col-md-offset-4">
+              <div class="row">
+              <div class="pagination col-md-offset-4">
+                  {{$activities->links()}}
+              </div><!-- pagination -->
+              </div>
+            </div>
      
 
   
