@@ -63,24 +63,14 @@
 			        		
 		     	
 			        
-			        <div class="col-md-4 ">
-		   	        	<div class="slide-panel">
-			   	        	<nav id="nav" role="navigation slide-panel" >
-					            <ul>
-					              <li class="active has-children"><a href="#"> Profile</a>
+			        <div class="col-md-4">
+		   	        	<div class="row btn">
+			   	        	<a href="#" class="btn" data-slide="slide" data-target="#agency-profile"> 
+					            
+					              <h3 class="btn"><a href="#"> Profile</a></h3>
 					              
-					                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-					                    <ul>
-					                      
-					                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
-					                     <li>Number:<p>{{{$agency->phone}}}</p></li>
-					                     <li>Email:<p>{{{$agency->email}}}</p></li>
-					                     <li><p class="summary">{{{ $agency->description }}}</p></li>
-					                    </ul>
-					                  </li>          
-					              
-					            </ul> <!-- summary of AGENCY PROFILE -->
-				          	</nav>
+					                
+				          	
 		   	        	</div>
 				   	</div>
 	   			   
@@ -106,25 +96,34 @@
 	        <hr class="visible-xs vertical-spacer vertical-spacer-xs">
 	  
 	     <!-- ================== BEGIN SLIDE OUT PANELS  ================= -->
-        	<div class="slide-panel">
-	   	        	<nav id="nav" role="navigation slide-panel" >
-			            <ul>
-			              <li class="active has-children"><a href="#"> Profile</a>
-			              
-			                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-			                    <ul>
-			                      
-			                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
-			                     <li>Number:<p>{{{$agency->phone}}}</p></li>
-			                     <li>Email:<p>{{{$agency->email}}}</p></li>
-			                     <li><p class="summary">{{{ $agency->description }}}</p></li>
-			                    </ul>
-			                  </li>          
-			              
-			            </ul> <!-- summary of AGENCY PROFILE -->
-		          	</nav>
+        	<div class="slide-panel-parent">
+        	<div class="slide-panel" id="agency-profile">
+        		 <a href="#" class="close ti ti-close"> 
+        		 	<!-- themify font -->
+	   	        	
+	   	        	<div  class="container">
+	   	        		<div class="row">
+				            <div class="col-md-6 text-right-md-view text-right-lg-view">
+					            <ul>
+					              <li class="active has-children"><a href="#"> Profile</a>
+					              
+					                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+					                    <ul>
+					                      
+					                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
+					                     <li>Number:<p>{{{$agency->phone}}}</p></li>
+					                     <li>Email:<p>{{{$agency->email}}}</p></li>
+					                     <li><p class="summary">{{{ $agency->description }}}</p></li>
+					                    </ul>
+					                  </li>          
+					              
+					            </ul> <!-- summary of AGENCY PROFILE -->
+				            </div>
+	   	        		</div>
+		          	</div>
         	</div>	       
 	          
+        </div><!-- slide panel parent -->
 	    
 	      <!-- VERTICAL SPACING -->
 	      <hr class="vertical-spacer vertical-spacer-lg"> 
