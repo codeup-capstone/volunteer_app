@@ -194,7 +194,7 @@
     </a>
     <div class="container">
       <h3 class="slide-panel-title">Search</h3>
-      <form role="form" action="{{{ action('ActivitiesController@index') }}}" method="GET" >   
+      <form role="form" action="{{{ action('HomeController@search') }}}" method="GET" >   
         <div class="form-group">
           <input type="search" placeholder="Enter search term and press enter" class="form-control">
         </div>
