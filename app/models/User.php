@@ -42,4 +42,8 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 		return $this->morphMany('Review', 'reviewable');
 	}
 
+	public function activities() {
+		return $this->belongsToMany('Activity');
+	}
+
 }

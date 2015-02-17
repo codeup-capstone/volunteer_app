@@ -47,6 +47,10 @@ Route::get('organizations', 'HomeController@showlistOrg');
 
 Route::get('pastVolunteers', 'HomeController@showVolunteers');
 
+Route::get('usersRSVP', 'HomeController@showUsersRSVP');
+
+Route::get('search', 'HomeController@search');
+
 /*Volunteer profile view below*/
 Route::get('volunteer', 'HomeController@showProfile');
 /*Volunteer profile view below*/
