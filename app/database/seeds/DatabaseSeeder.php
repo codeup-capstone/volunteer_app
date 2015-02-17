@@ -20,9 +20,9 @@ class DatabaseSeeder extends Seeder {
 		$this->call('LocationsTableSeeder');
 		$this->call('EventsTableSeeder');
 		$this->call('EventUserTableSeeder');
+		$this->call('ReviewsTableSeeder');
 		// $this->call('TagsTableSeeder');
 		// $this->call('EventTagTableSeeder');
-		// $this->call('ReviewsTableSeeder');
 	}
 
 }
