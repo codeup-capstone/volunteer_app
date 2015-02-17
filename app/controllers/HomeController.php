@@ -1,7 +1,5 @@
 <?php
-
 class HomeController extends BaseController {
-
 	/*
 	|--------------------------------------------------------------------------
 	| Default Home Controller
@@ -14,7 +12,6 @@ class HomeController extends BaseController {
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
 	*/
-
 	public function showAdminPage()
 	{
 		return View::make('activities.admin');
@@ -43,7 +40,6 @@ class HomeController extends BaseController {
 	{
 		return View::make('activities.organizations');
 	}
-
 	public function showVolunteers()
 	{
 		return View::make('activities.pastVolunteers');
@@ -52,23 +48,14 @@ class HomeController extends BaseController {
 	{
 		return View::make('activities.rsvp');
 	}
-	// public function showProfile()
-	// {
-	// 	$id = Auth::id();
-
-	// 	$user = User::find($id)->with('activity');
-	// 	dd($user)
-
-	// 	return View::make('activities.showProfile')->compact($user);
-	// }
-	// public function showProfileEdit()
-	// {
-	// 	$id = Auth::id();
-
-	// 	// $activities = Activity::
-
-	// 	return View::make('activities.volunteerRSVPEdit');
-	// }
+	public function showProfile()
+	{
+		return View::make('activities.volunteer');
+	}
+	public function showProfileEdit()
+	{
+		return View::make('activities.volunteerEdit');
+	}
 	public function showLogin()
 	{
 		return View::make('master');
@@ -77,14 +64,11 @@ class HomeController extends BaseController {
 	{
 		return View::make('master');
 	}
-
 	public function doLogin()
 	{
 		$email = Input::get('email');
 		$password = Input::get('password');	
-
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
-
 		    Session::flash('successMessage', "You're logged in!.");
 		    return Redirect::intended('/');
 		
@@ -94,13 +78,10 @@ class HomeController extends BaseController {
 		    return Redirect::action('HomeController@showHome');
 		}
 	}
-
 	public function doLogout()
 	{
 		Auth::logout();
 		Session::flash('successMessage', "You're logged out.");
 		return Redirect::to('/');
 	}
-
 }
-
