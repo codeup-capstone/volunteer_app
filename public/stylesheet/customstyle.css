@@ -13,9 +13,17 @@ a.btn:hover {
   border-style: none;
    
 }
-
+.btn-height {
+  min-height: 150px;
+  margin-top: 10px;
+  padding-top: 35px;
+}
+  
+ .btn-width {
+  width: 234px;
+}
 .dropmenuItems {
-	padding-left: 20px !important;
+  padding-left: 20px !important;
 }
 .no-gutters {
 	padding-right: 0;
@@ -35,6 +43,7 @@ a.btn:hover {
 }
 .transparent {
   background-color: transparent;
+  border-radius: 5px;
 }
 
 
