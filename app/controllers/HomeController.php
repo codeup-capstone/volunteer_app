@@ -52,23 +52,23 @@ class HomeController extends BaseController {
 	{
 		return View::make('activities.rsvp');
 	}
-	public function showProfile()
-	{
-		$id = Auth::id();
+	// public function showProfile()
+	// {
+	// 	$id = Auth::id();
 
-		$user = User::find($id)->with('activity');
-		dd($user)
+	// 	$user = User::find($id)->with('activity');
+	// 	dd($user)
 
-		return View::make('activities.showProfile')->compact($user);
-	}
-	public function showProfileEdit()
-	{
-		$id = Auth::id();
+	// 	return View::make('activities.showProfile')->compact($user);
+	// }
+	// public function showProfileEdit()
+	// {
+	// 	$id = Auth::id();
 
-		// $activities = Activity::
+	// 	// $activities = Activity::
 
-		return View::make('activities.volunteerRSVPEdit');
-	}
+	// 	return View::make('activities.volunteerRSVPEdit');
+	// }
 	public function showLogin()
 	{
 		return View::make('master');
