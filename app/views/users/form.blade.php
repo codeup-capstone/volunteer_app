@@ -20,7 +20,7 @@
      		   	    </div><!--div for profile picture -->
      		   	    			         	
 			        <div class="col-md-7 equal-height-title column-inner text-center">
-			             	<h3>Fill out the form below to create your Profile</h3>
+			             	<h3>Fill out the form below to create/update your profile</h3>
 			             	
 			        </div><!-- VOLUNTEERS-->	
 	   	   	    
