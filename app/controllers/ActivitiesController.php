@@ -29,7 +29,7 @@ class ActivitiesController extends \BaseController {
 			$activities = Activity::with('agency')->paginate(10);
 			// $activities = Activity::all();
 
-			return View::make('activities.events', compact('activities'));
+			return View::make('activities.eventsByOrganizations', compact('activities'));
 
 			// $activities = Activity::with('user')->orderBy('event_date', 'desc')->paginate(4);
 			// return View::make('activities.index')->with('activities', $activities);
