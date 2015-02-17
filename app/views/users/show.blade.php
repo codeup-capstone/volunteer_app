@@ -5,16 +5,13 @@
 <div>
 	<div class='main-container'>
 		<div class='col-md-12' id='users'>
-			<ul style="list-style-type:none">
-  				<li><h2>{{{ $user->first_name }}} &nbsp {{{ $user->last_name }}}</h2></li>
-  				<li>{{{ $user->city }}} &nbsp {{{ $user->state }}} &nbsp {{{ $user->zip }}}</li>
-  				<li>{{{ $user->email }}}</li>
-  				<li>{{{ $user->phone }}}</li>
-  				<li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
-  				<li>{{{ $user->first_name }}}'s profile was updated {{{ $user->updated_at->diffForHumans() }}}</li>
-			</ul>
+			
+  				
+  				
+  			
+			
 				
-			<p><h3>{{{ $user->description }}}</h3></p>
+			
 			@if (Auth::check())
 		
 			<a href="{{{ action('UsersController@edit', $user->id) }}}"><button class='btn btn-info' id='edit-button'>Edit User</button></a>
@@ -56,6 +53,7 @@
 				        <div class="half-row col-md-6">
 			             	<div class="equal-height-title column-inner text-center">
 			             		<h3>{{{$user->first_name." ".$user->last_name}}}</h3>
+			             		<p>{{{ $user->description }}}</p>
 			             	</div><!-- USER NAME-->
 				         	<div class="half-row">
 					            <div class="col-md-6 equal-height-text column-inner text-center">
@@ -81,6 +79,7 @@
 				                      <li>Address:<p>{{{$user->city}}}</p></li>
 				                      <li>Number:<p>{{{$user->phone}}}</p></li>
 				                      <li>Email:<p>{{{$user->email}}}</p></li>
+				                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
 				                    </ul>
 				                  </li>          
 				              
