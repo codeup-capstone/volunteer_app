@@ -32,7 +32,7 @@
             <div class="column-inner column-featured">
               <!-- <h3 class="h2 column-featured-headline">Quick Connect</h3> -->
            	
-              <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showRsvp') }}}">See an Event<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+              <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width" href="{{{ action('HomeController@showRsvp') }}}">Quick Filter</a> </p>
            
               
             </div>
@@ -44,7 +44,7 @@
             <div class="column-inner column-featured">
              <!--  <h3 class="h2 column-featured-headline">Events</h3> -->
            	
-              <p> <a class="btn btn-featured btn-lg" href="{{{ action('ActivitiesController@index') }}}">Browse Events<i class="fa fa-arrow-right fa-fw"></i></a> </p>
+              <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width" href="{{{ action('ActivitiesController@index') }}}">Browse Events</a> </p>
            
               
             </div>
@@ -55,7 +55,7 @@
             <div class="column-inner column-featured">
              <!--  <h3 class="h2 column-featured-headline">Non Profits</h3> -->
            	
-              <p> <a class="btn btn-featured btn-lg" href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits <i class="fa fa-arrow-right fa-fw"></i></a> </p>
+              <p> <a class="btn btn-featured btn-lg transparent shadow-1" href="{{{ action('AgenciesController@index') }}}">Browse Organizations </a> </p>
            
               
             </div>

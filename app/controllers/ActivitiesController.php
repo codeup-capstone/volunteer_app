@@ -26,7 +26,7 @@ class ActivitiesController extends \BaseController {
 
 			else {
 
-			$activities = Activity::with('agency')->paginate(6);
+			$activities = Activity::with('agency')->paginate(5);
 			// $activities = Activity::all();
 
 			return View::make('activities.index', compact('activities'));
