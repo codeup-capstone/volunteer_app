@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAgencyUserTable extends Migration {
+class CreateAgencyAdminTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,13 @@ class CreateAgencyUserTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('agency_user', function(Blueprint $table)
+		Schema::create('agency_admin', function(Blueprint $table)
 		{
 			$table->integer('agency_id')->unsigned();
-			$table->integer('user_id')->unsigned();
-			$table->primary(array('agency_id', 'user_id'));
+			$table->integer('admin_id')->unsigned();
+			$table->primary('agency_id');
 			$table->foreign('agency_id')->references('id')->on('agencies');
-			$table->foreign('user_id')->references('id')->on('users');
+			$table->foreign('admin_id')->references('id')->on('users');
 		});		
 	}
 
@@ -29,7 +29,7 @@ class CreateAgencyUserTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('agency_user');
+		Schema::drop('agency_admin');
 	}
 
 }
