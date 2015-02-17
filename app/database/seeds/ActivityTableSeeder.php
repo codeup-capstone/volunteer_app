@@ -1,6 +1,6 @@
 <?php
 
-class EventsTableSeeder extends Seeder {
+class ActivityTableSeeder extends Seeder {
 
 	public function run()
 	{
