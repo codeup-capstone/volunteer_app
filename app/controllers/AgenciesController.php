@@ -52,8 +52,14 @@ class AgenciesController extends \BaseController {
 	public function show($id)
 	{
 		$agency = Agency::findOrFail($id);
-
+		// dd($agency->activity);
+		// $activities = Activity::whereHas('agency', function($q) use($id)
+		// {
+		// 	$q->where('agency_id', $id);
+		// })->with('agency')->get();
+		// dd($activities);
 		return View::make('agencies.show', compact('agency'));
+
 	}
 
 	/**
