@@ -91,29 +91,6 @@
 	    	<div class="col-md-12">
 		     <div class="row">
 
-	    		<div class="col-md-12 text-center">	
-			     	<table class="table table-striped table-hover">
-			     	    <tr>
-			     	      <th>Event Name</th>
-			     	      <th>Organization</th>
-			     	      <th>Event Date</th>
-			     	      <th>Start Time</th>
-			     	      <th>End Time</th>
-			     	    </tr>
-			     	  @foreach ($activities as $activity)
-			     	    <tr>
-			     	    <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
-			     	    <td>
-			     	      {{ $activity->agency->name }}
-			     	    </td>
-			     	    <td>{{ $activity->event_date }}</td>
-			     	    <td>{{ $activity->start_time }}</td>
-			     	    <td>{{ $activity->end_time }}</td>
-			     	    </tr>
-			     	  @endforeach
-			     	</table>
-		     	</div><!-- table of events -->
-      		</div><!-- row that contains rsvp and all data -->
 		     
 
 	        <!--/.col-x-x-->
