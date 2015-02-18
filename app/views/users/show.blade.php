@@ -98,23 +98,23 @@
 	    	<div class="col-md-12">
 		     <div class="row no-gutters">
 
-	    		<div class="col-md-12 text-center">	
+	    		<div class="col-md-12 ">	
 			     		<table class="table table-striped table-hover">
-	             		    <tr>
+	             		    <tr class="text-center">
 	             		    	<th>Agency</th>
 	             		    	<th>Event Date</th>
-	             		    	<th>Category</th>
+	             		    	<th>Contact</th>
 	             		    	
 	             		    </tr>
 
-	             				@foreach($->activities as $activity)
+	             				@foreach($user->activities as $activity)
          					<tr>
-         						<a href="#">
-         							<td>{{{ $agenc->name }}}</td>
-	         						<td>{{{ $activity->name }}}</td>
-	         						<td>{{{ $activity->event_date }}}</td>
-	         						<td>{{{ $activity->category }}}</td>
-         						</a>
+         						
+	         						<td><a class="btn" href="{{{ action('AgenciesController@show', $activity->id) }}}">{{{ $activity->name }}}</a></td>
+	         						<td><a class="btn" href="{{{ action('AgenciesController@show', $activity->id) }}}">{{{ $activity->event_date }}}</a></td>
+         							<td><a class="btn" href="{{{ action('AgenciesController@show', $activity->id) }}}">{{{ $activity->contact_name }}}</a></td>
+	         						
+         						
 	             			</tr>			
 	             				@endforeach
 	             		</table>
