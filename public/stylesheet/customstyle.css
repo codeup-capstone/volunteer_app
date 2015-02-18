@@ -33,6 +33,7 @@ a.btn:hover {
 .no-page-gutters {
 	padding: 0px;
 }
+
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -41,6 +42,9 @@ a.btn:hover {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.smLogo {
+  max-height: 30px;
 }
 .summary {
   text-align: justify;
@@ -89,6 +93,9 @@ a.btn:hover {
       max-width: 183px;
       text-align: center;
     }
+    .logoHeight {
+      max-height: 80px;
+    }
 
     .landingBackground {
       height: 70%;
@@ -102,22 +109,7 @@ a.btn:hover {
       overflow-x: hidden;
        
     }
-    .slide-panel {
-      position: fixed;
-      padding: 20px 0;
-      color: #ffffff;
-      background: #000000;
-      top: 0;
-      width: 100%;
-      bottom: 0;
-      right: 100%;
-      z-index: 1000git ;
-      transition: all 0.5s ease-in-out;
-      overflow: auto;
-      box-shadow: inset 0px 0px 0px 2px #ffffff;
-      border: 3px solid #000000;
-     
-    }
+ 
     .pagination {
   position: relative;
   display: inline-block;
