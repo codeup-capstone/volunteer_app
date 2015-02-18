@@ -19,7 +19,7 @@
 	<link href="/bedifferent/theme/assets/css/logo-font.css" rel="stylesheet" type="text/css">
 
 	<!-- THEME CSS (unminified TOC version w/purchase) ============================================== -->
-	<link href="/bedifferent/theme/assets/css/theme-min.css" rel="stylesheet" type="text/css">
+	<link href="/bedifferent/theme/assets/css/theme-colors-css/b-different-navy.min.css" rel="stylesheet" type="text/css">
 
 	<!-- SCRIPTS IN HEAD ============================================== -->
 	<script src="/bedifferent/theme/assets/js/modernizr.2.8.3.js"></script>

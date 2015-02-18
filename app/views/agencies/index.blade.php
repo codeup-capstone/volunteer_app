@@ -56,7 +56,7 @@
 	             					@endforelse
 	             		</table>
 	                  </div>   
-                    <div class="col-md-3">                     
+                    <div class="col-md-3 static">                     
                             <div class="column-inner column-featured ">                            
                             	<p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
                             </div>
