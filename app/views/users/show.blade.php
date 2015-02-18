@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <div>
 	<div class='main-container'>
 		<div class='col-md-12' id='users'>
@@ -24,16 +25,14 @@
 			</div>
 </div>
 
-	@if (Auth::guest())
-		<h2>Welcome<p>{{{$user->first_name}}}</p></h2>
-	@endif
+	
 </div>
 	
 
 <div id="page">
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
   <div class="page-content" role="main">
-    <div class="container">
+    <div class="container no-gutters">
       
       <!-- .container for entire page --> 
       
@@ -45,62 +44,80 @@
 	      <!-- <div class="row sixteen-gutter"> -->
 	      
 	       <div class="col-md-12 ">       
-	       	<div class="row"> <!-- profile info bar -->           	
+	       	<div class="post person"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
- 		             		<img src="/bedifferent/theme/assets/images/people/kathy.jpg">
+ 				   			<div class="image">
+ 		             			<img src="/bedifferent/theme/assets/images/people/kathy.jpg">
+ 				   			</div>
  		   	       </div><!--div for profile picture -->
+
 		     		<div class="section">
-				        <div class="half-row col-md-6">
-			             	<div class="equal-height-title column-inner text-center">
-			             		<h3>{{{$user->first_name." ".$user->last_name}}}</h3>
+				        <div class="half-row col-md-10 no-gutters">
+			             	<div class="equal-height-title column-inner ">
+			             		<h3 class="text-center">{{{$user->first_name." ".$user->last_name}}}</h3>
 			             		<p>{{{ $user->description }}}</p>
-			             	</div><!-- USER NAME-->
-				         	<div class="half-row">
-					            <div class="col-md-6 equal-height-text column-inner text-center">
+					   	        	<nav id="nav" role="navigation">
+							            <ul>
+							              <li class="active has-children"><a href="#"> click for profile summary</a>
+							              
+							                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+							                    <ul>
+							                      
+							                      <li><span>Address:</span> {{{$user->city}}}</li>
+							                      <li><span>Number:</span> {{{$user->phone}}}</li>
+							                      <li><span>Email:</span> {{{$user->email}}}</li>
+							                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
+							                    </ul>
+							                  </li>          
+							              
+							            </ul> <!-- summary of USER PROFILE -->
+						          	</nav>
+							   	</div>
+				         	<div class="half-row no-gutters">
+					            <div class="col-md-6  equal-height-text column-inner text-center">
 					             	<h5>PAST EVENTS</h5>
 					             </div> <!-- PAST EVENTS-->     
 					             <div class="col-md-6 equal-height-title column-inner text-center">
 					             	<h5>FUTURE EVENTS</h5>
 					             </div><!-- RSVP COUNT-->	
 			         		</div><!-- usr rsvps data -->
+			             	</div><!-- USER NAME-->
 				        </div>  <!-- top half row section-->   
 	         		</div><!-- left third of profile infobar -->
 			        		
 		     	
 			        
 			        <div class="col-md-4">
-		   	        	<nav id="nav" role="navigation">
-				            <ul>
-				              <li class="active has-children"><a href="#"> Profile</a>
-				              
-				                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-				                    <ul>
-				                      
-				                      <li>Address:<p>{{{$user->city}}}</p></li>
-				                      <li>Number:<p>{{{$user->phone}}}</p></li>
-				                      <li>Email:<p>{{{$user->email}}}</p></li>
-				                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
-				                    </ul>
-				                  </li>          
-				              
-				            </ul> <!-- summary of USER PROFILE -->
-			          	</nav>
-				   	</div>
 	   			   
-	   			  
+	
 	   	   	    
 			</div><!--TOP SECTION OF USER PROFILE BREAKDOWN-->
 		   </div>             	
 	   
 
 	    	<div class="col-md-12">
-		     <div class="row">
+		     <div class="row no-gutters">
 
 	    		<div class="col-md-12 text-center">	
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
-			     	<h1>USERS RSVP EVENTS GO IN HERE</h1>
+			     		<table class="table table-striped table-hover">
+	             		    <tr>
+	             		    	<th>Agency</th>
+	             		    	<th>Event Date</th>
+	             		    	<th>Category</th>
+	             		    	
+	             		    </tr>
+
+	             				@foreach($->activities as $activity)
+         					<tr>
+         						<a href="#">
+         							<td>{{{ $agenc->name }}}</td>
+	         						<td>{{{ $activity->name }}}</td>
+	         						<td>{{{ $activity->event_date }}}</td>
+	         						<td>{{{ $activity->category }}}</td>
+         						</a>
+	             			</tr>			
+	             				@endforeach
+	             		</table>
 		     	</div><!-- table of events -->
       		</div><!-- row that contains rsvp and all data -->
 		     
