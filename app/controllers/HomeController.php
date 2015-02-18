@@ -46,7 +46,7 @@ class HomeController extends BaseController {
 	}
 	public function showRsvp()
 	{
-		return View::make('activities.rsvp');
+		return View::make('activities.show');
 	}
 	public function showProfile()
 	{
