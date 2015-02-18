@@ -19,53 +19,78 @@
         
          
        
-       <div class="col-md-12">
-          <div class="row">
+      <div class="row no gutters">
+         <div class="col-md-9">
               
-             
-              <div class="row"><!-- row form for edit fields -->
-                <div class="col-md-12 text-center ">
-                  <h3>Events in Your Area</h3>
-                </div><!-- form for edit fields -->
-             
-            <table class="table table-striped table-hover">
-                <tr>
-                  <th>Event Name</th>
-                  <th>Organization</th>
-                  <th>Event Date</th>
-                  <th>Start Time</th>
-                  <th>End Time</th>
-                </tr>
-              @foreach ($activities as $activity)
-                <tr>
-                <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
-                <td>
-                  {{ $activity->agency->name }}
-                </td>
-                <td>{{ $activity->event_date }}</td>
-                <td>{{ $activity->start_time }}</td>
-                <td>{{ $activity->end_time }}</td>
-                </tr>
-              @endforeach
-            </table>
-          </div>
+             <div class="row">
+                <div class="col-md-12"><!-- title -->
+                  <div class="row text-center ">
+                    <h3>Events in Your Area</h3>
+                  </div>
+                </div><!-- title -->
+             </div>
 
-       </div>               
-            <div class="col-md-6 col-md-offset-4">
-              <div class="row">
-              <div class="pagination col-md-offset-4">
-                  {{$activities->links()}}
-              </div><!-- pagination -->
-              </div>
+             <div class="row"> <!-- table -->
+             
+                <div class="col-md-12">
+             
+                    <table class="table table-striped table-hover ">
+                        <tr>
+                          <th>Event Name</th>
+                          <th>Organization</th>
+                          <th>Event Date</th>
+                          <th>Start Time</th>
+                          <th class="hidden-xs hidden-sm">End Time</th>
+                        </tr>
+                      @foreach ($activities as $activity)
+                        <tr>
+                        <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
+                        <td>
+                          {{ $activity->agency->name }}
+                        </td>
+                        <td>{{ $activity->event_date }}</td>
+                        <td>{{ $activity->start_time }}</td>
+                        <td class="hidden-xs hidden-sm">{{ $activity->end_time }}</td>
+                        </tr>
+                      @endforeach
+                    </table>
+                 </div>   
             </div>
-     
 
+                          
+     
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 ">
+                      <div class="pagination">
+                          {{$activities->links()}}
+                      </div><!-- pagination -->
+                    </div><!-- row -->
+                  </div><!-- col-md-6 -->
+
+          </div> <!-- main section and table -->
+                    <div class="col-md-3 ">
+                      <div class="row">
+                        <div class="col-md-12">
+                           <div class="column-inner column-featured ">
+                             
+                            <p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
+                           </div>
+
+                             <div class="column-inner column-featured">
+                             
+                               <p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showRsvp') }}}">Quick Finder</a> </p>      
+                             </div>
+                           <!--/.column-inner .column-featured-->
+                          </div>
+                         </div>
+                      </div> <!-- sidebar buttons to go home or random event  -->
+       </div>               
   
             
+        
       
        
       <!-- / .container -->
-        </div> 
       </div>
   <!-- /.page-content role=main --> 
   <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
