@@ -54,6 +54,12 @@
 										{{ Form::text('last_name', Input::old('last_name'), array('class' => 'form-control')) }}	
 										{{ $errors->first('last_name', '<p class="help-block">:message</p>') }}
 									</div>
+									
+									<div class="form-group" {{{ $errors->has('email') ? 'has-error' : '' }}}>
+										{{ Form::label('email', 'E-mail') }}
+										{{ Form::text('email', Input::old('email'), array('class' => 'form-control')) }}	
+										{{ $errors->first('email', '<p class="help-block">:message</p>') }}
+									</div>
 
 									<div class="form-group" {{{ $errors->has('password') ? 'has-error' : '' }}}>
 										{{ Form::label('password', 'Password') }}
@@ -62,7 +68,7 @@
 									</div>
 
 									<div class="form-group" {{{ $errors->has('password_confirmation') ? 'has-error' : '' }}}>
-										{{ Form::label('password_confirmation', 'password_confirmation') }}
+										{{ Form::label('password_confirmation', 'Password Confirmation') }}
 										{{ Form::password('password_confirmation', Input::old('password_confirmation'), array('class' => 'form-control')) }}	
 										{{ $errors->first('password_confirmation', '<p class="help-block">:message</p>') }}
 									</div>
@@ -73,11 +79,6 @@
 										{{ $errors->first('profile', '<p class="help-block">:message</p>') }}
 									</div>
 
-									<div class="form-group" {{{ $errors->has('email') ? 'has-error' : '' }}}>
-										{{ Form::label('email', 'E-mail') }}
-										{{ Form::text('email', Input::old('email'), array('class' => 'form-control')) }}	
-										{{ $errors->first('email', '<p class="help-block">:message</p>') }}
-									</div>
 
 									<div class="form-group" {{{ $errors->has('phone') ? 'has-error' : '' }}}>
 										{{ Form::label('phone', 'Phone Number') }}

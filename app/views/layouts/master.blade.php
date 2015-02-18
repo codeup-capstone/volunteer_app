@@ -129,8 +129,6 @@
 	<!-- WINDOWS 8 Phones BUG FIX -->
 	<script src="/bedifferent/theme/assets/js/windows-fix.js"></script>
 
-
-
 	</head>
 
 	<body>
