@@ -16,12 +16,15 @@ a.btn:hover {
   border-style: none;
    
 }
+
 .btn-height {
   min-height: 150px;
   margin-top: 10px;
   padding-top: 35px;
 }
-  
+ .btn-left {
+  text-align: left;
+ } 
  .btn-width {
   width: 234px;
 }

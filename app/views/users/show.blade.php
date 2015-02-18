@@ -110,9 +110,9 @@
 	             				@foreach($user->activities as $activity)
          					<tr>
          						
-	         						<td><a class="btn" href="{{{ action('AgenciesController@show', $activity->id) }}}">{{{ $activity->name }}}</a></td>
-	         						<td><a class="btn" href="{{{ action('AgenciesController@show', $activity->id) }}}">{{{ $activity->event_date }}}</a></td>
-         							<td><a class="btn" href="{{{ action('AgenciesController@show', $activity->id) }}}">{{{ $activity->contact_name }}}</a></td>
+	         						<td><a class="btn btn-left col-md-12" href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{{ $activity->name }}}</a></td>
+	         						<td><a class="btn col-md-12" href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{{ $activity->event_date }}}</a></td>
+         							<td><a class="btn col-md-12" href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{{ $activity->contact_name }}}</a></td>
 	         						
          						
 	             			</tr>			
