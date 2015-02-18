@@ -42,7 +42,10 @@ a.btn:hover {
 .round-btn {
   border-radius: 5px;
 }
-
+.row {
+  height: auto;
+  
+}
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -82,6 +85,10 @@ clickableRowbackground-color: #ccc;
 }
 #clickableRow td:hover {
     cursor: pointer;
+}
+
+#colFullheight {
+  height: 100%;
 }
 
 /*box shadows for buttons*/

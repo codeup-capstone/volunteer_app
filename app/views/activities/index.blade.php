@@ -68,7 +68,7 @@
                   </div><!-- col-md-6 -->
 
           </div> <!-- main section and table -->
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 " id="colFullheight">
                       <div class="row">
                         <div class="col-md-12">
                            <div class="column-inner column-featured ">
