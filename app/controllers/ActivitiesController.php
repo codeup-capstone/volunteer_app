@@ -11,7 +11,7 @@ class ActivitiesController extends \BaseController {
 	{
 			if (Input::has('search')) {
 				$search = Input::get('search');
-				$query = Activity::with('user', 'agencies');
+				$query = Activity::with('users', 'agency');
 
 				$query->where('name', 'like', '%' . $search . '%');
 				$query->orWhere('description', 'like', '%' . $search . '%');
