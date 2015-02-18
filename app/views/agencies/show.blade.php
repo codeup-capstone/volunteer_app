@@ -20,9 +20,7 @@
 </div>
 	@endif
 
-	@if (Auth::guest())
-		<p>Welcome {{{$agency->name}}}</p>
-	@endif
+	
 </div>
 	
 
@@ -46,41 +44,36 @@
  		   	      		<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}">
  		   	       </div><!--div for profile picture -->
 		     		<div class="section">
-				        <div class="half-row col-md-6">
-			             	<div class="equal-height-title column-inner text-center">
-			             		<h5>{{{ $agency->name }}}</h5>
-			             	</div><!-- AGENCY NAME-->
-				         	<div class="half-row">
-					            <div class="col-md-6 equal-height-text column-inner text-center">
-					             	<h5>PAST EVENTS</h5>
-					             </div> <!-- PAST EVENTS-->     
-					             <div class="col-md-6 equal-height-title column-inner text-center">
-					             	<h5>FUTURE EVENTS</h5>
-					             </div><!-- RSVP COUNT-->	
-			         		</div><!-- usr rsvps data -->
+				        <div class="half-row col-md-10">
+			             	
+			             		
+			   	        	<nav id="nav" role="navigation">
+					            <ul>
+					              <li class="active equal-height-title column-inner text-center has-children"><a href="#"> <h5>{{{ $agency->name }}}</h5>
+					              		<figcaption class="info-text-box">
+					              				<p>Click to see Profile</p>
+					              		</figcaption></a>
+					                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+					                    <ul class="text-left">
+					                      
+					                     <li><span>Address:</span> {{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
+					                     <li><span>Number:</span> {{{$agency->phone}}}</li>
+					                     
+					                     <li><p class="summary"> {{{ $agency->description }}}</p></li>
+					                    </ul>
+					                </li>           
+					              
+					            </ul> <!-- summary of AGENCY PROFILE -->
+				          	</nav>
+			             	
+				         	
 				        </div>  <!-- top half row section-->   
 	         		</div><!-- left third of profile infobar -->
 			        		
 		     	
 			        
-			        <div class="col-md-4">
-		   	        	<nav id="nav" role="navigation">
-				            <ul>
-				              <li class="active has-children"><a href="#"> Profile</a>
-				              
-				                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-				                    <ul>
-				                      
-				                     <li>Address:{{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
-				                     <li>Number:<p>{{{$agency->phone}}}</p></li>
-				                     <li>Email:<p>{{{$agency->email}}}</p></li>
-				                     <li><p class="summary">{{{ $agency->description }}}</p></li>
-				                    </ul>
-				                  </li>          
-				              
-				            </ul> <!-- summary of AGENCY PROFILE -->
-			          	</nav>
-				   	</div>
+			        
+				   	
 	   			   
 	   			  
 	   	   	    
@@ -90,17 +83,29 @@
 
 	    	<div class="col-md-12">
 		     <div class="row">
+		     	  <table class="table table-striped table-hover" id="clickableRow">
+                        <tr>
+							<th class="hidden">&nbsp</th>                        
+                          	<th>Event Name</th>
+                          	<th>Event Date</th>
+                          	<th>Start Time</th>
+                          
+                        </tr>
+                      @foreach ($agency->activities as $activity)
+                        <tr>
+                        	<td class="hidden"><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
+	                        <td>{{ $activity->name }}</td>
+	                        <td>{{ $activity->event_date }}</td>
+	                        <td>{{ $activity->start_time }}</td>
+                        </tr>
+                      @endforeach
+                    </table>
 
-		     
-
-	        <!--/.col-x-x-->
-	        <hr class="visible-xs vertical-spacer vertical-spacer-xs">
+	       
 	     
 	       
 	          
-	    
-	      <!-- VERTICAL SPACING -->
-	      <hr class="vertical-spacer vertical-spacer-lg"> 
+	   
 	    <!-- / .container -->
    			</div> 
   		</div>

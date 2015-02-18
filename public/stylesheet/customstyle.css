@@ -64,7 +64,25 @@ a.btn:hover {
 }
 
 
-
+table#clickableRow {
+    border-collapse: collapse;   
+}
+#clickableRow tr {
+    background-color: #eee;
+    border-top: 1px solid #fff;
+}
+#clickableRow tr:hover {
+clickableRowbackground-color: #ccc;
+}
+#clickableRow th {
+    background-color: #fff;
+}
+#clickableRow th, #clickableRow td {
+    padding: 3px 5px;
+}
+#clickableRow td:hover {
+    cursor: pointer;
+}
 
 /*box shadows for buttons*/
 /********************/
