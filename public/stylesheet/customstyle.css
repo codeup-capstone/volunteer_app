@@ -36,6 +36,9 @@ a.btn:hover {
 .no-page-gutters {
 	padding: 0px;
 }
+.round-btn {
+  border-radius: 5px;
+}
 
 .row.no-gutters {
   margin-right: 0;
