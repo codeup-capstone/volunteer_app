@@ -14,6 +14,13 @@ class Location extends BaseModel {
 	 */
 	protected $table = 'locations';
 
+	public static $rules = array(
+			'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+			'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+		    'email'  	=> 'Required|Between:3,64|Email|Unique:users',
+			'password'	=>'Required|AlphaNum|Between:4,15|Confirmed'
+		);
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
