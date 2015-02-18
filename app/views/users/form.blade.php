@@ -55,6 +55,18 @@
 										{{ $errors->first('last_name', '<p class="help-block">:message</p>') }}
 									</div>
 
+									<div class="form-group" {{{ $errors->has('password') ? 'has-error' : '' }}}>
+										{{ Form::label('password', 'Password') }}
+										{{ Form::password('password', Input::old('password'), array('class' => 'form-control')) }}	
+										{{ $errors->first('password', '<p class="help-block">:message</p>') }}
+									</div>
+
+									<div class="form-group" {{{ $errors->has('password_confirmation') ? 'has-error' : '' }}}>
+										{{ Form::label('password_confirmation', 'password_confirmation') }}
+										{{ Form::password('password_confirmation', Input::old('password_confirmation'), array('class' => 'form-control')) }}	
+										{{ $errors->first('password_confirmation', '<p class="help-block">:message</p>') }}
+									</div>
+
 									<div class="form-group" {{{ $errors->has('profile') ? 'has-error' : '' }}}>
 										{{ Form::label('profile', 'About Me') }}
 										{{ Form::text('profile', Input::old('profile'), array('class' => 'form-control')) }}	
