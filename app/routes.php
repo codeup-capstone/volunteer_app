@@ -58,3 +58,23 @@ Route::get('volunteerEdit', 'HomeController@showProfileEdit');
 Route::get('login', 'HomeController@doLogin');
 Route::post('/login', 'HomeController@doLogin');
 Route::get('logout', 'HomeController@doLogout');
+
+Route::get('landing', 'HomeController@doLogin');
+Route::post('/landing', 'HomeController@doLogin');
+Route::get('landing', 'HomeController@doLogout');
+
+Route::get('locations', 'HomeController@doLogin');
+Route::post('/locations', 'HomeController@doLogin');
+Route::get('locations', 'HomeController@doLogout');
+
+Route::get('search', 'HomeController@doLogin');
+Route::post('/search', 'HomeController@doLogin');
+Route::get('search', 'HomeController@doLogout');
+
+Route::get('activites', 'HomeController@doLogin');
+Route::post('/activites', 'HomeController@doLogin');
+Route::get('activites', 'HomeController@doLogout');
+
+Route::get('agencies', 'HomeController@doLogin');
+Route::post('/agencies', 'HomeController@doLogin');
+Route::get('agencies', 'HomeController@doLogout');
