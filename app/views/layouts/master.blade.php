@@ -210,20 +210,37 @@
 	<div class="hidden-xs header-btn-wrapper clearfix">
 	<!-- .header-btn-row-->
 	<div class="header-btn-row half-row">
-	  <!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
-	  <a href="#" class="login-toggle header-btn header-btn-xl" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
-	      <span class="header-btn-text">
-	        Login
-	    </span>
-	</a> 
+	  
+		@if (Auth::guest())
+			<!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
+			<a href="#" class="login-toggle header-btn header-btn-xl" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
+			    <span class="header-btn-text">
+			       	Login
+			    </span>
+			 </a>   
+		@else
+		 	<a href="/logout" class="login-toggle header-btn header-btn-xl"> <i class="fa fa-sign-out header-icon"></i>
+			      <span class="header-btn-text">
+			        Logout
+			    </span>
+			</a> 
+		@endif
 	<!-- this above data-slide toggles the #login-panel .slide-panel example --> 
 	<!-- /END 1st .header-btn .header-btn-xl in first row --> 
 	<!-- BEGIN 2nd.header-btn .header-btn-xl in first row --> 
+	@if (Auth::guest())
 	<a href="#" class="signin-toggle header-btn header-btn-xl" data-slide="slide" data-target="#signup-panel"> <i class="fa fa-pencil header-icon"></i>
 	  <span class="header-btn-text">
 	    Sign Up
 	</span>
 	</a> 
+	@else
+		<a href="#" class="signin-toggle header-btn header-btn-xl"> <i class="fa fa-pencil header-icon"></i>
+	  <span class="header-btn-text">
+	    Edit Profile
+	</span>
+	</a> 
+	@endif
 	<!-- this above data-slide toggles the #signup-panel .slide-panel example --> 
 	<!-- /END 2nd .header-btn .header-btn-xl in first row -->
 	</div>
@@ -381,8 +398,8 @@
 	<!-- /.col-*-6 -->
 	<div class="col-md-6">
 	<h4 class="no-margin-top">Sign In</h4>
-	{{ Form::open(array('url' => '/login')) }}
-	{{-- {{ Form::open(array(action('HomeController@doLogin'))) }} --}}
+	{{ Form::open(array('url' => 'login')) }}
+	{{--{{ Form::open(array(action('HomeController@doLogin'))) }} --}}
 
 	{{--Form::label('email', 'eMail Address'--}}
 	{{ Form::email('email', Input::old('email'), array('class' => 'form-control form-control-lg form-group', 'placeholder' => 'Enter email')) }}
