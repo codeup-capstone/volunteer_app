@@ -381,7 +381,8 @@
 	<!-- /.col-*-6 -->
 	<div class="col-md-6">
 	<h4 class="no-margin-top">Sign In</h4>
-	{{ Form::open(array(action('HomeController@doLogin'))) }}
+	{{ Form::open(array('url' => '/login')) }}
+	{{-- {{ Form::open(array(action('HomeController@doLogin'))) }} --}}
 
 	{{--Form::label('email', 'eMail Address'--}}
 	{{ Form::email('email', Input::old('email'), array('class' => 'form-control form-control-lg form-group', 'placeholder' => 'Enter email')) }}

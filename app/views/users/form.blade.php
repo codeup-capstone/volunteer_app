@@ -27,9 +27,9 @@
 	 				<div class="row text-center">
 	 					<div class="col-md-3">
 			 				<div class="form-group" {{{ $errors->has('image') ? 'has-error' : '' }}}>
-			 					{{ Form::label('image', 'User Image') }}
-			 					{{ Form::file('image', array('class' => 'form-control')) }}	
-			 					{{ $errors->first('image', '<p class="help-block">:message</p>') }}
+			 					{{ Form::label('image_url', 'User Image') }}
+			 					{{ Form::file('image_url', array('class' => 'form-control')) }}	
+			 					{{ $errors->first('image_url', '<p class="help-block">:message</p>') }}
 			 				</div>
 	 					</div>
 	 				</div>
