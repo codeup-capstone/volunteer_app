@@ -30,19 +30,21 @@
              	<div class="col-md-12">
              	
 	                <div class="col-md-9">
-	             		<table class="table table-striped table-hover">
+	             		<table class="table table-striped table-hover" id="clickableRow">
 	             		    <tr>
+                        <th class="hidden">&nbsp</th> 
 	             		    	<th>Agency</th>
 	             		    	<th>Address</th>
 	             		    	<th>Category</th>
 	             		    	
-	             		    </tr>
+	             		    </tr> 
 
 	             					@forelse ($agencies as $agency)
 	             					<tr>
+                          <td class="hidden"><a href="{{{ action('AgenciesController@show', $agency->id) }}}"></a></td>
 	             						<td><img  class="logoHeight smLogo" src="/img/agency/{{{ $agency->image_name }}}"></td>
 	             						<td>
-	             							<a href="{{{ action('AgenciesController@show', $agency->id) }}}">
+	             							
 	             							{{{ $agency->name }}}</a><br>
 	             							{{{ $agency->address }}}<br>
 	             							{{{ $agency->city }}}, {{{ $agency->state }}} {{{ $agency->zip }}}	             						
@@ -59,7 +61,7 @@
                             	<p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
                             </div>
                             <div class="column-inner column-featured">
-                                <p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showRsvp') }}}">Quick Finder</a> </p>      
+                                <p> <a class="btn btn-featured btn-md" href="/activities/6">Quick Finder</a> </p>      
             				</div>
                     </div>
                            <!--/.column-inner .column-featured-->

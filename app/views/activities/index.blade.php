@@ -78,7 +78,7 @@
 
                              <div class="column-inner column-featured">
                              
-                               <p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showRsvp') }}}">Quick Finder</a> </p>      
+                               <p> <a class="btn btn-featured btn-md" href="/activities/6">Quick Finder</a> </p>      
                              </div>
                            <!--/.column-inner .column-featured-->
                           </div>
