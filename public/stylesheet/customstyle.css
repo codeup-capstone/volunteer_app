@@ -6,6 +6,9 @@ body {
   max-height: 100%;
 
 }
+span {
+  font-weight: bold;
+}
 
 a.btn:hover {
   
@@ -119,61 +122,64 @@ a.btn:hover {
   width: 100%;
   height: 40px;
   text-align: center;
-}
-.pagination > li {
-  display: inline;
-}
-.pagination > li > a,
-.pagination > li > span {
-  position: relative;
-/*  float: left;*/
-  padding:  6px 12px;
-  margin-left: -1px;
-  /*line-height: 1.42867143; */
-  text-decoration: none;
-  background-color: #fff;
+    }
+    .pagination > li {
+      display: inline;
+    }
+    .pagination > li > a,
+    .pagination > li > span {
+      position: relative;
+    /*  float: left;*/
+      padding:  6px 12px;
+      margin-left: -1px;
+      /*line-height: 1.42867143; */
+      text-decoration: none;
+      background-color: #fff;
 
-}
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
-  margin-left: 0;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-.pagination > li:last-child > a,
-.pagination > li:last-child > span {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-.pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
-  color: #50D9FF;
-  background-color: #eee;
-  border-color: #ddd;
-}
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
-  z-index: 1;
-  color: #fff;
-  
-  background-color: #50D9FF;
+    }
+    .pagination > li:first-child > a,
+    .pagination > li:first-child > span {
+      margin-left: 0;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    .pagination > li:last-child > a,
+    .pagination > li:last-child > span {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    .pagination > li > a:hover,
+    .pagination > li > span:hover,
+    .pagination > li > a:focus,
+    .pagination > li > span:focus {
+      color: #50D9FF;
+      background-color: #eee;
+      border-color: #ddd;
+    }
+    .pagination > .active > a,
+    .pagination > .active > span,
+    .pagination > .active > a:hover,
+    .pagination > .active > span:hover,
+    .pagination > .active > a:focus,
+    .pagination > .active > span:focus {
+      z-index: 1;
+      color: #fff;
+      
+      background-color: #50D9FF;
 
-}
-.pagination > .disabled > span,
-.pagination > .disabled > span:hover,
-.pagination > .disabled > span:focus,
-.pagination > .disabled > a,
-.pagination > .disabled > a:hover,
-.pagination > .disabled > a:focus {
-  color: #50D9FF;
-  
-  background-color: #fff;
-  border-color: #ddd;
-}
-}
+    }
+    .pagination > .disabled > span,
+    .pagination > .disabled > span:hover,
+    .pagination > .disabled > span:focus,
+    .pagination > .disabled > a,
+    .pagination > .disabled > a:hover,
+    .pagination > .disabled > a:focus {
+      color: #50D9FF;
+      
+      background-color: #fff;
+      border-color: #ddd;
+    }
+    #sidebar {
+      height: 800px;
+    }
+    } /*end media query md *?
