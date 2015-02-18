@@ -81,11 +81,11 @@
                  <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
                    <div class="column-inner column-featured transparent btn-height ">
                      <!-- <h3 class="h2 column-featured-headline">Quick Connect</h3> -->
-<<<<<<< HEAD
-                      <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width" href="/activities/5">Quick Filter</a> </p>
-=======
+
+                      
+
                       <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width" href="/activities/6">Quick Filter</a> </p>
->>>>>>> master
+
                    </div>
                    <!--/.column-inner .column-featured-->
                  </div>
