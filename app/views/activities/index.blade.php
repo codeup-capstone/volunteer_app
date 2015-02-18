@@ -7,7 +7,7 @@
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
   <div class="page-content" role="main">
     <div class="container no-gutters">
-      
+         
       <!-- .container for entire page --> 
       
       <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
@@ -34,8 +34,9 @@
              
                 <div class="col-md-12">
              
-                    <table class="table table-striped table-hover ">
+                    <table class="table table-striped table-hover " id="clickableRow">
                         <tr>
+                          <th class="hidden">&nbsp</th> 
                           <th>Event Name</th>
                           <th>Organization</th>
                           <th>Event Date</th>
@@ -44,11 +45,12 @@
                         </tr>
                       @foreach ($activities as $activity)
                         <tr>
-                        <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
-                        <td>{{{ $activity->agency->name }}}</td>
-                        <td>{{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
-                        <td>{{{ date('g:i A',strtotime($activity->start_time)) }}}</td>
-                        <td class="hidden-xs hidden-sm">{{{ date('g:i A',strtotime($activity->end_time)) }}}</td>
+                          <td class="hidden"><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
+                          <td>{{ $activity->name }}</td>
+                          <td>{{{ $activity->agency->name }}}</td>
+                          <td>{{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
+                          <td>{{{ date('g:i A',strtotime($activity->start_time)) }}}</td>
+                          <td class="hidden-xs hidden-sm">{{{ date('g:i A',strtotime($activity->end_time)) }}}</td>
                         </tr>
                       @endforeach
                     </table>
