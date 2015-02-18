@@ -118,13 +118,13 @@
 	});
 	}
 	</script> <!-- end of facebook SDK -->
-	<!-- facebook SDK test -->
-	<div
+	<!-- facebook like/share bar -->
+	<!-- <div
 	class="fb-like"
 	data-share="true"
 	data-width="450"
 	data-show-faces="true">
-	</div>
+	</div> -->
 
 	<!-- WINDOWS 8 Phones BUG FIX -->
 	<script src="/bedifferent/theme/assets/js/windows-fix.js"></script>
@@ -132,7 +132,7 @@
 	</head>
 
 	<body>
-	<script> //facebook like/share bar
+	<script> //facebook SDK
 	window.fbAsyncInit = function() {
 	    FB.init({
 	      appId      : '591543250945125',
