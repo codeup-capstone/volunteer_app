@@ -32,7 +32,7 @@
 				                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
 				                    <ul>
 				                      <li>Age</li>
-				                      <li>Adress</li>
+				                      <li>Address</li>
 				                      <li>Number</li>
 				                      <li>Email</li>
 				                    </ul>
