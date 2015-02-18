@@ -45,12 +45,10 @@
                       @foreach ($activities as $activity)
                         <tr>
                         <td><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{ $activity->name }}</a></td>
-                        <td>
-                          {{ $activity->agency->name }}
-                        </td>
-                        <td>{{ $activity->event_date }}</td>
-                        <td>{{ $activity->start_time }}</td>
-                        <td class="hidden-xs hidden-sm">{{ $activity->end_time }}</td>
+                        <td>{{{ $activity->agency->name }}}</td>
+                        <td>{{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
+                        <td>{{{ date('g:i A',strtotime($activity->start_time)) }}}</td>
+                        <td class="hidden-xs hidden-sm">{{{ date('g:i A',strtotime($activity->end_time)) }}}</td>
                         </tr>
                       @endforeach
                     </table>
