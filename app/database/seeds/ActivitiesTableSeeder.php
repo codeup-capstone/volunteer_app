@@ -6,7 +6,7 @@ class ActivitiesTableSeeder extends Seeder {
 	{
 		$activity = new Activity();
 		$activity->name = 'Parks Weed Wednesday';
-		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210-207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
+		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210)207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
 		$activity->event_date = '2015-03-03';
 		$activity->start_time = '08:30';
 		$activity->end_time = '10:30';
@@ -25,7 +25,7 @@ class ActivitiesTableSeeder extends Seeder {
 
 		$activity = new Activity();
 		$activity->name = 'Parks Weed Wednesday';
-		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210-207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
+		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210)207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
 		$activity->event_date = '2015-03-11';
 		$activity->start_time = '08:30';
 		$activity->end_time = '10:30';
@@ -43,7 +43,7 @@ class ActivitiesTableSeeder extends Seeder {
 
 		$activity = new Activity();
 		$activity->name = 'Parks Weed Wednesday';
-		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210-207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
+		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210)207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
 		$activity->event_date = '2015-03-18';
 		$activity->start_time = '08:30';
 		$activity->end_time = '10:30';
@@ -61,7 +61,7 @@ class ActivitiesTableSeeder extends Seeder {
 
 		$activity = new Activity();
 		$activity->name = 'Parks Weed Wednesday';
-		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210-207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
+		$activity->description = 'Hardberger Park has a unique diversity of both flora and fauna and that diversity is being threatened by exotic invasive weeds. WE NEED YOUR HELP to combat these weeds which include Australian and Kleberg Bluestem, wild mustard, and malta star thistle. Join us for Weed Wednesdays at Hardberger Park from 8:30 to 10:30 a.m. We will pull weeds as well as plant native plant material in treated areas. Each week will be at a different location within the park so please contact Wendy Leonard (210)207-3292 or wendy.leonard@sanantonio.gov for details on meeting places.';
 		$activity->event_date = '2015-03-25';
 		$activity->start_time = '08:30';
 		$activity->end_time = '10:30';

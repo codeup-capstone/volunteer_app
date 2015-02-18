@@ -38,7 +38,7 @@
 	     document.write('<script src="/bedifferent/theme/assets/js/jquery-1.11.1.min.js"><\/script>');
 	 }
 	 </script>
-	 <script>
+	 <script> // Facebook SDK
 	// This is called with the results from from FB.getLoginStatus().
 	function statusChangeCallback(response) {
 	console.log('statusChangeCallback');
@@ -117,7 +117,8 @@
 	  'Thanks for logging in, ' + response.name + '!';
 	});
 	}
-	</script>
+	</script> <!-- end of facebook SDK -->
+	<!-- facebook SDK test -->
 	<div
 	class="fb-like"
 	data-share="true"
@@ -133,7 +134,7 @@
 	</head>
 
 	<body>
-	<script>
+	<script> //facebook like/share bar
 	window.fbAsyncInit = function() {
 	    FB.init({
 	      appId      : '591543250945125',
@@ -297,13 +298,14 @@
 	</a>
 	<div class="container">
 	  <h3 class="slide-panel-title">Search</h3>
-	  <form role="form" action="{{{ action('HomeController@search') }}}" method="GET" >   
-	    <div class="form-group">
-	      <input type="search" placeholder="Enter search term and press enter" class="form-control">
-	  </div>
-	  <!-- <button type="submit" class="pull-right btn btn-default">Submit</button> -->
-	  <!--/.form-group -->
-	</form>
+
+	{{ Form::open(array('action' => 'ActivitiesController@index', 'method' => 'GET')) }}
+	{{ Form::text('search', null, array('class' => 'form-group form-control', 'placeholder' => 'Enter your search')) }}
+	<button type="submit" class="pull-right btn btn-default"><i class="fa fa-search header-icon"></i></button>
+	{{ Form::close()}}
+
+	
+
 	</div>
 	<!--/.container -->
 	</div>
