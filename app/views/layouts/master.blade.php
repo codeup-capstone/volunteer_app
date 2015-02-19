@@ -134,7 +134,7 @@
 	</span>
 	</a> 
 	@else
-		<a href="{{{ action('UsersController@edit', $user->id) }}}" class="signin-toggle header-btn header-btn-xl"> <i class="fa fa-pencil header-icon"></i>
+		<a href="{{{ action('UsersController@edit', Auth::user()->id) }}}" class="signin-toggle header-btn header-btn-xl"> <i class="fa fa-pencil header-icon"></i>
 	  <span class="header-btn-text">
 	    Edit Profile
 	</span>
