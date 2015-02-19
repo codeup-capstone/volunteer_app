@@ -36,7 +36,7 @@
    	           
 	      
    	          	
-	      	<div class="col-md-7">
+	      	<div class="col-md-6">
          			<div class="row">
 		             	<!-- <div class="col-md-8 equal-height-text column-inner text-center">
 		             		<h3>Event Name</h3>
@@ -66,7 +66,7 @@
         	   	     	<div class="col-xs-12 col-md-12 no-gutters">
         			   	   <div>
         		           
-        		             <h3 class="column-inner text-center"> <a  href="#">{{ $activity->agency->name }}</a><h3>
+        		             <h3 class="column-inner text-center"> <a  href="{{{ action('AgenciesController@show', $activity->agency->id) }}}">{{ $activity->agency->name }}</a><h3>
         		              
         			   	   </div>
 
@@ -75,11 +75,11 @@
         	   	     </div><!-- middle third of  section-->
 			        
 			        <div class="half-row no-gutters">
-		             	<div class="col-md-6  equal-height-title column-inner text-center ">
+		             	<div class="col-md-6  equal-height-title column-inner text-center " id="matchSiblingHeight">
 		             		<h5>When</h5>
 		             		<p>{{{ $activity->event_date}}} at {{{ $activity->start_time}}}</p>
 		             	</div><!-- date section-->
-		             	<div class="col-md-6 equal-height-title column-inner text-center ">
+		             	<div class="col-md-6 equal-height-title column-inner text-center " id="location" >
 		             		<h5>Where</h5>
 	             				<p>{{ $activity->location->address }}<br>
 				             		{{ $activity->location->city }}, 
@@ -110,35 +110,36 @@
         <hr class="visible-xs vertical-spacer vertical-spacer-xs">
         <!-- add some vertical spacing when stacked -->
         
-        	<div class="col-md-2" id="sidebar">
+        	<div class="col-md-3" id="sidebar">
         	
 		        
-		          <div class="col-md-12 column-inner column-featured">
-		            <h3 class="h2 column-featured-headline">RSVP</h3>
-		            <p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showRsvp') }}}"></a> </p>      
+		          <div class="col-md-12 column-inner column-featured text-center">
+		            <h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('HomeController@showRsvp') }}}">RSVP</a></h3>
+		                 
 		          </div>
 		          <!--/.column-inner .column-featured-->
 		      
 		        
 
 		       
-		          <div class="col-md-12 column-inner column-featured ">
-		            <h3 class="h2 column-featured-headline">PASS</h3>
+		          <div class="col-md-12 column-inner column-featured text-center">
+		            <h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="#">PASS</a></h3>
 		         	
-		            <p> <a class="btn btn-featured btn-md" href="#"></a> </p>
+		           
 		                    
 		          </div>
 		          <!--/.column-inner .column-featured-->
 		       
 		        
 		       
-		          <div class="col-md-12 column-inner column-featured ">
-		            <h3 class="h2 column-featured-headline">HOME</h3>
-		         	<p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showHome') }}}"></a> </p>      
+		          <div class="col-md-12 column-inner column-featured text-center">
+		            <h3><a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}">HOME</a></h3>
+		         	     
 		          </div>
 		          <!--/.column-inner .column-featured-->
 		        
         	</div><!-- single sidebar section-->
+	         
 	        
         	
 	     </div><!-- id sidebar section-->

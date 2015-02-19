@@ -93,8 +93,8 @@
                         </tr>
                       @foreach ($agency->activities as $activity)
                         <tr>
-                        	<td class="hidden"><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
-	                        <td>{{ $activity->name }}</td>
+                        	<td class="hidden" ><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
+	                        <td >{{ $activity->name }}</td>
 	                        <td>{{ $activity->event_date }}</td>
 	                        <td>{{ $activity->start_time }}</td>
                         </tr>
