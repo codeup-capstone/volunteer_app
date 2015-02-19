@@ -30,7 +30,7 @@
              	<div class="col-md-12">
              	
 	                <div class="col-md-9">
-	             		<table class="table table-striped table-hover" id="clickableRow">
+	             		<table class="table table-striped table-hover raised" id="clickableRow">
 	             		    <tr>
                         <th class="hidden">&nbsp</th> 
 	             		    	<th>Agency</th>
@@ -66,7 +66,7 @@
                     </div>
                            <!--/.column-inner .column-featured-->
                   </div>
-                         
+                          
               </div> <!-- sidebar buttons to go home or random event  -->
           </div> <!-- main section and table -->
        </div>               
