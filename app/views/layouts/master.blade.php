@@ -292,7 +292,7 @@
 	        	<ul>
 	     		   <li><a href="/activites/6">Quick Connect</a></li>
 	      		   <li><a href="{{{ action('ActivitiesController@index') }}}">Browse by Event</a></li>
-	     		    <li><a href="{{{ action('HomeController@showlistOrg') }}}">Browse Non Profits</a></li>
+	     		    <li><a href="{{{ action('AgenciesController@index') }}}">Browse Non Profits</a></li>
 	        	</ul>
 	      </li>         
 	      <li><a data-slide="slide" data-target="#contact-panel" href="contact.html">Contact</a></li>
