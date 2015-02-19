@@ -38,18 +38,18 @@
 	      <!-- .row .sixteen-gutter --> 
 	      <!-- <div class="row sixteen-gutter"> -->
 	      
-	       <div class="col-md-12 ">       
+	       <div class="col-md-9 ">       
 	       	<div class="row"> <!-- profile info bar -->           	
- 				   <div class="col-md-2 embed-responsive-4by3">
+ 				   <div class="col-md-4 embed-responsive-4by3">
  		   	      		<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}">
  		   	       </div><!--div for profile picture -->
 		     		<div class="section">
-				        <div class="half-row col-md-10">
+				        <div class="half-row col-md-8">
 			             	
 			             		
-			   	        	<nav id="nav" role="navigation">
+			   	        	<nav class="headerStyle" id="nav" role="navigation">
 					            <ul>
-					              <li class="active equal-height-title column-inner text-center has-children"><a href="#"> <h5>{{{ $agency->name }}}</h5>
+					              <li class="active equal-height-title column-inner text-center has-children "><a href="#"> <h5>{{{ $agency->name }}}</h5>
 					              		<figcaption class="info-text-box">
 					              				<p>Click to see Profile</p>
 					              		</figcaption></a>
@@ -78,7 +78,7 @@
 	   			  
 	   	   	    
 			</div><!--TOP SECTION OF AGENCY PROFILE BREAKDOWN-->
-		   </div>             	
+		               	
 	   
 
 	    	<div class="col-md-12">
@@ -101,14 +101,29 @@
                       @endforeach
                     </table>
 
-	       
-	     
-	       
-	          
 	   
 	    <!-- / .container -->
-   			</div> 
-  		</div>
+		   			</div> 
+		  		</div>
+		  	</div>
+
+	  		<div class="col-md-3 " id="colFullheight">
+	  		  <div class="row">
+	  		    <div class="col-md-12">
+	  		       <div class="column-inner column-featured text-center">
+	  		         
+	  		        <h3> <a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> Home</a></h3>      
+	  		       </div>
+
+	  		         <div class="column-inner column-featured text-center">
+	  		         
+	  		           <h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="/activities/6">Quick Finder</a> </h1>      
+	  		         </div>
+	  		       <!--/.column-inner .column-featured-->
+	  		      </div>
+	  		     </div>
+	  		  </div> <!-- sidebar buttons to go home or random event  -->
+  		
   <!-- /.page-content role=main --> 
   <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
 	</div>

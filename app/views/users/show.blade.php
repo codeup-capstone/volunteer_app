@@ -53,22 +53,22 @@
 
 		     		<div class="section">
 				        <div class="half-row col-md-10 no-gutters">
-			             	<div class="equal-height-title column-inner ">
+			             	<div class="equal-height-title column-inner raised ">
 			             		<h3 class="text-center">{{{$user->first_name." ".$user->last_name}}}</h3>
 			             		<p>{{{ $user->description }}}</p>
 					   	        	<nav id="nav" role="navigation">
 							            <ul>
-							              <li class="active has-children"><a href="#"> click for profile summary</a>
+							              <li class="active has-children raised"><a href="#"> click for profile summary</a>
 							              
 							                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-							                    <ul>
+							                    <ul class="dropmenuItems">
 							                      
 							                      <li><span>Address:</span> {{{$user->city}}}</li>
-							                      <li><span>Number:</span> {{{$user->phone}}}</li>
+							                      <li><span>Number:</span> {{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $user->phone) }}}</li>
 							                      <li><span>Email:</span> {{{$user->email}}}</li>
 							                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
 							                    </ul>
-							                  </li>          
+							               </li>          
 							              
 							            </ul> <!-- summary of USER PROFILE -->
 						          	</nav>
@@ -99,8 +99,9 @@
 		     <div class="row no-gutters">
 
 	    		<div class="col-md-12 ">	
-			     		<table class="table table-striped table-hover">
+			     		<table class="table table-striped table-hover" id="clickableRow">
 	             		    <tr class="text-center">
+	             		    	<th class="hidden">&nbsp</th> 
 	             		    	<th>Agency</th>
 	             		    	<th>Event Date</th>
 	             		    	<th>Contact</th>
@@ -108,11 +109,12 @@
 	             		    </tr>
 
 	             				@foreach($user->activities as $activity)
-         					<tr>
-         						
-	         						<td><a class="btn btn-left col-md-12" href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{{ $activity->name }}}</a></td>
-	         						<td><a class="btn col-md-12" href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{{ $activity->event_date }}}</a></td>
-         							<td><a class="btn col-md-12" href="{{{ action('ActivitiesController@show', $activity->id) }}}">{{{ $activity->contact_name }}}</a></td>
+         					<tr class=" raised">
+         							<td class="hidden"><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">></a></td>
+	         						<td>{{{ $activity->name }}}</a></td>
+	         						<td>{{{ $activity->event_date }}}</a></td>
+         							<td>{{{ $activity->contact_name }}}</a></td>
+	         						
 	         						
          						
 	             			</tr>			
