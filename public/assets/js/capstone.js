@@ -9,6 +9,6 @@ $(document).ready(function() {
 
     $('#colFullheight').height( $('.container').height());
 
-
+    $('#matchSiblingHeight').height($('#location').height());
 		
 });

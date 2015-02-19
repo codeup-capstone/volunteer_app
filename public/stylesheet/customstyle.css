@@ -71,6 +71,7 @@ a.btn:hover {
 .no-page-gutters {
 	padding: 0px;
 }
+
 .round-btn {
   border-radius: 5px;
 }
@@ -126,7 +127,7 @@ background-color: #ccc;
   border-radius: 2px;
   background-color: transparent;
 }
-#nav .active>a, 
+#nav .active, 
 #nav a:hover, 
 #nav a:active, 
 #nav a:focus {

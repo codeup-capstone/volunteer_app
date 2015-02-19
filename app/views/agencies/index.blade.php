@@ -41,9 +41,9 @@
 
 	             					@forelse ($agencies as $agency)
 	             					<tr>
-                          <td class="hidden"><a href="{{{ action('AgenciesController@show', $agency->id) }}}"></a></td>
+                          <td class="hidden" > <a href="{{{ action('AgenciesController@show', $agency->id) }}}"></a></td>
 	             						<td><img  class="logoHeight smLogo" src="/img/agency/{{{ $agency->image_name }}}"></td>
-	             						<td>
+	             						<td data-hover="tooltip" data-placement="bottom" title="Click For More Information" >
 	             							
 	             							{{{ $agency->name }}}</a><br>
 	             							{{{ $agency->address }}}<br>
@@ -57,12 +57,12 @@
 	             		</table>
 	                  </div>   
                     <div class="col-md-3 static" id="colFullheight">                     
-                            <div class="column-inner column-featured ">                            
+                            <div class="column-inner column-featured text-center">                            
                             	<p> <a class="btn btn-featured btn-md buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
                             </div>
-                            <div class="column-inner column-featured">
-                                <p> <a class="btn btn-featured btn-md buttonStyle raised" href="/activities/6">Quick Finder</a> </p>      
-            				</div>
+                            <div class="column-inner column-featured text-center">
+                                <h1> <a class="btn btn-featured btn-lg buttonStyle raised" href="/activities/6">Quick Finder</a> </h1>      
+            				        </div>
                     </div>
                            <!--/.column-inner .column-featured-->
                   </div>
