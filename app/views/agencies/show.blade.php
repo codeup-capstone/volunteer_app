@@ -107,6 +107,14 @@
 		  		</div>
 		  	</div>
 
+		  	<div class="row">
+		  	  <div class="col-md-8 col-md-offset-2 ">
+		  	      <div class="pager">
+		  	          {{$activity->appends(Request::except('page'))->links()}}
+		  	      </div><!-- pagination -->
+		  	    </div><!-- row -->
+		  	  </div><!-- col-md-6 -->
+
 	  		<div class="col-md-3 " id="colFullheight">
 	  		  <div class="row">
 	  		    <div class="col-md-12">
