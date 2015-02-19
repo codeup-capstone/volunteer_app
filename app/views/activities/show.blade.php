@@ -77,7 +77,7 @@
 			        <div class="half-row no-gutters">
 		             	<div class="col-md-6  equal-height-title column-inner text-center " id="matchSiblingHeight">
 		             		<h5>When</h5>
-		             		<p>{{{ $activity->event_date}}} at {{{ $activity->start_time}}}</p>
+		             		<p>{{{ date('D, M d',strtotime($activity->event_date)) }}} at {{{ date('g:i A',strtotime($activity->start_time)) }}}</p>
 		             	</div><!-- date section-->
 		             	<div class="col-md-6 equal-height-title column-inner text-center " id="location" >
 		             		<h5>Where</h5>
