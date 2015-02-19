@@ -501,6 +501,45 @@
 	@yield('content')
 	<!-- _________ GO TO TOP ___________ --> 
 	<a id="go-to-top" href="#top" title="up"> <i class="ti ti-arrow-up"></i> </a> 
+	<!-- ================== FOOTER ================= -->
+	<footer class="footer">
+	  <div class="footer-column-wrapper">
+	    <div class="container">
+	      <div class="row footer-row equal-height-col">
+	        <div class="col-sm-5 col-md-3 footer-col">
+	          <h4 class="footer-title">Socialfy</h4>
+	          <ul class="social-icon-list">
+	            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
+	            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+	            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+	            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+	            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
+	            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
+	            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+	          </ul>
+	        </div>
+	        <!-- /.col-sm-5 .col-md-3 footer-col -->
+	        <div class="col-sm-7 col-md-9 footer-col">
+	          <h4 class="footer-title">About Us</h4>
+	          <p>We're a team of like minded guys with diverse backgrounds. We love changing our team name every 4 hours. We've consumed 20 gallons of milk and cupcakes in 3 days. So far no one has managed to crack but we probably will the closer to the deadline we get. </p>
+	        </div>
+	        <!-- /.col-sm-7 col-md-9 footer-col-->
+	      </div>
+	      <!--/.row .footer-row-->
+	   
+	    </div>
+	    <!--/.container -->
+	  </div>
+	  <!--/.footer-column-wrapper -->
+	  <div class="footer-copyright">
+	    <div class="container">
+	      <p class="no-margin">© Copyright 2015 
+	        All rights reserved.<a class="link-underline" href="site-map.html">Site Map</a> </p>
+	    </div>
+	  </div>
+	  <!--/.footer-copyright--> 
+	</footer>
+	<!-- ================== /.END footer ================= --> 
 
 	<!-- _________ FOOTER SCRIPTS  ________ --> 
 	<script src="/bedifferent/theme/assets/js/jquery.touch-swipe.js"></script> <!-- adds touch swipe to the theme's bootstrap carousel --> 
