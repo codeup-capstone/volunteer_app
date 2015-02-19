@@ -10,6 +10,8 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	 *
 	 * @var string
 	 */
+	protected $fillable = array('email', 'first_name', 'last_name', 'image_url', 'profile', 'phone', 'city', 'state', 'zip');
+
 	protected $table = 'users';
 	public static $rules = array(
 			'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',

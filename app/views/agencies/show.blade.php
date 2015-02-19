@@ -16,11 +16,9 @@
 				{{ Form::submit('Delete Organization', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
 			{{ Form::close() }}
 
-			</div>
-</div>
-	@endif
-
-	
+			@endif
+		</div>
+	</div>
 </div>
 	
 

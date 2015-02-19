@@ -74,6 +74,7 @@ class UsersController extends \BaseController {
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
+		dd($user);
 		}
 		$user->update($data);
 		return Redirect::route('users.index');
