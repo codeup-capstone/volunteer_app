@@ -10,9 +10,7 @@
 |
 */
 Route::get('login', 'HomeController@doLogin');
-
 Route::post('/login', 'HomeController@doLogin');
-
 Route::get('logout', 'HomeController@doLogout');
 
 Route::get('/', function()
@@ -52,6 +50,9 @@ Route::get('pastVolunteers', 'HomeController@showVolunteers');
 Route::get('usersRSVP', 'HomeController@showUsersRSVP');
 
 Route::get('search', 'HomeController@search');
+
+Route::post('uploadImage', 'UsersController@show');
+
 /*Volunteer profile view below*/
 Route::get('volunteer', 'HomeController@showProfile');
 /*Volunteer profile view below*/

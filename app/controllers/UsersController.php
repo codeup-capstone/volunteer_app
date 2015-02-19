@@ -36,6 +36,10 @@ class UsersController extends \BaseController {
 		$user->last_name = Input::get('last_name');
 		$user->email = Input::get('email');
 		$user->password = Input::get('password');
+		$user->profile = Input::get('profile');
+		$user->city = Input::get('city');
+		$user->state = Input::get('state');
+		$user->zip = Input::get('zip');
 		$user->save();
 		return Redirect::route('users.index');
 	}
@@ -69,12 +73,18 @@ class UsersController extends \BaseController {
 	 */
 	public function update($id)
 	{
+		$rules = array(
+			'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+			'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+		    'email'  	=> 'Required|Between:3,64|Email|Unique:users,email,'.$id,
+			'password'	=>'Required|AlphaNum|Between:4,15|Confirmed'
+		);
+
 		$user = User::findOrFail($id);
-		$validator = Validator::make($data = Input::all(), User::$rules);
+		$validator = Validator::make($data = Input::all(), $rules);
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
-		dd($user);
 		}
 		$user->update($data);
 		return Redirect::route('users.index');
@@ -90,4 +100,17 @@ class UsersController extends \BaseController {
 		User::destroy($id);
 		return Redirect::route('users.index');
 	}
+
+	public function uploadImage($image)
+	{
+		$image = new Image();
+		$file = $image;
+		$id = Auth::user()->id;
+		$filename = $id . "-" . $file->getClientOriginalName();
+		$new_images = $file->move(public_path('img/user'), $filename);
+		$image->user_id = Auth::user()->id;
+		$image->img_path = "/img/user" . "/" . $filename;
+		$image->save();
+	}
+
 }
