@@ -81,12 +81,19 @@ class UsersController extends \BaseController {
 		);
 
 		$user = User::findOrFail($id);
+				dd($user);
 		$validator = Validator::make($data = Input::all(), $rules);
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 		$user->update($data);
+
+		if (Input::hasFile('image_url')) {
+				$user->uploadImage(Input::file('image'));
+
+				$user->save();			
+			}
 		return Redirect::route('users.index');
 	}
 	/**

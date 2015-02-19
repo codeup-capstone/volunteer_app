@@ -15,7 +15,8 @@ Route::get('logout', 'HomeController@doLogout');
 
 Route::get('/', function()
 {
-	return View::make('landing');
+	$user = User::findOrFail(Auth::id());
+	return View::make('landing')->with('user', $user);
 });
 
 Route::post('/', 'HomeController@doLogin');
