@@ -1,7 +1,5 @@
 <?php
-
 class UsersController extends \BaseController {
-
 	/**
 	 * Display a listing of users
 	 *
@@ -10,10 +8,8 @@ class UsersController extends \BaseController {
 	public function index()
 	{
 		$users = User::all();
-
 		return View::make('users.index', compact('users'));
 	}
-
 	/**
 	 * Show the form for creating a new user
 	 *
@@ -23,7 +19,6 @@ class UsersController extends \BaseController {
 	{
 		return View::make('users.create');
 	}
-
 	/**
 	 * Store a newly created user in storage.
 	 *
@@ -32,22 +27,18 @@ class UsersController extends \BaseController {
 	public function store()
 	{
 		$validator = Validator::make($data = Input::all(), User::$rules);
-
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-
 		$user = new User();
 		$user->first_name = Input::get('first_name');
 		$user->last_name = Input::get('last_name');
 		$user->email = Input::get('email');
 		$user->password = Input::get('password');
 		$user->save();
-
 		return Redirect::route('users.index');
 	}
-
 	/**
 	 * Display the specified user.
 	 *
@@ -57,10 +48,8 @@ class UsersController extends \BaseController {
 	public function show($id)
 	{
 		$user = User::findOrFail($id);
-
 		return View::make('users.show', compact('user'));
 	}
-
 	/**
 	 * Show the form for editing the specified user.
 	 *
@@ -70,10 +59,8 @@ class UsersController extends \BaseController {
 	public function edit($id)
 	{
 		$user = User::find($id);
-
 		return View::make('users.edit', compact('user'));
 	}
-
 	/**
 	 * Update the specified user in storage.
 	 *
@@ -83,19 +70,14 @@ class UsersController extends \BaseController {
 	public function update($id)
 	{
 		$user = User::findOrFail($id);
-
 		$validator = Validator::make($data = Input::all(), User::$rules);
-
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-
 		$user->update($data);
-
 		return Redirect::route('users.index');
 	}
-
 	/**
 	 * Remove the specified user from storage.
 	 *
@@ -105,8 +87,6 @@ class UsersController extends \BaseController {
 	public function destroy($id)
 	{
 		User::destroy($id);
-
 		return Redirect::route('users.index');
 	}
-
 }
