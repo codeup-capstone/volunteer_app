@@ -48,7 +48,7 @@
 			             	
 			             		
 			   	        	<nav class="headerStyle" id="nav" role="navigation">
-					            <ul>
+					            <ul class="raised">
 					              <li class="active equal-height-title column-inner text-center has-children "><a href="#"> <h5>{{{ $agency->name }}}</h5>
 					              		<figcaption class="info-text-box">
 					              				<p>Click to see Profile</p>
@@ -83,7 +83,7 @@
 
 	    	<div class="col-md-12">
 		     <div class="row">
-		     	  <table class="table table-striped table-hover" id="clickableRow">
+		     	  <table class="table table-striped table-hover raised" id="clickableRow">
                         <tr>
 							<th class="hidden">&nbsp</th>                        
                           	<th>Event Name</th>
@@ -91,7 +91,7 @@
                           	<th>Start Time</th>
                           
                         </tr>
-                      @foreach ($agency->activities as $activity)
+                      @foreach ($activities as $activity)
                         <tr>
                         	<td class="hidden" ><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
 	                        <td >{{ $activity->name }}</td>
@@ -107,13 +107,6 @@
 		  		</div>
 		  	</div>
 
-		  	<div class="row">
-		  	  <div class="col-md-8 col-md-offset-2 ">
-		  	      <div class="pager">
-		  	          {{$activity->appends(Request::except('page'))->links()}}
-		  	      </div><!-- pagination -->
-		  	    </div><!-- row -->
-		  	  </div><!-- col-md-6 -->
 
 	  		<div class="col-md-3 " id="colFullheight">
 	  		  <div class="row">
@@ -132,6 +125,13 @@
 	  		     </div>
 	  		  </div> <!-- sidebar buttons to go home or random event  -->
   		
+			<div class="row">
+			  <div class="col-md-8 col-md-offset-2 ">
+			      <div class="pager">
+			          {{$activities->appends(Request::except('page'))->links()}}
+			      </div><!-- pagination -->
+			    </div><!-- row -->
+			  </div><!-- col-md-6 -->
   <!-- /.page-content role=main --> 
   <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
 	</div>
