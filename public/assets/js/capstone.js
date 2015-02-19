@@ -7,4 +7,8 @@ $(document).ready(function() {
         }
     });
 
+    $('#colFullheight').height( $('.container').height());
+
+
+		
 });

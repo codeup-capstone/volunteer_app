@@ -56,12 +56,12 @@
 	             					@endforelse
 	             		</table>
 	                  </div>   
-                    <div class="col-md-3 static">                     
+                    <div class="col-md-3 static" id="colFullheight">                     
                             <div class="column-inner column-featured ">                            
-                            	<p> <a class="btn btn-featured btn-md" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
+                            	<p> <a class="btn btn-featured btn-md buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
                             </div>
                             <div class="column-inner column-featured">
-                                <p> <a class="btn btn-featured btn-md" href="/activities/6">Quick Finder</a> </p>      
+                                <p> <a class="btn btn-featured btn-md buttonStyle raised" href="/activities/6">Quick Finder</a> </p>      
             				</div>
                     </div>
                            <!--/.column-inner .column-featured-->
