@@ -419,7 +419,7 @@
 	        <!-- /.col-sm-5 .col-md-3 footer-col -->
 	        <div class="col-sm-7 col-md-9 footer-col">
 	          <h4 class="footer-title">About Us</h4>
-	          <p>The Serve Search Team believes giving your time to make your community and world a better place should be easy.  We love on demand movies, one-click shopping and the convience of our "get it now" culture.  We think volunteering should be just as easy! <a href="#"> Our Team </p>
+	          <p>The Serve Search Team believes giving your time to make your community and world a better place should be easy.  We love on demand movies, one-click shopping and the convience of our "get it now" culture.  We think volunteering should be just as easy! Learn more about our team. <a href="{{{ action('HomeController@showAboutUs') }}}"><i class="fa fa-users"></i></p>
 	        </div>
 	        <!-- /.col-sm-7 col-md-9 footer-col-->
 	      </div>
