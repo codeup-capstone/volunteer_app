@@ -29,6 +29,10 @@ Route::resource('agencies', 'AgenciesController');
 
 Route::resource('locations', 'LocationsController');
 
+Route::get('RSVP/create/{activityID}', 'RSVPController@create');
+
+Route::resource('RSVP', 'RSVPController');
+
 Route::resource('users', 'UsersController');
 
 Route::resource('activities', 'ActivitiesController');
