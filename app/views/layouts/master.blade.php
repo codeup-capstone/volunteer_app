@@ -203,15 +203,14 @@
 	      	    </span>
 	      	 </a></li>   
 	      @else
-	       	<li><a href="/logout">Logout</a></li>   
-	      
+		      	<li><a href="{{{ action('UsersController@show', Auth::user()->id) }}}">View Profile</a></li> 
 	      @endif
 
 	      @if (Auth::guest())
 		      <li><a href="#" data-slide="slide" data-target="#signup-panel">Sign Up</a></li> 
 		    
 	      @else
-		      	<li><a href="{{{ action('UsersController@show', Auth::user()->id) }}}">View Profile</a></li> 
+	       	<li><a href="/logout">Logout</a></li>   
 		     
 	      @endif
 	      <!-- <li><a data-slide="slide" data-target="#login-panel" href="login.html">Login</a></li> -->
