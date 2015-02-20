@@ -40,13 +40,11 @@ class UsersController extends \BaseController {
 		$user->city = Input::get('city');
 		$user->state = Input::get('state');
 		$user->zip = Input::get('zip');
-		$user->save();
 
 		if (Input::hasFile('image_url')) {
 				$user->uploadImage(Input::file('image_url'));
-
-				$user->save();			
 			}
+				$user->save();			
 		return Redirect::action('UsersController@show', $user->id);
 	}
 	/**
@@ -90,13 +88,19 @@ class UsersController extends \BaseController {
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-		$user->update($data);
+
+		$user->first_name = Input::get('first_name');
+		$user->last_name = Input::get('last_name');
+		$user->profile = Input::get('profile');
+		$user->phone = Input::get('phone');
+		$user->city = Input::get('city');
+		$user->state = Input::get('state');
+		$user->zip = Input::get('zip');
 
 		if (Input::hasFile('image_url')) {
-				$user->uploadImage(Input::file('image_url'));
-
-				$user->save();			
-			}
+			$user->uploadImage(Input::file('image_url'));
+		}
+		$user->save();
 		return Redirect::action('UsersController@show', $user->id);
 	}
 	/**

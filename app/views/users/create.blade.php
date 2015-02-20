@@ -20,7 +20,7 @@
 	       <div class="col-md-12 ">       
 	       	<div class="row no-gutters"> <!-- profile info bar -->           	
  				   	<div class="text-center col-md-3 embed-responsive-4by3">
-     		             		@if(!empty('$user->image_url'))
+     		             		@if(!empty($user->image_url))
      		             			<img src="{{{ $user->image_url }}}">
      		             		@else 
      		             			<img src="/img/user/placeholder.jpg">
