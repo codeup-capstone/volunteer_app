@@ -419,7 +419,7 @@
 	        <!-- /.col-sm-5 .col-md-3 footer-col -->
 	        <div class="col-sm-7 col-md-9 footer-col">
 	          <h4 class="footer-title">About Us</h4>
-	          <p>We're a team of like minded guys with diverse backgrounds. We love changing our team name every 4 hours. We've consumed 20 gallons of milk and cupcakes in 3 days. So far no one has managed to crack but we probably will the closer to the deadline we get. </p>
+	          <p>The Serve Search Team believes giving your time to make your community and world a better place should be easy.  We love on demand movies, one-click shopping and the convience of our "get it now" culture.  We think volunteering should be just as easy! <a href="#"> Our Team </p>
 	        </div>
 	        <!-- /.col-sm-7 col-md-9 footer-col-->
 	      </div>

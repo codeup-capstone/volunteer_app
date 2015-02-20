@@ -66,6 +66,10 @@ class HomeController extends BaseController {
 			->with('user', $user);
 
 	}
+	public function showAboutUs()
+	{
+		return View::make('aboutUs');
+	}
 
 	public function showLogin()
 	{
