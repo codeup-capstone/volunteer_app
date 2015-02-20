@@ -23,9 +23,9 @@
 		   	         <div class="row no-gutters" id="sidebar">
 		             	
 			             	<div class=" embed-responsive-4by3">
-			             		<img src="/img/agency/habitat.jpg">
+			             		<img src="/img/agency/{{ $activity->agency->image_name }}">
 			   	            </div><!--div for logo -->
-		            	    
+		            	    <br>
 		        	     	<div class="hidden-xs hidden-sm embed-responsive-4by3">
 		                  		<img src="/img/agency/map.png" height="203px" width="259px">
 		        	        </div><!--div for logo -->
@@ -114,7 +114,15 @@
         	
 		        
 		          <div class="col-md-12 column-inner column-featured text-center">
-		            <h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('HomeController@showRsvp') }}}">RSVP</a></h3>
+		            <h3>
+		            	@if (Auth::check())
+							<a class="btn btn-featured btn-lg buttonStyle raised"  href="">RSVP</a>
+                        @else
+                        	<a class="btn btn-featured btn-lg buttonStyle raised"  href="#" data-slide="slide" data-target="#login-panel">RSVP</a>
+                        @endif
+
+		            </h3>
+
 		                 
 		          </div>
 		          <!--/.column-inner .column-featured-->
