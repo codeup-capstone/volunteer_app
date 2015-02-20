@@ -66,17 +66,21 @@ class ActivitiesController extends \BaseController {
 		return Redirect::route('activities.index');
 	}
 
-	/**
-	 * Display the specified event.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function show($id)
 	{
 		$activity = Activity::findOrFail($id);
 		// $activityId = $activity->id;
-	
+		return View::make('activities.show', compact('activity'));
+	}
+
+	public function showRandom()
+	{
+
+		// Keep for later
+		// $offset=mt_rand(1,10);
+
+		$activity = Activity::whereRaw('event_date >= now()')->get()->random();
+			// $activityId = $activity->id;
 		return View::make('activities.show', compact('activity'));
 	}
 
