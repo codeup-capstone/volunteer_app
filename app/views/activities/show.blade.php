@@ -42,22 +42,28 @@
 		             		<h3>Event Name</h3>
 		             	</div> -->    <!-- event section-->  
 		             	<div class="col-md-12 equal-height-title column-inner raised">
-		             			   	   <nav id="nav" role="navigation">
-		             		            <ul>
-		             		              <li class="active has-children " ><a href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
-		             		              
-		             		                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-		             		                    <ul>
-		             		                      <li class="dropmenuItems"><span>Description:</span> {{ $activity->description }}</li>
-		             		                      <li class="dropmenuItems"><span>Max Volunteers:</span> {{ $activity->max_volunteers }}</li>
-		             		                      <li class="dropmenuItems"><span>Staff:</span> {{ $activity->contact_name }}</li>
-		             		                      <li class="dropmenuItems"><span>Contact Number:</span> <a href="tel:{{$activity->contact_phone}}">{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $activity->contact_phone) }}</a></li>
-		             		                      <li class="dropmenuItems"><span>Min Age:</span> {{ $activity->min_age }}</li>
-		             		                    </ul>
-		             		               </li>          
-		             		              
-		             		            </ul> <!-- summary of event -->
-		             		          </nav>
+		             		<nav id="nav" role="navigation">
+		             		    <ul>
+		             		        <li class="active has-children " ><a href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
+
+                                              <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+                                                <ul>
+                                                  <li class="dropmenuItems"><span>Description:</span> {{ $activity->description }}</li>
+                                                  <li class="dropmenuItems"><span>Max Volunteers:</span> {{ $activity->max_volunteers }}</li>
+                                                  <li class="dropmenuItems"><span>Staff:</span> {{ $activity->contact_name }}</li>
+                                                  <li class="dropmenuItems"><span>Contact Number:</span> {{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $activity->contact_phone) }}</li>
+                                                  <li class="dropmenuItems"><span>Min Age:</span> {{ $activity->min_age }}</li>
+                                                </ul>
+                                           </li>          
+                                          
+                                        </ul> <!-- summary of event -->
+                                      </nav>
+                                    @if (Auth::check())
+    		             		        @if($activity->users->contains(Auth::id()))
+    		             		            <strong>You are attending this event!</strong>
+		             		            @endif
+                                    @endif
+
 		             	</div><!-- hosted section-->
 		             		
          			</div><!-- bottem half row section-->
@@ -116,12 +122,16 @@
 		          <div class="col-md-12 column-inner column-featured text-center">
 		            <h3>
 		            	@if (Auth::check())
-		        		{{--	{{ Form::open(['action' => 'RSVPController@index']) }}
-		        			{{Form::hidden('activity-id') }} --}}
-							<a class="btn btn-featured btn-lg buttonStyle raised" 
-							 href="">RSVP!</a>
-							{{-- {{Form::close() }} --}}
+		            		<!-- Check if RSVP already exists for this user and this event -->
+		            		@if(!$activity->users->contains(Auth::id()))
+								<a class="btn btn-featured btn-lg buttonStyle raised" href="{{ action('RSVPController@create', $activity->id) }}">RSVP</a>
+
+							@else
+								<!-- Allow user to cancel RSVP if record exists -->
+								<a class="btn btn-featured btn-lg buttonStyle raised" href="{{ action('RSVPController@destroy', $activity->id) }}">Cancel RSVP</a>
+							@endif
                         @else
+                        	<!-- Make user login if not signed in -->
                         	<a class="btn btn-featured btn-lg buttonStyle raised" 
                         	 href="#" data-slide="slide" data-target="#login-panel">RSVP</a>
                         @endif
