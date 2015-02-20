@@ -61,7 +61,7 @@ class UsersController extends \BaseController {
 
 				$user->save();			
 			}
-		return Redirect::route('landing');
+		return Redirect::route('users.show');
 	}
 	/**
 	 * Display the specified user.
