@@ -75,7 +75,8 @@ class ActivitiesController extends \BaseController {
 	public function show($id)
 	{
 		$activity = Activity::findOrFail($id);
-
+		// $activityId = $activity->id;
+	
 		return View::make('activities.show', compact('activity'));
 	}
 
