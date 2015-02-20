@@ -18,10 +18,10 @@
       <div class="row no-gutters">
          
               
-             <div class="row">
+             <div class="row" id="tableHeaders">
                 <div class="col-md-12"><!-- title -->
                   <div class="text-center ">
-                    <h3>Non Profits in Your Area</h3>
+                    <h3>NON PROFITS IN YOUR AREA</h3>
                   </div>
                 </div><!-- title -->
              </div>

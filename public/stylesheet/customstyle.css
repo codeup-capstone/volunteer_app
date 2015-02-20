@@ -175,6 +175,17 @@ background-color: #ccc;
   color: #7DC1C4;
   border-radius: 2px;
 }
+#tableHeaders {
+  font-family: Montserrat;
+  font-weight: 500;
+  word-spacing: .4em;
+  background: #787E89;
+  color: #fff;
+  padding-top: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 8px 0 #ABA5A5;
+}
 /*box shadows for buttons*/
 /********************/
 /*.wrapper {
