@@ -194,8 +194,28 @@
 	        	</ul>
 	      </li>         
 	      <li><a data-slide="slide" data-target="#contact-panel" href="contact.html">Contact</a></li>
-	      <li><a data-slide="slide" data-target="#login-panel" href="login.html">Login</a></li>
-	      <li><a data-slide="slide" data-target="#signup-panel" href="sign-up.html">Sign Up</a></li>
+	      
+	      @if (Auth::guest())
+	      	<!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
+	      	<li><a href="#" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
+	      	    <span class="header-btn-text">
+	      	       	Login
+	      	    </span>
+	      	 </a></li>   
+	      @else
+	       	<li><a href="/logout">Logout</a></li>   
+	      
+	      @endif
+
+	      @if (Auth::guest())
+		      <li><a href="#" data-slide="slide" data-target="#signup-panel">Sign Up</a></li> 
+		    
+	      @else
+		      	<li><a href="{{{ action('UsersController@show', Auth::user()->id) }}}">View Profile</a></li> 
+		     
+	      @endif
+	      <!-- <li><a data-slide="slide" data-target="#login-panel" href="login.html">Login</a></li> -->
+	      <!-- <li><a data-slide="slide" data-target="#signup-panel" href="sign-up.html">Sign Up</a></li> -->
 	  </ul>
 	</nav>
 	</div>
@@ -419,7 +439,7 @@
 	        <!-- /.col-sm-5 .col-md-3 footer-col -->
 	        <div class="col-sm-7 col-md-9 footer-col">
 	          <h4 class="footer-title">About Us</h4>
-	          <p>We're a team of like minded guys with diverse backgrounds. We love changing our team name every 4 hours. We've consumed 20 gallons of milk and cupcakes in 3 days. So far no one has managed to crack but we probably will the closer to the deadline we get. </p>
+	          <p>The Serve Search Team believes giving your time to make your community and world a better place should be easy.  We love on demand movies, one-click shopping and the convience of our "get it now" culture.  We think volunteering should be just as easy! Learn more about our team. <a href="{{{ action('HomeController@showAboutUs') }}}"><i class="fa fa-users"></i></p>
 	        </div>
 	        <!-- /.col-sm-7 col-md-9 footer-col-->
 	      </div>

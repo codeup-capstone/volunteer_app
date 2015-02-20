@@ -64,6 +64,8 @@ Route::get('search', 'HomeController@search');
 
 Route::post('uploadImage', 'UsersController@show');
 
+Route::get('aboutUs', 'HomeController@showAboutUs');
+
 /*Volunteer profile view below*/
 Route::get('volunteer', 'HomeController@showProfile');
 /*Volunteer profile view below*/

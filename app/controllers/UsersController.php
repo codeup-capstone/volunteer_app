@@ -26,13 +26,6 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
-		// $rules = array(
-		// 	'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
-		// 	'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
-		//     'email'  	=> 'Required|Between:3,64|Email|Unique:users,email',
-		// 	'password'	=>'Required|AlphaNum|Between:4,15|Confirmed'
-		// );
-
 		$validator = Validator::make($data = Input::all(), User::$rules);
 		if ($validator->fails())
 		{
@@ -47,13 +40,11 @@ class UsersController extends \BaseController {
 		$user->city = Input::get('city');
 		$user->state = Input::get('state');
 		$user->zip = Input::get('zip');
-		$user->save();
 
 		if (Input::hasFile('image_url')) {
 				$user->uploadImage(Input::file('image_url'));
-
-				$user->save();			
 			}
+				$user->save();			
 		return Redirect::action('UsersController@show', $user->id);
 	}
 	/**
@@ -89,7 +80,6 @@ class UsersController extends \BaseController {
 		$rules = array(
 			'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
 			'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
-			'email'  	=> 'Required|Between:3,64|Email|Unique:users,email,'.$id,
 		);
 
 		$user = User::findOrFail($id);
@@ -98,14 +88,20 @@ class UsersController extends \BaseController {
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-		$user->update($data);
+
+		$user->first_name = Input::get('first_name');
+		$user->last_name = Input::get('last_name');
+		$user->profile = Input::get('profile');
+		$user->phone = Input::get('phone');
+		$user->city = Input::get('city');
+		$user->state = Input::get('state');
+		$user->zip = Input::get('zip');
 
 		if (Input::hasFile('image_url')) {
-				$user->uploadImage(Input::file('image_url'));
-
-				$user->save();			
-			}
-		return Redirect::route('users.index');
+			$user->uploadImage(Input::file('image_url'));
+		}
+		$user->save();
+		return Redirect::action('UsersController@show', $user->id);
 	}
 	/**
 	 * Remove the specified user from storage.

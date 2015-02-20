@@ -12,7 +12,6 @@
 	  
 	  <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
    
-	 
 	  
 	  <!-- .row .sixteen-gutter --> 
 	  
@@ -45,6 +44,7 @@
 							<nav id="nav" role="navigation">
 								<ul>
 									<li class="active has-children " ><a href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
+
 
 											  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
 												<ul>
