@@ -24,8 +24,9 @@
 	       	<div class="post person"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
  				   			<div class="image">
-								<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="/bedifferent/theme/assets/images/people/{{ $user->image_url }}"></a>
- 		             			
+
+ 		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="{{{ $user->image_url }}}"></a>
+
  				   			</div>
  		   	       </div><!--div for profile picture -->
 			@endif
