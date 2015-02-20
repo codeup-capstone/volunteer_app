@@ -101,7 +101,7 @@
 	      </span>
 	      
 	      <span class="menu-toggle-text">
-	          M<i class="fa fa-bars"></i>NU
+	          MENU
 	      </span>
 	  </div>
 	</a> 
