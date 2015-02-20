@@ -21,8 +21,11 @@
 	       <div class="col-md-12 ">       
 	       	<div class="row no-gutters"> <!-- profile info bar -->           	
  				   	<div class="text-center col-md-3 embed-responsive-4by3">
-     		             		<img src="/img/agency/placeholder.jpg">
-     		             		<p>Welcome!</p>
+     		             		
+     		             		<div class="image">
+	     		             		<img src="/bedifferent/theme/assets/images/people/{{ $user->image_url }}">
+     		             		</div>
+	     		             		<p>Welcome!</p>
      		   	    </div><!--div for profile picture -->
      		   	    			         	
 			        <div class="col-md-7 equal-height-title column-inner text-center">

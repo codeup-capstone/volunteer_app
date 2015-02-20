@@ -134,12 +134,13 @@
 	</span>
 	</a> 
 	@else
-		<a href="{{{ action('UsersController@edit', Auth::user()->id) }}}" class="signin-toggle header-btn header-btn-xl"> <i class="fa fa-pencil header-icon"></i>
+		<a href="{{{ action('UsersController@show', Auth::user()->id) }}}" class="signin-toggle header-btn header-btn-xl"> <i class="fa fa-pencil header-icon"></i>
 	  <span class="header-btn-text">
-	    Edit Profile
+	    View Profile
 	</span>
 	</a> 
 	@endif
+
 	<!-- this above data-slide toggles the #signup-panel .slide-panel example --> 
 	<!-- /END 2nd .header-btn .header-btn-xl in first row -->
 	</div>
