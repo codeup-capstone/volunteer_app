@@ -21,16 +21,7 @@
 	       <div class="col-md-12 ">       
 	       	<div class="row no-gutters"> <!-- profile info bar -->           	
  				   	<div class="text-center col-md-3 embed-responsive-4by3">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> master
-     		             		
-     		             		
-	     		             		
-     		             		
-	     		             		
+	
 
 								@if(file_exists('$user->image_url'))
      		             			<img src="{{{ $user->image_url }}}">
@@ -39,11 +30,7 @@
      		             		@endif     		             		
      		             		<img src="{{{ $user->image_url }}}" class="embed-responsive-4by3">
      		             		<p>Welcome!</p>
-<<<<<<< HEAD
->>>>>>> e66a50fc88fc6c8952c38eb0c23a07a395197f0c
-=======
 
->>>>>>> master
      		   	    </div><!--div for profile picture -->
      		   	    			         	
 			        <div class="col-md-7 equal-height-title column-inner text-center">

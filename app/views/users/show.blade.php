@@ -25,11 +25,10 @@
  				   <div class="col-md-2 embed-responsive-4by3">
  				   			<div class="image">
 
-								<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="/bedifferent/theme/assets/images/people/{{ $user->image_url }}"></a>
- 		             			
+
+ 		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="{{{ $user->image_url }}}"></a>
 
 
- 
  				   			</div>
  		   	       </div><!--div for profile picture -->
 			@endif
@@ -87,7 +86,6 @@
 
 	             				@foreach($user->activities as $activity)
          					<tr class=" raised">
-         							
          							<td class="hidden"><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">></a></td>
 	         						<td>{{{ $activity->name }}}</a></td>
 	         						<td>{{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
