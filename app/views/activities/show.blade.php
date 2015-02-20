@@ -22,7 +22,7 @@
 					 <div class="row no-gutters" id="sidebar">
 						
 							<div class=" embed-responsive-4by3">
-								<img src="/img/agency/{{ $activity->agency->image_name }}">
+								<img class="img-size" src="/img/agency/{{ $activity->agency->image_name }}">
 							</div><!--div for logo -->
 							<br>
 							<div class="hidden-xs hidden-sm embed-responsive-4by3">
