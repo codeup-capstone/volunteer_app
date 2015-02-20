@@ -22,10 +22,10 @@
 	       	<div class="row no-gutters"> <!-- profile info bar -->           	
  				   	<div class="text-center col-md-3 embed-responsive-4by3">
      		             		
-     		             		<div class="image">
+     		             		
 	     		             		<img src="/bedifferent/theme/assets/images/people/{{ $user->image_url }}">
-     		             		</div>
-	     		             		<p>Welcome!</p>
+     		             		
+	     		             		
      		   	    </div><!--div for profile picture -->
      		   	    			         	
 			        <div class="col-md-7 equal-height-title column-inner text-center">
