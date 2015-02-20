@@ -56,8 +56,8 @@ a.btn:hover {
      transition-delay: 0s;
    }
 .column-featured {
-  background-color: transparent;
-}
+     background-color: transparent;
+   }
 .container {
   height: auto;
 }
@@ -74,6 +74,9 @@ a.btn:hover {
 .headero-btn-bar a.active-slide-btn {
   background-color: #787E89;
 
+}
+.landing-column {
+  background-color: #787E89;
 }
 
 .no-gutters {
@@ -203,7 +206,9 @@ background-color: #ccc;
 
 /*hides the background image on anything smaller than the a destop screen*/
 @media screen and (min-width: 992px){
-
+    .column-featured {
+      background-color: transparent;
+    }
     .img-size {
       max-width: 183px;
       text-align: center;
