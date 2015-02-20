@@ -27,7 +27,7 @@
 							@if(file_exists('$user->image_url'))
  		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="{{{ $user->image_url }}}"></a>
      		             	@else 
-     		             		<img src="/img/user/placeholder.jpg">
+     		             		<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="/img/user/placeholder.jpg">
      		             	@endif 
 								
 
