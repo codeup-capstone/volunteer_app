@@ -51,7 +51,7 @@
 		             		                      <li class="dropmenuItems"><span>Description:</span> {{ $activity->description }}</li>
 		             		                      <li class="dropmenuItems"><span>Max Volunteers:</span> {{ $activity->max_volunteers }}</li>
 		             		                      <li class="dropmenuItems"><span>Staff:</span> {{ $activity->contact_name }}</li>
-		             		                      <li class="dropmenuItems"><span>Contact Number:</span> {{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $activity->contact_phone) }}</li>
+		             		                      <li class="dropmenuItems"><span>Contact Number:</span> <a href="tel:{{$activity->contact_phone}}">{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $activity->contact_phone) }}</a></li>
 		             		                      <li class="dropmenuItems"><span>Min Age:</span> {{ $activity->min_age }}</li>
 		             		                    </ul>
 		             		               </li>          
@@ -99,7 +99,7 @@
 		             	</div>
 
 		             	<div class="col-md-6  column-inner text-center">
-		             		<p>call button</p><!--table data will go here with some blade sytax -->
+		             		<p><a href="tel:{{$activity->contact_phone}}">call button</a></p><!--table data will go here with some blade sytax -->
 		             	</div>
 	          	</div> <!-- address section-->
 	             
