@@ -114,7 +114,15 @@
         	
 		        
 		          <div class="col-md-12 column-inner column-featured text-center">
-		            <h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('HomeController@showRsvp') }}}">RSVP</a></h3>
+		            <h3>
+		            	@if (Auth::check())
+							<a class="btn btn-featured btn-lg buttonStyle raised"  href="">RSVP</a>
+                        @else
+                        	<a class="btn btn-featured btn-lg buttonStyle raised"  href="#" data-slide="slide" data-target="#login-panel">RSVP</a>
+                        @endif
+
+		            </h3>
+
 		                 
 		          </div>
 		          <!--/.column-inner .column-featured-->
