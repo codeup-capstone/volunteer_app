@@ -14,13 +14,7 @@
 				
 			
 			@if (Auth::check())
-		
 			<a href="{{{ action('UsersController@edit', $user->id) }}}"><button class='btn btn-info' id='edit-button'>Edit User</button></a>
-
-			{{ Form::open(array('action' => array('UsersController@destroy', $user->id), 'method' => 'delete')) }}
-				{{ Form::submit('Delete User', array('class' => 'btn btn-danger', 'id' => 'delete-button')) }}
-			{{ Form::close() }}
-
 			@endif
 			</div>
 </div>
@@ -74,14 +68,7 @@
 							            </ul> <!-- summary of USER PROFILE -->
 						          	</nav>
 							   	</div>
-				         	<div class="half-row no-gutters">
-					            <div class="col-md-6  equal-height-text column-inner text-center">
-					             	<h5>PAST EVENTS</h5>
-					             </div> <!-- PAST EVENTS-->     
-					             <div class="col-md-6 equal-height-title column-inner text-center">
-					             	<h5>FUTURE EVENTS</h5>
-					             </div><!-- RSVP COUNT-->	
-			         		</div><!-- usr rsvps data -->
+				         
 			             	</div><!-- USER NAME-->
 				        </div>  <!-- top half row section-->   
 	         		</div><!-- left third of profile infobar -->
@@ -113,7 +100,7 @@
          					<tr class=" raised">
          							<td class="hidden"><a href="{{{ action('ActivitiesController@show', $activity->id) }}}">></a></td>
 	         						<td>{{{ $activity->name }}}</a></td>
-	         						<td>{{{ $activity->event_date }}}</a></td>
+	         						<td>{{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
          							<td>{{{ $activity->contact_name }}}</a></td>
 	         						
 	         						

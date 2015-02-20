@@ -41,7 +41,7 @@
 		             	<!-- <div class="col-md-8 equal-height-text column-inner text-center">
 		             		<h3>Event Name</h3>
 		             	</div> -->    <!-- event section-->  
-		             	<div class="col-md-12 equal-height-title column-inner ">
+		             	<div class="col-md-12 equal-height-title column-inner raised">
 		             			   	   <nav id="nav" role="navigation">
 		             		            <ul>
 		             		              <li class="active has-children " ><a href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
