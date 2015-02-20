@@ -18,7 +18,7 @@
       <div class="row no-gutters">
          
               
-             <div class="row" id="tableHeaders">
+             <div class="row" id="tableTitle">
                 <div class="col-md-12"><!-- title -->
                   <div class="text-center ">
                     <h3>NON PROFITS IN YOUR AREA</h3>
@@ -31,7 +31,7 @@
              	
 	                <div class="col-md-9">
 	             		<table class="table table-striped table-hover raised" id="clickableRow">
-	             		    <tr>
+	             		    <tr class="tableHeader">
                         <th class="hidden">&nbsp</th> 
 	             		    	<th>Agency</th>
 	             		    	<th>Address</th>

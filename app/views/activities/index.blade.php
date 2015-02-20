@@ -22,7 +22,7 @@
       <div class="row no gutters">
          <div class="col-md-9">
               
-             <div class="row">
+             <div class="row" id="tableTitle">
                 <div class="col-md-12"><!-- title -->
                   <div class="row text-center ">
                     <h3>Events in Your Area</h3>
