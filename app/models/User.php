@@ -47,4 +47,11 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 		return $this->belongsToMany('Activity');
 	}
 
+	public function uploadImage($file)
+	{
+		$filename = $file->getClientOriginalName();
+		$new_images = $file->move(public_path('img/user'), $filename);
+		$this->attributes['image_url'] = "/img/user" . "/" . $filename;
+	}
+
 }
