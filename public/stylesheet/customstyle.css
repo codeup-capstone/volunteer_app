@@ -108,6 +108,14 @@ a.btn:hover {
 
 
 
+#calltoAction {
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #7DC1C4;
+  color: #7DC1C4;
+ 
+}
 table#clickableRow {
     border-collapse: collapse;   
 }
@@ -271,4 +279,5 @@ background-color: #ccc;
     #sidebar {
       height: 800px;
     }
+
     } /*end media query md *?
