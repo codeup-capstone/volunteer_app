@@ -28,7 +28,7 @@
      		             		@else 
      		             			<img src="/img/user/placeholder.jpg">
      		             		@endif     		             		
-     		             		<img src="{{{ $user->image_url }}}" class="embed-responsive-4by3">
+     		             		{{-- <img src="{{{ $user->image_url }}}" class="embed-responsive-4by3"> --}}
      		             		<p>Welcome!</p>
 
      		   	    </div><!--div for profile picture -->
