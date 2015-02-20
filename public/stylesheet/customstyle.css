@@ -20,6 +20,7 @@ a.btn:hover {
    
 }
 
+
 .btn-height {
   min-height: 150px;
   margin-top: 10px;
@@ -55,14 +56,27 @@ a.btn:hover {
      transition-delay: 0s;
    }
 .column-featured {
-  background-color: transparent;
-}
+     background-color: transparent;
+   }
 .container {
   height: auto;
 }
 .dropmenuItems {
   padding-left: 20px !important;
   
+}
+.header {
+  border-color:  #fff;
+}
+.header-btn-bar a:focus,
+.header-btn-bar a:hover,
+.header-btn-bar a:active,
+.headero-btn-bar a.active-slide-btn {
+  background-color: #787E89;
+
+}
+.landing-column {
+  background-color: #787E89;
 }
 
 .no-gutters {
@@ -94,6 +108,10 @@ a.btn:hover {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.slide-panel {
+  background-color: #787E89;
+
 }
 .smLogo {
   max-height: 30px;
@@ -157,6 +175,17 @@ background-color: #ccc;
   color: #7DC1C4;
   border-radius: 2px;
 }
+#tableHeaders {
+  font-family: Montserrat;
+  font-weight: 500;
+  word-spacing: .4em;
+  background: #787E89;
+  color: #fff;
+  padding-top: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 8px 0 #ABA5A5;
+}
 /*box shadows for buttons*/
 /********************/
 /*.wrapper {
@@ -188,7 +217,9 @@ background-color: #ccc;
 
 /*hides the background image on anything smaller than the a destop screen*/
 @media screen and (min-width: 992px){
-
+    .column-featured {
+      background-color: transparent;
+    }
     .img-size {
       max-width: 183px;
       text-align: center;
