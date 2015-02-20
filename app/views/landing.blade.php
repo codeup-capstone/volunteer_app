@@ -83,7 +83,7 @@
                    <div class="column-inner column-featured transparent btn-height ">
                      <!-- <h3 class="h2 column-featured-headline">Quick Connect</h3> -->
 
-                      <p> <a class="btn btn-featured btn-lg shadow-1 btn-width" id="calltoAction" href="/activities/6">Quick Filter</a> </p>
+                      <p> <a class="btn btn-featured btn-lg shadow-1 btn-width" id="calltoAction" href="{{ action('ActivitiesController@showRandom') }}">Quick Filter</a> </p>
 
                    </div>
                    <!--/.column-inner .column-featured-->

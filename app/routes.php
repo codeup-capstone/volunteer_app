@@ -35,6 +35,8 @@ Route::resource('RSVP', 'RSVPController');
 
 Route::resource('users', 'UsersController');
 
+Route::get('quickpick','ActivitiesController@showRandom');
+
 Route::resource('activities', 'ActivitiesController');
 
 Route::get('events','ActivitiesController@index');
