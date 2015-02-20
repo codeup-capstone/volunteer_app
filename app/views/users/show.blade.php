@@ -2,25 +2,6 @@
 
 @section('content')
 
-
-<div>
-	<div class='main-container'>
-		<div class='col-md-12' id='users'>
-			
-  				
-  				
-  			
-			
-				
-			
-			@if (Auth::check())
-			<a href="{{{ action('UsersController@edit', $user->id) }}}"><button class='btn btn-info' id='edit-button'>Edit User</button></a>
-			@endif
-			</div>
-</div>
-
-	
-</div>
 	
 
 <div id="page">
@@ -32,18 +13,22 @@
       
       <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
    
-     
+   <!--   <button class='btn btn-info' id='edit-button'>Edit agency</button> -->
       
 	      <!-- .row .sixteen-gutter --> 
 	      <!-- <div class="row sixteen-gutter"> -->
-	      
+	      @if (Auth::check())
+		
+
 	       <div class="col-md-12 ">       
 	       	<div class="post person"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
  				   			<div class="image">
- 		             			<img src="/bedifferent/theme/assets/images/people/kathy.jpg">
+								<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="/bedifferent/theme/assets/images/people/{{ $user->image_url }}"></a>
+ 		             			
  				   			</div>
  		   	       </div><!--div for profile picture -->
+			@endif
 
 		     		<div class="section">
 				        <div class="half-row col-md-10 no-gutters">
