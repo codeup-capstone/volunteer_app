@@ -20,6 +20,7 @@ a.btn:hover {
    
 }
 
+
 .btn-height {
   min-height: 150px;
   margin-top: 10px;
@@ -64,6 +65,16 @@ a.btn:hover {
   padding-left: 20px !important;
   
 }
+.header {
+  border-color:  #fff;
+}
+.header-btn-bar a:focus,
+.header-btn-bar a:hover,
+.header-btn-bar a:active,
+.headero-btn-bar a.active-slide-btn {
+  background-color: #787E89;
+
+}
 
 .no-gutters {
 	padding-right: 0;
@@ -94,6 +105,10 @@ a.btn:hover {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.slide-panel {
+  background-color: #787E89;
+
 }
 .smLogo {
   max-height: 30px;
