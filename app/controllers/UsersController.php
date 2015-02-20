@@ -96,7 +96,6 @@ class UsersController extends \BaseController {
 		$validator = Validator::make($data = Input::all(), $rules);
 		if ($validator->fails())
 		{
-			dd(Input::all());
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 		$user->update($data);
