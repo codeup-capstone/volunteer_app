@@ -112,17 +112,20 @@
         
         	<div class="col-md-3" id="sidebar">
         	
-		        
 		          <div class="col-md-12 column-inner column-featured text-center">
 		            <h3>
 		            	@if (Auth::check())
-							<a class="btn btn-featured btn-lg buttonStyle raised"  href="">RSVP</a>
+		        		{{--	{{ Form::open(['action' => 'RSVPController@index']) }}
+		        			{{Form::hidden('activity-id') }} --}}
+							<a class="btn btn-featured btn-lg buttonStyle raised" 
+							 href="">RSVP!</a>
+							{{-- {{Form::close() }} --}}
                         @else
-                        	<a class="btn btn-featured btn-lg buttonStyle raised"  href="#" data-slide="slide" data-target="#login-panel">RSVP</a>
+                        	<a class="btn btn-featured btn-lg buttonStyle raised" 
+                        	 href="#" data-slide="slide" data-target="#login-panel">RSVP</a>
                         @endif
 
 		            </h3>
-
 		                 
 		          </div>
 		          <!--/.column-inner .column-featured-->
@@ -130,12 +133,9 @@
 		        
 
 		       
-		          <div class="col-md-12 column-inner column-featured text-center">
+		        <div class="col-md-12 column-inner column-featured text-center">
 		            <h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="#">PASS</a></h3>
-		         	
-		           
-		                    
-		          </div>
+		        </div>
 		          <!--/.column-inner .column-featured-->
 		       
 		        
@@ -145,6 +145,9 @@
 		         	     
 		          </div>
 		          <!--/.column-inner .column-featured-->
+		        <div class="col-md-12 column-inner column-featured text-center">
+		            <h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@edit') }}}">Edit Event</a></h3>
+		        </div>
 		        
         	</div><!-- single sidebar section-->
 	         
