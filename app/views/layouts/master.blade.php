@@ -194,8 +194,28 @@
 	        	</ul>
 	      </li>         
 	      <li><a data-slide="slide" data-target="#contact-panel" href="contact.html">Contact</a></li>
-	      <li><a data-slide="slide" data-target="#login-panel" href="login.html">Login</a></li>
-	      <li><a data-slide="slide" data-target="#signup-panel" href="sign-up.html">Sign Up</a></li>
+	      
+	      @if (Auth::guest())
+	      	<!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
+	      	<li><a href="#" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
+	      	    <span class="header-btn-text">
+	      	       	Login
+	      	    </span>
+	      	 </a></li>   
+	      @else
+	       	<li><a href="/logout">Logout</a></li>   
+	      
+	      @endif
+
+	      @if (Auth::guest())
+		      <li><a href="#" data-slide="slide" data-target="#signup-panel">Sign Up</a></li> 
+		    
+	      @else
+		      	<li><a href="{{{ action('UsersController@show', Auth::user()->id) }}}">View Profile</a></li> 
+		     
+	      @endif
+	      <!-- <li><a data-slide="slide" data-target="#login-panel" href="login.html">Login</a></li> -->
+	      <!-- <li><a data-slide="slide" data-target="#signup-panel" href="sign-up.html">Sign Up</a></li> -->
 	  </ul>
 	</nav>
 	</div>

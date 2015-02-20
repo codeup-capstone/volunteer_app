@@ -78,7 +78,7 @@
 		     <div class="row no-gutters">
 
 	    		<div class="col-md-12 ">	
-			     		<table class="table table-striped table-hover" id="clickableRow">
+			     		<table class="table table-striped table-hover raised" id="clickableRow">
 	             		    <tr class="text-center">
 	             		    	<th class="hidden">&nbsp</th> 
 	             		    	<th>Agency</th>
