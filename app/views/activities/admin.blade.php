@@ -41,13 +41,13 @@
 				            </ul> <!-- summary of USER PROFILE -->
 			          	</nav>
 				   	</div>
-			        <div class="hidden-xs col-md-3 equal-height-title column-inner text-center ">
-			             	<h3>VOLUNTEERS</h3>
-			             	<p>see past volunteers</p>
+			        <div class="col-md-3 column-inner column-featured text-center ">
+			             	<h3><a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showVolunteers') }}}">VOLUNTEERS</a></h3>
+			             	
 			        </div><!-- VOLUNTEERS-->	
-		     		<div class="col-xs-12 col-md-3">
-				        <div class="equal-height-title column-inner text-center ">
-		             		<h3>CREATE event Button</h3>
+		     		<div class="col-md-3 column-inner column-featured text-center">
+				        <div>
+		             		<h3><a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showCreate') }}}">CREATE event Button</a></h3>
 		             	</div><!-- CREATE EVENT-->
 	         		</div><!-- CREATE EVENT -->
 
