@@ -41,7 +41,7 @@
 	       	<div class="post person"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
  				   			<div class="image">
- 		             			<img src="/bedifferent/theme/assets/images/people/kathy.jpg">
+ 		             			<img src="{{{ $user->image_url }}}">
  				   			</div>
  		   	       </div><!--div for profile picture -->
 
