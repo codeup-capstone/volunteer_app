@@ -72,7 +72,7 @@
                           	<th>Start Time</th>
                           
                         </tr>
-                      @foreach ($activities as $activity)
+                      @foreach ($agency->activities as $activity)
                         <tr>
                         	<td class="hidden" ><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
 	                        <td >{{ $activity->name }}</td>
