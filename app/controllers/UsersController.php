@@ -26,12 +26,12 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
-		$rules = array(
-			'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
-			'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
-		    'email'  	=> 'Required|Between:3,64|Email|Unique:users,email',
-			'password'	=>'Required|AlphaNum|Between:4,15|Confirmed'
-		);
+		// $rules = array(
+		// 	'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+		// 	'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+		//     'email'  	=> 'Required|Between:3,64|Email|Unique:users,email',
+		// 	'password'	=>'Required|AlphaNum|Between:4,15|Confirmed'
+		// );
 
 		$validator = Validator::make($data = Input::all(), User::$rules);
 		if ($validator->fails())
@@ -49,19 +49,12 @@ class UsersController extends \BaseController {
 		$user->zip = Input::get('zip');
 		$user->save();
 
-		$validator = Validator::make($data = Input::all(), $rules);
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
-		$user->update($data);
-
 		if (Input::hasFile('image_url')) {
 				$user->uploadImage(Input::file('image_url'));
 
 				$user->save();			
 			}
-		return Redirect::route('users.show');
+		return Redirect::action('UsersController@show', $user->id);
 	}
 	/**
 	 * Display the specified user.
