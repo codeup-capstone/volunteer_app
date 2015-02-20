@@ -72,6 +72,12 @@ a.btn:hover {
 .no-page-gutters {
 	padding: 0px;
 }
+.profileImage {
+  margin: 0 auto;
+  display: block;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
 
 .round-btn {
   border-radius: 5px;

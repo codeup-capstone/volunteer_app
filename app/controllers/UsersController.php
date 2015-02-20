@@ -26,6 +26,13 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
+		$rules = array(
+			'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+			'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
+		    'email'  	=> 'Required|Between:3,64|Email|Unique:users,email',
+			'password'	=>'Required|AlphaNum|Between:4,15|Confirmed'
+		);
+
 		$validator = Validator::make($data = Input::all(), User::$rules);
 		if ($validator->fails())
 		{
@@ -41,7 +48,20 @@ class UsersController extends \BaseController {
 		$user->state = Input::get('state');
 		$user->zip = Input::get('zip');
 		$user->save();
-		return Redirect::route('users.index');
+
+		$validator = Validator::make($data = Input::all(), $rules);
+		if ($validator->fails())
+		{
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+		$user->update($data);
+
+		if (Input::hasFile('image_url')) {
+				$user->uploadImage(Input::file('image_url'));
+
+				$user->save();			
+			}
+		return Redirect::route('users.show');
 	}
 	/**
 	 * Display the specified user.
@@ -76,21 +96,20 @@ class UsersController extends \BaseController {
 		$rules = array(
 			'first_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
 			'last_name' => 'Required|Min:3|Max:80|Regex:/^([a-z0-9- ])+$/i',
-		    'email'  	=> 'Required|Between:3,64|Email|Unique:users,email,'.$id,
-			'password'	=>'Required|AlphaNum|Between:4,15|Confirmed'
+			'email'  	=> 'Required|Between:3,64|Email|Unique:users,email,'.$id,
 		);
 
 		$user = User::findOrFail($id);
-				dd($user);
 		$validator = Validator::make($data = Input::all(), $rules);
 		if ($validator->fails())
 		{
+			dd(Input::all());
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 		$user->update($data);
 
 		if (Input::hasFile('image_url')) {
-				$user->uploadImage(Input::file('image'));
+				$user->uploadImage(Input::file('image_url'));
 
 				$user->save();			
 			}
@@ -106,18 +125,6 @@ class UsersController extends \BaseController {
 	{
 		User::destroy($id);
 		return Redirect::route('users.index');
-	}
-
-	public function uploadImage($image)
-	{
-		$image = new Image();
-		$file = $image;
-		$id = Auth::user()->id;
-		$filename = $id . "-" . $file->getClientOriginalName();
-		$new_images = $file->move(public_path('img/user'), $filename);
-		$image->user_id = Auth::user()->id;
-		$image->img_path = "/img/user" . "/" . $filename;
-		$image->save();
 	}
 
 }

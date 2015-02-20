@@ -63,6 +63,7 @@
     		             		            <strong>You are attending this event!</strong>
 		             		            @endif
                                     @endif
+
 		             	</div><!-- hosted section-->
 		             		
          			</div><!-- bottem half row section-->
@@ -86,10 +87,11 @@
 		             	</div><!-- date section-->
 		             	<div class="col-md-6 equal-height-title column-inner text-center " id="location" >
 		             		<h5>Where</h5>
+		             		<a href="http://maps.google.com/?daddr={{ $activity->location->address }}+{{ $activity->location->city }}+{{ $activity->location->state }}">
 	             				<p>{{ $activity->location->address }}<br>
 				             		{{ $activity->location->city }}, 
 				             		{{ $activity->location->state }} 
-				             		{{ $activity->location->zip }}</p>	<!--table data will go here with some blade sytax -->
+				             		{{ $activity->location->zip }}</p></a>	<!--table data will go here with some blade sytax -->
 	             		</div>	
 			        </div>  <!-- top half row section-->   
          			
@@ -103,7 +105,7 @@
 		             	</div>
 
 		             	<div class="col-md-6  column-inner text-center">
-		             		<p>call button</p><!--table data will go here with some blade sytax -->
+		             		<p><a href="tel:{{$activity->contact_phone}}">call button</a></p><!--table data will go here with some blade sytax -->
 		             	</div>
 	          	</div> <!-- address section-->
 	             
