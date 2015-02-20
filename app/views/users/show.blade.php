@@ -21,12 +21,15 @@
 		
 
 	       <div class="col-md-12 ">       
-	       	<div class="post person"> <!-- profile info bar -->           	
+	       		<div class="post person"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
- 				   			<div class="image">
-
-
+ 				   		<div class="image">
+							@if(file_exists('$user->image_url'))
  		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="{{{ $user->image_url }}}"></a>
+     		             	@else 
+     		             		<img src="/img/user/placeholder.jpg">
+     		             	@endif 
+								
 
 
  				   			</div>
