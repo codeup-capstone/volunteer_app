@@ -72,7 +72,7 @@
                           	<th>Start Time</th>
                           
                         </tr>
-                      @foreach ($activities as $activity)
+                      @foreach ($agency->activities as $activity)
                         <tr>
                         	<td class="hidden" ><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
 	                        <td >{{ $activity->name }}</td>
@@ -99,7 +99,7 @@
 
 	  		         <div class="column-inner column-featured text-center">
 	  		         
-	  		           <h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="/activities/6">Quick Finder</a> </h1>      
+	  		           <h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{ action('ActivitiesController@showRandom')}}">Quick Finder</a> </h1>      
 	  		         </div>
 	  		       <!--/.column-inner .column-featured-->
 	  		      </div>
