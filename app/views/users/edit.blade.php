@@ -24,9 +24,9 @@
 	
 
 								@if(!empty($user->image_url))
-     		             			<img src="{{{ $user->image_url }}}">
+     		             			<img class="img-size" src="{{{ $user->image_url }}}">
      		             		@else 
-     		             			<img src="/img/user/placeholder.jpg">
+     		             			<img class="img-size" src="/img/user/placeholder.jpg">
      		             		@endif     		             		
      		             		{{-- <img src="{{{ $user->image_url }}}" class="embed-responsive-4by3"> --}}
      		             		<p>Welcome!</p>
