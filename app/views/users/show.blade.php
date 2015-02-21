@@ -10,21 +10,13 @@
     <div class="container no-gutters">
       
       <!-- .container for entire page --> 
-      
-      <!-- uses bigtext.js plugin AND clever use of the responsive utilities and the grid // unless you use the same character count, the results will vary -->
-   
-   <!--   <button class='btn btn-info' id='edit-button'>Edit agency</button> -->
-      
-	      <!-- .row .sixteen-gutter --> 
-	      <!-- <div class="row sixteen-gutter"> -->
-
 
 	       <div class="col-md-9 ">       
 	       		<div class="post person"> <!-- profile info bar -->           	
  				   <div class="col-md-3 embed-responsive-4by3">
  				   		<div class="image">
 							@if(!empty($user->image_url))
- 		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img class="img-size" src="{{{ $user->image_url }}}"></a>
+ 		             			<a  href="{{{ action('UsersController@edit', $user->id) }}}" ><img class="img-size" src="{{{ $user->image_url }}}" data-hover="tooltip" data-placement="left" title="Click to Edit Profile"></a>
      		             	@else 
      		             		<a href="{{{ action('UsersController@edit', $user->id) }}}"><img class="img-size" src="/img/user/placeholder.jpg"></a>
      		             	@endif 
@@ -96,13 +88,15 @@
 
 		    <div class="col-md-3" >
 
-		    	<div class="col-md-12 column-inner column-featured text-center">
+		    	<div class=" column-inner column-featured text-center">
 		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@showRandom') }}}">Quick Connect</a></h3>
 		    	</div>
-			 	<div class="col-md-12 column-inner column-featured text-center">
-		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}">HOME</a></h3>	 
+			 	<div class=" column-inner column-featured text-center">
+		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}">Home</a></h3>	 
 		    	</div>
-    	
+    			<div class="column-inner column-featured text-center">
+    			  <h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('UsersController@edit', $user->id) }}}">Edit Profile</a> </h1>      
+    			</div>
 		    </div><!-- single sidebar section--> 
 
   		</div>
