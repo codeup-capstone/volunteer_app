@@ -26,7 +26,7 @@
 							</div><!--div for logo -->
 							<br>
 							<div class="hidden-xs hidden-sm embed-responsive-4by3">
-								<img src="/img/agency/map.png" height="203px" width="259px">
+								<img class="img-size" src="/img/agency/map.png" height="203px" width="259px">
 							</div><!--div for logo -->
 							
 					</div>  

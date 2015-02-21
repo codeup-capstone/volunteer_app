@@ -18,7 +18,7 @@
             <img src="bedifferent/theme/assets/images/bird_hand.jpeg" class="img-responsive" alt="Responsive image">
              
         
-        <div class="col-xs-12 col-md-12 container-fluid">
+        <div class="col-xs-12 col-md-12 container-fluid" id="fix-padding-right">
     
         <div class="row no-gutters" >
         
@@ -33,7 +33,7 @@
               <!-- <h3 class="h2 column-featured-headline">Quick Connect</h3> -->
 
            	
-              <p> <a class="btn btn-featured btn-lg shadow-1 btn-width" id="calltoAction" href="/activities/6">QUICK FILTER</a></p>
+              <p> <a class="btn btn-featured btn-lg shadow-1 btn-width calltoAction"  href="/activities/6">QUICK FILTER</a></p>
               
             </div>
             <!--/.column-inner .column-featured-->
@@ -44,7 +44,7 @@
             <div class="column-inner column-featured text-center landing-column">
              <!--  <h3 class="h2 column-featured-headline">Events</h3> -->
            	
-              <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width" href="{{{ action('ActivitiesController@index') }}}">Browse Events</a> </p>
+              <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width calltoAction" href="{{{ action('ActivitiesController@index') }}}">Browse Events</a> </p>
            
               
             </div>
@@ -55,7 +55,7 @@
             <div class="column-inner column-featured text-center landing-column">
              <!--  <h3 class="h2 column-featured-headline">Non Profits</h3> -->
            	
-              <p> <a class="btn btn-featured btn-lg transparent shadow-1" href="{{{ action('AgenciesController@index') }}}">Browse Organizations </a> </p>
+              <p> <a class="btn btn-featured btn-lg transparent shadow-1 calltoAction" href="{{{ action('AgenciesController@index') }}}">Browse Organizations </a> </p>
            
               
             </div>
@@ -83,7 +83,7 @@
                    <div class="column-inner column-featured transparent btn-height ">
                      <!-- <h3 class="h2 column-featured-headline">Quick Connect</h3> -->
 
-                      <p> <a class="btn btn-featured btn-lg shadow-1 btn-width" id="calltoAction" href="{{ action('ActivitiesController@showRandom') }}">Quick Filter</a> </p>
+                      <p> <a class="btn btn-featured btn-lg shadow-1 btn-width calltoAction"  href="{{ action('ActivitiesController@showRandom') }}">Quick Filter</a> </p>
 
                    </div>
                    <!--/.column-inner .column-featured-->
@@ -96,7 +96,7 @@
                    <div class="column-inner column-featured transparent btn-height ">
                      <!-- <h3 class="h2 column-featured-headline">Events</h3> -->
                     
-                     <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width" href="{{{ action('ActivitiesController@index') }}}">Browse Events</a> </p>
+                     <p> <a class="btn btn-featured btn-lg transparent shadow-1 btn-width calltoAction" href="{{{ action('ActivitiesController@index') }}}">Browse Events</a> </p>
                    </div>
                    <!--/.column-inner .column-featured-->
                   </div>
@@ -107,7 +107,7 @@
                 <div class=" col-xs-12 col-sm-12 col-md-4 col-md-offset-9">
                    <div class="column-inner column-featured transparent btn-height">
                      <!-- h3 class="h2 column-featured-headline">Non Profits</h3> -->
-                        <p> <a class="btn btn-featured btn-lg transparent shadow-1" href="{{{ action('AgenciesController@index') }}}">Browse Organizations </a> </p>
+                        <p> <a class="btn btn-featured btn-lg transparent shadow-1 calltoAction" href="{{{ action('AgenciesController@index') }}}">Browse Organizations </a> </p>
                    </div>
                    <!--/.column-inner .column-featured-->
                 </div>

@@ -24,7 +24,7 @@
 	       		<div class="post person"> <!-- profile info bar -->           	
  				   <div class="col-md-2 embed-responsive-4by3">
  				   		<div class="image">
-							@if(!empty('$user->image_url'))
+							@if(!empty($user->image_url))
  		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="{{{ $user->image_url }}}"></a>
      		             	@else 
      		             		<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="/img/user/placeholder.jpg">
@@ -41,7 +41,7 @@
 			             	<div class="equal-height-title column-inner raised ">
 			             		<h3 class="text-center">{{{$user->first_name." ".$user->last_name}}}</h3>
 			             		<p>{{{ $user->description }}}</p>
-					   	        	<nav id="nav" role="navigation">
+					   	        	<nav id="nav" class="fix-left-indent" role="navigation">
 							            <ul>
 							              <li class="active has-children raised"><a href="#"> click for profile summary</a>
 							              
@@ -50,7 +50,7 @@
 							                      
 							                      <li><span>Address:</span> {{{$user->city}}}</li>
 							                      <li><span>Number:</span> {{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $user->phone) }}}</li>
-							                      <li><a class="raised" data-hover="tooltip" data-placement="left" title="Click to email" href="mailto:{{{ $user->email }}}">Email: {{$user->email}}</a></li>
+							                      <li><span>Email:</span> {{$user->email}}</a></li>
 
 							                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
 							                    </ul>
