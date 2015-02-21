@@ -33,7 +33,7 @@
               <!-- <h3 class="h2 column-featured-headline">Quick Connect</h3> -->
 
            	
-              <p> <a class="btn btn-featured btn-lg shadow-1 btn-width calltoAction"  href="/activities/6">QUICK FILTER</a></p>
+              <p> <a class="btn btn-featured btn-lg shadow-1 btn-width calltoAction"  href="{{ action('ActivitiesController@showRandom') }}">QUICK FILTER</a></p>
               
             </div>
             <!--/.column-inner .column-featured-->
