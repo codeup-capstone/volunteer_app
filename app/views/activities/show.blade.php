@@ -26,7 +26,7 @@
 							</div><!--div for logo -->
 							<br>
 							<div class="hidden-xs hidden-sm embed-responsive-4by3">
-								<a href="http://maps.google.com/?daddr={{ $activity->location->address }}+{{ $activity->location->city }}+{{ $activity->location->state }}"><img class="img-size" src="/img/agency/maps/{{ $activity->agency->id }}.png">
+								<a href="http://maps.google.com/?daddr={{ $activity->location->address }}+{{ $activity->location->city }}+{{ $activity->location->state }}"><img class="img-size" src="/img/agency/maps/{{ $activity->agency->id }}.png"></a>
 							</div><!--div for logo -->
 							
 					</div>  
@@ -43,10 +43,10 @@
 						<div class="col-md-12 equal-height-title column-inner raised">
 							<nav id="nav" role="navigation">
 								<ul>
-									<li class="active has-children " ><a href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
+									<li class="active has-children "><a href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
 
 
-											  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
+											 
 												<ul>
 												  <li class="dropmenuItems"><span>Description:</span> {{ $activity->description }}</li>
 												  <li class="dropmenuItems"><span>Max Volunteers:</span> {{ $activity->max_volunteers }}</li>
@@ -56,13 +56,13 @@
 												</ul>
 										   </li>          
 										  
-										</ul> <!-- summary of event -->
-									  </nav>
-									@if (Auth::check())
-										@if($activity->users->contains(Auth::id()))
-											<strong>You are attending this event!</strong>
-										@endif
-									@endif
+								</ul> <!-- summary of event -->
+							  </nav>
+							@if (Auth::check())
+								@if($activity->users->contains(Auth::id()))
+									<strong>You are attending this event!</strong>
+								@endif
+							@endif
 
 						</div><!-- hosted section-->
 							
