@@ -17,8 +17,7 @@
       
 	      <!-- .row .sixteen-gutter --> 
 	      <!-- <div class="row sixteen-gutter"> -->
-	     
-		
+
 
 	       <div class="col-md-9 ">       
 	       		<div class="post person"> <!-- profile info bar -->           	
@@ -31,7 +30,7 @@
      		             	@endif 
  				   		</div>
  		   	       </div><!--div for profile picture -->
-		
+
 
 		     		<div class="section">
 				        <div class="half-row col-md-9 no-gutters">
