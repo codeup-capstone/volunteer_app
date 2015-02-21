@@ -41,7 +41,7 @@
 			             	<div class="equal-height-title column-inner raised ">
 			             		<h3 class="text-center">{{{$user->first_name." ".$user->last_name}}}</h3>
 			             		<p>{{{ $user->description }}}</p>
-					   	        	<nav id="nav" role="navigation">
+					   	        	<nav id="nav" class="fix-left-indent" role="navigation">
 							            <ul>
 							              <li class="active has-children raised"><a href="#"> click for profile summary</a>
 							              
@@ -50,7 +50,7 @@
 							                      
 							                      <li><span>Address:</span> {{{$user->city}}}</li>
 							                      <li><span>Number:</span> {{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $user->phone) }}}</li>
-							                      <li id="fix-left-indent"><a data-hover="tooltip" data-placement="left" title="Click to email" href="mailto:{{{ $user->email }}}"><span>Email:</span> {{$user->email}}</a></li>
+							                      <li><span>Email:</span> {{$user->email}}</a></li>
 
 							                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
 							                    </ul>

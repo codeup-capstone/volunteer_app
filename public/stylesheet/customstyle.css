@@ -197,9 +197,7 @@ background-color: #ccc;
   margin-bottom: 20px;
   box-shadow: 0 2px 9px 0 #ABA5A5;
 }
-#fix-left-indent{
-  padding-left: 0px;
-}
+
 
 /*box shadows for buttons*/
 /********************/
@@ -322,6 +320,7 @@ background-color: #ccc;
       background-color: #fff;
       border-color: #ddd;
     }
+
     #sidebar {
       height: 800px;
     }
