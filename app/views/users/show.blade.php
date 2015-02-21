@@ -17,7 +17,7 @@
       
 	      <!-- .row .sixteen-gutter --> 
 	      <!-- <div class="row sixteen-gutter"> -->
-	      @if (Auth::check())
+	     
 		
 
 	       <div class="col-md-9 ">       
@@ -31,7 +31,7 @@
      		             	@endif 
  				   		</div>
  		   	       </div><!--div for profile picture -->
-			@endif
+		
 
 		     		<div class="section">
 				        <div class="half-row col-md-9 no-gutters">
