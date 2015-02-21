@@ -67,10 +67,11 @@ a.btn:hover {
 .calltoAction {
      background-color: transparent;
      border-radius: 5px;
-     border-width: 2px;
-     border-color: #7DC1C4;
-     color: #7DC1C4;
+     border-width: 3.5px;
+     border-color: #40EC9A;
+     color: #40EC9A;
      font-weight: 100;
+
      
     
     
@@ -89,8 +90,8 @@ a.btn:hover {
   margin-right: 0px;
   position: relative;
   z-index: 2;
-  border-top: 1px solid #9bd4ec;
-  border-right: 1px solid #9bd4ec;
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
 }
 .header {
   border-color:  #fff;
