@@ -17,24 +17,24 @@
       
 	      <!-- .row .sixteen-gutter --> 
 	      <!-- <div class="row sixteen-gutter"> -->
-	      @if (Auth::check())
 		
-
-	       <div class="col-md-9 ">       
+	       <div class="col-md-12 ">       
 	       		<div class="post person"> <!-- profile info bar -->           	
- 				   <div class="col-md-3 embed-responsive-4by3">
+ 				   <div class="col-md-2 embed-responsive-4by3">
  				   		<div class="image">
 							@if(!empty($user->image_url))
- 		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img class="img-size" src="{{{ $user->image_url }}}"></a>
+ 		             			<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="{{{ $user->image_url }}}"></a>
      		             	@else 
-     		             		<a href="{{{ action('UsersController@edit', $user->id) }}}"><img class="img-size" src="/img/user/placeholder.jpg"></a>
+     		             		<a href="{{{ action('UsersController@edit', $user->id) }}}"><img src="/img/user/placeholder.jpg">
      		             	@endif 
- 				   		</div>
+								
+
+
+ 				   			</div>
  		   	       </div><!--div for profile picture -->
-			@endif
 
 		     		<div class="section">
-				        <div class="half-row col-md-9 no-gutters">
+				        <div class="half-row col-md-10 no-gutters">
 			             	<div class="equal-height-title column-inner raised ">
 			             		<h3 class="text-center">{{{$user->first_name." ".$user->last_name}}}</h3>
 			             		<p>{{{ $user->description }}}</p>
@@ -47,7 +47,7 @@
 							                      
 							                      <li><span>Address:</span> {{{$user->city}}}</li>
 							                      <li><span>Number:</span> {{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $user->phone) }}}</li>
-							                      <li><span>Email:</span> {{$user->email}}</li>
+							                      <li><span>Email:</span> {{$user->email}}</a></li>
 
 							                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
 							                    </ul>
@@ -59,10 +59,19 @@
 				         
 			             	</div><!-- USER NAME-->
 				        </div>  <!-- top half row section-->   
-	         		</div><!-- left third of profile infobar --> 
+	         		</div><!-- left third of profile infobar -->
+			        		
+		     	
+			        
+			        <div class="col-md-4">
+	   			   
+	
+	   	   	    
+			</div><!--TOP SECTION OF USER PROFILE BREAKDOWN-->
+		   </div>             	
 	   
 
-	    	<div class="col-md-12 no-gutters">
+	    	<div class="col-md-12">
 		     <div class="row no-gutters">
 
 	    		<div class="col-md-12 ">	
@@ -81,31 +90,26 @@
 	         						<td>{{{ $activity->name }}}</a></td>
 	         						<td>{{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
          							<td>{{{ $activity->contact_name }}}</a></td>
+	         						
+	         						
+         						
 	             			</tr>			
 	             				@endforeach
 	             		</table>
-		     		</div><!-- table of events -->
-	      		</div><!-- row that contains rsvp and all data -->
-		        <!--/.col-x-x-->
-		        
-		      	<!-- VERTICAL SPACING -->
-		      
-		    	<!-- / .container -->
-   			</div> 
-		   </div>             	
+		     	</div><!-- table of events -->
+      		</div><!-- row that contains rsvp and all data -->
 		     
 
-		    <div class="col-md-3" >
-
-		    	<div class="col-md-12 column-inner column-featured text-center">
-		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@showRandom') }}}">Quick Connect</a></h3>
-		    	</div>
-			 	<div class="col-md-12 column-inner column-featured text-center">
-		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}">HOME</a></h3>	 
-		    	</div>
-    	
-		    </div><!-- single sidebar section--> 
-
+	        <!--/.col-x-x-->
+	        <hr class="visible-xs vertical-spacer vertical-spacer-xs">
+	     
+	       
+	          
+	    
+	      <!-- VERTICAL SPACING -->
+	      <hr class="vertical-spacer vertical-spacer-lg"> 
+	    <!-- / .container -->
+   			</div> 
   		</div>
   <!-- /.page-content role=main --> 
   <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
