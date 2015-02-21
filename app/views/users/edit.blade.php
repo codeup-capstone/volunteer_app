@@ -29,7 +29,7 @@
      		             			<img class="img-size" src="/img/user/placeholder.jpg">
      		             		@endif     		             		
      		             		{{-- <img src="{{{ $user->image_url }}}" class="embed-responsive-4by3"> --}}
-     		             		<p>Welcome!</p>
+     		             		<p>Welcome {{{ $user->first_name }}}!</p>
 
      		   	    </div><!--div for profile picture -->
      		   	    			         	
