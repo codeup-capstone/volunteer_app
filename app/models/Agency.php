@@ -29,7 +29,7 @@ class Agency extends BaseModel {
 
 	public function users()
 	{
-	    return $this->belongsToMany('User');
+	    return $this->belongsToMany('User', 'agency_admin', 'agency_id', 'admin_id');
 	}
 	public function events()
 	{
