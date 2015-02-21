@@ -32,7 +32,7 @@ class RSVPController extends \BaseController {
 
 		$user->activities()->attach($activityID);
 
-		return Redirect::back();
+		return Redirect::action('ActivitiesController@show', $activityID);
 	}
 
 	/**
