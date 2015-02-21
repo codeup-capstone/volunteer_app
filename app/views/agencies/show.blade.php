@@ -25,22 +25,22 @@
  		   	      		<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}">
  		   	       </div><!--div for profile picture -->
 		     		<div class="section">
-				        <div class="half-row col-md-8">
+				        <div class="half-row col-md-8 equal-height-title column-inner raised">
 			             	
 			             		
-			   	        	<nav class="headerStyle" id="nav" role="navigation">
-					            <ul class="raised">
-					              <li class="active equal-height-title column-inner text-center has-children "><a href="#"> <h5>{{{ $agency->name }}}</h5>
+			   	        	<nav id="nav" role="navigation">
+					            <ul>
+					              <li class="active has-children "><a href="#"> <h5>{{{ $agency->name }}}</h5>
 					              		<figcaption class="info-text-box">
 					              				<p>Click to see Profile</p>
 					              		</figcaption></a>
 					                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
-					                    <ul class="text-left">
+					                    <ul>
 					                      
-					                     <li><span>Address:</span> {{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
-					                     <li><span>Number:</span> {{{$agency->phone}}}</li>
-					                     
-					                     <li><p class="summary"> {{{ $agency->description }}}</p></li>
+						                     <li class="dropmenuItems"><span>Address:</span> {{{ $agency->city }}} &nbsp {{{ $agency->state }}} &nbsp {{{ $agency->zip }}}</li>
+						                     <li class="dropmenuItems"><span>Number:</span> {{{$agency->phone}}}</li>
+						                     
+						                     <li class="dropmenuItems"><p> {{{ $agency->description }}}</p></li>
 					                    </ul>
 					                </li>           
 					              

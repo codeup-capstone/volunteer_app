@@ -81,7 +81,7 @@ a.btn:hover {
 .header-btn-bar a:hover,
 .header-btn-bar a:active,
 .headero-btn-bar a.active-slide-btn {
-  background-color: #787E89;
+  background-color: #4A4A4A;
 
 }
 .landing-column {
@@ -119,7 +119,7 @@ a.btn:hover {
   padding-left: 0;
 }
 .slide-panel {
-  background-color: #787E89;
+  background-color: #4A4A4A;
 
 }
 .smLogo {
@@ -131,6 +131,7 @@ a.btn:hover {
 .transparent {
   background-color: transparent;
   border-radius: 5px;
+  border-width: 3.5px;
 }
 
 
@@ -138,7 +139,7 @@ a.btn:hover {
 #calltoAction {
   background-color: transparent;
   border-radius: 5px;
-  border-width: 2px;
+  border-width: 3.5px;
   border-color: #40EC9A;
   color: #40EC9A;
  
