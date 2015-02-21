@@ -160,7 +160,7 @@
 
 				<!-- Need some sort of if statement here -->
 				<div class="col-md-12 column-inner column-featured text-center">
-					<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@edit') }}}">Edit Event</a></h3>
+					<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@edit', $activity->id) }}}">Edit Event</a></h3>
 				</div>
 
 				
