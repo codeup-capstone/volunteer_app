@@ -46,9 +46,11 @@
                       @foreach ($activities as $activity)
                         <tr>
                           <td class="hidden"><a href="{{{ action('ActivitiesController@show', $activity->id) }}}"></a></td>
+
                           <td>{{ $activity->name }}</td>
                           <td>{{{ $activity->agency->name }}}</td>
-                          <td>{{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
+                          <td data-hover="tooltip" data-placement="bottom" title="Click For More Information: {{{ $activity->description }}}" >
+                            {{{ date('D, M d',strtotime($activity->event_date)) }}}</td>
                           <td>{{{ date('g:i A',strtotime($activity->start_time)) }}}</td>
                           <td class="hidden-xs hidden-sm">{{{ date('g:i A',strtotime($activity->end_time)) }}}</td>
                         </tr>

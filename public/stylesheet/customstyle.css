@@ -5,6 +5,8 @@ body {
 	overflow-x: hidden;
   height: 100%;
   max-height: 100%;
+  color: #787E89;
+  border-style: none;
 
 }
 
@@ -37,6 +39,12 @@ a.btn:hover {
   width: 100%;
   border-style: none;
   padding: 20px;
+}
+.button-cancel {
+  padding: 20px;
+  width: 100%;
+  border-style: none;
+  background-color: #F4633B;
 }
 .buttonStyle {
   width: 100%;
@@ -78,12 +86,13 @@ a.btn:hover {
 }
 .header {
   border-color:  #fff;
+
 }
 .header-btn-bar a:focus,
 .header-btn-bar a:hover,
 .header-btn-bar a:active,
 .headero-btn-bar a.active-slide-btn {
-  background-color: #787E89;
+  background-color: #4A4A4A;
 
 }
 .landing-column {
@@ -121,7 +130,7 @@ a.btn:hover {
   padding-left: 0;
 }
 .slide-panel {
-  background-color: #787E89;
+  background-color: #4A4A4A;
 
 }
 .smLogo {
@@ -133,10 +142,20 @@ a.btn:hover {
 .transparent {
   background-color: transparent;
   border-radius: 5px;
+  border-width: 3.5px;
 }
 
 
 
+
+#calltoAction {
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 3.5px;
+  border-color: #40EC9A;
+  color: #40EC9A;
+ 
+}
 
 table#clickableRow {
     border-collapse: collapse;   
@@ -176,14 +195,14 @@ background-color: #ccc;
 #nav .current-parent, 
 #nav a.current.parent {
   background: #787E89;
-  color: #7DC1C4;
+  color: #40EC9A;
   border-radius: 2px;
 }
 #tableTitle {
   font-family: Montserrat;
   font-weight: 500;
   word-spacing: .4em;
-  background: #787E89;
+  background: #4A4A4A;
   color: #fff;
   padding-top: 20px;
   border-radius: 2px;
