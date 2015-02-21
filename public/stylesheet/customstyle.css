@@ -55,6 +55,17 @@ a.btn:hover {
      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 1.26);
      transition-delay: 0s;
    }
+.calltoAction {
+     background-color: transparent;
+     border-radius: 5px;
+     border-width: 2px;
+     border-color: #7DC1C4;
+     color: #7DC1C4;
+     font-weight: 100;
+     
+    
+    
+   }
 .column-featured {
      background-color: transparent;
    }
@@ -126,14 +137,7 @@ a.btn:hover {
 
 
 
-#calltoAction {
-  background-color: transparent;
-  border-radius: 5px;
-  border-width: 2px;
-  border-color: #7DC1C4;
-  color: #7DC1C4;
- 
-}
+
 table#clickableRow {
     border-collapse: collapse;   
 }
