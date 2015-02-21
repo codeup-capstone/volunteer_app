@@ -37,7 +37,7 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	}
 	public function agencies()
 	{
-	    return $this->belongsToMany('Agency');
+	    return $this->belongsToMany('Agency', 'agency_admin', 'admin_id', 'agency_id');
 	}
 	public function reviews()
 	{
