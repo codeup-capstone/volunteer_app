@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('AgencyAdminTableSeeder');
 		$this->call('LocationsTableSeeder');
 		$this->call('ActivitiesTableSeeder');
-		$this->call('ActivityUserTableSeeder');
+		// $this->call('ActivityUserTableSeeder');
 		$this->call('ReviewsTableSeeder');
 		// $this->call('TagsTableSeeder');
 		// $this->call('ActivityTagTableSeeder');
