@@ -7,6 +7,7 @@ body {
   max-height: 100%;
   color: #787E89;
   border-style: none;
+  overflow-x: none;
 
 }
 
@@ -83,6 +84,13 @@ a.btn:hover {
 .dropmenuItems {
   padding-left: 20px !important;
   
+}
+.footer {
+  margin-right: 0px;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #9bd4ec;
+  border-right: 1px solid #9bd4ec;
 }
 .header {
   border-color:  #fff;
@@ -183,6 +191,7 @@ background-color: #ccc;
   border-radius: 2px;
   background-color: transparent;
 }
+
 #nav .active, 
 #nav a:hover, 
 #nav a:active, 
@@ -209,6 +218,7 @@ background-color: #ccc;
   margin-bottom: 20px;
   box-shadow: 0 2px 9px 0 #ABA5A5;
 }
+
 
 /*box shadows for buttons*/
 /********************/
@@ -331,6 +341,7 @@ background-color: #ccc;
       background-color: #fff;
       border-color: #ddd;
     }
+
     #sidebar {
       height: 800px;
     }
