@@ -26,7 +26,7 @@
 							</div><!--div for logo -->
 							<br>
 							<div class="hidden-xs hidden-sm embed-responsive-4by3">
-								<img class="img-size" src="/img/agency/map.png" height="203px" width="259px">
+								<a href="http://maps.google.com/?daddr={{ $activity->location->address }}+{{ $activity->location->city }}+{{ $activity->location->state }}"><img class="img-size" src="/img/agency/maps/{{ $activity->agency->id }}.png">
 							</div><!--div for logo -->
 							
 					</div>  
