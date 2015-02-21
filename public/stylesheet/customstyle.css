@@ -7,7 +7,7 @@ body {
   max-height: 100%;
   color: #787E89;
   border-style: none;
-  overflow-x: hidden;
+  overflow-x: none;
 
 }
 
@@ -73,6 +73,13 @@ a.btn:hover {
 .dropmenuItems {
   padding-left: 20px !important;
   
+}
+.footer {
+  margin-right: 0px;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #9bd4ec;
+  border-right: 1px solid #9bd4ec;
 }
 .header {
   border-color:  #fff;
