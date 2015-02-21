@@ -197,11 +197,7 @@
 	      
 	      @if (Auth::guest())
 	      	<!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
-	      	<li><a href="#" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"></i>
-	      	    <span class="header-btn-text">
-	      	       	Login
-	      	    </span>
-	      	 </a></li>   
+	      	<li><a href="#" data-slide="slide" data-target="#login-panel"> <i class="fa fa-sign-in header-icon"> </i> Sign In</a></li>   
 	      @else
 		      	<li><a href="{{{ action('UsersController@show', Auth::user()->id) }}}">View Profile</a></li> 
 	      @endif
@@ -215,6 +211,7 @@
 	      @endif
 	      <!-- <li><a data-slide="slide" data-target="#login-panel" href="login.html">Login</a></li> -->
 	      <!-- <li><a data-slide="slide" data-target="#signup-panel" href="sign-up.html">Sign Up</a></li> -->
+	      	<li><a href="#" class="search-toggle" data-slide="slide" data-target="#search-panel"  data-hover="tooltip" data-placement="left" title="search"> <i class="fa fa-search header-icon"></i></a></li>
 	  </ul>
 	</nav>
 	</div>
@@ -451,7 +448,7 @@
 	  <div class="footer-copyright">
 	    <div class="container">
 	      <p class="no-margin">© Copyright 2015 
-	        All rights reserved.<a class="link-underline" href="site-map.html">Site Map</a> </p>
+	        All rights reserved. </p>
 	    </div>
 	  </div>
 	  <!--/.footer-copyright--> 
