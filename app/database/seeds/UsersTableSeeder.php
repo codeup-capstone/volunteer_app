@@ -9,7 +9,7 @@ class UsersTableSeeder extends Seeder {
 	{
 
 		$user = new User();
-		$user->email = 'wendey.loenard@sanantonio.gov';
+		$user->email = 'wendey.leonard@sanantonio.gov';
 		$user->password = 'codeup';
 		$user->first_name = 'Wendey';
 		$user->last_name = 'Leonard';
