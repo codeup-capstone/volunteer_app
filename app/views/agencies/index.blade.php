@@ -43,7 +43,7 @@
 	             					<tr>
                           <td class="hidden" > <a href="{{{ action('AgenciesController@show', $agency->id) }}}"></a></td>
 	             						<td><img  class="logoHeight smLogo" src="/img/agency/{{{ $agency->image_name }}}"></td>
-	             						<td data-hover="tooltip" data-placement="bottom" title="Click For More Information" >
+	             						<td data-hover="tooltip" data-placement="bottom" title="Click For More Information: {{{ $agency->description }}}" >
 	             							
 	             							{{{ $agency->name }}}</a><br>
 	             							{{{ $agency->address }}}<br>
