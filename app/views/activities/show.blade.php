@@ -128,7 +128,7 @@
 
 							@else
 								<!-- Allow user to cancel RSVP if record exists -->
-								<a class="btn btn-featured btn-lg buttonStyle raised" href="{{ action('RSVPController@destroy', $activity->id) }}">Cancel RSVP</a>
+								<a class="btn btn-featured btn-lg raised button-cancel"  href="{{ action('RSVPController@destroy', $activity->id) }}">Cancel RSVP</a>
 							@endif
 						@else
 							<!-- Make user login if not signed in -->

@@ -5,6 +5,8 @@ body {
 	overflow-x: hidden;
   height: 100%;
   max-height: 100%;
+  color: #787E89;
+  border-style: none;
 
 }
 
@@ -38,6 +40,12 @@ a.btn:hover {
   border-style: none;
   padding: 20px;
 }
+.button-cancel {
+  padding: 20px;
+  width: 100%;
+  border-style: none;
+  background-color: #F4633B;
+}
 .buttonStyle {
   width: 100%;
   border-style: none;
@@ -67,6 +75,7 @@ a.btn:hover {
 }
 .header {
   border-color:  #fff;
+
 }
 .header-btn-bar a:focus,
 .header-btn-bar a:hover,
@@ -130,8 +139,8 @@ a.btn:hover {
   background-color: transparent;
   border-radius: 5px;
   border-width: 2px;
-  border-color: #7DC1C4;
-  color: #7DC1C4;
+  border-color: #40EC9A;
+  color: #40EC9A;
  
 }
 table#clickableRow {
@@ -172,14 +181,14 @@ background-color: #ccc;
 #nav .current-parent, 
 #nav a.current.parent {
   background: #787E89;
-  color: #7DC1C4;
+  color: #40EC9A;
   border-radius: 2px;
 }
 #tableTitle {
   font-family: Montserrat;
   font-weight: 500;
   word-spacing: .4em;
-  background: #787E89;
+  background: #4A4A4A;
   color: #fff;
   padding-top: 20px;
   border-radius: 2px;
