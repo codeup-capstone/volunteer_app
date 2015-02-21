@@ -191,7 +191,9 @@ background-color: #ccc;
   border-radius: 2px;
   background-color: transparent;
 }
-
+#fix-padding-right {
+  padding-right: 0px;
+}
 #nav .active, 
 #nav a:hover, 
 #nav a:active, 

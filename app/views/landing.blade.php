@@ -18,7 +18,7 @@
             <img src="bedifferent/theme/assets/images/bird_hand.jpeg" class="img-responsive" alt="Responsive image">
              
         
-        <div class="col-xs-12 col-md-12 container-fluid">
+        <div class="col-xs-12 col-md-12 container-fluid" id="fix-padding-right">
     
         <div class="row no-gutters" >
         
