@@ -50,7 +50,7 @@
 							                      
 							                      <li><span>Address:</span> {{{$user->city}}}</li>
 							                      <li><span>Number:</span> {{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $user->phone) }}}</li>
-							                      <li><a class="raised" data-hover="tooltip" data-placement="left" title="Click to email" href="mailto:{{{ $user->email }}}">Email: {{$user->email}}</a></li>
+							                      <li id="fix-left-indent"><a data-hover="tooltip" data-placement="left" title="Click to email" href="mailto:{{{ $user->email }}}"><span>Email:</span> {{$user->email}}</a></li>
 
 							                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
 							                    </ul>
