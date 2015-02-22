@@ -50,7 +50,7 @@
    				   				<div class="row "><!-- cancel and save buttons -->
    				   					<div class="col-md-9 ">
 	   				   					
-	   				   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center column-featured">
+	   				   					<div class="col-xs-12 col-md-6 equal-height-title column-inner text-center column-featured">
 	   				   						{{Form::submit('Save Changes', array('class' => "btn btn-featured btn-md buttonStyle raised")) }}
 	   										{{ Form::close() }}
 	   				   					</div><!-- save buttons -->	
