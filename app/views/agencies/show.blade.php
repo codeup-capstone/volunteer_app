@@ -30,9 +30,9 @@
 			             		
 			   	        	<nav id="nav" role="navigation">
 					            <ul>
-					              <li class="active has-children "><a href="#"> <h5>{{{ $agency->name }}}</h5>
+					              <li class="active has-children "><a class="menuDropDown" href="#"> <h5>{{{ $agency->name }}}</h5>
 					              		<figcaption class="info-text-box">
-					              				<p>Click to see Profile</p>
+					              				<p id="moveRight">Profile</p>
 					              		</figcaption></a>
 					                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
 					                    <ul>

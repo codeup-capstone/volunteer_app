@@ -43,7 +43,7 @@
 						<div class="col-md-12 equal-height-title column-inner raised">
 							<nav id="nav" role="navigation">
 								<ul>
-									<li class="active has-children "><a href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
+									<li class="active has-children"><a  href="/agencies/{{ $activity->agency->id }}"><h3>{{ $activity->name }}</h3></a>
 
 
 											 
@@ -101,13 +101,13 @@
 		  
 				<div class=" half-row no-gutters">
 						<div class="col-xs-12 col-md-12 raised column-inner text-center">
-							<p><a href="mailto:{{$activity->contact_email}}">email button</a></p><!--table data will go here with some blade sytax -->
+							<p><a href="mailto:{{$activity->contact_email}}"><img src="/img/icons/envelope32.png"></a></p><!--table data will go here with some blade sytax -->
 						</div>
 
 
 
-						<div class="col-xs-12 hidden-md hidden-lg raised  column-inner text-center">
-							<p><a href="tel:{{$activity->contact_phone}}">call button</a></p><!--table data will go here with some blade sytax -->
+						<div class="btn col-xs-12 hidden-md hidden-lg raised  column-inner text-center">
+							<p><a href="tel:{{$activity->contact_phone}}"><img src="/img/icons/call10.png"></a></p><!--table data will go here with some blade sytax -->
 						</div>
 				</div> <!-- address section-->
 				 

@@ -10,5 +10,10 @@ $(document).ready(function() {
     $('#colFullheight').height( $('.container').height());
 
     $('#matchSiblingHeight').height($('#location').height());
+
+    $('.menuDropDown').click(function(){
+    	$('#moveRight').toggle();
+    	$('#moveRight').css({ color: '#787E89'})
+    });
 		
 });

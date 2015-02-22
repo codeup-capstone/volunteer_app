@@ -71,6 +71,7 @@ a.btn:hover {
      border-color: #40EC9A;
      color: #40EC9A;
      font-weight: 100;
+     text-transform: uppercase;
 
      
     
@@ -187,14 +188,15 @@ a.btn:hover {
 
 
 
-#calltoAction {
-  background-color: transparent;
-  border-radius: 5px;
-  border-width: 3.5px;
-  border-color: #40EC9A;
-  color: #40EC9A;
- 
-}
+.calltoAction {
+      background-color: transparent;
+      border-radius: 5px;
+      border-width: 3.5px;
+      border-color: #40EC9A;
+      color: #40EC9A;
+      min-width: 234px;
+     
+    }
 
 table#clickableRow {
     border-collapse: collapse;   
@@ -225,6 +227,10 @@ background-color: #ccc;
 #fix-padding-right {
   padding-right: 0px;
 }
+#moveRight {
+  text-align: right;
+}
+
 #nav .active, 
 #nav a:hover, 
 #nav a:active, 
@@ -239,6 +245,13 @@ background-color: #ccc;
   background: #787E89;
   color: #40EC9A;
   border-radius: 2px;
+}
+#nav .active > a,
+#nav a:hover,
+#nav a:active,
+#nav a:focus {
+   background-color: #787e89;
+  color: #40EC9A;
 }
 #tableTitle {
   font-family: Montserrat;
@@ -284,6 +297,7 @@ background-color: #ccc;
 
 /*hides the background image on anything smaller than the a destop screen*/
 @media screen and (min-width: 992px){
+    
     .column-featured {
       background-color: transparent;
     }
