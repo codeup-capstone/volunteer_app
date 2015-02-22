@@ -31,7 +31,7 @@
 			             		<p>{{{ $user->description }}}</p>
 					   	        	<nav id="nav" class="fix-left-indent" role="navigation">
 							            <ul>
-							              <li class="active has-children raised"><a href="#"> click for profile summary</a>
+							              <li class="active has-children raised"><a href="#"> Profile Summary</a>
 							              
 							                  <!-- <li class="has-children"> <a href="#">Find Events</a> -->
 							                    <ul class="dropmenuItems">
