@@ -23,7 +23,10 @@ a.btn:hover {
    
 }
 
-
+.btnEmail {
+  width: 100%;
+  height: 100%;
+}
 .btn-height {
   min-height: 150px;
   margin-top: 10px;
