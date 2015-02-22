@@ -49,11 +49,7 @@
 		   			</div><!-- form for editing or creating -->
    				   				<div class="row "><!-- cancel and save buttons -->
    				   					<div class="col-md-9 ">
-	   				   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center column-featured"><!-- cancel buttons -->
-	   				   						
-	   										<a href="/users/create" class="btn btn-kill btn-featured btn-md button-cancel raised">Cancel Changes</a>
-
-	   				   					</div><!-- cancel buttons -->
+	   				   					
 	   				   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center column-featured">
 	   				   						{{Form::submit('Save Changes', array('class' => "btn btn-featured btn-md buttonStyle raised")) }}
 	   										{{ Form::close() }}
