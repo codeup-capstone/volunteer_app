@@ -1,7 +1,7 @@
 
 									<div class="form-group" {{{ $errors->has('first_name') ? 'has-error' : '' }}}>
 										{{ Form::label('first_name', 'First Name') }}
-										{{ Form::text('first_name', Input::old('first_name'), array('class' => 'form-control')) }}	
+										{{ Form::text('first_name', Input::old('first_name'), array('class' => 'form-control','autofocus'=>'autofocus')) }}	
 										{{ $errors->first('first_name', '<p class="help-block">:message</p>') }}
 									</div>
 
@@ -51,7 +51,7 @@
    				   					<div class="col-md-9 ">
 	   				   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center column-featured"><!-- cancel buttons -->
 	   				   						
-	   										<a href="/users/create" class="btn btn-kill btn-featured btn-md raised">Cancel Changes</a>
+	   										<a href="/users/create" class="btn btn-kill btn-featured btn-md button-cancel raised">Cancel Changes</a>
 
 	   				   					</div><!-- cancel buttons -->
 	   				   					<div class="col-xs-6 col-md-6 equal-height-title column-inner text-center column-featured">

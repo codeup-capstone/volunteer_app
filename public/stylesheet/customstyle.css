@@ -77,6 +77,7 @@ a.btn:hover {
     
     
    }
+   
 .column-featured {
      background-color: transparent;
    }
@@ -238,6 +239,7 @@ background-color: #ccc;
   background: #787E89;
   color: #fff;
   border-radius: 2px;
+
 }
 #nav .current, 
 #nav .current-parent, 
@@ -266,30 +268,84 @@ background-color: #ccc;
 }
 
 
-/*box shadows for buttons*/
+/*input and forms*/
 /********************/
-/*.wrapper {
-	width: 100%;
+.input-group,
+.form-control,
+.input-group-addon {
+  border-style: solid;
+  background-color: #eee;
 }
-.shadow-0 {
-    border: 1px solid #eee;
+.form-control {
+  background-color: #eee;
+  height: 48px;
 }
-.shadow-1 {
-    box-shadow: 0 2px 10px 0 #eee, 0 2px 5px 0 #eee;
+.form-control:hover {
+  background-color: #fbfbfb;
+  box-shadow: 2px 3px 5px #888888;
 }
-.shadow-2 {
-    box-shadow: 0 6px 20px 0 #eee, 0 8px 17px 0 #eee;
+.input-group > .form-control,
+.input-group > .input-group-addon,
+.input-group > .input-group-btn > .btn {
+  height: 48px;
 }
-.shadow-3 {
-    box-shadow: 0 17px 50px 0 #eee, 0 12px 15px 0 #eee;
+select.input-group > .form-control,
+select.input-group > .input-group-addon,
+select.input-group > .input-group-btn > .btn {
+  height: 48px;
+  line-height: 34px;
 }
-.shadow-4 {
-    box-shadow: 0 25px 55px 0 #eee, 0 16px 28px 0 #eee;
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  height: 48px;
 }
-.shadow-5 {
-    box-shadow: 0 40px 77px 0 #eee, 0 27px 24px 0 #eee;
-}*/
-/*box shadows for buttons*/
+select.input-group-lg > .form-control,
+select.input-group-lg > .input-group-addon,
+select.input-group-lg > .input-group-btn > .btn {
+  height: 48px;
+  line-height: 48px;
+}
+.input-group-addon {
+  background-color: #ffffff;
+}
+.input-group-btn > .btn + .btn {
+  margin-left: -1px;
+}
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group {
+  margin-right: -1px;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+  margin-left: -1px;
+}
+.form-control:focus {
+  outline: 0;
+}
+.form-control,
+.input-group span,
+.input-group .btn {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-control::-moz-placeholder {
+  opacity: 1;
+  color: #6e5c53;
+}
+.form-control:-ms-input-placeholder {
+  color: #6e5c53;
+}
+.form-control::-webkit-input-placeholder {
+  color: #6e5c53;
+}
+.form-control:focus {
+  border-color: #d4fbfb;
+  border-style: none;
+  border-width: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: 2px 3px 5px #888888;
+}
 /********************/
 
 

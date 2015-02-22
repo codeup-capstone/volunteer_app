@@ -13,7 +13,11 @@ $(document).ready(function() {
 
     $('.menuDropDown').click(function(){
     	$('#moveRight').toggle();
-    	$('#moveRight').css({ color: '#787E89'})
+    	$('#moveRight').css( "color", "#787E89");
     });
-		
+	
+	$('input').focus(function(){
+		$(this).parent().css("color", "#494B4F");
+	});
+
 });
