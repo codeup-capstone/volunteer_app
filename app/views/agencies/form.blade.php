@@ -15,7 +15,6 @@
 	       <div class="col-md-12 ">       
 	       		<div class="row no-gutters"> <!-- profile info bar --> 
 	       			<div class="text-center col-md-3 embed-responsive-4by3">
-     		            <img src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}"  width="250">
      		             	<p>Welcome!</p>
      		             </img>
      		   	    </div><!--div for profile picture -->

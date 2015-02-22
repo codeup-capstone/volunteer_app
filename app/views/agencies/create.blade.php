@@ -6,8 +6,4 @@
 		
 	@include('agencies.form')
 
-
-</div>
-
-
 @stop

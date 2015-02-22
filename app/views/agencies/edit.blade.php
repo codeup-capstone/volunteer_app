@@ -4,9 +4,7 @@
 
 	<div>
 		<div class='main-container'>
-			<div class='col-md-12' id='agencies'>
-				
-					
+			<div class='col-md-12' id='agencies'>					
 				
 				@if (Auth::check())
 			
