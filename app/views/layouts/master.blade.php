@@ -155,7 +155,9 @@
 	<!-- this above data-slide toggles the #contact-panel .slide-panel example --> 
 	<!-- /END 3rd .header-btn .header-btn-lg in second row --> 
 	<!-- BEGIN 4th .header-btn .header-btn-sm in second row--> 
-	<a href="#" class="header-btn header-btn-xl search-toggle" data-slide="slide" data-target="#search-panel"  data-hover="tooltip" data-placement="left" title="search"> <i class="fa fa-search header-icon"></i> </a> 
+	<a href="#" class="header-btn header-btn-xl search-toggle" data-slide="slide" data-target="#search-panel" > <i class="fa fa-search header-icon"></i> <span class="header-btn-text">
+	    Search
+	</span></a> 
 	<!-- this above data-slide toggles the #search-panel .slide-panel example -->     
 	</div>
 	<!-- /END .header-btn-row-->
