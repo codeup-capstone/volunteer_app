@@ -2,6 +2,8 @@
 
 @section('content')
 
+@if (Auth::check())
+
 @forelse ($users as $user)
 
 <div class='main-container'>
@@ -20,6 +22,8 @@
 @empty
 {{{ "Search not found on the site." }}}
 @endforelse
+
+@endif
 
 
 @stop
