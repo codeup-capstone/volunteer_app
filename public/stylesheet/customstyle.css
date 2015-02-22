@@ -231,6 +231,9 @@ background-color: #ccc;
   border-radius: 2px;
   background-color: transparent;
 }
+#emailButton {
+  margin-bottom: 15px;
+}
 #fix-padding-right {
   padding-right: 0px;
 }
