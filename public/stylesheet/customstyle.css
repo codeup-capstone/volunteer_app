@@ -106,10 +106,12 @@ a.btn:hover {
   background-color: #4A4A4A;
 
 }
- .img-size {
+  .img-size {
       max-width: 183px;
-      text-align: center;
+     
+      
     }
+
 .landing-column {
   background-color: #787E89;
 }
@@ -126,6 +128,7 @@ a.btn:hover {
   display: block;
   border: 5px solid #40EC9A;;
   border-radius: 50%;
+  text-align: center;
 }
 
 .round-btn {
@@ -279,6 +282,8 @@ background-color: #ccc;
 .form-control {
   background-color: #eee;
   height: 48px;
+  
+  text-transform: capitalize;
 }
 .form-control:hover {
   background-color: #fbfbfb;
@@ -288,6 +293,7 @@ background-color: #ccc;
 .input-group > .input-group-addon,
 .input-group > .input-group-btn > .btn {
   height: 48px;
+
 }
 select.input-group > .form-control,
 select.input-group > .input-group-addon,
@@ -321,7 +327,9 @@ select.input-group-lg > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .form-control:focus {
-  outline: 0;
+  background-color: #fbfbfb;
+  
+  font-weight: 600;
 }
 .form-control,
 .input-group span,
@@ -449,4 +457,18 @@ select.input-group-lg > .input-group-btn > .btn {
       height: 800px;
     }
 
-    } /*end media query md *?
+    } /*end media query md */
+
+
+    @media screen and (max-width: 768px){
+
+    .img-size-mobile {
+      max-width: 183px;
+     
+      margin: 0px auto;
+    }
+      
+    }
+
+
+
