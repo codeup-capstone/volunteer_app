@@ -103,7 +103,7 @@
 		  
 				<div class=" half-row no-gutters">
 						<div class="col-xs-12 col-md-12 raised column-inner text-center">
-							<p><a href="mailto:{{$activity->contact_email}}"><img src="/img/icons/envelope32.png"></a></p><!--table data will go here with some blade sytax -->
+							<a class="btn btnEmail" href="mailto:{{$activity->contact_email}}"><img src="/img/icons/envelope32.png"></a><!--table data will go here with some blade sytax -->
 						</div>
 
 
