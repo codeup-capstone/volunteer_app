@@ -103,13 +103,13 @@
 		  
 				<div class=" half-row no-gutters">
 						<div class="col-xs-12 col-md-12 raised column-inner text-center">
-							<a class="btn btnEmail" href="mailto:{{$activity->contact_email}}"><img  href="mailto:{{$activity->contact_email}}" src="/img/icons/envelope32.png"></a><!--table data will go here with some blade sytax -->
+							<a class="btn btnEmail" href="mailto:{{$activity->contact_email}}"><img src="/img/icons/envelope32.png"></a><!--table data will go here with some blade sytax -->
 						</div>
 
 
 
 						<div class="btn col-xs-12 hidden-md hidden-lg raised  column-inner text-center">
-							<a href="tel:{{$activity->contact_phone}}"><img href="tel:{{$activity->contact_phone}}" src="/img/icons/call10.png"></a><!--table data will go here with some blade sytax -->
+							<img href="tel:{{$activity->contact_phone}}" src="/img/icons/call10.png"><!--table data will go here with some blade sytax -->
 						</div>
 				</div> <!-- address section-->
 				 
@@ -121,7 +121,7 @@
 		<hr class="visible-xs vertical-spacer vertical-spacer-xs">
 		<!-- add some vertical spacing when stacked -->
 		
-			<div class="col-md-3" id="sidebar">
+			<div class="col-md-3">
 			
 				  <div class="col-md-12 column-inner column-featured text-center">
 					<h3>

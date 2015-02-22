@@ -53,7 +53,7 @@
 
 		  	</div>
 			
-			<div class="col-md-3 " id="colFullheight">
+			<div class="col-md-3 " >
 	  		  	<div class="row">
 	  		    	<div class="col-md-12">
 	  		       		<div class="column-inner column-featured text-center">
