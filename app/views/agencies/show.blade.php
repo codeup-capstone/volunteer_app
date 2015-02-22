@@ -21,8 +21,10 @@
 	      
 	       <div class="col-md-9 ">       
 	       	<div class="row"> <!-- profile info bar -->           	
- 				   <div class="col-md-4 embed-responsive-4by3">
- 		   	      		<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}">
+ 				   <div class="col-md-4 embed-responsive-4by3 img-size-mobile">
+ 		   	      		
+ 		   	      			<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}">
+ 		   	      		
  		   	       </div><!--div for profile picture -->
 		     		<div class="section">
 				        <div class="half-row col-md-8 equal-height-title column-inner raised">

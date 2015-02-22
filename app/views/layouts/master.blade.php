@@ -250,7 +250,7 @@
 	  <h2 class="slide-panel-title text-center-md-view">Contact Us</h2>
 	  <div class="row">
 	    <div class="col-md-6 text-right-md-view text-right-lg-view">
-	      <h3>Afternoon Delight</h3>
+	      <h3>Serve Search</h3>
 	      <p class="lead"> 112 East Pecan<br>
 	        San Antonio, TX<br>
 	        <strong>phone:</strong> <a href="tel:8135551234">214.608.7675</a><br>
