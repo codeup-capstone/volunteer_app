@@ -21,25 +21,23 @@
 		   
 		   <div class="col-md-12">
 		   		<div class="row ">
-		   			<div class="col-md-8 column-inner raised"><!-- form for editing or creating -->
+		   			<div class="col-md-offset-2 col-md-8  column-inner text-center" id="tableTitle"><!-- form for editing or creating -->
 
-		   				<div class="row"><!-- row form for edit fields -->
-		   					<div class="col-md-12 ">
 
-		   						<h1 class="column-inner text-center">Create New Event</h1>
-		   						
+		   						<h3>Create New Event</h3>
+		   				
+		   			</div><!-- form for editing or creating -->
+		   			
+
+		   			<div class="col-md-8"><!-- events table  -->
+					 	<div class="row no-gutters" id="sidebar">
 		   						{{ Form::open(array('action' => 'ActivitiesController@store', 'files' => true)) }}
 
 									@include('activities.form')
 
-								{{ Form::submit('Create New Event', array('class' => 'btn btn-primary')) }}
+								{{ Form::submit('Create New Event', array('class' => "btn btn-featured btn-md buttonStyle raised")) }}
 								{{ Form::close() }}
 
-		   					</div><!-- form for edit fields -->
-		   				</div><!-- row form for edit fields -->
-		   			</div><!-- form for editing or creating -->
-		   			<div class="col-md-4"><!-- events table  -->
-					 	<div class="row no-gutters" id="sidebar">
 						
 							
 						</div>  
