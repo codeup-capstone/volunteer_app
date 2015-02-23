@@ -8,7 +8,9 @@
 	       <div class="col-md-9 ">       
 	       		<div class="row"> <!-- profile info bar -->           	
  				   	<div class="col-md-4 embed-responsive-4by3 img-size-mobile">
- 		   	      		<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}">		
+ 		   	      		<img class="img-size" src="/img/agency/{{{ $agency->image_name }}}" alt="{{{ $agency->name }}}"><br>
+ 		   	      		<img class="img-size" src="/img/icons/stars.png"><br>
+ 		   	      		<a href="{{{ action('AgenciesController@showReviews', $agency->id)}}}">See Reviews</a>	
  		   	       	</div><!--div for profile picture -->
 		     		
 		     		<div class="section">

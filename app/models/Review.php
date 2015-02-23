@@ -22,9 +22,13 @@ class Review extends BaseModel {
 
 	// Polymorphic relationship with users and agencies.
 
-    public function reviewable()
-    {
-        return $this->morphTo();
-    }
+	public function user()
+	{
+	    return $this->belongsTo('User');
+	}
+	public function agency()
+	{
+	    return $this->belongsTo('agency');
+	}
 
 }

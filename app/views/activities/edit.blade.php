@@ -4,7 +4,7 @@
 
 
 
-<div id="page">
+<div id="page" >
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
   <div class="page-content" role="main">
     <div class="container no-gutters">
@@ -18,39 +18,40 @@
 	      <!-- .row .sixteen-gutter --> 
 	      <!-- <div class="row sixteen-gutter"> -->
 	      
+
 		   
 		   <div class="col-md-12">
 		   		<div class="row ">
 		   			<div class="col-md-8 column-inner raised"><!-- form for editing or creating -->
-
 		   				<div class="row"><!-- row form for edit fields -->
-		   					<div class="col-md-12 ">
+		   						<h1 class="column-inner text-center">Edit Event</h1>
+								{{ Form::model($activity, array('action' => array('ActivitiesController@update', $activity->id), 'method' => 'put', 'files' => true)) }}
 
-		   						<h1 class="column-inner text-center">Create New Agency</h1>
-		   						
-		   						{{ Form::open(array('action' => 'AgenciesController@create', 'files' => true)) }}
+									@include('activities.form')
 
-									<div class="form-group {{{ $errors->has('image_name') ? 'has-error' : '' }}}">
-										{{ Form::label('image_name', 'Agency Image', array('class'=> 'some-class')) }}
-										{{ Form::file('image_name', array('class' => 'form-control')) }}
-										{{ $errors->first('image_name', '<span class="help-block">:message</span>') }}
-									</div>
-
-
-									@include('agencies.form')
-
-								{{ Form::submit('Create New Agency', array('class' => 'btn btn-primary')) }}
+								{{ Form::submit('Update Event', array('class' => 'btn btn-primary')) }}
 								{{ Form::close() }}
 
-		   					</div><!-- form for edit fields -->
+								{{ Form::open(array('action'=> array('ActivitiesController@destroy', $activity->id), 'method' => 'delete')) }}
+								{{ Form::submit('Delete Event', array('class' => 'btn btn-danger')) }}
+								{{ Form::close() }}
+
 		   				</div><!-- row form for edit fields -->
 		   			</div><!-- form for editing or creating -->
-		   			<div class="col-md-4"><!-- events table  -->
+		   			<div class="col-md-1"></div>
+		   			<div class="col-md-3">
 					 	<div class="row no-gutters" id="sidebar">
 						
+							<div class=" embed-responsive-4by3">
+								<img class="img-size" src="/img/agency/{{ $activity->agency->image_name }}">
+							</div><!--div for logo -->
+							<br>
+							<div class="hidden-xs hidden-sm embed-responsive-4by3">
+								<a href="http://maps.google.com/?daddr={{ $activity->location->address }}+{{ $activity->location->city }}+{{ $activity->location->state }}"><img class="img-size" src="/img/agency/maps/{{ $activity->agency->id }}.png"></a>
+							</div><!--div for logo -->
 							
 						</div>  
-		   			</div><!-- events table-->
+		   			</div>
 		   		</div>
 
 		   </div>             	

@@ -119,9 +119,11 @@ class RSVPController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		RSVP::destroy($id);
+		$user = Auth::user();
 
-		return Redirect::route('RSVP.index');
+		$user->activities()->detach($activityID);
+
+		return Redirect::action('ActivitiesController@show', $activityID);
 	}
 
 }

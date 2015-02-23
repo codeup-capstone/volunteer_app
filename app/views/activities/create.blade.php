@@ -26,20 +26,13 @@
 		   				<div class="row"><!-- row form for edit fields -->
 		   					<div class="col-md-12 ">
 
-		   						<h1 class="column-inner text-center">Create New Agency</h1>
+		   						<h1 class="column-inner text-center">Create New Event</h1>
 		   						
-		   						{{ Form::open(array('action' => 'AgenciesController@create', 'files' => true)) }}
+		   						{{ Form::open(array('action' => 'ActivitiesController@store', 'files' => true)) }}
 
-									<div class="form-group {{{ $errors->has('image_name') ? 'has-error' : '' }}}">
-										{{ Form::label('image_name', 'Agency Image', array('class'=> 'some-class')) }}
-										{{ Form::file('image_name', array('class' => 'form-control')) }}
-										{{ $errors->first('image_name', '<span class="help-block">:message</span>') }}
-									</div>
+									@include('activities.form')
 
-
-									@include('agencies.form')
-
-								{{ Form::submit('Create New Agency', array('class' => 'btn btn-primary')) }}
+								{{ Form::submit('Create New Event', array('class' => 'btn btn-primary')) }}
 								{{ Form::close() }}
 
 		   					</div><!-- form for edit fields -->

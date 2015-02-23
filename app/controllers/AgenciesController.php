@@ -58,6 +58,15 @@ class AgenciesController extends \BaseController {
 
 	}
 
+	public function showReviews($id)
+	{
+		$agency = Agency::findOrFail($id);
+	
+		$reviews = Review::with('user')->orderBy('event_date', 'ASC')->simplePaginate(5);
+		return View::make('agencies.show')->with(compact('agency'))->with(compact('activities'));
+
+	}
+
 	/**
 	 * Show the form for editing the specified event.
 	 *
