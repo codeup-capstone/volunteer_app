@@ -27,6 +27,8 @@ Route::post('/', 'HomeController@doLogin');
 
 Route::resource('agencies', 'AgenciesController');
 
+Route::get('reviews', 'AgenciesController@showReviews');
+
 Route::resource('locations', 'LocationsController');
 
 Route::get('RSVP/create/{activityID}', 'RSVPController@create');
@@ -34,6 +36,7 @@ Route::get('RSVP/create/{activityID}', 'RSVPController@create');
 Route::resource('RSVP', 'RSVPController');
 
 Route::resource('users', 'UsersController');
+
 
 Route::get('quickpick','ActivitiesController@showRandom');
 

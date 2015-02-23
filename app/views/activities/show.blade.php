@@ -21,8 +21,10 @@
 				<div class="col-md-3">	            
 					 <div class="row no-gutters" id="sidebar">
 						
-							<div class=" embed-responsive-4by3">
-								<img class="img-size" src="/img/agency/{{ $activity->agency->image_name }}">
+							<div class=" embed-responsive-4by3 img-size img-size-mobile">
+								
+									<img class="img-size" src="/img/agency/{{ $activity->agency->image_name }}">
+								
 							</div><!--div for logo -->
 							<br>
 							<div class="hidden-xs hidden-sm embed-responsive-4by3">
@@ -72,7 +74,7 @@
 						<div class="col-xs-12 col-md-12 no-gutters">
 						   <div>
 						   
-							 <h3 class="column-inner text-center"> <a  href="{{{ action('AgenciesController@show', $activity->agency->id) }}}">{{ $activity->agency->name }}</a><h3>
+							 <h3 class="column-inner text-center"> <a  href="{{{ action('AgenciesController@show', $activity->agency->id) }}}">{{ $activity->agency->name }}</a></h3>
 							  
 						   </div>
 
@@ -99,16 +101,16 @@
 
 			  
 		  
-				<div class=" half-row no-gutters">
-						<div class="col-xs-12 col-md-12 raised column-inner text-center">
-							<p><a href="mailto:{{$activity->contact_email}}"><img src="/img/icons/envelope32.png"></a></p><!--table data will go here with some blade sytax -->
+				<div class="half-row no-gutters">
+					<div>
+						<div class="col-xs-12 col-md-12 raised column-inner text-center" id="emailButton">
+							<a href="mailto:{{$activity->contact_email}}" rel="external"><img  src="/img/icons/envelope32.png"></a><!--table data will go here with some blade sytax -->
 						</div>
 
 
 
-						<div class="btn col-xs-12 hidden-md hidden-lg raised  column-inner text-center">
-							<p><a href="tel:{{$activity->contact_phone}}"><img src="/img/icons/call10.png"></a></p><!--table data will go here with some blade sytax -->
-						</div>
+						
+					</div>
 				</div> <!-- address section-->
 				 
 			 </div><!-- top third of  section-->
@@ -116,10 +118,10 @@
 	
  
 		<!--/.col-x-x-->
-		<hr class="visible-xs vertical-spacer vertical-spacer-xs">
+		
 		<!-- add some vertical spacing when stacked -->
 		
-			<div class="col-md-3" id="sidebar">
+			<div class="col-md-3">
 			
 				  <div class="col-md-12 column-inner column-featured text-center">
 					<h3>
@@ -134,8 +136,7 @@
 							@endif
 						@else
 							<!-- Make user login if not signed in -->
-							<a class="btn btn-featured btn-lg buttonStyle raised" 
-							 href="#" data-slide="slide" data-target="#login-panel">Sign in to RSVP</a>
+							<a class="btn btn-featured btn-lg buttonStyle raised" href="#" data-slide="slide" data-target="#login-panel">Sign in to RSVP</a>
 						@endif
 
 					</h3>
@@ -147,7 +148,7 @@
 
 			   
 				<div class="col-md-12 column-inner column-featured text-center">
-					<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@showRandom') }}}">PASS</a></h3>
+					<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@showRandom') }}}">NEXT</a></h3>
 				</div>
 				  <!--/.column-inner .column-featured-->
 			   
@@ -183,7 +184,7 @@
   <!-- /.page-content role=main --> 
   <!--=========== END CONTENT FOR THE PAGE ============================================================ -->
 </div>
-</div>
+
 <!-- ================== END #page ================= --> 
 
 

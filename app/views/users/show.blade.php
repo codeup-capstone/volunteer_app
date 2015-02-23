@@ -13,10 +13,11 @@
 
 	       <div class="col-md-9 ">       
 	       		<div class="post person"> <!-- profile info bar -->           	
- 				   <div class="col-md-3 embed-responsive-4by3">
+ 				   <div class="col-md-3 embed-responsive-4by3 img-size img-size-mobile">
  				   		<div class="image">
 							@if(!empty($user->image_url))
  		             			<a  href="{{{ action('UsersController@edit', $user->id) }}}" ><img class="img-size" src="{{{ $user->image_url }}}" data-hover="tooltip" data-placement="left" title="Click to Edit Profile"></a>
+ 		             			
      		             	@else 
      		             		<a href="{{{ action('UsersController@edit', $user->id) }}}"><img class="img-size" src="/img/user/placeholder.jpg"></a>
      		             	@endif 
@@ -28,7 +29,7 @@
 				        <div class="half-row col-md-9 no-gutters">
 			             	<div class="equal-height-title column-inner raised ">
 			             		<h3 class="text-center">{{{$user->first_name." ".$user->last_name}}}</h3>
-			             		<p>{{{ $user->description }}}</p>
+			             		
 					   	        	<nav id="nav" class="fix-left-indent" role="navigation">
 							            <ul>
 							              <li class="active has-children raised"><a href="#"> Profile Summary</a>
@@ -39,7 +40,7 @@
 							                      <li><span>Address:</span> {{{$user->city}}}</li>
 							                      <li><span>Number:</span> {{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $user->phone) }}}</li>
 							                      <li><span>Email:</span> {{$user->email}}</li>
-
+							                      <li><span>Tagline:</span> {{$user->profile}}</li>
 							                      <li>{{{ $user->first_name }}} joined {{{ $user->created_at->diffForHumans() }}}</li>
 							                    </ul>
 							               </li>          

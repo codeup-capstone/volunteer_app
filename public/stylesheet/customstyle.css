@@ -23,7 +23,10 @@ a.btn:hover {
    
 }
 
-
+.btnEmail {
+  width: 100%;
+  height: 100%;
+}
 .btn-height {
   min-height: 150px;
   margin-top: 10px;
@@ -106,10 +109,12 @@ a.btn:hover {
   background-color: #4A4A4A;
 
 }
- .img-size {
+  .img-size {
       max-width: 183px;
-      text-align: center;
+     
+      
     }
+
 .landing-column {
   background-color: #787E89;
 }
@@ -126,6 +131,7 @@ a.btn:hover {
   display: block;
   border: 5px solid #40EC9A;;
   border-radius: 50%;
+  text-align: center;
 }
 
 .round-btn {
@@ -225,6 +231,9 @@ background-color: #ccc;
   border-radius: 2px;
   background-color: transparent;
 }
+#emailButton {
+  margin-bottom: 15px;
+}
 #fix-padding-right {
   padding-right: 0px;
 }
@@ -279,6 +288,8 @@ background-color: #ccc;
 .form-control {
   background-color: #eee;
   height: 48px;
+  
+ 
 }
 .form-control:hover {
   background-color: #fbfbfb;
@@ -288,6 +299,7 @@ background-color: #ccc;
 .input-group > .input-group-addon,
 .input-group > .input-group-btn > .btn {
   height: 48px;
+
 }
 select.input-group > .form-control,
 select.input-group > .input-group-addon,
@@ -321,7 +333,9 @@ select.input-group-lg > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .form-control:focus {
-  outline: 0;
+  background-color: #fbfbfb;
+  
+  font-weight: 600;
 }
 .form-control,
 .input-group span,
@@ -346,10 +360,77 @@ select.input-group-lg > .input-group-btn > .btn {
   -webkit-box-shadow: none;
   box-shadow: 2px 3px 5px #888888;
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 /********************/
 
+/************PAGER*****************************/
+/*********************************************/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+.pager li > a,
+.pager li > span {
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background: #787E89;
+  color: #fff;
+  margin: 0 5px;
+  width: 95px;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.26);
+      border-radius: 5px;
+}
+.pager li {
+  background: inherit;
+}
+.pager .ti {
+  font-size: 80%;
+}
+.text-right.pager {
+  text-align: right;
+}
+.text-left.pager {
+  text-align: left;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  background-color: #787E89;
+  color: #ffffff;
+  border-color: #4b3f38;
+}
+.pager > .disabled > span,
+.pager > .disabled > span:hover,
+.pager > .disabled > span:focus,
+.pager > .disabled > a,
+.pager > .disabled > a:hover,
+.pager > .disabled > a:focus {
+  color: #eee;
+  background-color: #eee;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*******HEADER BUTTON BAR ******************/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+.header-btn-bar a:hover,
+.header-btn-bar a:active,
+.header-btn-bar a.active-slide-btn {
+  color: #f3f1e7;
+  background: #787E89;
+  text-decoration: none;
+}
+.btn-default,
+.btn-default:hover {
+  color: #f3f1e7;
+  background: #787E89;
+  border-style: none;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*hides the background image on anything smaller than the a destop screen*/
 @media screen and (min-width: 992px){
@@ -378,75 +459,24 @@ select.input-group-lg > .input-group-btn > .btn {
        
     }
  
-    .pagination {
-  position: relative;
-  display: inline-block;
-  padding-top: 10px;
-  /*margin: 20px 0;*/
-  border-radius: 4px;
-  width: 100%;
-  height: 40px;
-  text-align: center;
-    }
-    .pagination > li {
-      display: inline;
-    }
-    .pagination > li > a,
-    .pagination > li > span {
-      position: relative;
-    /*  float: left;*/
-      padding:  6px 12px;
-      margin-left: -1px;
-      /*line-height: 1.42867143; */
-      text-decoration: none;
-      background-color: #fff;
-
-    }
-    .pagination > li:first-child > a,
-    .pagination > li:first-child > span {
-      margin-left: 0;
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
-    }
-    .pagination > li:last-child > a,
-    .pagination > li:last-child > span {
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
-    }
-    .pagination > li > a:hover,
-    .pagination > li > span:hover,
-    .pagination > li > a:focus,
-    .pagination > li > span:focus {
-      color: #50D9FF;
-      background-color: #eee;
-      border-color: #ddd;
-    }
-    .pagination > .active > a,
-    .pagination > .active > span,
-    .pagination > .active > a:hover,
-    .pagination > .active > span:hover,
-    .pagination > .active > a:focus,
-    .pagination > .active > span:focus {
-      z-index: 1;
-      color: #fff;
-      
-      background-color: #50D9FF;
-
-    }
-    .pagination > .disabled > span,
-    .pagination > .disabled > span:hover,
-    .pagination > .disabled > span:focus,
-    .pagination > .disabled > a,
-    .pagination > .disabled > a:hover,
-    .pagination > .disabled > a:focus {
-      color: #50D9FF;
-      
-      background-color: #fff;
-      border-color: #ddd;
-    }
+    
 
     #sidebar {
       height: 800px;
     }
 
-    } /*end media query md *?
+    } /*end media query md */
+
+
+    @media screen and (max-width: 768px){
+
+    .img-size-mobile {
+      max-width: 183px;
+     
+      margin: 0px auto;
+    }
+      
+    }
+
+
+

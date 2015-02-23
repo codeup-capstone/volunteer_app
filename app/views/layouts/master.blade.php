@@ -155,7 +155,9 @@
 	<!-- this above data-slide toggles the #contact-panel .slide-panel example --> 
 	<!-- /END 3rd .header-btn .header-btn-lg in second row --> 
 	<!-- BEGIN 4th .header-btn .header-btn-sm in second row--> 
-	<a href="#" class="header-btn header-btn-xl search-toggle" data-slide="slide" data-target="#search-panel"  data-hover="tooltip" data-placement="left" title="search"> <i class="fa fa-search header-icon"></i> </a> 
+	<a href="#" class="header-btn header-btn-xl search-toggle" data-slide="slide" data-target="#search-panel" > <i class="fa fa-search header-icon"></i> <span class="header-btn-text">
+	    Search
+	</span></a> 
 	<!-- this above data-slide toggles the #search-panel .slide-panel example -->     
 	</div>
 	<!-- /END .header-btn-row-->
@@ -250,7 +252,7 @@
 	  <h2 class="slide-panel-title text-center-md-view">Contact Us</h2>
 	  <div class="row">
 	    <div class="col-md-6 text-right-md-view text-right-lg-view">
-	      <h3>Afternoon Delight</h3>
+	      <h3>Serve Search</h3>
 	      <p class="lead"> 112 East Pecan<br>
 	        San Antonio, TX<br>
 	        <strong>phone:</strong> <a href="tel:8135551234">214.608.7675</a><br>
@@ -265,13 +267,7 @@
 	<div class="col-md-6">
 	  <h3>Find Us On...</h3>
 	  <ul class="social-icon-list">
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
 	    <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
 	</ul>
 	</div>
 	<!-- /.col-md-6 -->
@@ -421,15 +417,11 @@
 	    <div class="container">
 	      <div class="row footer-row equal-height-col">
 	        <div class="col-sm-5 col-md-3 footer-col">
-	          <h4 class="footer-title">Socialfy</h4>
+	          <h4 class="footer-title">Social</h4>
 	          <ul class="social-icon-list">
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+
+	            <li><a href="https://github.com/codeup-capstone/volunteer_app"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+
 	          </ul>
 	        </div>
 	        <!-- /.col-sm-5 .col-md-3 footer-col -->
