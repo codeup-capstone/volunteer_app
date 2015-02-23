@@ -430,6 +430,11 @@ select.input-group-lg > .input-group-btn > .btn {
   background: #787E89;
   border-style: none;
 }
+.hideBorder,
+.hideBorder  a {
+  border-style: none;
+}
+
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*hides the background image on anything smaller than the a destop screen*/

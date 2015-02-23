@@ -90,7 +90,7 @@
 	</div>
 	<!-- /.logo-brand-->
 
-	<div class="header-btn-bar">
+	<div class="header-btn-bar hideBorder" >
 	  <!-- .menu-toggle --> 
 	  <a href="#" class="menu-toggle" data-slide="slide" data-target="#navigation-panel"> 
 	    <!-- this above data-slide toggles the #navigation-panel .slide-panel -->
@@ -108,7 +108,7 @@
 	<!-- /.menu-toggle-->
 	<div class="hidden-xs header-btn-wrapper clearfix">
 	<!-- .header-btn-row-->
-	<div class="header-btn-row half-row">
+	<div class="header-btn-row half-row hideBorder">
 	  
 		@if (Auth::guest())
 			<!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
