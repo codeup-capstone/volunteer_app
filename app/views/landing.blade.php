@@ -1,8 +1,9 @@
 @extends('layouts.master')
 
-@section('content')
 
+@section('content')
 <!-- =============== BEGIN #page ==============================-->
+
 <div id="page" class="landingBackground">
   <!-- =========== BEGIN CONTENT FOR THE PAGE =========================================================================== -->
   <div class="page-content no-page-gutters" role="main">
@@ -33,7 +34,7 @@
               <!-- <h3 class="h2 column-featured-headline">Quick Connect</h3> -->
 
            	
-              <p> <a class="btn btn-featured btn-lg shadow-1 btn-width calltoAction"  href="{{ action('ActivitiesController@showRandom') }}">QUICK FILTER</a></p>
+              <p> <a class="btn btn-featured btn-lg shadow-1 btn-width calltoAction"  href="{{ action('ActivitiesController@showRandom') }}">Quick Filter</a></p>
               
             </div>
             <!--/.column-inner .column-featured-->
