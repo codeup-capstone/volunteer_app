@@ -637,6 +637,42 @@ class ActivitiesTableSeeder extends Seeder {
 		$activity->save();
 
 		$activity = new Activity();
+		$activity->name = 'Sorting';
+		$activity->description = 'Help us by repackaging diapers, wipes, making food bags, and doing special projects. Your time helps keep families healthy right here in Bexar County.';
+		$activity->event_date = '2015-02-26';
+		$activity->start_time = '09:00';
+		$activity->end_time = '12:00';
+		$activity->cutoff_time = '2015-03-03';
+		$activity->image_name = 'texasDiaperBank.jpg';
+		$activity->headline = '';
+		$activity->contact_name = 'Angelica Torija';
+		$activity->contact_phone = '2107318118';
+		$activity->contact_email = 'aetorija@texasdiaperbank.org';
+		$activity->max_volunteers = '20';
+		$activity->min_age = '8';
+		$activity->agency_id = 3;
+		$activity->location_id = 3;
+		$activity->save();
+
+		$activity = new Activity();
+		$activity->name = 'Sorting';
+		$activity->description = 'Help us by repackaging diapers, wipes, making food bags, and doing special projects. Your time helps keep families healthy right here in Bexar County.';
+		$activity->event_date = '2015-03-03';
+		$activity->start_time = '09:00';
+		$activity->end_time = '12:00';
+		$activity->cutoff_time = '2015-03-03';
+		$activity->image_name = 'texasDiaperBank.jpg';
+		$activity->headline = '';
+		$activity->contact_name = 'Angelica Torija';
+		$activity->contact_phone = '2107318118';
+		$activity->contact_email = 'aetorija@texasdiaperbank.org';
+		$activity->max_volunteers = '20';
+		$activity->min_age = '8';
+		$activity->agency_id = 3;
+		$activity->location_id = 3;
+		$activity->save();
+
+		$activity = new Activity();
 		$activity->name = 'Orientation for Volunteers';
 		$activity->description = 'Come to our Orientation session! Walk dogs; clean cages; spend time in our kitty cottage assisting with cats and kittens, volunteer in the administration department with paperwork.';
 		$activity->event_date = '2015-02-26';
