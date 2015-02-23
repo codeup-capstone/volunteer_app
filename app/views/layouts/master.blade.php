@@ -1,8 +1,26 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 	<head>
 	<title>Serve Search</title>
 	<meta charset="utf-8">
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/logo/favicon.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/logo/favicon.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/logo/favicon.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/logo/favicon.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/logo/favicon.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/logo/favicon.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/logo/favicon.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/logo/favicon.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/logo/favicon.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/img/logo/favicon.ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/logo/favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/logo/favicon.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/logo/favicon.ico/favicon-16x16.png">
+	<link rel="manifest" href="/img/logo/favicon.ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/img/logo/favicon.ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<meta name="description" content="A fast way to give back. A web app developed to help people connect with non profit events in their communities.">
@@ -77,20 +95,13 @@
 	    <!-- #### logo font  -->
 	    <div class="logo-brand logo-font">
 	      <a href="{{{ action('HomeController@showHome') }}}">
-	         <!--Need to change this in CSS -->
-	         <span class="logo-brand-inner"><!--Need to change this in CSS -->
-	             <!--Need to change this in CSS -->
-	             <span class="">
-	              <h1>Serve Search</h1>
-	              <!--logo font for demo -->
-	          </span>
-	          <!-- This demo is using a logo turned into a font, in the examples, there is an img src= version you can use instead -->
-	      </span>
+	       	        <img src="/img/logo/taglineLogo.png">
+
 	  </a>
 	</div>
 	<!-- /.logo-brand-->
 
-	<div class="header-btn-bar">
+	<div class="header-btn-bar hideBorder" >
 	  <!-- .menu-toggle --> 
 	  <a href="#" class="menu-toggle" data-slide="slide" data-target="#navigation-panel"> 
 	    <!-- this above data-slide toggles the #navigation-panel .slide-panel -->
@@ -108,7 +119,7 @@
 	<!-- /.menu-toggle-->
 	<div class="hidden-xs header-btn-wrapper clearfix">
 	<!-- .header-btn-row-->
-	<div class="header-btn-row half-row">
+	<div class="header-btn-row half-row hideBorder">
 	  
 		@if (Auth::guest())
 			<!-- BEGIN 1st .header-btn .header-btn-xl in first row --> 
@@ -458,4 +469,4 @@
 	<script src="/bedifferent/theme/assets/js/jquery.main.js"></script> <!-- CORE scripts and initializations --> 
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 	</body>
-	</html>
+</html>

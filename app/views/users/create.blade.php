@@ -29,8 +29,8 @@
      		             		<p>Welcome!</p>
      		   	    </div><!--div for profile picture -->
      		   	    			         	
-			        <div class="col-md-7 equal-height-title column-inner text-center">
-			             	<h3>Fill out the form below to create your profile</h3>
+			        <div class="col-md-7 equal-height-title column-inner text-center " id="tableTitle">
+			             	<h3>Create Profile</h3>
 			             	
 			        </div><!-- VOLUNTEERS-->	
 	   	   	    
@@ -55,7 +55,7 @@
 		   					<div class="col-md-12 ">
 									<div class="form-group" {{{ $errors->has('email') ? 'has-error' : '' }}}>
 										{{ Form::label('email', 'E-mail') }}
-										{{ Form::text('email', Input::old('email'), array('class' => 'form-control')) }}	
+										{{ Form::text('email', Input::old('email'), array('class' => 'form-control','autofocus'=>'autofocus')) }}	
 										{{ $errors->first('email', '<p class="help-block">:message</p>') }}
 									</div>
 
