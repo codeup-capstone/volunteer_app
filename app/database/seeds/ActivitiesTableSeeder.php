@@ -639,6 +639,24 @@ class ActivitiesTableSeeder extends Seeder {
 		$activity = new Activity();
 		$activity->name = 'Orientation for Volunteers';
 		$activity->description = 'Come to our Orientation session! Walk dogs; clean cages; spend time in our kitty cottage assisting with cats and kittens, volunteer in the administration department with paperwork.';
+		$activity->event_date = '2015-02-26';
+		$activity->start_time = '18:00';
+		$activity->end_time = '19:00';
+		$activity->cutoff_time = '2015-03-12';
+		$activity->image_name = 'humaneSociety.jpg';
+		$activity->headline = '';
+		$activity->contact_name = 'Cathy Rea';
+		$activity->contact_phone = '2102267461';
+		$activity->contact_email = 'orientation@SAhumane.org';
+		$activity->max_volunteers = '30';
+		$activity->min_age = '12';
+		$activity->agency_id = 6;
+		$activity->location_id = 6;
+		$activity->save();
+
+		$activity = new Activity();
+		$activity->name = 'Orientation for Volunteers';
+		$activity->description = 'Come to our Orientation session! Walk dogs; clean cages; spend time in our kitty cottage assisting with cats and kittens, volunteer in the administration department with paperwork.';
 		$activity->event_date = '2015-03-12';
 		$activity->start_time = '18:00';
 		$activity->end_time = '19:00';
@@ -657,6 +675,24 @@ class ActivitiesTableSeeder extends Seeder {
 		$activity = new Activity();
 		$activity->name = 'Orientation for Volunteers';
 		$activity->description = 'Come find out how to help us give hope, love and companionship to homeless dogs and cats. Whether it is walking dogs, cleaning kennels, socializing or helping in the “Fetching Finds” Thrift Shop, our volunteers are helping to save dogs and cats in our community.';
+		$activity->event_date = '2015-02-27';
+		$activity->start_time = '17:30';
+		$activity->end_time = '18:30';
+		$activity->cutoff_time = '2015-03-10';
+		$activity->image_name = 'ADL.jpg';
+		$activity->headline = '';
+		$activity->contact_name = 'Sabine Brooks';
+		$activity->contact_phone = '2106551481';
+		$activity->contact_email = 'sbrooks@adltexas.org';
+		$activity->max_volunteers = '20';
+		$activity->min_age = '10';
+		$activity->agency_id = 4;
+		$activity->location_id = 4;
+		$activity->save();
+
+		$activity = new Activity();
+		$activity->name = 'Orientation for Volunteers';
+		$activity->description = 'Come find out how to help us give hope, love and companionship to homeless dogs and cats. Whether it is walking dogs, cleaning kennels, socializing or helping in the “Fetching Finds” Thrift Shop, our volunteers are helping to save dogs and cats in our community.';
 		$activity->event_date = '2015-03-10';
 		$activity->start_time = '17:30';
 		$activity->end_time = '18:30';
@@ -670,6 +706,24 @@ class ActivitiesTableSeeder extends Seeder {
 		$activity->min_age = '10';
 		$activity->agency_id = 4;
 		$activity->location_id = 4;
+		$activity->save();
+
+		$activity = new Activity();
+		$activity->name = 'Orientation for Volunteers';
+		$activity->description = 'Come learn about our mission and volunteer opportunities in San Antonio and surrounding areas with Habitat for Humanity of San Antonio. At our volunteer orientations you will learn more about what we do locally. You’ll also learn about how you can help with ongoing and upcoming volunteer projects. ';
+		$activity->event_date = '2015-02-26';
+		$activity->start_time = '18:00';
+		$activity->end_time = '19:00';
+		$activity->cutoff_time = '2015-03-03';
+		$activity->image_name = '';
+		$activity->headline = '';
+		$activity->contact_name = 'Sarah Arrendondo';
+		$activity->contact_phone = '2102235203';
+		$activity->contact_email = 'sarah@habitatsa.org';
+		$activity->max_volunteers = '30';
+		$activity->min_age = '14';
+		$activity->agency_id = 7;
+		$activity->location_id = 5;
 		$activity->save();
 
 		$activity = new Activity();
