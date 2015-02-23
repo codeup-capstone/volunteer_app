@@ -117,7 +117,7 @@
 	  </div>
 	</a> 
 	<!-- /.menu-toggle-->
-	<div class="hidden-xs header-btn-wrapper clearfix">
+	<div class="hidden-xs hidden-sm header-btn-wrapper clearfix">
 	<!-- .header-btn-row-->
 	<div class="header-btn-row half-row hideBorder">
 	  
