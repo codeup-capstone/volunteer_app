@@ -267,13 +267,7 @@
 	<div class="col-md-6">
 	  <h3>Find Us On...</h3>
 	  <ul class="social-icon-list">
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
 	    <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
-	    <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
 	</ul>
 	</div>
 	<!-- /.col-md-6 -->
@@ -423,15 +417,11 @@
 	    <div class="container">
 	      <div class="row footer-row equal-height-col">
 	        <div class="col-sm-5 col-md-3 footer-col">
-	          <h4 class="footer-title">Socialfy</h4>
+	          <h4 class="footer-title">Social</h4>
 	          <ul class="social-icon-list">
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-google-plus"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-linkedin"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-pinterest"></i></a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+
+	            <li><a href="https://github.com/codeup-capstone/volunteer_app"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+
 	          </ul>
 	        </div>
 	        <!-- /.col-sm-5 .col-md-3 footer-col -->

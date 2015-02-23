@@ -414,6 +414,24 @@ select.input-group-lg > .input-group-btn > .btn {
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*******HEADER BUTTON BAR ******************/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.header-btn-bar a:hover,
+.header-btn-bar a:active,
+.header-btn-bar a.active-slide-btn {
+  color: #f3f1e7;
+  background: #787E89;
+  text-decoration: none;
+}
+.btn-default,
+.btn-default:hover {
+  color: #f3f1e7;
+  background: #787E89;
+  border-style: none;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*hides the background image on anything smaller than the a destop screen*/
 @media screen and (min-width: 992px){
     
