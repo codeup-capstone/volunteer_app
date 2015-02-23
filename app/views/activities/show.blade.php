@@ -101,10 +101,31 @@
 
 			  
 		  
+				@if ($activity->agency->users->contains(Auth::user()))
 				<div class="half-row no-gutters">
 					<div>
-						<div class="col-xs-12 col-md-12 raised column-inner text-center" id="emailButton">
-							<a href="mailto:{{$activity->contact_email}}" rel="external"></a><!--table data will go here with some blade sytax -->
+						<div class="col-xs-12 col-md-12">
+							<h3 class="column-inner text-center" id="tableTitle">Who's Going?</h3>
+							<!--table data will go here with some blade sytax -->
+							<table class="col-xs-12 table table-striped table-hover raised" id="clickableRow">
+	             		    <tr>
+	             		    	<th class="hidden">&nbsp</th> 
+	             		    	<th class="text-left">Volunteer</th>
+	             		    	<th class="text-left">Phone</th>
+	             		    	<th class="text-left hidden-xs hidden-sm">E-mail</th>
+	             		    	
+	             		    </tr>
+
+	             				@foreach($activity->users as $user)
+         					<tr clas="raised">
+         							<td class="hidden"><a href="{{{ action('UsersController@show', $user->id) }}}">></a></td>
+	         						<td class="text-left">{{{ $user->first_name." ".$user->last_name }}}</td>
+         							<td class="text-left">{{{ preg_replace("/([0-9]{3})([0-9]{3})([0-9]{4})/", "($1) $2-$3", $user->phone) }}}</td>
+         							<td class="text-left hidden-xs hidden-sm">{{{ $user->email }}}</td>
+	             			</tr>			
+	             				@endforeach
+	             		</table>
+
 						</div>
 
 
@@ -112,7 +133,7 @@
 						
 					</div>
 				</div> <!-- address section-->
-				 
+				@endif
 			 </div><!-- top third of  section-->
 		<!-- primary columnsection col-md-9 -->
 	
