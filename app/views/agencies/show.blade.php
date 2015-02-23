@@ -65,10 +65,11 @@
 	  		         	<div class="column-inner column-featured text-center">
 	  		         		<h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{ action('ActivitiesController@showRandom')}}">Quick Finder</a> </h1>      
 	  		         	</div>
-	  		       
+	  		       		@if ($agency->users->contains(Auth::user()))
 	  		       		<div class="column-inner column-featured text-center">
 	  		         		<h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{ action('ActivitiesController@create')}}">Create Event</a> </h1>      
 	  		         	</div>
+						@endif
 	  		      	</div>
 	  		    </div>
 	  		</div>
