@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 	<head>
 	<title>Serve Search</title>
@@ -20,6 +20,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/img/logo/favicon.ico/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<meta name="description" content="A fast way to give back. A web app developed to help people connect with non profit events in their communities.">
@@ -89,12 +90,13 @@
 	<!--  /.sr-only accessibility--> 
 	<!-- =============== HEADER ==============================-->
 	<header class="header">
-	  <div class="header-inner" id="fixHeaderMargin">
+	  <div class="header-inner">
 	    <!-- :: info :: .header-inner acts like container --> 
 	    <!-- #### logo font  -->
 	    <div class="logo-brand logo-font">
 	      <a href="{{{ action('HomeController@showHome') }}}">
-	        <img src="/img/logo/taglineLogo.png">
+	       	        <img src="/img/logo/taglineLogo.png">
+
 	  </a>
 	</div>
 	<!-- /.logo-brand-->
@@ -127,13 +129,21 @@
 			    </span>
 			 </a>   
 		@else
-		 	 
+		 	<a href="/logout" class="login-toggle header-btn header-btn-xl"> <i class="fa fa-sign-out header-icon"></i>
+			      <span class="header-btn-text">
+			        Logout
+			    </span>
+			</a> 
 		@endif
 	<!-- this above data-slide toggles the #login-panel .slide-panel example --> 
 	<!-- /END 1st .header-btn .header-btn-xl in first row --> 
 	<!-- BEGIN 2nd.header-btn .header-btn-xl in first row --> 
 	@if (Auth::guest())
-	
+	<a href="#" class="signin-toggle header-btn header-btn-xl" data-slide="slide" data-target="#signup-panel"> <i class="fa fa-pencil header-icon"></i>
+	  <span class="header-btn-text">
+	    Sign Up
+	</span>
+	</a> 
 	@else
 		<a href="{{{ action('UsersController@show', Auth::user()->id) }}}" class="signin-toggle header-btn header-btn-xl"> <i class="fa fa-pencil header-icon"></i>
 	  <span class="header-btn-text">
@@ -141,22 +151,26 @@
 	</span>
 	</a> 
 	@endif
-	<a href="#" class="header-btn header-btn-xl search-toggle" data-slide="slide" data-target="#search-panel" > <i class="fa fa-search header-icon"></i> <span class="header-btn-text">
-	    Search
-	</span></a> 
 
 	<!-- this above data-slide toggles the #signup-panel .slide-panel example --> 
 	<!-- /END 2nd .header-btn .header-btn-xl in first row -->
 	</div>
 	<!-- /.header-btn-row-->
-	
+	<div class="header-btn-row half-row">
 	<!-- BEGIN 3rd .header-btn .header-btn-lg in second row --> 
-	
+	<a href="#" class="anchor header-btn header-btn-xl" data-slide="slide" data-target="#contact-panel"> <i class="fa fa-at header-icon"></i>
+	  <span class="header-btn-text">
+	    Contact
+	</span>
+	</a> 
 	<!-- this above data-slide toggles the #contact-panel .slide-panel example --> 
 	<!-- /END 3rd .header-btn .header-btn-lg in second row --> 
 	<!-- BEGIN 4th .header-btn .header-btn-sm in second row--> 
+	<a href="#" class="header-btn header-btn-xl search-toggle" data-slide="slide" data-target="#search-panel" > <i class="fa fa-search header-icon"></i> <span class="header-btn-text">
+	    Search
+	</span></a> 
 	<!-- this above data-slide toggles the #search-panel .slide-panel example -->     
-	
+	</div>
 	<!-- /END .header-btn-row-->
 	<!-- /END .header-btn-row-->
 	</div>
@@ -455,4 +469,4 @@
 	<script src="/bedifferent/theme/assets/js/jquery.main.js"></script> <!-- CORE scripts and initializations --> 
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 	</body>
-	</html>
+</html>
