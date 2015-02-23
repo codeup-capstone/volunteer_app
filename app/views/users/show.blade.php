@@ -90,7 +90,7 @@
 		    <div class="col-md-3" >
 
 		    	<div class=" column-inner column-featured text-center">
-		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@showRandom') }}}">Quick Connect</a></h3>
+		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@showRandom') }}}">Fast Find</a></h3>
 		    	</div>
 			 	<div class=" column-inner column-featured text-center">
 		    		<h3><a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}">Home</a></h3>	 

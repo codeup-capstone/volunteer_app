@@ -201,7 +201,7 @@
 	         
 	        <li class="has-children"> <a href="#">Find Events</a>
 	        	<ul>
-	     		   <li><a href="/activities/6">Quick Connect</a></li>
+	     		   <li><a href="/activities/6">Fast Find</a></li>
 	      		   <li><a href="{{{ action('ActivitiesController@index') }}}">Browse by Event</a></li>
 	     		    <li><a href="{{{ action('AgenciesController@index') }}}">Browse Non Profits</a></li>
 	        	</ul>
