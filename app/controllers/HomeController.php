@@ -80,7 +80,7 @@ class HomeController extends BaseController {
 		return View::make('master');
 	}
 	public function doLogin()
-	{
+	{	
 		$email = Input::get('email');
 		$password = Input::get('password');	
 		

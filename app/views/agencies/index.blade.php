@@ -45,12 +45,12 @@
 	             		</table>
 	                </div>   
                 	<div class="col-md-3 static" id="colFullheight">                     
-                        <div class="column-inner column-featured text-center">                            
-                            <p> <a class="btn btn-featured btn-md buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
-                        </div>
                         <div class="column-inner column-featured text-center">
-                            <h1> <a class="btn btn-featured btn-lg buttonStyle raised" href="/activities/6">Fast Finder</a> </h1>      
-            			</div>
+                            <h1> <a class="btn btn-featured btn-lg buttonStyle raised" href="/activities/6">FAST FIND</a> </h1>      
+                       </div>
+                        <div class="column-inner column-featured text-center">                            
+                            <h1> <a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> HOME</a></h1>      
+                        </div>
                     </div>
                 </div>
             </div>

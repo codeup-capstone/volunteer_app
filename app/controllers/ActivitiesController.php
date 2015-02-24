@@ -124,14 +124,14 @@ class ActivitiesController extends \BaseController {
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
-		}
+		} 
 
 		$activity->name = Input::get('name');
 		$activity->description = Input::get('description');
 		$activity->event_date = Input::get('event_date');
 		$activity->start_time = Input::get('start_time');
 		$activity->end_time = Input::get('end_time');
-		$activity->contct_name = Input::get('contct_name');
+		$activity->contct_name = Input::get('contact_name');
 		$activity->contact_phone = Input::get('contact_phone');
 		$activity->contact_email = Input::get('contact_email');
 
