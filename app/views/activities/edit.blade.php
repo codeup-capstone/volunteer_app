@@ -53,7 +53,7 @@
 								</div>
 		   			</div><!-- form for editing or creating -->
 
-		   			<div class="col-md-1"></div>
+		   			
 		   		
 
 		   </div>             	
