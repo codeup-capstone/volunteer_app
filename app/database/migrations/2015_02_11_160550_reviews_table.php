@@ -14,14 +14,16 @@ class ReviewsTable extends Migration {
 	{
 		Schema::create('reviews', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->integer('review_on_id');
-			$table->string('review_on_type');
-			$table->integer('review_by_id');
+			$table->integer('agency_id')->unsigned();
+			$table->integer('user_id')->unsigned();
+			$table->date('review_date');
 			$table->string('headline', 100);
-			$table->text('review');
+			$table->text('review')->nullable();
 			$table->tinyInteger('rating');
 			$table->timestamps();
+			$table->primary(array('agency_id', 'user_id'));
+			$table->foreign('agency_id')->references('id')->on('agencies');
+			$table->foreign('user_id')->references('id')->on('users');
 		});
 	}
 

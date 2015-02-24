@@ -6,40 +6,36 @@ class ReviewsTableSeeder extends Seeder
 	public function run()
 	{
 		$review = new Review();
-		$review->review_on_id = 5;
-		$review->review_on_type = 'Agency';
-		$review->review_by_id = 8;
+		$review->agency_id = 2;
+		$review->user_id = 11;
+		$review->review_date = '2015-02-15';
 		$review->headline = 'This place is great!';
-		$review->review = 'I have enjoyed my time with the American Red Cross tremendously.  I have served on the Disaster Action Team for the past 7 years and would not trade my experience for anything.';
+		$review->review = 'I have enjoyed my time with the San Antonio Food Bank tremendously.  I have served on the donation collection team for the past 7 years and would not trade my experience for anything.';
 		$review->rating = 5;
 		$review->save();
 
 		$review = new Review();
-		$review->review_on_id = 3;
-		$review->review_on_type = 'Agency';
-		$review->review_by_id = 9;
-		$review->headline = 'The diapers were stinky!';
-		$review->review = 'I did not really have a good time here.';
-		$review->rating = 1;
+		$review->agency_id = 2;
+		$review->user_id = 12;
+		$review->review_date = '2015-01-21';
+		$review->headline = 'We would definitely come back.';
+		$review->rating = 4;
 		$review->save();
 
 		$review = new Review();
-		$review->review_on_id = 8;
-		$review->review_on_type = 'Volunteer';
-		$review->review_by_id = 5;
-		$review->headline = 'We love John!';
-		$review->review = 'John is great! He always goes the extra mile and has a positive attitude!';
+		$review->agency_id = 2;
+		$review->user_id = 13;
+		$review->review_date = '2014-11-15';
+		$review->headline = 'Very rewarding experience';
 		$review->rating = 5;
 		$review->save();
 
 		$review = new Review();
-		$review->review_on_id = 9;
-		$review->review_on_type = 'Volunteer';
-		$review->review_by_id = 3;
-		$review->headline = 'Jane might do better elsewhere.';
-		$review->review = 'We enjoyed meeting Jane at our monthly diaper packing event, but she did not seem happy to be there.';
-		$review->rating = 2;
+		$review->agency_id = 2;
+		$review->user_id = 14;
+		$review->review_date = '2014-12-27';
+		$review->headline = 'This is now a Christmas tradition for our family';
+		$review->rating = 4;
 		$review->save();
-
 	}
 }

@@ -62,8 +62,8 @@ class AgenciesController extends \BaseController {
 	{
 		$agency = Agency::findOrFail($id);
 	
-		$reviews = Review::with('user')->orderBy('event_date', 'ASC')->simplePaginate(5);
-		return View::make('agencies.show')->with(compact('agency'))->with(compact('activities'));
+		$reviews = Review::with('user')->orderBy('review_date', 'DESC')->simplePaginate(5);
+		return View::make('agencies.showReviews')->with(compact('agency'))->with(compact('reviews'));
 
 	}
 

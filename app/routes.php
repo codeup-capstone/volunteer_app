@@ -27,7 +27,7 @@ Route::post('/', 'HomeController@doLogin');
 
 Route::resource('agencies', 'AgenciesController');
 
-Route::get('reviews', 'AgenciesController@showReviews');
+Route::get('reviews/{id}', 'AgenciesController@showReviews');
 
 Route::resource('locations', 'LocationsController');
 
