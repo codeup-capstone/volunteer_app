@@ -20,7 +20,6 @@ class Review extends BaseModel {
 	 * @var array
 	 */
 
-	// Polymorphic relationship with users and agencies.
 
 	public function user()
 	{
@@ -28,7 +27,7 @@ class Review extends BaseModel {
 	}
 	public function agency()
 	{
-	    return $this->belongsTo('agency');
+	    return $this->belongsTo('Agency');
 	}
 
 }

@@ -45,7 +45,7 @@ class Agency extends BaseModel {
 	}
 	public function reviews()
 	{
-		return $this->morphMany('Review', 'reviewable');
+		return $this->hasMany('Review');
 	}
 	public function activities()
 	{
