@@ -78,30 +78,22 @@
       <h3>
         David Runnels
       </h3>
-      <ul>
+      <ul style="list-style-type:none">
         <li>
-          Lorem ipsum dolor sit amet
+          I love creating in a collaborative environment.  I'm analytical, inspired and driven to find solutions to the problem at hand. I bring imagination and persistence to all of my projects, personal and professional. Reach out and let me know how I can use my creativity and effort to benefit your projects.
         </li>
         <li>
-          Consectetur adipiscing elit
-        </li>
-        <li>
-          Integer molestie lorem at massa
-        </li>
-        <li>
-          Facilisis in pretium nisl aliquet
-        </li>
-        <li>
-          Nulla volutpat aliquam velit
-        </li>
-        <li>
-          Faucibus porta lacus fringilla vel
-        </li>
-        <li>
-          Aenean sit amet erat nunc
-        </li>
-        <li>
-          Eget porttitor lorem
+          	<a href="mailto:david.runnels@gmail.com?Subject=Serve%20Search%20inquiry">
+            	<i class="fa fa-envelope-square fa-3x"></i>
+    		</a>
+
+		    <a href="http://linkedin.com/in/davidrunnels" target="_blank">
+		      	<i class="fa fa-linkedin-square fa-3x"></i> 
+		    </a>
+
+		    <a href="https://github.com/davidrunnels" target="_blank">
+		      <i class="fa fa-github-square fa-3x"></i>
+		    </a>
         </li>
       </ul>
     </div>
