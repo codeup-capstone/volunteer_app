@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ƒ<!DOCTYPE html>
 	<html>
 	<head>
 	<title>Serve Search</title>
@@ -269,7 +269,9 @@
 	        <strong>phone:</strong> <a href="tel:8135551234">214.608.7675</a><br>
 	        <strong>fax:</strong> 813.555.1235<br>
 	        <span class="overflow">
-	        <strong>email:</strong> <a class="link-underline" href="mailto:paulqlove@gmail.com">paulqlove@gmail.com</a>
+	        <strong>email:</strong> <a class="link-underline" href="mailto:nomadjeff@gmail.com">nomadjeff@gmail.com</a><br>
+	        <strong>email:</strong> <a class="link-underline" href="mailto:paulqlove@gmail.com">paulqlove@gmail.com</a><br>
+	        <strong>email:</strong> <a class="link-underline" href="mailto:david.runnels@gmail.com">david.runnels@gmail.com</a>
 	      </span>
 	  </p>
 	</div>
