@@ -72,15 +72,15 @@
                     <div class="col-md-3 " id="colFullheight">
                       <div class="row">
                         <div class="col-md-12">
-                           <div class="column-inner column-featured text-center">
-                             
-                            <h3> <a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> Home</a></h3>      
-                           </div>
 
                              <div class="column-inner column-featured text-center">
                              
-                               <h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="/activities/6">Fast Finder</a> </h1>      
+                               <h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="/activities/6">FAST FIND</a> </h1>      
                              </div>
+                           <div class="column-inner column-featured text-center">
+                             
+                            <h3> <a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}">HOME</a></h3>      
+                           </div>
                            <!--/.column-inner .column-featured-->
                           </div>
                          </div>

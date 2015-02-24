@@ -42,7 +42,7 @@
 						</div> 
 
 						<div class="row no-gutters">
-							<a class="btn btn-featured button-cancel btn-md raised" href="{{{ URL::previous() }}}">Go Back</a>
+							<a class="btn btn-featured button-cancel btn-md raised" href="{{{ URL::previous() }}}">PREV</a>
 						</div>	
 					
 		   			</div><!-- events table-->

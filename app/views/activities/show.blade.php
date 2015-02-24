@@ -157,7 +157,7 @@
 							@endif
 						@else
 							<!-- Make user login if not signed in -->
-							<a class="btn btn-featured btn-lg buttonStyle raised" href="#" data-slide="slide" data-target="#login-panel">Sign in to RSVP</a>
+							<a class="btn btn-featured btn-lg buttonStyle raised" href="#" data-slide="slide" data-target="#login-panel">RSVP</a>
 						@endif
 
 					</h3>
@@ -183,7 +183,7 @@
 				<!-- Need some sort of if statement here -->
 				@if ($activity->agency->users->contains(Auth::user()))
 				<div class="col-md-12 column-inner column-featured text-center">
-					<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@edit', $activity->id) }}}">Edit Event</a></h3>
+					<h3><a class="btn btn-featured btn-lg buttonStyle raised"  href="{{{ action('ActivitiesController@edit', $activity->id) }}}">EDIT</a></h3>
 				</div>
 				@endif
 

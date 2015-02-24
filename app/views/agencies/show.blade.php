@@ -58,18 +58,18 @@
 			<div class="col-md-3 " >
 	  		  	<div class="row">
 	  		    	<div class="col-md-12">
-	  		       		<div class="column-inner column-featured text-center">
-	  		        		<h3> <a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> Home</a></h3>      
-	  		       		</div>
 
 	  		         	<div class="column-inner column-featured text-center">
-	  		         		<h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{ action('ActivitiesController@showRandom')}}">Fast Finder</a> </h1>      
+	  		         		<h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{ action('ActivitiesController@showRandom')}}">FAST FIND</a> </h1>      
 	  		         	</div>
 	  		       		@if ($agency->users->contains(Auth::user()))
 	  		       		<div class="column-inner column-featured text-center">
-	  		         		<h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{ action('ActivitiesController@create')}}">Create Event</a> </h1>      
+	  		         		<h1> <a class="btn btn-featured btn-lg buttonStyle raised"  href="{{ action('ActivitiesController@create')}}">CREATE EVENT</a> </h1>      
 	  		         	</div>
 						@endif
+	  		       		<div class="column-inner column-featured text-center">
+	  		        		<h1> <a class="btn btn-featured btn-lg buttonStyle raised" href="{{{ action('HomeController@showHome') }}}">HOME</a></h1>      
+	  		       		</div>
 	  		      	</div>
 	  		    </div>
 	  		</div>
