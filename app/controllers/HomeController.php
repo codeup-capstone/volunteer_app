@@ -83,10 +83,18 @@ class HomeController extends BaseController {
 	{
 		$email = Input::get('email');
 		$password = Input::get('password');	
-		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
-		    return Redirect::intended('/');
 		
-		} else {
+		if (Auth::attempt(array('email' => $email, 'password' => $password))) 
+		{
+			if (Auth::id() > 7) {
+		    	return Redirect::action('UsersController@show', array(Auth::id()));
+			}
+			else {
+				return Redirect::action('AgenciesController@show', array(Auth::id()));
+		    }
+		}
+
+		else {
 			
 			Session::flash('errorMessage', 'Failed to log in.');
 		    return Redirect::action('HomeController@showHome');
