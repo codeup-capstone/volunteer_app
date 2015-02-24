@@ -44,4 +44,11 @@ class Activity extends BaseModel {
 	    return $this->belongsTo('Agency');
 	}
 
+	public function uploadImage($file)
+	{
+		$filename = $file->getClientOriginalName();
+		$new_images = $file->move(public_path('img/activity'), $filename);
+		$this->attributes['image_name'] = "/img/activity" . "/" . $filename;
+	}
+
 }
