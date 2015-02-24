@@ -49,7 +49,7 @@
                             <p> <a class="btn btn-featured btn-md buttonStyle raised" href="{{{ action('HomeController@showHome') }}}"> HOME</a></p>      
                         </div>
                         <div class="column-inner column-featured text-center">
-                            <h1> <a class="btn btn-featured btn-lg buttonStyle raised" href="/activities/6">Quick Finder</a> </h1>      
+                            <h1> <a class="btn btn-featured btn-lg buttonStyle raised" href="/activities/6">Fast Finder</a> </h1>      
             			</div>
                     </div>
                 </div>
