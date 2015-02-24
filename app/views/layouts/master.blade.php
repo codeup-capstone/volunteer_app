@@ -269,8 +269,8 @@
 	        <strong>phone:</strong> <a href="tel:8135551234">214.608.7675</a><br>
 	        <strong>fax:</strong> 813.555.1235<br>
 	        <span class="overflow">
-	        <strong>email:</strong> <a class="link-underline" href="mailto:nomadjeff@gmail.com">nomadjeff@gmail.com</a><br>
-	        <strong>email:</strong> <a class="link-underline" href="mailto:paulqlove@gmail.com">paulqlove@gmail.com</a><br>
+	        <strong>email:</strong> <a class="link-underline" href="mailto:nomadjeff@gmail.com">nomadjeff@gmail.com</a>
+	        <strong>email:</strong> <a class="link-underline" href="mailto:paulqlove@gmail.com">paulqlove@gmail.com</a>
 	        <strong>email:</strong> <a class="link-underline" href="mailto:david.runnels@gmail.com">david.runnels@gmail.com</a>
 	      </span>
 	  </p>
@@ -433,7 +433,7 @@
 	          <h4 class="footer-title">Github</h4>
 	          <ul class="social-icon-list">
 
-	            <li><a href="https://github.com/codeup-capstone/volunteer_app"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+	            <li><a href="https://github.com/coMy enthusiasm for technology and creating led me to enter Code School. Having completed General Assembly’s Web Design Circuit course, I am armed with core strategic skills in design, layout, user experience, HTML and CSS. My over 800 hours spent in Code Up’s Full-Stack Immersive Bootcamp, honing my back-end craft, has made me proficient in PHP, JavaScript, Laravel, jquery and bootstrap (among others). I’m a triple-threat in my unique ability to blend thoughtful strategy, imaginative design and seamless execution in development. In my spare time I enjoy spending time with my wife, throwing the ball for my dogs and perfecting my homemade bacon recipe. stone/volunteer_app"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
 
 	          </ul>
 	        </div>

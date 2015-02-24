@@ -120,11 +120,23 @@ a.btn:hover {
 
 }
   .img-size {
-      max-width: 183px;
-     
-      
+      max-width: 183px;  
     }
+.about-us-img {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
 
+}
+.about-us-img > ul ,
+.about-us-summary > ul {
+  padding-left: 0px;
+  list-style: none;
+}
+.about-us-top {
+  margin-right: auto; 
+  margin-left: auto;
+}
 .landing-column {
   background-color: #787E89;
 }
