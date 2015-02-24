@@ -75,7 +75,7 @@
       <div class="about-us-summary">
         <ul>
           <li>
-            I love creating in a collaborative environment.  I'm analytical, inspired and driven to find solutions to the problem at hand. I bring imagination and persistence to all of my projects, personal and professional. Reach out and let me know how I can use my creativity and effort to benefit your projects.
+            Web development allows me to create and make a difference. I love creating in a collaborative environment.  I'm analytical, inspired and driven to find solutions to the problem at hand. I bring imagination and persistence to all of my projects, personal and professional. I will add value to your team by bringing the perfect combination of imagination and persistence. Reach out and let me know how I can use my creativity and effort to benefit your company. 
           </li>
           <li>
             	<a href="mailto:david.runnels@gmail.com?Subject=Serve%20Search%20inquiry">
