@@ -10,7 +10,9 @@ body {
   overflow-x: none;
 
 }
-
+button:hover {
+  color: #000;
+}
 span {
   font-weight: bold;
 }
@@ -50,6 +52,7 @@ a.btn:hover {
   width: 100%;
   border-style: none;
   background-color: #F4633B;
+
 }
 .buttonStyle {
   width: 100%;
@@ -204,6 +207,10 @@ a.btn:hover {
      
     }
 
+#cancelButtonText {
+  color: #fff;
+}
+
 table#clickableRow {
     border-collapse: collapse;   
 }
@@ -230,7 +237,7 @@ background-color: #ccc;
   border-radius: 2px;
   background-color: transparent;
 }
-#emailButton {
+#marginBot-Button {
   margin-bottom: 15px;
 }
 #fix-padding-right {

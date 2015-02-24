@@ -428,7 +428,7 @@
 	    <div class="container">
 	      <div class="row footer-row equal-height-col">
 	        <div class="col-sm-5 col-md-3 footer-col">
-	          <h4 class="footer-title">Social</h4>
+	          <h4 class="footer-title">Github</h4>
 	          <ul class="social-icon-list">
 
 	            <li><a href="https://github.com/codeup-capstone/volunteer_app"><i class="fa fa-fw fa-2x fa-github"></i></a></li>

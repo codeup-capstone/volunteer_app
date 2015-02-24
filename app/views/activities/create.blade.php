@@ -29,8 +29,8 @@
 		   			</div><!-- form for editing or creating -->
 		   			
 
-		   			<div class="col-md-8"><!-- events table  -->
-					 	<div class="row no-gutters" id="sidebar">
+		   			<div class="col-md-offset-2 col-md-8"><!-- events table  -->
+					 	<div class="row no-gutters" id="marginBot-Button">
 		   						{{ Form::open(array('action' => 'ActivitiesController@store', 'files' => true)) }}
 
 									@include('activities.form')
@@ -38,9 +38,13 @@
 								{{ Form::submit('Create New Event', array('class' => "btn btn-featured btn-md buttonStyle raised")) }}
 								{{ Form::close() }}
 
-						
 							
-						</div>  
+						</div> 
+
+						<div class="row no-gutters">
+							<a class="btn btn-featured button-cancel btn-md raised" href="{{{ URL::previous() }}}">Go Back</a>
+						</div>	
+					
 		   			</div><!-- events table-->
 		   		</div>
 
