@@ -1,4 +1,4 @@
-ƒ<!DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 	<head>
 	<title>Serve Search</title>
