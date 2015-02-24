@@ -61,9 +61,21 @@ class ActivitiesController extends \BaseController {
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 
-		Activity::create($data);
+		$activity->name = Input::get('name');
+		$activity->description = Input::get('description');
+		$activity->event_date = Input::get('event_date');
+		$activity->start_time = Input::get('start_time');
+		$activity->end_time = Input::get('end_time');
+		$activity->contct_name = Input::get('contct_name');
+		$activity->contact_phone = Input::get('contact_phone');
+		$activity->contact_email = Input::get('contact_email');
 
-		return Redirect::route('activities.index');
+		if (Input::hasFile('image_name')) {
+			$activity->uploadImage(Input::file('image_name'));
+		}
+		$activity->save();
+
+		return Redirect::action('ActivitiesController@show', $activity->id);
 	}
 
 	public function show($id)
@@ -114,9 +126,20 @@ class ActivitiesController extends \BaseController {
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 
-		$activity->update($data);
+		$activity->name = Input::get('name');
+		$activity->description = Input::get('description');
+		$activity->event_date = Input::get('event_date');
+		$activity->start_time = Input::get('start_time');
+		$activity->end_time = Input::get('end_time');
+		$activity->contct_name = Input::get('contct_name');
+		$activity->contact_phone = Input::get('contact_phone');
+		$activity->contact_email = Input::get('contact_email');
 
-		return Redirect::route('activities.index');
+		if (Input::hasFile('image_name')) {
+			$activity->uploadImage(Input::file('image_name'));
+		}
+		$activity->save();
+		return Redirect::route('ActivitiesController@show', $activity->id);
 	}
 
 	/**
@@ -133,4 +156,3 @@ class ActivitiesController extends \BaseController {
 	}
 
 }
-
